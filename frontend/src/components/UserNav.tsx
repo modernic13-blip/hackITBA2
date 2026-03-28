@@ -27,9 +27,9 @@ export const UserNav = () => {
     };
 
     return (
-        <div className="absolute top-0 w-full p-6 flex justify-end z-50 pointer-events-auto">
+        <div className="absolute top-0 w-full p-6 flex justify-end z-50 pointer-events-none">
             {user ? (
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 pointer-events-auto">
                     {!isDashboard && (
                         <Link to="/dashboard" className="flex items-center gap-3 bg-card border border-border px-5 py-2 rounded-full hover:bg-muted transition-colors shadow-sm">
                             <span className="text-sm font-medium">{user.user_metadata?.full_name?.split(' ')[0] || "Mi Panel"}</span>
@@ -52,7 +52,7 @@ export const UserNav = () => {
                     )}
                 </div>
             ) : (
-                <Link to="/login" className="text-sm font-medium border border-border bg-card/80 backdrop-blur-md hover:bg-muted px-8 py-3 rounded-full transition-colors shadow-sm">
+                <Link to="/login" className="text-sm font-medium border border-border bg-card/80 backdrop-blur-md hover:bg-muted px-8 py-3 rounded-full transition-colors shadow-sm pointer-events-auto">
                     Ingresar
                 </Link>
             )}
