@@ -62,7 +62,7 @@ export default function Dashboard() {
 
     return (
         <div className="min-h-screen bg-background text-foreground flex flex-col relative font-sans">
-            <header className="p-6 border-b border-border flex items-center justify-between sticky top-0 bg-background/80 backdrop-blur-md z-40">
+            <header className="p-6 flex items-center justify-between sticky top-0 bg-background/80 backdrop-blur-md z-40">
                 <Link
                     to="/"
                     className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"

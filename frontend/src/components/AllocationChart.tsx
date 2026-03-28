@@ -4,7 +4,7 @@ import {
   AreaChart, Area, PieChart, Pie, Cell, XAxis, YAxis, ResponsiveContainer,
   Tooltip, Legend, LineChart, Line,
 } from "recharts";
-import type { BacktestDay } from "@/hooks/useBacktestData";
+import { computeMetrics, type BacktestDay } from "@/hooks/useBacktestData";
 
 const COLORS = [
   "hsl(217, 91%, 60%)",   // Azul
@@ -66,6 +66,9 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
   }, [data]);
 
   if (data.length === 0) return null;
+
+  const metrics = computeMetrics(data);
+  const finalValue = data.length > 0 ? Math.round(data[data.length - 1].portfolio_value * 25) : 0;
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-24">
@@ -149,6 +152,59 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
               </ResponsiveContainer>
             </div>
           </div>
+        </motion.div>
+
+        {/* Métricas Reales Extraídas */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+        >
+          {[
+            {
+              label: "Retorno Total",
+              value: `${metrics.totalReturn >= 0 ? "+" : ""}${metrics.totalReturn}%`,
+              colored: true,
+              positive: metrics.totalReturn >= 0,
+            },
+            { label: "Max Drawdown", value: `${metrics.maxDrawdown}%`, colored: false },
+            { label: "Sharpe Ratio", value: String(metrics.sharpeRatio), colored: false },
+            {
+              label: "vs Benchmark",
+              value: `${metrics.vsbenchmark >= 0 ? "+" : ""}${metrics.vsbenchmark}%`,
+              colored: true,
+              positive: metrics.vsbenchmark >= 0,
+            },
+          ].map(({ label, value, colored, positive }) => (
+            <div key={label} className="text-center p-5 rounded-xl border border-border bg-card shadow-sm">
+              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{label}</p>
+              <p
+                className={`text-2xl font-semibold ${colored
+                  ? positive
+                    ? "text-success"
+                    : "text-red-500"
+                  : "text-foreground"
+                  }`}
+              >
+                {value}
+              </p>
+            </div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ delay: 0.2 }}
+          className="text-center space-y-1 mb-8"
+        >
+          <p className="text-sm font-medium text-foreground">
+            Capital final de la simulación:{" "}
+            <span className="text-primary text-xl">${finalValue.toLocaleString()}</span>
+          </p>
         </motion.div>
 
         {/* Stacked Area Chart */}

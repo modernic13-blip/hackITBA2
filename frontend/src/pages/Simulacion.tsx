@@ -175,8 +175,8 @@ export default function Simulacion() {
               key={m.id}
               onClick={() => handleModelChange(m)}
               className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${selectedModel.id === m.id
-                  ? "bg-card text-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                ? "bg-card text-foreground shadow-sm"
+                : "text-muted-foreground hover:text-foregr  ound"
                 }`}
             >
               {m.name}

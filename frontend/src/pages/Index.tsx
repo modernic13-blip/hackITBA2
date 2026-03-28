@@ -1,6 +1,5 @@
 import { useState, useCallback } from "react";
 import HeroSection from "@/components/HeroSection";
-import BacktestingReveal from "@/components/BacktestingReveal";
 import AllocationChart from "@/components/AllocationChart";
 import ConversionSection from "@/components/ConversionSection";
 import { UserNav } from "@/components/UserNav";
@@ -51,7 +50,6 @@ const Index = () => {
         </div>
       </section>
 
-      <BacktestingReveal capital={capital} risk={risk} />
       <AllocationChart data={backtestData} />
       <ConversionSection />
     </div>
