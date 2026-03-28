@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
-import { ArrowLeft, Play, Square, RefreshCcw } from "lucide-react";
+import { ArrowLeft, Play, Square, RefreshCcw, Check } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
-// Redefining the full capabilities since we extracted UI to landing page
 const AI_MODELS = [
     { id: "low", name: "Modelo Conservador", fee: "1%", multiplier: 1.0005, volatility: 0.002, desc: "Bajo riesgo" },
     { id: "mid", name: "Modelo Dinámico", fee: "10%", multiplier: 1.002, volatility: 0.01, desc: "Balance medio" },
@@ -15,6 +15,8 @@ type DataPoint = { day: number; value: number; neto: number; feePaga: number };
 
 export default function Simulacion() {
     const location = useLocation();
+    const navigate = useNavigate();
+    const [userId, setUserId] = useState<string | null>(null);
     const [capitalInput, setCapitalInput] = useState<number>(6000);
     const [selectedModel, setSelectedModel] = useState(
         AI_MODELS.find(m => m.id === location.state?.selectedModelId) || AI_MODELS[1]
@@ -22,207 +24,258 @@ export default function Simulacion() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [gameData, setGameData] = useState<DataPoint[]>([]);
     const [dayCounter, setDayCounter] = useState(0);
+    const [isLoadingData, setIsLoadingData] = useState(true);
 
-    // Initialize or load from local storage
+    // Auth Guard & Fetch DB
     useEffect(() => {
-        const saved = localStorage.getItem("smart_capital_simulation_v2");
-        if (saved) {
-            try {
-                const parsed = JSON.parse(saved);
-                if (parsed.data && parsed.data.length > 0) {
-                    setGameData(parsed.data);
-                    setDayCounter(parsed.data[parsed.data.length - 1].day);
-                    setCapitalInput(parsed.data[0].value);
-                }
-            } catch (e) {
-                console.error("Local storage error");
+        let mounted = true;
+        const loadUserAndData = async () => {
+            const { data } = await supabase.auth.getSession();
+            if (!data.session) {
+                navigate("/login");
+                return;
             }
-        } else {
-            resetSimulation();
-        }
-    }, []);
+            const uid = data.session.user.id;
+            setUserId(uid);
 
-    // Save to local storage on change
+            // Fetch cloud progress
+            const { data: dbData } = await supabase
+                .from('simulations')
+                .select('*')
+                .eq('user_id', uid)
+                .single();
+
+            if (mounted) {
+                if (dbData) {
+                    setGameData(dbData.game_data || []);
+                    setDayCounter(dbData.day_counter || 0);
+                    setCapitalInput(dbData.capital_input || 6000);
+                    const model = AI_MODELS.find(m => m.id === dbData.selected_model_id);
+                    if (model) setSelectedModel(model);
+                }
+                setIsLoadingData(false);
+            }
+        };
+        loadUserAndData();
+        return () => { mounted = false; };
+    }, [navigate]);
+
+    // Save logic
+    const saveToSupabase = async (overrideData?: any) => {
+        if (!userId) return;
+        await supabase.from('simulations').upsert({
+            user_id: userId,
+            selected_model_id: selectedModel.id,
+            day_counter: overrideData?.dayCounter ?? dayCounter,
+            game_data: overrideData?.gameData ?? gameData,
+            capital_input: capitalInput,
+            is_playing: false
+        });
+    };
+
+    // Auto-save debounced / on pause
     useEffect(() => {
-        if (gameData.length > 0) {
-            localStorage.setItem("smart_capital_simulation_v2", JSON.stringify({ data: gameData }));
+        if (isLoadingData || !userId) return;
+
+        let interval: NodeJS.Timeout | null = null;
+        if (isPlaying) {
+            // Backup as it runs every 5s so we don't spam Supabase API linearly on every tick
+            interval = setInterval(() => {
+                saveToSupabase();
+            }, 5000);
+        } else if (!isPlaying && gameData.length > 0) {
+            // Save immediately when paused 
+            saveToSupabase();
         }
-    }, [gameData]);
+
+        return () => {
+            if (interval) clearInterval(interval);
+        };
+    }, [isPlaying, gameData, dayCounter, selectedModel, capitalInput, isLoadingData]);
+
+    // Cleanup localstorage as it's legacy
+    useEffect(() => {
+        localStorage.removeItem("smart_capital_simulation_v2");
+    }, []);
 
     // Game Loop
     useEffect(() => {
-        if (!isPlaying) return;
+        let interval: NodeJS.Timeout;
+        if (isPlaying) {
+            interval = setInterval(() => {
+                setDayCounter(prev => {
+                    const newDay = prev + 1;
+                    setGameData(current => {
+                        const last = current.length > 0 ? current[current.length - 1] : { day: 0, value: capitalInput, neto: capitalInput, feePaga: 0 };
 
-        const interval = setInterval(() => {
-            setGameData(prev => {
-                const currentData = prev.length > 0 ? prev : [{ day: 0, value: capitalInput, neto: capitalInput, feePaga: 0 }];
-                const lastPoint = currentData[currentData.length - 1];
+                        let baseGrowth = (selectedModel.multiplier - 1);
+                        let randomWalk = (Math.random() - 0.45) * selectedModel.volatility;
+                        let dailyReturn = baseGrowth + randomWalk;
 
-                // AI Decition (Random Variance + Model Multiplier)
-                const marketNoise = (Math.random() * 2 - 1) * selectedModel.volatility;
-                const grossValue = lastPoint.value * (selectedModel.multiplier + marketNoise);
+                        let newValue = last.value * (1 + dailyReturn);
+                        if (newValue < capitalInput * 0.1) newValue = capitalInput * 0.1;
 
-                // Calculate Fees on Profit
-                let currentNeto = grossValue;
-                let diff = grossValue - capitalInput;
-                let feeAmount = 0;
+                        const gananciaCruda = newValue - capitalInput;
+                        const hasProfit = gananciaCruda > 0;
+                        const feePercentage = parseFloat(selectedModel.fee) / 100;
 
-                if (diff > 0) {
-                    const feeRate = parseInt(selectedModel.fee) / 100;
-                    feeAmount = diff * feeRate;
-                    currentNeto = grossValue - feeAmount;
-                }
+                        let curFeePaga = hasProfit ? gananciaCruda * feePercentage : 0;
+                        let curNeto = newValue - curFeePaga;
 
-                const newPoint = {
-                    day: lastPoint.day + 1,
-                    value: Math.max(0, grossValue),
-                    neto: Math.max(0, currentNeto),
-                    feePaga: Math.max(0, feeAmount)
-                };
-
-                setDayCounter(newPoint.day);
-                return [...currentData, newPoint];
-            });
-        }, 500); // 1 Day = 0.5s
-
+                        const nextNodes = [...current, { day: newDay, value: newValue, neto: curNeto, feePaga: curFeePaga }];
+                        if (nextNodes.length > 100) nextNodes.shift();
+                        return nextNodes;
+                    });
+                    return newDay;
+                });
+            }, 300);
+        }
         return () => clearInterval(interval);
-    }, [isPlaying, capitalInput, selectedModel]);
+    }, [isPlaying, selectedModel, capitalInput]);
 
-    const resetSimulation = () => {
+    const handleRestart = async () => {
         setIsPlaying(false);
+        setGameData([]);
         setDayCounter(0);
-        setGameData([{ day: 0, value: capitalInput, neto: capitalInput, feePaga: 0 }]);
+        await saveToSupabase({ dayCounter: 0, gameData: [] });
     };
 
-    const currentNeto = gameData.length > 0 ? gameData[gameData.length - 1].neto : capitalInput;
-    const currentFee = gameData.length > 0 ? gameData[gameData.length - 1].feePaga : 0;
-    const profit = currentNeto - capitalInput;
-    const profitPercentage = ((profit / capitalInput) * 100).toFixed(2);
+    if (isLoadingData) {
+        return <div className="min-h-screen flex items-center justify-center bg-background"><span className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></span></div>;
+    }
+
+    const currentData = gameData.length > 0 ? gameData[gameData.length - 1] : { value: capitalInput, neto: capitalInput, feePaga: 0 };
+    const maxProfit = gameData.length > 0 ? Math.max(...gameData.map(d => d.neto)) : capitalInput;
+    const isLosing = currentData.neto < capitalInput;
 
     return (
-        <div className="min-h-screen bg-background text-foreground flex flex-col">
-            {/* Header */}
-            <header className="p-6 flex items-center justify-between border-b border-border/40">
+        <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
+            <header className="p-6 border-b border-border flex items-center justify-between sticky top-0 bg-background/80 backdrop-blur-md z-10">
                 <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
                     <ArrowLeft size={16} />
-                    Volver
+                    Volver al inicio
                 </Link>
-                <div className="font-semibold text-sm tracking-widest uppercase opacity-70">Trading Game AI</div>
-                <div className="w-16"></div> {/* Spacer */}
+                <div className="flex bg-muted p-1 rounded-xl">
+                    {AI_MODELS.map(m => (
+                        <button
+                            key={m.id}
+                            onClick={() => { setSelectedModel(m); handleRestart(); }}
+                            className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${selectedModel.id === m.id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
+                        >
+                            {m.name}
+                        </button>
+                    ))}
+                </div>
             </header>
 
-            <main className="flex-1 max-w-7xl w-full mx-auto p-6 lg:p-12">
-                {/* Simulador Dashboard */}
-                <section className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <main className="flex-1 w-full max-w-7xl mx-auto p-6 md:p-10 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
 
-                    {/* Controles Laterales */}
-                    <div className="lg:col-span-1 space-y-8">
+                {/* Visualizer Area */}
+                <div className="flex flex-col space-y-6">
+                    <div className="flex justify-between items-end">
                         <div>
-                            <h1 className="text-3xl font-semibold mb-2">Simulador de Pruebas</h1>
-                            <p className="text-muted-foreground text-sm">
-                                Observa cómo opera la IA.
-                            </p>
-                        </div>
-
-                        <div className="space-y-4">
-                            <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">1. Selecciona Modelo</h3>
-                            <div className="space-y-3">
-                                {AI_MODELS.map(model => (
-                                    <button
-                                        key={model.id}
-                                        onClick={() => setSelectedModel(model)}
-                                        disabled={isPlaying}
-                                        className={`w-full text-left p-4 rounded-xl border transition-all ${selectedModel.id === model.id
-                                                ? "bg-primary/10 border-primary"
-                                                : "bg-card border-border hover:border-border/80"
-                                            } disabled:opacity-50`}
-                                    >
-                                        <div className="font-semibold text-foreground">{model.name}</div>
-                                        <div className="text-xs text-muted-foreground mt-1">Comisión del {model.fee}</div>
-                                    </button>
-                                ))}
+                            <h2 className="text-sm font-medium text-muted-foreground">Tu Capital Neto Actual</h2>
+                            <div className={`text-5xl font-bold tracking-tight mt-2 flex items-baseline gap-3 ${isLosing ? 'text-red-500' : 'text-foreground'}`}>
+                                ${currentData.neto.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                             </div>
                         </div>
+                        <div className="text-right">
+                            <div className="text-sm text-muted-foreground">Día Operativo</div>
+                            <div className="text-2xl font-mono font-medium">{dayCounter}</div>
+                        </div>
+                    </div>
 
-                        <div className="space-y-4">
-                            <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">2. Capital Inicial</h3>
+                    <div className="bg-card w-full border border-border rounded-2xl h-[400px] p-6 flex flex-col relative overflow-hidden">
+                        {gameData.length === 0 ? (
+                            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+                                Presiona Iniciar para ver el mercado.
+                            </div>
+                        ) : (
+                            <ResponsiveContainer width="100%" height="100%">
+                                <LineChart data={gameData} margin={{ top: 5, right: 5, left: 5, bottom: 5 }}>
+                                    <XAxis dataKey="day" axisLine={false} tickLine={false} tickFormatter={(v) => `Día ${v}`} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} minTickGap={30} />
+                                    <YAxis domain={['auto', 'auto']} axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} tickFormatter={(v) => `$${(v / 1000).toFixed(1)}k`} width={50} />
+                                    <Tooltip
+                                        contentStyle={{ background: "hsl(0, 0%, 100%)", border: "1px solid hsl(220, 13%, 91%)", borderRadius: "12px", boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)", color: "#000" }}
+                                        formatter={(value: number) => [`$${value.toFixed(2)}`, "Neto (Tuyo)"]}
+                                        labelFormatter={(label) => `Día Operable ${label}`}
+                                    />
+                                    <Line type="monotone" dataKey="neto" stroke="hsl(217, 91%, 60%)" strokeWidth={3} dot={false} isAnimationActive={false} />
+                                </LineChart>
+                            </ResponsiveContainer>
+                        )}
+                    </div>
+                </div>
+
+                {/* Control Panel */}
+                <div className="space-y-6">
+                    <div className="bg-card border border-border rounded-2xl p-6">
+                        <div className="mb-8">
+                            <label className="text-sm font-medium text-muted-foreground mb-4 block">Inversión Ficticia Inicial</label>
                             <div className="relative">
-                                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground text-lg">$</span>
                                 <input
                                     type="number"
-                                    disabled={isPlaying || dayCounter > 0}
-                                    className="w-full bg-card border border-border rounded-lg py-3 pl-8 pr-4 text-lg font-semibold focus:outline-none focus:ring-1 focus:ring-primary disabled:opacity-50"
                                     value={capitalInput}
-                                    onChange={(e) => setCapitalInput(Number(e.target.value))}
+                                    onChange={(e) => {
+                                        setCapitalInput(Number(e.target.value));
+                                        handleRestart();
+                                    }}
+                                    className="w-full bg-background border border-input rounded-xl h-14 pl-8 pr-4 text-xl font-medium focus:outline-none focus:ring-2 focus:ring-primary"
                                 />
                             </div>
                         </div>
 
-                        <div className="pt-2 flex flex-col gap-3">
+                        <div className="space-y-4 mb-8">
+                            <div className="flex justify-between items-center text-sm border-b border-border pb-3">
+                                <span className="text-muted-foreground">Performance Fee Automático</span>
+                                <span className="font-semibold">{selectedModel.fee} de las ganancias</span>
+                            </div>
+                            <div className="flex justify-between items-center text-sm border-b border-border pb-3">
+                                <span className="text-muted-foreground">Volatilidad Estructurada</span>
+                                <span className="font-medium text-foreground">{selectedModel.desc}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-sm">
+                                <span className="text-muted-foreground">Costo Pagado a I.A</span>
+                                <span className="font-medium text-red-500">${currentData.feePaga.toFixed(2)}</span>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-3">
+                            {isPlaying ? (
+                                <button
+                                    onClick={() => setIsPlaying(false)}
+                                    className="col-span-2 bg-red-500 hover:bg-red-600 text-white font-medium py-3.5 rounded-xl flex items-center justify-center gap-2 transition-colors duration-200"
+                                >
+                                    <Square fill="currentColor" size={16} /> Detener Simulación
+                                </button>
+                            ) : (
+                                <button
+                                    onClick={() => setIsPlaying(true)}
+                                    className="col-span-2 bg-foreground text-background hover:bg-foreground/90 font-medium py-3.5 rounded-xl flex items-center justify-center gap-2 transition-colors duration-200"
+                                >
+                                    <Play fill="currentColor" size={16} /> Iniciar IA
+                                </button>
+                            )}
+
                             <button
-                                onClick={() => setIsPlaying(!isPlaying)}
-                                className="w-full flex items-center justify-center gap-2 bg-foreground text-background py-4 rounded-xl font-medium hover:opacity-90 transition-opacity"
+                                onClick={handleRestart}
+                                className="col-span-2 mt-2 bg-muted hover:bg-muted/80 text-foreground font-medium py-3.5 rounded-xl flex items-center justify-center gap-2 transition-colors border border-border"
                             >
-                                {isPlaying ? <><Square size={20} fill="currentColor" /> Detener Simulación</> : <><Play size={20} fill="currentColor" /> Iniciar Inversión IA</>}
-                            </button>
-                            <button
-                                onClick={resetSimulation}
-                                className="w-full flex items-center justify-center gap-2 py-3 border border-border bg-card hover:bg-muted text-foreground rounded-xl transition-colors"
-                            >
-                                <RefreshCcw size={16} /> Reiniciar
+                                <RefreshCcw size={16} /> Reiniciar de cero
                             </button>
                         </div>
                     </div>
 
-                    {/* Panel Derecho: Dashboard */}
-                    <div className="lg:col-span-3 space-y-6 flex flex-col">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                            <div className="bg-card border border-border p-5 rounded-xl">
-                                <div className="text-xs text-muted-foreground uppercase mb-1">Días Operando</div>
-                                <div className="text-2xl font-bold">{dayCounter}</div>
-                            </div>
-                            <div className="bg-card border border-border p-5 rounded-xl">
-                                <div className="text-xs text-muted-foreground uppercase mb-1">Balance Neto (Tuyo)</div>
-                                <div className="text-2xl font-bold">${currentNeto.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</div>
-                            </div>
-                            <div className="bg-card border border-border p-5 rounded-xl relative overflow-hidden">
-                                <div className="text-xs font-semibold text-primary uppercase mb-1">Nuestra Comisión</div>
-                                <div className="text-2xl font-bold text-foreground">
-                                    ${currentFee.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
-                                </div>
-                            </div>
-                            <div className="bg-card border border-border p-5 rounded-xl">
-                                <div className="text-xs text-muted-foreground uppercase mb-1">Tus Ganancias Limpias</div>
-                                <div className={`text-2xl font-bold ${profit >= 0 ? 'text-success' : 'text-red-500'}`}>
-                                    {profit >= 0 ? '+' : ''}${profit.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex-1 bg-card border border-border rounded-xl p-6 min-h-[400px] flex flex-col">
-                            <h3 className="text-sm font-medium mb-6">Gráfico de Inversión (En Vivo)</h3>
-                            <div className="flex-1 w-full relative">
-                                <ResponsiveContainer width="100%" height="100%">
-                                    <LineChart data={gameData} margin={{ top: 5, right: 5, bottom: 5, left: 5 }}>
-                                        <XAxis dataKey="day" axisLine={false} tickLine={false} tickFormatter={(v) => `Día ${v}`} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} minTickGap={30} />
-                                        <YAxis domain={['auto', 'auto']} axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} tickFormatter={(v) => `$${(v / 1000).toFixed(1)}k`} width={50} />
-                                        <Tooltip
-                                            contentStyle={{ background: "hsl(0, 0%, 100%)", border: "1px solid hsl(220, 13%, 91%)", borderRadius: "8px", color: "#000" }}
-                                            formatter={(value: number) => [`$${value.toFixed(2)}`, "Neto (Tuyo)"]}
-                                            labelFormatter={(label) => `Día Operable ${label}`}
-                                        />
-                                        <Line type="monotone" dataKey="neto" stroke="hsl(217, 91%, 60%)" strokeWidth={2.5} dot={false} isAnimationActive={false} />
-                                    </LineChart>
-                                </ResponsiveContainer>
-                                {gameData.length <= 1 && (
-                                    <div className="absolute inset-0 flex items-center justify-center bg-background/50 backdrop-blur-sm rounded-lg">
-                                        <div className="text-muted-foreground">Inicia la IA para ver las transacciones</div>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+                    <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+                        <h4 className="text-sm font-medium text-primary flex items-center gap-2 mb-2">
+                            <Check size={16} /> Simulación Autónoma Activa
+                        </h4>
+                        <p className="text-xs text-muted-foreground leading-relaxed">
+                            A medida que avanzan los días operables, se te descontará el {selectedModel.fee} automáticamente única y exclusivamente si los retornos son positivos.
+                        </p>
                     </div>
-                </section>
+                </div>
             </main>
         </div>
     );

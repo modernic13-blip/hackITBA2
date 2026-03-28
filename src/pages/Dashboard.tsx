@@ -1,134 +1,181 @@
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
-import { LogOut, LayoutDashboard, Wallet, UserCircle } from "lucide-react";
 import { Session } from "@supabase/supabase-js";
+import { UserNav } from "@/components/UserNav";
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
+import { ArrowLeft } from "lucide-react";
+
+type DataPoint = { day: number; value: number; neto: number; feePaga: number };
 
 export default function Dashboard() {
     const navigate = useNavigate();
     const [session, setSession] = useState<Session | null>(null);
     const [loading, setLoading] = useState(true);
+    const [viewMode, setViewMode] = useState<"real" | "simulacion">("simulacion");
+    const [simData, setSimData] = useState<DataPoint[]>([]);
 
     useEffect(() => {
-        const fetchSession = async () => {
+        // Auth Check & Load DB Data
+        const fetchSessionAndData = async () => {
             const { data: { session: currentSession } } = await supabase.auth.getSession();
             if (!currentSession) {
                 navigate("/login");
-            } else {
-                setSession(currentSession);
+                return;
+            }
+            setSession(currentSession);
+
+            // Load remote data from Supabase Instead of localStorage
+            const { data: dbData } = await supabase
+                .from('simulations')
+                .select('game_data')
+                .eq('user_id', currentSession.user.id)
+                .single();
+
+            if (dbData && dbData.game_data) {
+                setSimData(dbData.game_data);
             }
             setLoading(false);
         };
-
-        fetchSession();
+        fetchSessionAndData();
 
         const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-            if (!session) {
-                navigate("/login");
-            } else {
-                setSession(session);
-            }
+            if (!session) navigate("/login");
+            else setSession(session);
         });
 
         return () => subscription.unsubscribe();
     }, [navigate]);
 
-    const handleLogout = async () => {
-        await supabase.auth.signOut();
-        navigate("/");
-    };
-
-    if (loading) {
+    if (loading || !session) {
         return <div className="min-h-screen flex items-center justify-center bg-background"><span className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></span></div>;
     }
 
-    if (!session) return null;
-
-    // Extraer metadata provista por Google
     const { user } = session;
-    const metadata = user.user_metadata || {};
-    const fullName = metadata.full_name || metadata.name || "Inversor";
-    const avatarUrl = metadata.avatar_url || metadata.picture;
-    const email = user.email;
+    const fullName = user.user_metadata?.full_name || user.user_metadata?.name || "Inversor";
+
+    // Calc metrics from local sim
+    const currentNeto = simData.length > 0 ? simData[simData.length - 1].neto : 0;
+    const initialCapital = simData.length > 0 ? simData[0].value : 0;
+    const profit = currentNeto - initialCapital;
 
     return (
-        <div className="min-h-screen bg-background text-foreground flex">
-            {/* Sidebar Lateral */}
-            <aside className="w-64 border-r border-border bg-card/30 p-6 flex flex-col">
-                <div className="flex items-center gap-2 mb-12">
-                    <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center border border-primary/40">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-primary" />
-                    </div>
-                    <span className="font-semibold tracking-tight">Smart Capital</span>
+        <div className="min-h-screen bg-background text-foreground flex flex-col relative pt-8 px-6 lg:px-12">
+
+            {/* Absolute Menus */}
+            <div className="flex justify-between absolute top-0 w-full left-0 p-6 pointer-events-auto z-40">
+                <div>
+                    <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors bg-card/50 backdrop-blur-md px-4 py-2 rounded-full border border-border shadow-sm">
+                        <ArrowLeft size={16} />
+                        Volver
+                    </Link>
                 </div>
+                <div>
+                    {/* Empty space for UserNav to align, wait, UserNav positions itself absolutely */}
+                </div>
+            </div>
 
-                <nav className="flex-1 space-y-2">
-                    <Link to="/dashboard" className="flex items-center gap-3 bg-primary/10 text-primary px-4 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                        <LayoutDashboard size={18} />
-                        Panel Principal
-                    </Link>
-                    <Link to="/simulacion" className="flex items-center gap-3 text-muted-foreground hover:bg-muted px-4 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                        <Wallet size={18} />
-                        Mis Simulaciones
-                    </Link>
-                </nav>
+            <UserNav />
 
-                <div className="mt-auto pt-6 border-t border-border">
-                    <div className="flex justify-between items-center bg-card p-3 rounded-xl border border-border">
-                        <div className="flex items-center gap-3">
-                            {avatarUrl ? (
-                                <img src={avatarUrl} alt="Avatar" className="w-9 h-9 rounded-full object-cover" />
-                            ) : (
-                                <div className="w-9 h-9 rounded-full bg-muted flex items-center justify-center">
-                                    <UserCircle size={20} className="text-muted-foreground" />
-                                </div>
-                            )}
-                            <div className="flex flex-col">
-                                <span className="text-sm font-medium leading-none truncate w-24">{fullName}</span>
-                                <span className="text-[10px] text-muted-foreground mt-1 truncate w-24">{email}</span>
-                            </div>
-                        </div>
-                        <button onClick={handleLogout} className="p-2 text-muted-foreground hover:text-red-400 hover:bg-red-400/10 rounded-lg transition-colors">
-                            <LogOut size={16} />
+            <main className="flex-1 max-w-7xl w-full mx-auto pt-16 pb-12">
+                <header className="mb-10 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
+                    <div>
+                        <h1 className="text-3xl font-semibold">Hola, {fullName.split(' ')[0]} 👋</h1>
+                        <p className="text-muted-foreground mt-1 gap-2 flex items-center">
+                            Visualiza de forma global tus estrategias conectadas a la DB.
+                        </p>
+                    </div>
+
+                    {/* Toggle Real vs Simulado */}
+                    <div className="flex bg-muted p-1 rounded-xl w-max border border-border">
+                        <button
+                            onClick={() => setViewMode("simulacion")}
+                            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'simulacion' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
+                        >
+                            Simulación
+                        </button>
+                        <button
+                            onClick={() => setViewMode("real")}
+                            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'real' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'}`}
+                        >
+                            Plata de Verdad
                         </button>
                     </div>
-                </div>
-            </aside>
-
-            {/* Contenido Principal */}
-            <main className="flex-1 p-8 lg:p-12 overflow-y-auto">
-                <header className="mb-10">
-                    <h1 className="text-3xl font-semibold">Hola, {fullName.split(' ')[0]} 👋</h1>
-                    <p className="text-muted-foreground mt-1">Aquí tienes un resumen de tu capital y rendimiento actual.</p>
                 </header>
 
-                {/* Stats Cards Fake (Mocked Data for visual filling) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                    <div className="bg-card border border-border p-6 rounded-2xl">
-                        <div className="text-sm font-medium text-muted-foreground mb-4">Capital Total</div>
-                        <div className="text-4xl font-bold">$0.00</div>
-                        <div className="text-xs text-muted-foreground mt-4">Aún no has depositado fondos reales.</div>
-                    </div>
-                    <div className="bg-card border border-border p-6 rounded-2xl">
-                        <div className="text-sm font-medium text-muted-foreground mb-4">Ganancias Generadas</div>
-                        <div className="text-4xl font-bold text-success">+$0.00</div>
-                        <div className="text-xs text-muted-foreground mt-4">Profit histórico acumulado.</div>
-                    </div>
-                    <div className="bg-card border border-border p-6 rounded-2xl flex flex-col justify-between">
-                        <div>
-                            <div className="text-sm font-medium text-muted-foreground mb-4">Próximo paso</div>
-                            <p className="text-sm">Prueba simulando tu rendimiento antes de invertir de verdad.</p>
+                {viewMode === "real" ? (
+                    <div className="bg-card w-full border border-border rounded-2xl min-h-[400px] flex flex-col items-center justify-center text-center p-8">
+                        <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mb-4 border border-border/50">
+                            <span className="text-2xl">🏦</span>
                         </div>
-                        <Link to="/simulacion" className="mt-4 bg-primary text-primary-foreground text-center py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
-                            Crear Simulación
-                        </Link>
+                        <h3 className="text-lg font-medium mb-2">No has depositado fondos</h3>
+                        <p className="text-sm text-muted-foreground max-w-sm mb-6">Aún no tienes capital real en administración. Inicia una simulación para ver cómo operaría la IA o fondea tu cuenta.</p>
+                        <button className="bg-foreground text-background font-medium px-8 py-3 rounded-xl opacity-50 cursor-not-allowed">
+                            Depositar Capital (Próximamente)
+                        </button>
                     </div>
-                </div>
+                ) : (
+                    <div className="space-y-6">
+                        {/* Mini Stats */}
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div className="bg-card border border-border p-5 rounded-xl">
+                                <div className="text-xs text-muted-foreground uppercase mb-1">Capital Inicial</div>
+                                <div className="text-2xl font-bold">${initialCapital.toLocaleString('en-US', { minimumFractionDigits: 0 })}</div>
+                            </div>
+                            <div className="bg-card border border-border p-5 rounded-xl">
+                                <div className="text-xs text-muted-foreground uppercase mb-1">Balance Actual</div>
+                                <div className="text-2xl font-bold text-primary">${currentNeto.toLocaleString('en-US', { minimumFractionDigits: 0 })}</div>
+                            </div>
+                            <div className="bg-card border border-border p-5 rounded-xl">
+                                <div className="text-xs text-muted-foreground uppercase mb-1">Ganancias (Profit)</div>
+                                <div className={`text-2xl font-bold ${profit >= 0 ? 'text-success' : 'text-red-500'}`}>
+                                    {profit >= 0 ? '+' : ''}${profit.toLocaleString('en-US', { minimumFractionDigits: 0 })}
+                                </div>
+                            </div>
+                            <div className="bg-card border border-border p-5 rounded-xl">
+                                <div className="text-xs text-muted-foreground uppercase mb-1">Días Corridos</div>
+                                <div className="text-2xl font-bold">{simData.length > 0 ? simData[simData.length - 1].day : 0}</div>
+                            </div>
+                        </div>
 
-                {/* Table or Chart Placeholders */}
-                <div className="bg-card border border-border p-8 rounded-2xl min-h-[300px] flex items-center justify-center text-muted-foreground text-sm">
-                    Tus transacciones y gráficas de rendimiento aparecerán aquí pronto.
-                </div>
+                        {/* Gráfico */}
+                        <div className="bg-card border border-border rounded-xl p-6 min-h-[400px] flex flex-col">
+                            <div className="flex justify-between items-center mb-6">
+                                <h3 className="text-sm font-medium flex items-center gap-2">
+                                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                                    Ultima Simulación Guardada en la Nube
+                                </h3>
+                                <Link to="/simulacion" className="text-xs border border-border bg-muted hover:bg-muted/80 px-4 py-2 rounded-lg transition-colors">
+                                    Modificar Simulación
+                                </Link>
+                            </div>
+
+                            <div className="flex-1 w-full relative">
+                                {simData.length > 1 ? (
+                                    <ResponsiveContainer width="100%" height="400px">
+                                        <LineChart data={simData} margin={{ top: 5, right: 5, bottom: 5, left: 5 }}>
+                                            <XAxis dataKey="day" axisLine={false} tickLine={false} tickFormatter={(v) => `Día ${v}`} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} minTickGap={30} />
+                                            <YAxis domain={['auto', 'auto']} axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "hsl(220, 9%, 46%)" }} tickFormatter={(v) => `$${(v / 1000).toFixed(1)}k`} width={50} />
+                                            <Tooltip
+                                                contentStyle={{ background: "hsl(0, 0%, 100%)", border: "1px solid hsl(220, 13%, 91%)", borderRadius: "8px", color: "#000" }}
+                                                formatter={(value: number) => [`$${value.toFixed(2)}`, "Neto"]}
+                                                labelFormatter={(label) => `Día ${label}`}
+                                            />
+                                            <Line type="monotone" dataKey="neto" stroke="hsl(217, 91%, 60%)" strokeWidth={2.5} dot={false} isAnimationActive={false} />
+                                        </LineChart>
+                                    </ResponsiveContainer>
+                                ) : (
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/30 rounded-lg">
+                                        <p className="text-muted-foreground mb-4">No hay datos en Supabase para mostrar.</p>
+                                        <Link to="/simulacion" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+                                            Correr Primera Simulación
+                                        </Link>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                )}
             </main>
         </div>
     );
