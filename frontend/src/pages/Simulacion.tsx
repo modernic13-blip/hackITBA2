@@ -7,9 +7,9 @@ import { supabase } from "@/lib/supabase";
 import { useBacktestData, modelIdToProfile, type BacktestDay } from "@/hooks/useBacktestData";
 
 const AI_MODELS = [
-  { id: "low",  name: "Modelo Conservador", fee: "1%",  feeRate: 0.01, desc: "Bajo riesgo"    },
-  { id: "mid",  name: "Modelo Dinámico",    fee: "10%", feeRate: 0.10, desc: "Balance medio"  },
-  { id: "high", name: "Modelo Agresivo",    fee: "30%", feeRate: 0.30, desc: "Alto riesgo"    },
+  { id: "low", name: "Modelo Conservador", fee: "1%", feeRate: 0.01, desc: "Bajo riesgo" },
+  { id: "mid", name: "Modelo Dinámico", fee: "10%", feeRate: 0.10, desc: "Balance medio" },
+  { id: "high", name: "Modelo Agresivo", fee: "30%", feeRate: 0.30, desc: "Alto riesgo" },
 ];
 
 type DataPoint = { day: number; value: number; neto: number; feePaga: number };
@@ -18,26 +18,26 @@ function buildGameData(raw: BacktestDay[], capital: number, feeRate: number): Da
   if (raw.length === 0) return [];
   const scale = capital / raw[0].portfolio_value;
   return raw.map((d, i) => {
-    const value       = d.portfolio_value * scale;
-    const ganancia    = Math.max(0, value - capital);
-    const feePaga     = ganancia * feeRate;
-    const neto        = value - feePaga;
+    const value = d.portfolio_value * scale;
+    const ganancia = Math.max(0, value - capital);
+    const feePaga = ganancia * feeRate;
+    const neto = value - feePaga;
     return { day: i + 1, value, neto, feePaga };
   });
 }
 
 export default function Simulacion() {
-  const location   = useLocation();
-  const navigate   = useNavigate();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const [userId,        setUserId]        = useState<string | null>(null);
-  const [capitalInput,  setCapitalInput]  = useState<number>(6000);
+  const [userId, setUserId] = useState<string | null>(null);
+  const [capitalInput, setCapitalInput] = useState<number>(6000);
   const [selectedModel, setSelectedModel] = useState(
     AI_MODELS.find((m) => m.id === location.state?.selectedModelId) || AI_MODELS[1],
   );
-  const [isPlaying,     setIsPlaying]     = useState(false);
-  const [cursor,        setCursor]        = useState(0);   // índice actual en gameData
-  const [gameData,      setGameData]      = useState<DataPoint[]>([]);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [cursor, setCursor] = useState(0);   // índice actual en gameData
+  const [gameData, setGameData] = useState<DataPoint[]>([]);
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
 
   // Cargar datos reales del perfil seleccionado
@@ -48,20 +48,46 @@ export default function Simulacion() {
   useEffect(() => {
     if (rawData.length === 0) return;
     fullData.current = buildGameData(rawData, capitalInput, selectedModel.feeRate);
-    // Si el cursor ya avanzó, reescalar en lugar de reiniciar
-    setGameData(fullData.current.slice(0, Math.max(cursor, 0)));
-  }, [rawData, capitalInput, selectedModel.id]);
+    // Si el cursor ya avanzó (ej. restaurado desde DB), reescalar en lugar de reiniciar
+    if (cursor > 0) {
+      setGameData(fullData.current.slice(0, cursor + 1));
+    }
+  }, [rawData, capitalInput, selectedModel.id, cursor]);
 
-  // Auth guard
+  // Auth guard & DB Fetch
   useEffect(() => {
     let mounted = true;
-    supabase.auth.getSession().then(({ data }) => {
+
+    const initSession = async () => {
+      const { data } = await supabase.auth.getSession();
       if (!data.session) { navigate("/login"); return; }
+
+      const currentUserId = data.session.user.id;
       if (mounted) {
-        setUserId(data.session.user.id);
+        setUserId(currentUserId);
+
+        // Fetch guardado de la nube
+        const { data: dbData } = await supabase
+          .from("simulations")
+          .select("*")
+          .eq("user_id", currentUserId)
+          .single();
+
+        if (dbData) {
+          if (dbData.capital_input) setCapitalInput(dbData.capital_input);
+          if (dbData.selected_model_id) {
+            const m = AI_MODELS.find(x => x.id === dbData.selected_model_id);
+            if (m) setSelectedModel(m);
+          }
+          if (dbData.day_counter && dbData.game_data) {
+            setCursor(dbData.day_counter);
+          }
+        }
         setIsLoadingAuth(false);
       }
-    });
+    };
+
+    initSession();
     return () => { mounted = false; };
   }, [navigate]);
 
@@ -85,20 +111,33 @@ export default function Simulacion() {
   // Autoguardar en Supabase al pausar
   useEffect(() => {
     if (isLoadingAuth || !userId || isPlaying || gameData.length === 0) return;
-    supabase.from("simulations").upsert({
-      user_id:           userId,
-      selected_model_id: selectedModel.id,
-      day_counter:       cursor,
-      game_data:         gameData,
-      capital_input:     capitalInput,
-      is_playing:        false,
-    });
-  }, [isPlaying]);
 
-  const handleRestart = () => {
+    supabase.from("simulations").upsert({
+      user_id: userId,
+      selected_model_id: selectedModel.id,
+      day_counter: cursor,
+      game_data: gameData,
+      capital_input: capitalInput,
+      is_playing: false,
+    });
+  }, [isPlaying, cursor, gameData, userId, isLoadingAuth, selectedModel.id, capitalInput]);
+
+  const handleRestart = async () => {
     setIsPlaying(false);
     setCursor(0);
     setGameData([]);
+
+    // Wipe DB state immediately
+    if (userId) {
+      await supabase.from("simulations").upsert({
+        user_id: userId,
+        selected_model_id: selectedModel.id,
+        day_counter: 0,
+        game_data: [],
+        capital_input: capitalInput,
+        is_playing: false,
+      });
+    }
   };
 
   const handleModelChange = (model: typeof AI_MODELS[0]) => {
@@ -114,9 +153,9 @@ export default function Simulacion() {
     );
   }
 
-  const current    = gameData[gameData.length - 1] ?? { value: capitalInput, neto: capitalInput, feePaga: 0 };
-  const isLosing   = current.neto < capitalInput;
-  const totalDays  = fullData.current.length;
+  const current = gameData[gameData.length - 1] ?? { value: capitalInput, neto: capitalInput, feePaga: 0 };
+  const isLosing = current.neto < capitalInput;
+  const totalDays = fullData.current.length;
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
@@ -135,11 +174,10 @@ export default function Simulacion() {
             <button
               key={m.id}
               onClick={() => handleModelChange(m)}
-              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                selectedModel.id === m.id
+              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${selectedModel.id === m.id
                   ? "bg-card text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               {m.name}
             </button>
@@ -155,9 +193,8 @@ export default function Simulacion() {
             <div>
               <h2 className="text-sm font-medium text-muted-foreground">Tu Capital Neto Actual</h2>
               <div
-                className={`text-5xl font-bold tracking-tight mt-2 flex items-baseline gap-3 ${
-                  isLosing ? "text-red-500" : "text-foreground"
-                }`}
+                className={`text-5xl font-bold tracking-tight mt-2 flex items-baseline gap-3 ${isLosing ? "text-red-500" : "text-foreground"
+                  }`}
               >
                 ${current.neto.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
               </div>

@@ -25,6 +25,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
   const [chartData, setChartData] = useState<any[]>([]);
   const [lastDayAllocs, setLastDayAllocs] = useState<Array<{ name: string; value: number }>>([]);
   const [assets, setAssets] = useState<string[]>([]);
+  const multiplier = 25; // Scale up 1000 to match the 25k static capital for visualizations
 
   useEffect(() => {
     if (data.length === 0) return;
@@ -37,16 +38,21 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
     const assetList = Array.from(allAssets).sort();
     setAssets(assetList);
 
-    // Preprocesar para stacked area chart
+    // Preprocesar para stacked area chart y line chart (portfolio value)
     const processedData = data.map((d, idx) => {
-      const row: any = { day: idx + 1 };
+      const row: any = {
+        day: idx + 1,
+        portfolio: Math.round(d.portfolio_value * multiplier),
+        benchmark: Math.round(d.benchmark_value * multiplier),
+        month: d.date.slice(0, 7)
+      };
       assetList.forEach((asset) => {
         row[asset] = (d.allocations[asset] || 0) * 100; // % format
       });
       return row;
     });
 
-    // Submuestrear cada 10 días para no saturar el gráfico
+    // Submuestrear cada 10 días para no saturar los gráficos visualmente
     const sampled = processedData.filter((_, i) => i % 10 === 0 || i === processedData.length - 1);
     setChartData(sampled);
 
@@ -68,32 +74,32 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-semibold text-foreground">
-            Evolución de Allocations
+            Evolución de Allocations e Inversión
           </h2>
           <p className="mt-3 text-muted-foreground text-sm">
-            Cómo el modelo rebalanceó el portafolio a lo largo de 2024
+            Cómo el modelo rebalanceó el portafolio a lo largo del año e impacto en las ganancias
           </p>
         </motion.div>
 
-        {/* Stacked Area Chart */}
+        {/* Ganancias Totales Chart (New) */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <div className="bg-card border border-border rounded-2xl p-6">
-            <h3 className="text-sm font-semibold text-foreground mb-6">Pesos por Activo (% del portafolio)</h3>
+          <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+            <h3 className="text-sm font-semibold text-foreground mb-6">Ganancias Totales (Portfolio AI vs Benchmark)</h3>
             <div className="h-[360px] w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
+                <LineChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
                   <XAxis
-                    dataKey="day"
+                    dataKey="month"
                     axisLine={false}
                     tickLine={false}
                     tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
@@ -102,7 +108,72 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                     axisLine={false}
                     tickLine={false}
                     tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
-                    label={{ value: "% del Portafolio", angle: -90, position: "insideLeft" }}
+                    tickFormatter={(v) => `$${(v / 1000).toFixed(1)}k`}
+                    domain={['auto', 'auto']}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "hsl(0, 0%, 100%)",
+                      border: "1px solid hsl(220, 13%, 91%)",
+                      borderRadius: "8px",
+                      fontSize: "12px",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                      color: "#000",
+                    }}
+                    formatter={(value: number, name: string) => [
+                      `$${value.toLocaleString()}`,
+                      name === "portfolio" ? "Portafolio IA" : "Benchmark (S&P 500)",
+                    ]}
+                  />
+                  <Legend wrapperStyle={{ fontSize: 12 }} />
+                  <Line
+                    type="monotone"
+                    dataKey="portfolio"
+                    stroke="hsl(142, 76%, 36%)"
+                    strokeWidth={3}
+                    dot={false}
+                    isAnimationActive={true}
+                    animationDuration={1500}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="benchmark"
+                    stroke="hsl(220, 9%, 65%)"
+                    strokeWidth={2}
+                    strokeDasharray="4 4"
+                    dot={false}
+                    isAnimationActive={true}
+                    animationDuration={1500}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Stacked Area Chart */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+            <h3 className="text-sm font-semibold text-foreground mb-6">Pesos por Activo (% del portafolio)</h3>
+            <div className="h-[360px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
+                  <XAxis
+                    dataKey="month"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
+                  />
+                  <YAxis
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
+                    label={{ value: "% del Portafolio", angle: -90, position: "insideLeft", offset: 0 }}
                   />
                   <Tooltip
                     contentStyle={{
@@ -126,7 +197,8 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                       stroke={COLORS[idx % COLORS.length]}
                       fill={COLORS[idx % COLORS.length]}
                       fillOpacity={0.7}
-                      isAnimationActive={false}
+                      isAnimationActive={true}
+                      animationDuration={1500}
                     />
                   ))}
                 </AreaChart>
@@ -139,14 +211,14 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
         >
           {/* Pie Chart - Último día */}
-          <div className="bg-card border border-border rounded-2xl p-6">
+          <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
             <h3 className="text-sm font-semibold text-foreground mb-6 text-center">
-              Allocations - Último Día
+              Rebalanceo Final - Último Día
             </h3>
             <div className="h-[300px] w-full">
               <ResponsiveContainer width="100%" height="100%">
@@ -172,8 +244,8 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
           </div>
 
           {/* Top Assets Table */}
-          <div className="bg-card border border-border rounded-2xl p-6 space-y-4">
-            <h3 className="text-sm font-semibold text-foreground">Top Allocations</h3>
+          <div className="bg-card border border-border rounded-2xl p-6 space-y-4 shadow-sm">
+            <h3 className="text-sm font-semibold text-foreground">Top Posiciones Actuales</h3>
             <div className="space-y-3">
               {lastDayAllocs.slice(0, 5).map((item, idx) => (
                 <div key={item.name} className="flex items-center justify-between">
@@ -205,10 +277,10 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
             {/* Resumen */}
             <div className="pt-4 border-t border-border mt-4">
               <p className="text-xs text-muted-foreground">
-                Total de activos en portafolio: <span className="font-semibold">{lastDayAllocs.length}</span>
+                Total de activos en portafolio de IA: <span className="font-semibold">{lastDayAllocs.length}</span>
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                Activos principales: <span className="font-semibold">{lastDayAllocs.slice(0, 3).map(a => a.name).join(", ")}</span>
+                Foco principal: <span className="font-semibold">{lastDayAllocs.slice(0, 3).map(a => a.name).join(", ")}</span>
               </p>
             </div>
           </div>

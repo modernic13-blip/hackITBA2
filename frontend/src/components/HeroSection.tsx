@@ -84,7 +84,7 @@ const PortfolioLine = () => {
 };
 
 const HeroSection = () => {
-  const words = ["MÁS", "MEJOR", "MÁS PROFUNDO", "COMO IA"];
+  const words = ["PRECISA", "EFICAZ", "CONSTANTE", "INTELIGENTE"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -95,34 +95,45 @@ const HeroSection = () => {
   }, [words.length]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       <PortfolioLine />
-      <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-6 flex flex-col items-center">
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-muted border border-border text-xs font-semibold text-muted-foreground mb-8"
+        >
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+          Modelo Backtesteado 2021-2025
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl sm:text-5xl md:text-6xl font-semibold text-foreground tracking-tight leading-[1.1]"
+          className="text-6xl sm:text-7xl md:text-[5.5rem] font-bold text-foreground tracking-tighter leading-[1.05]"
         >
           El mercado se mueve.
-          <br />
-          Tu estrategia también debería.
+          <br className="hidden sm:block" />
+          <span className="text-muted-foreground">Tu estrategia también.</span>
         </motion.h1>
-        
-        <motion.div 
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
-          className="mt-6 text-xl md:text-2xl font-medium tracking-wide flex items-center justify-center gap-2 text-foreground"
+
+        <motion.div
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+          className="mt-8 text-xl md:text-3xl font-medium tracking-tight flex flex-wrap items-center justify-center gap-2 text-foreground/80"
         >
-          <span>PIENSA</span>
-          <div className="relative inline-flex overflow-hidden h-8 items-center text-primary">
+          <span>CONSTRUYE UN PORTAFOLIO</span>
+          <div className="relative inline-flex overflow-hidden h-10 items-center justify-center text-primary min-w-[200px]">
             <AnimatePresence mode="popLayout">
               <motion.span
                 key={words[index]}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.4 }}
-                className="font-bold whitespace-nowrap"
+                className="font-semibold block"
               >
                 {words[index]}
               </motion.span>
@@ -133,18 +144,19 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
-          className="mt-6 text-base text-muted-foreground max-w-md mx-auto"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-medium"
         >
-          Tu trader personal de IA — construido sobre datos reales del mercado.
+          Tu sistema de trading automatizado impulsado por Inteligencia Artificial y datos de mercado reales.
         </motion.p>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
+          transition={{ duration: 1, delay: 1 }}
           className="mt-16"
         >
-          <svg className="w-5 h-5 mx-auto text-muted-foreground/50 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <svg className="w-6 h-6 mx-auto text-muted-foreground/30 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </motion.div>

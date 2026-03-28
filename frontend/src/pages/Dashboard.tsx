@@ -14,6 +14,7 @@ export default function Dashboard() {
     const [loading, setLoading] = useState(true);
     const [viewMode, setViewMode] = useState<"real" | "simulacion">("simulacion");
     const [simData, setSimData] = useState<DataPoint[]>([]);
+    const [initialCapital, setInitialCapital] = useState<number>(0);
 
     useEffect(() => {
         // Auth Check & Load DB Data
@@ -25,15 +26,16 @@ export default function Dashboard() {
             }
             setSession(currentSession);
 
-            // Load remote data from Supabase Instead of localStorage
+            // Fetch synced variables
             const { data: dbData } = await supabase
                 .from('simulations')
-                .select('game_data')
+                .select('game_data, capital_input')
                 .eq('user_id', currentSession.user.id)
                 .single();
 
-            if (dbData && dbData.game_data) {
-                setSimData(dbData.game_data);
+            if (dbData) {
+                if (dbData.game_data) setSimData(dbData.game_data);
+                if (dbData.capital_input) setInitialCapital(dbData.capital_input);
             }
             setLoading(false);
         };
@@ -54,30 +56,25 @@ export default function Dashboard() {
     const { user } = session;
     const fullName = user.user_metadata?.full_name || user.user_metadata?.name || "Inversor";
 
-    // Calc metrics from local sim
+    // Calc metrics precisely
     const currentNeto = simData.length > 0 ? simData[simData.length - 1].neto : 0;
-    const initialCapital = simData.length > 0 ? simData[0].value : 0;
-    const profit = currentNeto - initialCapital;
+    const profit = currentNeto > 0 ? currentNeto - initialCapital : 0;
 
     return (
-        <div className="min-h-screen bg-background text-foreground flex flex-col relative pt-8 px-6 lg:px-12">
-
-            {/* Absolute Menus */}
-            <div className="flex justify-between absolute top-0 w-full left-0 p-6 pointer-events-auto z-40">
-                <div>
-                    <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors bg-card/50 backdrop-blur-md px-4 py-2 rounded-full border border-border shadow-sm">
-                        <ArrowLeft size={16} />
-                        Volver
-                    </Link>
-                </div>
-                <div>
-                    {/* Empty space for UserNav to align, wait, UserNav positions itself absolutely */}
-                </div>
-            </div>
+        <div className="min-h-screen bg-background text-foreground flex flex-col relative font-sans">
+            <header className="p-6 border-b border-border flex items-center justify-between sticky top-0 bg-background/80 backdrop-blur-md z-40">
+                <Link
+                    to="/"
+                    className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                    <ArrowLeft size={16} />
+                    Volver al inicio
+                </Link>
+            </header>
 
             <UserNav />
 
-            <main className="flex-1 max-w-7xl w-full mx-auto pt-16 pb-12">
+            <main className="flex-1 max-w-7xl w-full mx-auto px-6 lg:px-12 pt-10 pb-12">
                 <header className="mb-10 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
                     <div>
                         <h1 className="text-3xl font-semibold">Hola, {fullName.split(' ')[0]} 👋</h1>
