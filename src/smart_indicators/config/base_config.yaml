@@ -1,0 +1,169 @@
+# =============================================================================
+# Smart Indicators Pipeline -- Base Configuration
+# =============================================================================
+# This is the default configuration for the 8-stage ML signal pipeline.
+# Copy and modify for each asset / experiment.
+#
+# Top-level keys: asset, period, frequency
+# Module sections: ingestion, features, filtering, labeling, splitting,
+#                  feature_selection, modeling, evaluation
+# =============================================================================
+
+# --- Asset and time range ---
+asset: "AAPL"
+period:
+  - "2021-01-01"
+  - "2024-12-31"
+frequency: "15min"
+
+# =============================================================================
+# M1 Ingestion
+# =============================================================================
+ingestion:
+  source: "csv"             # "csv" or "yfinance"
+  csv_path: "data/AAPL_15min.csv"
+  # date_column: "date"     # optional: specify if auto-detection fails
+  # columns_map:            # optional: rename CSV columns to standard names
+  #   Date: date
+  #   Open: open
+  #   High: high
+  #   Low: low
+  #   Close: close
+  #   Volume: volume
+
+# =============================================================================
+# M2 Feature Engineering
+# =============================================================================
+features:
+  # Timeframes to compute indicators at (must be >= base frequency)
+  timeframes:
+    - "15min"
+    - "1h"
+    - "4h"
+    - "12h"
+    - "1d"
+
+  # Which indicators to compute ("all" or list of names)
+  # Available: rsi, macd, cci, willr, bbands, adx, atr, supertrend,
+  #            vwap, cmf, mfi, obv, ofi, trans_rate, tick_autocorr, ems_pct
+  indicators: "all"
+
+  # Per-indicator parameter overrides
+  indicator_params:
+    rsi:
+      period: [14, 21]
+    macd:
+      fast: [12]
+      slow: [26]
+      signal: [9]
+    cci:
+      period: [20]
+    willr:
+      period: [14]
+    bbands:
+      period: [20]
+      num_std: [2.0]
+    adx:
+      period: [14]
+    atr:
+      period: [14]
+    supertrend:
+      period: [10]
+      multiplier: [3.0]
+    cmf:
+      period: [20]
+    mfi:
+      period: [14]
+    ofi:
+      period: [20]
+    trans_rate:
+      period: [20]
+    tick_autocorr:
+      period: [20]
+    ems_pct:
+      span: [20, 50]
+
+  # Optional smoothing applied to all features
+  # smooth:
+  #   method: "ema"          # "ema", "sma", "wma"
+  #   window: 5
+
+  # Optional normalization applied to all features
+  normalize:
+    methods:
+      - "zscore"
+    window: 100
+
+  # Drop columns with NaN fraction above this threshold
+  drop_na_threshold: 0.5
+
+# =============================================================================
+# M3 Filtering (CUSUM event detection)
+# =============================================================================
+filtering:
+  method: "adaptive_cusum"    # "cusum", "adaptive_cusum", or "kalman"
+  cusum_mode: "symmetric"     # "symmetric", "positive", "negative"
+  k_Px: 0.5                  # CUSUM sensitivity for price
+  # k_Vol: 0.5               # optional: CUSUM on volume
+  lookback: 100               # rolling window for adaptive threshold
+  # combine: "union"         # how to combine price and volume events
+  min_events: 50
+
+# =============================================================================
+# M4 Labeling (Triple Barrier Method)
+# =============================================================================
+labeling:
+  pt_sl:
+    - 1.0                    # profit-taking multiplier (x volatility)
+    - 1.0                    # stop-loss multiplier (x volatility)
+  min_ret: 0.0               # minimum return threshold
+  vertical_bars: 50          # bars until vertical barrier (time expiration)
+  vol_span: 100              # EMA span for volatility estimation
+  use_sample_weights: true
+
+# =============================================================================
+# M5 Splitting (Walk-Forward CV)
+# =============================================================================
+splitting:
+  n_splits: 5
+  test_size: 0.2
+  purge_hours: 24            # hours of label look-ahead to purge
+  embargo_pct: 0.01          # embargo as fraction of test size
+  expanding: true            # expanding (true) vs rolling (false) window
+  min_train_size: 100
+
+# =============================================================================
+# M6 Feature Selection (Forward Selection)
+# =============================================================================
+feature_selection:
+  max_features: 30
+  min_improvement: 0.001     # minimum AUC improvement to continue
+  n_estimators: 100          # trees in the selection estimator
+  max_depth: 5
+  use_sample_weights: true
+  verbose: false
+
+# =============================================================================
+# M7 Modeling (Classifier Training)
+# =============================================================================
+modeling:
+  model: "xgboost"           # "xgboost", "lightgbm", "catboost", "random_forest"
+  max_combinations: 50       # max grid search combinations to try
+  use_sample_weights: true
+  use_selected_features: true
+  verbose: false
+  # param_grid:              # optional: custom hyperparameter grid
+  #   n_estimators: [100, 200]
+  #   max_depth: [3, 5, 7]
+  #   learning_rate: [0.01, 0.05, 0.1]
+
+# =============================================================================
+# M8 Evaluation
+# =============================================================================
+evaluation:
+  risk_free_rate: 0.0
+  periods_per_year: 252      # trading days per year (adjust for intraday)
+  n_trials_dsr: 10           # number of trials for Deflated Sharpe Ratio
+  pbo_partitions: 8          # partitions for Probability of Backtest Overfitting
+  commission_bps: 1.0        # commission in basis points per trade
+  use_selected_features: true
