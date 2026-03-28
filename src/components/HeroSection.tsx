@@ -8,7 +8,6 @@ const PortfolioLine = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
@@ -20,22 +19,17 @@ const PortfolioLine = () => {
     resize();
     window.addEventListener("resize", resize);
 
-    const points = [
-      20, 22, 21, 25, 24, 28, 26, 30, 29, 33, 31, 35, 34, 38, 36, 40, 42, 41, 45, 48, 50, 49, 53, 55, 54, 58, 60,
-    ];
-
+    const points = [20, 22, 21, 25, 24, 28, 26, 30, 29, 33, 31, 35, 34, 38, 36, 40, 42, 41, 45, 48, 50, 49, 53, 55, 54, 58, 60];
     let progress = 0;
 
     const draw = () => {
       const w = canvas.offsetWidth;
       const h = canvas.offsetHeight;
       ctx.clearRect(0, 0, w, h);
-
       const segmentWidth = w / (points.length - 1);
       const minY = Math.min(...points);
       const maxY = Math.max(...points);
       const range = maxY - minY;
-
       const currentPoints = Math.min(Math.floor(progress * points.length), points.length);
 
       if (currentPoints < 2) {
@@ -44,7 +38,6 @@ const PortfolioLine = () => {
         return;
       }
 
-      // Draw line
       ctx.beginPath();
       ctx.strokeStyle = "hsla(217, 91%, 60%, 0.3)";
       ctx.lineWidth = 2;
@@ -59,9 +52,7 @@ const PortfolioLine = () => {
       }
       ctx.stroke();
 
-      // Fill gradient
       const lastX = (currentPoints - 1) * segmentWidth;
-      const lastY = h - ((points[currentPoints - 1] - minY) / range) * h * 0.6 - h * 0.2;
       ctx.lineTo(lastX, h);
       ctx.lineTo(0, h);
       ctx.closePath();
@@ -72,15 +63,11 @@ const PortfolioLine = () => {
       ctx.fillStyle = gradient;
       ctx.fill();
 
-      if (progress < 1) {
-        progress += 0.003;
-      }
-
+      if (progress < 1) progress += 0.003;
       animationRef.current = requestAnimationFrame(draw);
     };
 
     animationRef.current = requestAnimationFrame(draw);
-
     return () => {
       cancelAnimationFrame(animationRef.current);
       window.removeEventListener("resize", resize);
@@ -96,11 +83,10 @@ const PortfolioLine = () => {
   );
 };
 
-const HeroSection = ({ onCTA }: { onCTA: () => void }) => {
+const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <PortfolioLine />
-
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -112,7 +98,6 @@ const HeroSection = ({ onCTA }: { onCTA: () => void }) => {
           <br />
           Your strategy should too.
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,28 +106,15 @@ const HeroSection = ({ onCTA }: { onCTA: () => void }) => {
         >
           Your personal AI trader — built on real market data.
         </motion.p>
-
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-          className="mt-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="mt-16"
         >
-          <button
-            onClick={onCTA}
-            className="group relative inline-flex items-center gap-2 rounded-full bg-foreground text-background px-8 py-4 text-sm font-medium transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
-          >
-            See how it would work for you
-            <svg
-              className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
+          <svg className="w-5 h-5 mx-auto text-muted-foreground/50 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </motion.div>
       </div>
     </section>
