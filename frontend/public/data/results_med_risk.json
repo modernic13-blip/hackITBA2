@@ -1,2834 +1,5842 @@
 [
   {
-    "date": "2025-10-01",
-    "portfolio_value": 1019.4869,
-    "benchmark_value": 1015.9887,
+    "date": "2024-01-01",
+    "portfolio_value": 1002.2376,
+    "benchmark_value": 1002.2376,
     "allocations": {
-      "AAPL": 0.0335,
-      "NVDA": 0.0335,
-      "META": 0.3,
-      "AMZN": 0.3,
-      "XOM": 0.0335,
-      "QQQ": 0.0335,
-      "BTC": 0.1286,
-      "COIN": 0.1373
+      "AAPL": 0.125,
+      "NVDA": 0.125,
+      "META": 0.125,
+      "AMZN": 0.125,
+      "XOM": 0.125,
+      "QQQ": 0.125,
+      "BTC": 0.125,
+      "COIN": 0.125
     },
-    "confidence": 0.5337
+    "confidence": 0.5
   },
   {
-    "date": "2025-10-02",
-    "portfolio_value": 1017.5717,
-    "benchmark_value": 1017.1419,
+    "date": "2024-01-02",
+    "portfolio_value": 985.8464,
+    "benchmark_value": 988.0057,
     "allocations": {
-      "AAPL": 0.0693,
-      "NVDA": 0.0693,
-      "META": 0.0693,
-      "AMZN": 0.3,
-      "XOM": 0.0693,
-      "QQQ": 0.2034,
-      "BTC": 0.15,
-      "COIN": 0.0693
-    },
-    "confidence": 0.5168
-  },
-  {
-    "date": "2025-10-03",
-    "portfolio_value": 1017.6539,
-    "benchmark_value": 1017.2923,
-    "allocations": {
-      "AAPL": 0.0461,
-      "NVDA": 0.0247,
-      "META": 0.3,
-      "AMZN": 0.3,
-      "XOM": 0.2114,
-      "QQQ": 0.0247,
-      "BTC": 0.0683,
-      "COIN": 0.0247
-    },
-    "confidence": 0.5786
-  },
-  {
-    "date": "2025-10-04",
-    "portfolio_value": 1018.7263,
-    "benchmark_value": 1018.4259,
-    "allocations": {
-      "AAPL": 0.0366,
-      "NVDA": 0.0173,
-      "META": 0.3,
-      "AMZN": 0.3,
-      "XOM": 0.1934,
-      "QQQ": 0.0173,
-      "BTC": 0.1182,
-      "COIN": 0.0173
-    },
-    "confidence": 0.5867
-  },
-  {
-    "date": "2025-10-05",
-    "portfolio_value": 1026.5445,
-    "benchmark_value": 1023.4359,
-    "allocations": {
-      "AAPL": 0.0226,
-      "NVDA": 0.006,
-      "META": 0.2485,
-      "AMZN": 0.3,
-      "XOM": 0.1504,
+      "AAPL": 0.006,
+      "NVDA": 0.3,
+      "META": 0.0305,
+      "AMZN": 0.1728,
+      "XOM": 0.1631,
       "QQQ": 0.006,
-      "BTC": 0.2605,
-      "COIN": 0.006
+      "BTC": 0.1458,
+      "COIN": 0.1758
     },
-    "confidence": 0.6224
+    "confidence": 0.5074
   },
   {
-    "date": "2025-10-06",
-    "portfolio_value": 1025.6068,
-    "benchmark_value": 1015.5188,
+    "date": "2024-01-03",
+    "portfolio_value": 994.4287,
+    "benchmark_value": 990.1087,
     "allocations": {
-      "AAPL": 0.2582,
-      "NVDA": 0.0244,
-      "META": 0.0244,
-      "AMZN": 0.3,
+      "AAPL": 0.0106,
+      "NVDA": 0.3,
+      "META": 0.1013,
+      "AMZN": 0.035,
+      "XOM": 0.2414,
+      "QQQ": 0.0106,
+      "BTC": 0.1985,
+      "COIN": 0.1026
+    },
+    "confidence": 0.5053
+  },
+  {
+    "date": "2024-01-04",
+    "portfolio_value": 1002.0158,
+    "benchmark_value": 993.9264,
+    "allocations": {
+      "AAPL": 0.0269,
+      "NVDA": 0.3,
+      "META": 0.0269,
+      "AMZN": 0.1735,
       "XOM": 0.3,
-      "QQQ": 0.0244,
-      "BTC": 0.0442,
-      "COIN": 0.0244
+      "QQQ": 0.0269,
+      "BTC": 0.0269,
+      "COIN": 0.1191
     },
-    "confidence": 0.5579
+    "confidence": 0.5478
   },
   {
-    "date": "2025-10-07",
-    "portfolio_value": 1036.261,
-    "benchmark_value": 1029.0339,
+    "date": "2024-01-05",
+    "portfolio_value": 1001.6392,
+    "benchmark_value": 993.4383,
     "allocations": {
-      "AAPL": 0.035,
-      "NVDA": 0.035,
-      "META": 0.035,
-      "AMZN": 0.294,
-      "XOM": 0.2312,
-      "QQQ": 0.3,
-      "BTC": 0.035,
-      "COIN": 0.035
+      "AAPL": 0.0626,
+      "NVDA": 0.2727,
+      "META": 0.095,
+      "AMZN": 0.0842,
+      "XOM": 0.3,
+      "QQQ": 0.0186,
+      "BTC": 0.0957,
+      "COIN": 0.0714
     },
-    "confidence": 0.5608
+    "confidence": 0.5471
   },
   {
-    "date": "2025-10-08",
-    "portfolio_value": 1036.5638,
-    "benchmark_value": 1030.4634,
+    "date": "2024-01-06",
+    "portfolio_value": 1001.5944,
+    "benchmark_value": 993.3082,
     "allocations": {
-      "AAPL": 0.0811,
-      "NVDA": 0.0811,
-      "META": 0.1214,
-      "AMZN": 0.0811,
-      "XOM": 0.0811,
-      "QQQ": 0.3,
-      "BTC": 0.173,
-      "COIN": 0.0811
+      "AAPL": 0.0682,
+      "NVDA": 0.2883,
+      "META": 0.1012,
+      "AMZN": 0.0924,
+      "XOM": 0.3,
+      "QQQ": 0.0215,
+      "BTC": 0.0426,
+      "COIN": 0.0858
     },
-    "confidence": 0.5447
+    "confidence": 0.5471
   },
   {
-    "date": "2025-10-09",
-    "portfolio_value": 987.7404,
-    "benchmark_value": 982.1942,
+    "date": "2024-01-07",
+    "portfolio_value": 1027.1471,
+    "benchmark_value": 1023.3964,
     "allocations": {
-      "AAPL": 0.2749,
-      "NVDA": 0.0416,
-      "META": 0.3,
-      "AMZN": 0.0416,
-      "XOM": 0.0416,
-      "QQQ": 0.0416,
-      "BTC": 0.0423,
-      "COIN": 0.2163
+      "AAPL": 0.071,
+      "NVDA": 0.2938,
+      "META": 0.1019,
+      "AMZN": 0.0959,
+      "XOM": 0.3,
+      "QQQ": 0.0221,
+      "BTC": 0.0264,
+      "COIN": 0.0888
     },
-    "confidence": 0.6133
+    "confidence": 0.5471
   },
   {
-    "date": "2025-10-10",
-    "portfolio_value": 987.0153,
-    "benchmark_value": 979.7445,
-    "allocations": {
-      "AAPL": 0.216,
-      "NVDA": 0.0368,
-      "META": 0.3,
-      "AMZN": 0.0368,
-      "XOM": 0.0368,
-      "QQQ": 0.3,
-      "BTC": 0.0368,
-      "COIN": 0.0368
-    },
-    "confidence": 0.5074
-  },
-  {
-    "date": "2025-10-11",
-    "portfolio_value": 988.4398,
-    "benchmark_value": 984.5575,
-    "allocations": {
-      "AAPL": 0.2164,
-      "NVDA": 0.0367,
-      "META": 0.3,
-      "AMZN": 0.0367,
-      "XOM": 0.0367,
-      "QQQ": 0.3,
-      "BTC": 0.0367,
-      "COIN": 0.0367
-    },
-    "confidence": 0.5074
-  },
-  {
-    "date": "2025-10-12",
-    "portfolio_value": 1003.1594,
-    "benchmark_value": 997.4144,
-    "allocations": {
-      "AAPL": 0.2163,
-      "NVDA": 0.0367,
-      "META": 0.3,
-      "AMZN": 0.0367,
-      "XOM": 0.0367,
-      "QQQ": 0.3,
-      "BTC": 0.0367,
-      "COIN": 0.0367
-    },
-    "confidence": 0.5074
-  },
-  {
-    "date": "2025-10-13",
-    "portfolio_value": 989.8774,
-    "benchmark_value": 980.4283,
+    "date": "2024-01-08",
+    "portfolio_value": 1024.826,
+    "benchmark_value": 1017.2308,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.0446,
-      "META": 0.0446,
-      "AMZN": 0.0446,
-      "XOM": 0.0446,
-      "QQQ": 0.3,
-      "BTC": 0.0446,
-      "COIN": 0.1769
-    },
-    "confidence": 0.6368
-  },
-  {
-    "date": "2025-10-14",
-    "portfolio_value": 989.4357,
-    "benchmark_value": 977.898,
-    "allocations": {
-      "AAPL": 0.0276,
-      "NVDA": 0.2556,
-      "META": 0.3,
-      "AMZN": 0.0276,
-      "XOM": 0.1514,
-      "QQQ": 0.0276,
-      "BTC": 0.0276,
-      "COIN": 0.1824
-    },
-    "confidence": 0.5237
-  },
-  {
-    "date": "2025-10-15",
-    "portfolio_value": 982.074,
-    "benchmark_value": 969.9804,
-    "allocations": {
-      "AAPL": 0.0801,
-      "NVDA": 0.0801,
-      "META": 0.1239,
-      "AMZN": 0.0801,
-      "XOM": 0.1466,
-      "QQQ": 0.3,
-      "BTC": 0.0801,
-      "COIN": 0.109
-    },
-    "confidence": 0.5566
-  },
-  {
-    "date": "2025-10-16",
-    "portfolio_value": 989.8714,
-    "benchmark_value": 976.0763,
-    "allocations": {
-      "AAPL": 0.073,
-      "NVDA": 0.073,
-      "META": 0.073,
-      "AMZN": 0.073,
-      "XOM": 0.2309,
-      "QQQ": 0.3,
-      "BTC": 0.073,
-      "COIN": 0.1041
-    },
-    "confidence": 0.5454
-  },
-  {
-    "date": "2025-10-17",
-    "portfolio_value": 989.8738,
-    "benchmark_value": 976.9053,
-    "allocations": {
-      "AAPL": 0.2546,
-      "NVDA": 0.0004,
-      "META": 0.2239,
-      "AMZN": 0.0004,
-      "XOM": 0.0444,
-      "QQQ": 0.3,
-      "BTC": 0.0004,
-      "COIN": 0.176
-    },
-    "confidence": 0.5519
-  },
-  {
-    "date": "2025-10-18",
-    "portfolio_value": 990.3148,
-    "benchmark_value": 978.6055,
-    "allocations": {
-      "AAPL": 0.2468,
-      "NVDA": 0.0,
-      "META": 0.2163,
-      "AMZN": 0.0,
-      "XOM": 0.041,
-      "QQQ": 0.2933,
-      "BTC": 0.032,
-      "COIN": 0.1705
-    },
-    "confidence": 0.5519
-  },
-  {
-    "date": "2025-10-19",
-    "portfolio_value": 1012.0756,
-    "benchmark_value": 994.6866,
-    "allocations": {
-      "AAPL": 0.2034,
-      "NVDA": 0.0,
-      "META": 0.1793,
-      "AMZN": 0.0,
-      "XOM": 0.0338,
-      "QQQ": 0.242,
-      "BTC": 0.2,
-      "COIN": 0.1416
-    },
-    "confidence": 0.5787
-  },
-  {
-    "date": "2025-10-20",
-    "portfolio_value": 1007.4682,
-    "benchmark_value": 993.0107,
-    "allocations": {
-      "AAPL": 0.0439,
-      "NVDA": 0.0309,
-      "META": 0.3,
+      "NVDA": 0.3,
+      "META": 0.0477,
       "AMZN": 0.0309,
-      "XOM": 0.2586,
+      "XOM": 0.1638,
       "QQQ": 0.0309,
-      "BTC": 0.208,
-      "COIN": 0.0967
+      "BTC": 0.0309,
+      "COIN": 0.0958
     },
-    "confidence": 0.5982
+    "confidence": 0.5847
   },
   {
-    "date": "2025-10-21",
-    "portfolio_value": 1003.6943,
-    "benchmark_value": 981.6189,
-    "allocations": {
-      "AAPL": 0.0009,
-      "NVDA": 0.0009,
-      "META": 0.3,
-      "AMZN": 0.296,
-      "XOM": 0.2455,
-      "QQQ": 0.1284,
-      "BTC": 0.0009,
-      "COIN": 0.0274
-    },
-    "confidence": 0.5797
-  },
-  {
-    "date": "2025-10-22",
-    "portfolio_value": 1011.5161,
-    "benchmark_value": 991.2764,
-    "allocations": {
-      "AAPL": 0.0973,
-      "NVDA": 0.0651,
-      "META": 0.3,
-      "AMZN": 0.0651,
-      "XOM": 0.2769,
-      "QQQ": 0.0651,
-      "BTC": 0.0651,
-      "COIN": 0.0651
-    },
-    "confidence": 0.5792
-  },
-  {
-    "date": "2025-10-23",
-    "portfolio_value": 1026.5657,
-    "benchmark_value": 1011.9886,
-    "allocations": {
-      "AAPL": 0.0771,
-      "NVDA": 0.0649,
-      "META": 0.3,
-      "AMZN": 0.1438,
-      "XOM": 0.0649,
-      "QQQ": 0.0649,
-      "BTC": 0.2195,
-      "COIN": 0.0649
-    },
-    "confidence": 0.5769
-  },
-  {
-    "date": "2025-10-24",
-    "portfolio_value": 1026.8384,
-    "benchmark_value": 1012.7333,
-    "allocations": {
-      "AAPL": 0.0491,
-      "NVDA": 0.0451,
-      "META": 0.3,
-      "AMZN": 0.0451,
-      "XOM": 0.0451,
-      "QQQ": 0.3,
-      "BTC": 0.0451,
-      "COIN": 0.1704
-    },
-    "confidence": 0.6081
-  },
-  {
-    "date": "2025-10-25",
-    "portfolio_value": 1028.579,
-    "benchmark_value": 1015.9083,
-    "allocations": {
-      "AAPL": 0.0453,
-      "NVDA": 0.0413,
-      "META": 0.3,
-      "AMZN": 0.0413,
-      "XOM": 0.0413,
-      "QQQ": 0.3,
-      "BTC": 0.0676,
-      "COIN": 0.1633
-    },
-    "confidence": 0.6081
-  },
-  {
-    "date": "2025-10-26",
-    "portfolio_value": 1043.0112,
-    "benchmark_value": 1031.0243,
-    "allocations": {
-      "AAPL": 0.026,
-      "NVDA": 0.022,
-      "META": 0.3,
-      "AMZN": 0.022,
-      "XOM": 0.022,
-      "QQQ": 0.3,
-      "BTC": 0.1804,
-      "COIN": 0.1277
-    },
-    "confidence": 0.6342
-  },
-  {
-    "date": "2025-10-27",
-    "portfolio_value": 1046.8495,
-    "benchmark_value": 1035.4362,
-    "allocations": {
-      "AAPL": 0.1072,
-      "NVDA": 0.0538,
-      "META": 0.3,
-      "AMZN": 0.0538,
-      "XOM": 0.0538,
-      "QQQ": 0.3,
-      "BTC": 0.0775,
-      "COIN": 0.0538
-    },
-    "confidence": 0.5667
-  },
-  {
-    "date": "2025-10-28",
-    "portfolio_value": 1044.2756,
-    "benchmark_value": 1036.9555,
-    "allocations": {
-      "AAPL": 0.0656,
-      "NVDA": 0.0656,
-      "META": 0.3,
-      "AMZN": 0.1113,
-      "XOM": 0.0656,
-      "QQQ": 0.0656,
-      "BTC": 0.0656,
-      "COIN": 0.2606
-    },
-    "confidence": 0.5371
-  },
-  {
-    "date": "2025-10-29",
-    "portfolio_value": 991.5019,
-    "benchmark_value": 1002.4775,
-    "allocations": {
-      "AAPL": 0.0545,
-      "NVDA": 0.0545,
-      "META": 0.3,
-      "AMZN": 0.0545,
-      "XOM": 0.3,
-      "QQQ": 0.0545,
-      "BTC": 0.0545,
-      "COIN": 0.1273
-    },
-    "confidence": 0.5783
-  },
-  {
-    "date": "2025-10-30",
-    "portfolio_value": 999.8693,
-    "benchmark_value": 1017.8043,
-    "allocations": {
-      "AAPL": 0.0756,
-      "NVDA": 0.0756,
-      "META": 0.3,
-      "AMZN": 0.0756,
-      "XOM": 0.0756,
-      "QQQ": 0.0756,
-      "BTC": 0.1499,
-      "COIN": 0.1721
-    },
-    "confidence": 0.5385
-  },
-  {
-    "date": "2025-10-31",
-    "portfolio_value": 1000.6176,
-    "benchmark_value": 1018.4215,
-    "allocations": {
-      "AAPL": 0.0193,
-      "NVDA": 0.0454,
-      "META": 0.3,
-      "AMZN": 0.0193,
-      "XOM": 0.1425,
-      "QQQ": 0.3,
-      "BTC": 0.1543,
-      "COIN": 0.0193
-    },
-    "confidence": 0.5998
-  },
-  {
-    "date": "2025-11-01",
-    "portfolio_value": 1001.2982,
-    "benchmark_value": 1019.069,
-    "allocations": {
-      "AAPL": 0.0228,
-      "NVDA": 0.0495,
-      "META": 0.3,
-      "AMZN": 0.0228,
-      "XOM": 0.1484,
-      "QQQ": 0.3,
-      "BTC": 0.1337,
-      "COIN": 0.0228
-    },
-    "confidence": 0.5942
-  },
-  {
-    "date": "2025-11-02",
-    "portfolio_value": 995.5371,
-    "benchmark_value": 1014.9241,
-    "allocations": {
-      "AAPL": 0.0313,
-      "NVDA": 0.0609,
-      "META": 0.3,
-      "AMZN": 0.0313,
-      "XOM": 0.1693,
-      "QQQ": 0.3,
-      "BTC": 0.0758,
-      "COIN": 0.0313
-    },
-    "confidence": 0.5804
-  },
-  {
-    "date": "2025-11-03",
-    "portfolio_value": 977.1113,
-    "benchmark_value": 988.889,
-    "allocations": {
-      "AAPL": 0.2795,
-      "NVDA": 0.0604,
-      "META": 0.3,
-      "AMZN": 0.0604,
-      "XOM": 0.0604,
-      "QQQ": 0.0806,
-      "BTC": 0.0604,
-      "COIN": 0.0983
-    },
-    "confidence": 0.5695
-  },
-  {
-    "date": "2025-11-04",
-    "portfolio_value": 989.0093,
-    "benchmark_value": 996.7644,
-    "allocations": {
-      "AAPL": 0.0496,
-      "NVDA": 0.0496,
-      "META": 0.3,
-      "AMZN": 0.0496,
-      "XOM": 0.0496,
-      "QQQ": 0.3,
-      "BTC": 0.0496,
-      "COIN": 0.152
-    },
-    "confidence": 0.6101
-  },
-  {
-    "date": "2025-11-05",
-    "portfolio_value": 969.9955,
-    "benchmark_value": 971.3119,
-    "allocations": {
-      "AAPL": 0.0664,
-      "NVDA": 0.0664,
-      "META": 0.3,
-      "AMZN": 0.0664,
-      "XOM": 0.259,
-      "QQQ": 0.1058,
-      "BTC": 0.0698,
-      "COIN": 0.0664
-    },
-    "confidence": 0.5679
-  },
-  {
-    "date": "2025-11-06",
-    "portfolio_value": 983.007,
-    "benchmark_value": 982.6402,
-    "allocations": {
-      "AAPL": 0.0722,
-      "NVDA": 0.0722,
-      "META": 0.3,
-      "AMZN": 0.1337,
-      "XOM": 0.0872,
-      "QQQ": 0.0722,
-      "BTC": 0.091,
-      "COIN": 0.1717
-    },
-    "confidence": 0.5549
-  },
-  {
-    "date": "2025-11-07",
-    "portfolio_value": 982.7998,
-    "benchmark_value": 981.3455,
+    "date": "2024-01-09",
+    "portfolio_value": 1037.8307,
+    "benchmark_value": 1027.8395,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.02,
-      "META": 0.3,
-      "AMZN": 0.02,
-      "XOM": 0.02,
-      "QQQ": 0.3,
-      "BTC": 0.02,
-      "COIN": 0.02
+      "NVDA": 0.3,
+      "META": 0.1162,
+      "AMZN": 0.0343,
+      "XOM": 0.0725,
+      "QQQ": 0.0343,
+      "BTC": 0.0343,
+      "COIN": 0.1084
     },
-    "confidence": 0.5941
+    "confidence": 0.5751
   },
   {
-    "date": "2025-11-08",
-    "portfolio_value": 983.2718,
-    "benchmark_value": 984.2914,
+    "date": "2024-01-10",
+    "portfolio_value": 1031.8474,
+    "benchmark_value": 1020.4001,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.02,
-      "META": 0.3,
-      "AMZN": 0.02,
-      "XOM": 0.02,
-      "QQQ": 0.3,
-      "BTC": 0.02,
-      "COIN": 0.02
+      "NVDA": 0.3,
+      "META": 0.0458,
+      "AMZN": 0.0507,
+      "XOM": 0.073,
+      "QQQ": 0.0458,
+      "BTC": 0.0735,
+      "COIN": 0.1113
     },
-    "confidence": 0.5941
+    "confidence": 0.5861
   },
   {
-    "date": "2025-11-09",
-    "portfolio_value": 998.1071,
-    "benchmark_value": 1004.5123,
+    "date": "2024-01-11",
+    "portfolio_value": 1016.6405,
+    "benchmark_value": 1004.2398,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.02,
-      "META": 0.3,
-      "AMZN": 0.02,
-      "XOM": 0.02,
-      "QQQ": 0.3,
-      "BTC": 0.02,
-      "COIN": 0.02
+      "NVDA": 0.3,
+      "META": 0.019,
+      "AMZN": 0.0522,
+      "XOM": 0.0937,
+      "QQQ": 0.019,
+      "BTC": 0.019,
+      "COIN": 0.1972
     },
-    "confidence": 0.5941
+    "confidence": 0.594
   },
   {
-    "date": "2025-11-10",
-    "portfolio_value": 991.7658,
-    "benchmark_value": 995.3723,
+    "date": "2024-01-12",
+    "portfolio_value": 1016.6179,
+    "benchmark_value": 1004.2082,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2474,
+      "META": 0.0096,
+      "AMZN": 0.0875,
+      "XOM": 0.125,
+      "QQQ": 0.0096,
+      "BTC": 0.0885,
+      "COIN": 0.1326
+    },
+    "confidence": 0.627
+  },
+  {
+    "date": "2024-01-13",
+    "portfolio_value": 1016.2886,
+    "benchmark_value": 1001.1431,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2655,
+      "META": 0.0133,
+      "AMZN": 0.1,
+      "XOM": 0.1346,
+      "QQQ": 0.0133,
+      "BTC": 0.0133,
+      "COIN": 0.16
+    },
+    "confidence": 0.607
+  },
+  {
+    "date": "2024-01-14",
+    "portfolio_value": 1017.5215,
+    "benchmark_value": 1003.286,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2541,
+      "META": 0.0108,
+      "AMZN": 0.0873,
+      "XOM": 0.1267,
+      "QQQ": 0.0108,
+      "BTC": 0.0708,
+      "COIN": 0.1395
+    },
+    "confidence": 0.6195
+  },
+  {
+    "date": "2024-01-15",
+    "portfolio_value": 1021.9244,
+    "benchmark_value": 1004.0572,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2688,
+      "META": 0.0135,
+      "AMZN": 0.0942,
+      "XOM": 0.1347,
+      "QQQ": 0.0135,
+      "BTC": 0.0183,
+      "COIN": 0.1569
+    },
+    "confidence": 0.607
+  },
+  {
+    "date": "2024-01-16",
+    "portfolio_value": 1016.0694,
+    "benchmark_value": 998.9602,
+    "allocations": {
+      "AAPL": 0.2975,
+      "NVDA": 0.2225,
+      "META": 0.0,
+      "AMZN": 0.1399,
+      "XOM": 0.2131,
+      "QQQ": 0.0,
+      "BTC": 0.0,
+      "COIN": 0.127
+    },
+    "confidence": 0.6465
+  },
+  {
+    "date": "2024-01-17",
+    "portfolio_value": 1019.7073,
+    "benchmark_value": 997.8136,
+    "allocations": {
+      "AAPL": 0.1966,
+      "NVDA": 0.2104,
+      "META": 0.2016,
+      "AMZN": 0.0319,
+      "XOM": 0.0972,
+      "QQQ": 0.0,
+      "BTC": 0.2038,
+      "COIN": 0.0585
+    },
+    "confidence": 0.6966
+  },
+  {
+    "date": "2024-01-18",
+    "portfolio_value": 1038.1855,
+    "benchmark_value": 1013.0355,
+    "allocations": {
+      "AAPL": 0.2714,
+      "NVDA": 0.2338,
+      "META": 0.0972,
+      "AMZN": 0.0482,
+      "XOM": 0.1109,
+      "QQQ": 0.0,
+      "BTC": 0.1348,
+      "COIN": 0.1038
+    },
+    "confidence": 0.5617
+  },
+  {
+    "date": "2024-01-19",
+    "portfolio_value": 1038.2772,
+    "benchmark_value": 1013.179,
+    "allocations": {
+      "AAPL": 0.1233,
+      "NVDA": 0.3,
+      "META": 0.0491,
+      "AMZN": 0.1146,
+      "XOM": 0.0799,
+      "QQQ": 0.0258,
+      "BTC": 0.0779,
+      "COIN": 0.2294
+    },
+    "confidence": 0.5453
+  },
+  {
+    "date": "2024-01-20",
+    "portfolio_value": 1038.1986,
+    "benchmark_value": 1012.8149,
     "allocations": {
       "AAPL": 0.1367,
-      "NVDA": 0.0931,
-      "META": 0.0931,
-      "AMZN": 0.098,
-      "XOM": 0.0931,
-      "QQQ": 0.3,
-      "BTC": 0.0931,
-      "COIN": 0.0931
-    },
-    "confidence": 0.557
-  },
-  {
-    "date": "2025-11-11",
-    "portfolio_value": 979.8797,
-    "benchmark_value": 985.4119,
-    "allocations": {
-      "AAPL": 0.0542,
-      "NVDA": 0.0222,
-      "META": 0.0222,
-      "AMZN": 0.3,
-      "XOM": 0.3,
-      "QQQ": 0.0222,
-      "BTC": 0.0753,
-      "COIN": 0.2041
-    },
-    "confidence": 0.5254
-  },
-  {
-    "date": "2025-11-12",
-    "portfolio_value": 955.7225,
-    "benchmark_value": 965.0304,
-    "allocations": {
-      "AAPL": 0.0402,
-      "NVDA": 0.0402,
-      "META": 0.3,
-      "AMZN": 0.1628,
-      "XOM": 0.0402,
-      "QQQ": 0.0402,
-      "BTC": 0.1467,
-      "COIN": 0.2295
-    },
-    "confidence": 0.5362
-  },
-  {
-    "date": "2025-11-13",
-    "portfolio_value": 950.2824,
-    "benchmark_value": 960.0402,
-    "allocations": {
-      "AAPL": 0.2682,
-      "NVDA": 0.0053,
-      "META": 0.0053,
-      "AMZN": 0.0408,
-      "XOM": 0.0053,
-      "QQQ": 0.3,
-      "BTC": 0.1132,
-      "COIN": 0.2619
-    },
-    "confidence": 0.5423
-  },
-  {
-    "date": "2025-11-14",
-    "portfolio_value": 950.6017,
-    "benchmark_value": 961.4593,
-    "allocations": {
-      "AAPL": 0.2418,
-      "NVDA": 0.0284,
-      "META": 0.3,
-      "AMZN": 0.0445,
-      "XOM": 0.0284,
-      "QQQ": 0.0284,
-      "BTC": 0.0284,
-      "COIN": 0.3
-    },
-    "confidence": 0.605
-  },
-  {
-    "date": "2025-11-15",
-    "portfolio_value": 950.2358,
-    "benchmark_value": 959.8439,
-    "allocations": {
-      "AAPL": 0.2433,
-      "NVDA": 0.0286,
-      "META": 0.3,
-      "AMZN": 0.0422,
-      "XOM": 0.0286,
-      "QQQ": 0.0286,
-      "BTC": 0.0286,
-      "COIN": 0.3
-    },
-    "confidence": 0.605
-  },
-  {
-    "date": "2025-11-16",
-    "portfolio_value": 919.5558,
-    "benchmark_value": 938.9497,
-    "allocations": {
-      "AAPL": 0.2205,
-      "NVDA": 0.02,
-      "META": 0.3,
-      "AMZN": 0.0311,
-      "XOM": 0.02,
-      "QQQ": 0.02,
-      "BTC": 0.0883,
-      "COIN": 0.3
-    },
-    "confidence": 0.605
-  },
-  {
-    "date": "2025-11-17",
-    "portfolio_value": 911.4637,
-    "benchmark_value": 929.6516,
-    "allocations": {
-      "AAPL": 0.1289,
-      "NVDA": 0.0647,
-      "META": 0.0647,
-      "AMZN": 0.0647,
-      "XOM": 0.0647,
-      "QQQ": 0.3,
-      "BTC": 0.1048,
-      "COIN": 0.2076
-    },
-    "confidence": 0.6049
-  },
-  {
-    "date": "2025-11-18",
-    "portfolio_value": 906.7854,
-    "benchmark_value": 927.413,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0561,
-      "META": 0.0561,
-      "AMZN": 0.0561,
-      "XOM": 0.1193,
-      "QQQ": 0.0561,
-      "BTC": 0.0561,
-      "COIN": 0.3
-    },
-    "confidence": 0.5696
-  },
-  {
-    "date": "2025-11-19",
-    "portfolio_value": 877.9884,
-    "benchmark_value": 902.1095,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0287,
-      "META": 0.0287,
-      "AMZN": 0.0287,
-      "XOM": 0.0287,
-      "QQQ": 0.3,
-      "BTC": 0.0287,
-      "COIN": 0.2567
-    },
-    "confidence": 0.5971
-  },
-  {
-    "date": "2025-11-20",
-    "portfolio_value": 886.1072,
-    "benchmark_value": 905.6894,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0611,
-      "META": 0.0611,
-      "AMZN": 0.09,
-      "XOM": 0.0656,
-      "QQQ": 0.0611,
-      "BTC": 0.0611,
-      "COIN": 0.3
-    },
-    "confidence": 0.586
-  },
-  {
-    "date": "2025-11-21",
-    "portfolio_value": 885.8818,
-    "benchmark_value": 905.221,
-    "allocations": {
-      "AAPL": 0.2124,
-      "NVDA": 0.0302,
-      "META": 0.0302,
-      "AMZN": 0.0355,
-      "XOM": 0.0302,
-      "QQQ": 0.3,
-      "BTC": 0.0615,
-      "COIN": 0.3
-    },
-    "confidence": 0.6076
-  },
-  {
-    "date": "2025-11-22",
-    "portfolio_value": 886.6436,
-    "benchmark_value": 908.0303,
-    "allocations": {
-      "AAPL": 0.2239,
-      "NVDA": 0.0346,
-      "META": 0.0346,
-      "AMZN": 0.0375,
-      "XOM": 0.0346,
-      "QQQ": 0.3,
-      "BTC": 0.0346,
-      "COIN": 0.3
-    },
-    "confidence": 0.6076
-  },
-  {
-    "date": "2025-11-23",
-    "portfolio_value": 916.4319,
-    "benchmark_value": 929.5595,
-    "allocations": {
-      "AAPL": 0.1883,
-      "NVDA": 0.0199,
-      "META": 0.0199,
-      "AMZN": 0.0234,
-      "XOM": 0.0199,
-      "QQQ": 0.3,
-      "BTC": 0.1284,
-      "COIN": 0.3
-    },
-    "confidence": 0.6169
-  },
-  {
-    "date": "2025-11-24",
-    "portfolio_value": 921.3614,
-    "benchmark_value": 930.3442,
-    "allocations": {
-      "AAPL": 0.0306,
-      "NVDA": 0.0306,
-      "META": 0.1996,
-      "AMZN": 0.0306,
-      "XOM": 0.0306,
-      "QQQ": 0.3,
-      "BTC": 0.1907,
-      "COIN": 0.1871
-    },
-    "confidence": 0.6806
-  },
-  {
-    "date": "2025-11-25",
-    "portfolio_value": 934.5817,
-    "benchmark_value": 941.8829,
-    "allocations": {
-      "AAPL": 0.1935,
-      "NVDA": 0.0413,
-      "META": 0.3,
-      "AMZN": 0.0413,
-      "XOM": 0.0413,
-      "QQQ": 0.0413,
-      "BTC": 0.0413,
-      "COIN": 0.3
-    },
-    "confidence": 0.5744
-  },
-  {
-    "date": "2025-11-26",
-    "portfolio_value": 934.9268,
-    "benchmark_value": 942.8784,
-    "allocations": {
-      "AAPL": 0.0971,
-      "NVDA": 0.008,
-      "META": 0.008,
-      "AMZN": 0.2456,
-      "XOM": 0.008,
-      "QQQ": 0.3,
-      "BTC": 0.0437,
-      "COIN": 0.2897
-    },
-    "confidence": 0.531
-  },
-  {
-    "date": "2025-11-27",
-    "portfolio_value": 947.4961,
-    "benchmark_value": 949.3273,
-    "allocations": {
-      "AAPL": 0.1039,
-      "NVDA": 0.0101,
-      "META": 0.0101,
-      "AMZN": 0.2556,
-      "XOM": 0.0101,
-      "QQQ": 0.3,
-      "BTC": 0.0101,
-      "COIN": 0.3
-    },
-    "confidence": 0.531
-  },
-  {
-    "date": "2025-11-28",
-    "portfolio_value": 947.4143,
-    "benchmark_value": 949.2114,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0469,
-      "META": 0.0469,
-      "AMZN": 0.0469,
-      "XOM": 0.0568,
-      "QQQ": 0.3,
-      "BTC": 0.0884,
-      "COIN": 0.1141
-    },
-    "confidence": 0.5563
-  },
-  {
-    "date": "2025-11-29",
-    "portfolio_value": 947.0345,
-    "benchmark_value": 948.6756,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0468,
-      "META": 0.0468,
-      "AMZN": 0.0468,
-      "XOM": 0.0568,
-      "QQQ": 0.3,
-      "BTC": 0.0888,
-      "COIN": 0.114
-    },
-    "confidence": 0.5563
-  },
-  {
-    "date": "2025-11-30",
-    "portfolio_value": 945.3375,
-    "benchmark_value": 943.0122,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0459,
-      "META": 0.0459,
-      "AMZN": 0.0459,
-      "XOM": 0.0562,
-      "QQQ": 0.3,
-      "BTC": 0.0932,
-      "COIN": 0.1129
-    },
-    "confidence": 0.5566
-  },
-  {
-    "date": "2025-12-01",
-    "portfolio_value": 956.3563,
-    "benchmark_value": 954.4786,
-    "allocations": {
-      "AAPL": 0.1,
-      "NVDA": 0.1,
-      "META": 0.3,
-      "AMZN": 0.1,
-      "XOM": 0.1,
-      "QQQ": 0.1,
-      "BTC": 0.1,
-      "COIN": 0.1
-    },
-    "confidence": 0.5355
-  },
-  {
-    "date": "2025-12-02",
-    "portfolio_value": 963.525,
-    "benchmark_value": 962.0552,
-    "allocations": {
-      "AAPL": 0.0923,
-      "NVDA": 0.0923,
-      "META": 0.0923,
-      "AMZN": 0.0923,
-      "XOM": 0.146,
-      "QQQ": 0.3,
-      "BTC": 0.0923,
-      "COIN": 0.0923
-    },
-    "confidence": 0.5204
-  },
-  {
-    "date": "2025-12-03",
-    "portfolio_value": 967.7918,
-    "benchmark_value": 961.6047,
-    "allocations": {
-      "AAPL": 0.0338,
-      "NVDA": 0.0338,
-      "META": 0.3,
-      "AMZN": 0.0338,
-      "XOM": 0.3,
-      "QQQ": 0.0338,
-      "BTC": 0.2312,
-      "COIN": 0.0338
-    },
-    "confidence": 0.5761
-  },
-  {
-    "date": "2025-12-04",
-    "portfolio_value": 968.6442,
-    "benchmark_value": 956.8948,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0207,
-      "META": 0.2351,
-      "AMZN": 0.0207,
-      "XOM": 0.0207,
-      "QQQ": 0.3,
-      "BTC": 0.0553,
-      "COIN": 0.0477
-    },
-    "confidence": 0.6175
-  },
-  {
-    "date": "2025-12-05",
-    "portfolio_value": 968.5862,
-    "benchmark_value": 956.7459,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0481,
-      "META": 0.0481,
-      "AMZN": 0.0481,
-      "XOM": 0.3,
-      "QQQ": 0.0481,
-      "BTC": 0.0481,
-      "COIN": 0.1593
-    },
-    "confidence": 0.5386
-  },
-  {
-    "date": "2025-12-06",
-    "portfolio_value": 971.5364,
-    "benchmark_value": 958.1521,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0267,
-      "META": 0.0267,
-      "AMZN": 0.0267,
-      "XOM": 0.2219,
-      "QQQ": 0.0267,
-      "BTC": 0.2591,
-      "COIN": 0.1122
-    },
-    "confidence": 0.5648
-  },
-  {
-    "date": "2025-12-07",
-    "portfolio_value": 971.76,
-    "benchmark_value": 958.9582,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0482,
-      "META": 0.0482,
-      "AMZN": 0.0482,
-      "XOM": 0.3,
-      "QQQ": 0.0482,
-      "BTC": 0.0482,
-      "COIN": 0.1591
-    },
-    "confidence": 0.5386
-  },
-  {
-    "date": "2025-12-08",
-    "portfolio_value": 979.722,
-    "benchmark_value": 963.5818,
-    "allocations": {
-      "AAPL": 0.021,
-      "NVDA": 0.021,
-      "META": 0.081,
-      "AMZN": 0.239,
-      "XOM": 0.021,
-      "QQQ": 0.2445,
-      "BTC": 0.3,
-      "COIN": 0.0723
-    },
-    "confidence": 0.5554
-  },
-  {
-    "date": "2025-12-09",
-    "portfolio_value": 980.1962,
-    "benchmark_value": 964.1308,
-    "allocations": {
-      "AAPL": 0.0366,
-      "NVDA": 0.0,
-      "META": 0.198,
-      "AMZN": 0.1291,
-      "XOM": 0.2687,
-      "QQQ": 0.0,
-      "BTC": 0.2816,
-      "COIN": 0.086
-    },
-    "confidence": 0.5771
-  },
-  {
-    "date": "2025-12-10",
-    "portfolio_value": 973.9528,
-    "benchmark_value": 959.3524,
-    "allocations": {
-      "AAPL": 0.0512,
-      "NVDA": 0.0512,
-      "META": 0.0512,
-      "AMZN": 0.3,
-      "XOM": 0.0512,
-      "QQQ": 0.3,
-      "BTC": 0.0512,
-      "COIN": 0.1438
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2025-12-11",
-    "portfolio_value": 964.6961,
-    "benchmark_value": 945.2557,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0882,
-      "META": 0.1722,
-      "AMZN": 0.0508,
-      "XOM": 0.0508,
-      "QQQ": 0.0508,
-      "BTC": 0.0508,
-      "COIN": 0.2364
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2025-12-12",
-    "portfolio_value": 964.7048,
-    "benchmark_value": 945.2975,
-    "allocations": {
-      "AAPL": 0.2909,
-      "NVDA": 0.0256,
-      "META": 0.3,
-      "AMZN": 0.186,
-      "XOM": 0.0256,
-      "QQQ": 0.0256,
-      "BTC": 0.0256,
-      "COIN": 0.1209
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2025-12-13",
-    "portfolio_value": 964.1241,
-    "benchmark_value": 942.5169,
-    "allocations": {
-      "AAPL": 0.2905,
-      "NVDA": 0.0256,
-      "META": 0.3,
-      "AMZN": 0.1861,
-      "XOM": 0.0256,
-      "QQQ": 0.0256,
-      "BTC": 0.0256,
-      "COIN": 0.1211
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2025-12-14",
-    "portfolio_value": 950.3794,
-    "benchmark_value": 928.6957,
-    "allocations": {
-      "AAPL": 0.2599,
-      "NVDA": 0.0193,
-      "META": 0.3,
-      "AMZN": 0.1651,
-      "XOM": 0.0193,
-      "QQQ": 0.0193,
-      "BTC": 0.1108,
-      "COIN": 0.1063
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2025-12-15",
-    "portfolio_value": 959.3934,
-    "benchmark_value": 931.5348,
-    "allocations": {
-      "AAPL": 0.2933,
-      "NVDA": 0.0229,
-      "META": 0.3,
-      "AMZN": 0.0229,
-      "XOM": 0.0229,
-      "QQQ": 0.0229,
-      "BTC": 0.292,
-      "COIN": 0.0229
-    },
-    "confidence": 0.5491
-  },
-  {
-    "date": "2025-12-16",
-    "portfolio_value": 944.3848,
-    "benchmark_value": 918.5283,
-    "allocations": {
-      "AAPL": 0.0584,
-      "NVDA": 0.0584,
-      "META": 0.2023,
-      "AMZN": 0.0584,
-      "XOM": 0.0584,
-      "QQQ": 0.3,
-      "BTC": 0.2055,
-      "COIN": 0.0584
-    },
-    "confidence": 0.593
-  },
-  {
-    "date": "2025-12-17",
-    "portfolio_value": 959.8642,
-    "benchmark_value": 923.8414,
-    "allocations": {
-      "AAPL": 0.022,
-      "NVDA": 0.022,
-      "META": 0.3,
-      "AMZN": 0.2355,
-      "XOM": 0.0765,
-      "QQQ": 0.3,
-      "BTC": 0.022,
-      "COIN": 0.022
-    },
-    "confidence": 0.6123
-  },
-  {
-    "date": "2025-12-18",
-    "portfolio_value": 969.4899,
-    "benchmark_value": 936.5342,
-    "allocations": {
-      "AAPL": 0.0475,
-      "NVDA": 0.0475,
-      "META": 0.3,
-      "AMZN": 0.0475,
-      "XOM": 0.0475,
-      "QQQ": 0.3,
-      "BTC": 0.1627,
-      "COIN": 0.0475
-    },
-    "confidence": 0.5806
-  },
-  {
-    "date": "2025-12-19",
-    "portfolio_value": 970.0496,
-    "benchmark_value": 936.8631,
-    "allocations": {
-      "AAPL": 0.2383,
-      "NVDA": 0.0,
-      "META": 0.1553,
-      "AMZN": 0.0,
-      "XOM": 0.1664,
-      "QQQ": 0.2345,
-      "BTC": 0.2055,
-      "COIN": 0.0
-    },
-    "confidence": 0.6426
-  },
-  {
-    "date": "2025-12-20",
-    "portfolio_value": 970.191,
-    "benchmark_value": 937.2055,
-    "allocations": {
-      "AAPL": 0.285,
-      "NVDA": 0.0,
-      "META": 0.1859,
-      "AMZN": 0.0,
-      "XOM": 0.1989,
-      "QQQ": 0.2804,
-      "BTC": 0.0498,
-      "COIN": 0.0
-    },
-    "confidence": 0.6116
-  },
-  {
-    "date": "2025-12-21",
-    "portfolio_value": 971.2254,
-    "benchmark_value": 941.709,
-    "allocations": {
-      "AAPL": 0.2904,
-      "NVDA": 0.0,
-      "META": 0.1902,
-      "AMZN": 0.0,
-      "XOM": 0.2026,
-      "QQQ": 0.2869,
-      "BTC": 0.0298,
-      "COIN": 0.0
-    },
-    "confidence": 0.6116
-  },
-  {
-    "date": "2025-12-22",
-    "portfolio_value": 974.0246,
-    "benchmark_value": 946.1598,
-    "allocations": {
-      "AAPL": 0.035,
-      "NVDA": 0.035,
-      "META": 0.2773,
-      "AMZN": 0.0917,
-      "XOM": 0.035,
-      "QQQ": 0.3,
-      "BTC": 0.1909,
-      "COIN": 0.035
-    },
-    "confidence": 0.5665
-  },
-  {
-    "date": "2025-12-23",
-    "portfolio_value": 978.385,
-    "benchmark_value": 947.8462,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0657,
-      "META": 0.3,
-      "AMZN": 0.0657,
-      "XOM": 0.0657,
-      "QQQ": 0.0657,
-      "BTC": 0.0657,
-      "COIN": 0.0716
-    },
-    "confidence": 0.549
-  },
-  {
-    "date": "2025-12-24",
-    "portfolio_value": 978.0765,
-    "benchmark_value": 947.2901,
-    "allocations": {
-      "AAPL": 0.2569,
-      "NVDA": 0.0672,
-      "META": 0.3,
-      "AMZN": 0.0672,
-      "XOM": 0.0672,
-      "QQQ": 0.0672,
-      "BTC": 0.0672,
-      "COIN": 0.1072
-    },
-    "confidence": 0.5192
-  },
-  {
-    "date": "2025-12-25",
-    "portfolio_value": 973.4921,
-    "benchmark_value": 944.6335,
-    "allocations": {
-      "AAPL": 0.239,
-      "NVDA": 0.0605,
-      "META": 0.3,
-      "AMZN": 0.0605,
-      "XOM": 0.0605,
-      "QQQ": 0.0605,
-      "BTC": 0.1211,
-      "COIN": 0.0979
-    },
-    "confidence": 0.5192
-  },
-  {
-    "date": "2025-12-26",
-    "portfolio_value": 974.1032,
-    "benchmark_value": 945.312,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0238,
-      "META": 0.3,
-      "AMZN": 0.0238,
-      "XOM": 0.1524,
-      "QQQ": 0.0238,
-      "BTC": 0.1092,
-      "COIN": 0.067
-    },
-    "confidence": 0.56
-  },
-  {
-    "date": "2025-12-27",
-    "portfolio_value": 974.1127,
-    "benchmark_value": 945.345,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0352,
-      "META": 0.3,
-      "AMZN": 0.0352,
-      "XOM": 0.177,
-      "QQQ": 0.0352,
-      "BTC": 0.0352,
-      "COIN": 0.0823
-    },
-    "confidence": 0.554
-  },
-  {
-    "date": "2025-12-28",
-    "portfolio_value": 972.7237,
-    "benchmark_value": 941.4338,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0351,
-      "META": 0.3,
-      "AMZN": 0.0351,
-      "XOM": 0.1772,
-      "QQQ": 0.0351,
-      "BTC": 0.0351,
-      "COIN": 0.0825
-    },
-    "confidence": 0.554
-  },
-  {
-    "date": "2025-12-29",
-    "portfolio_value": 972.0183,
-    "benchmark_value": 943.0316,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0539,
-      "META": 0.0656,
-      "AMZN": 0.0539,
-      "XOM": 0.0539,
-      "QQQ": 0.3,
-      "BTC": 0.0669,
-      "COIN": 0.1058
-    },
-    "confidence": 0.5236
-  },
-  {
-    "date": "2025-12-30",
-    "portfolio_value": 959.6951,
-    "benchmark_value": 934.3012,
-    "allocations": {
-      "AAPL": 0.1868,
-      "NVDA": 0.0157,
-      "META": 0.0157,
-      "AMZN": 0.0157,
-      "XOM": 0.0157,
-      "QQQ": 0.1505,
-      "BTC": 0.3,
-      "COIN": 0.3
-    },
-    "confidence": 0.5514
-  },
-  {
-    "date": "2025-12-31",
-    "portfolio_value": 961.4111,
-    "benchmark_value": 935.9297,
-    "allocations": {
-      "AAPL": 0.0539,
-      "NVDA": 0.0539,
-      "META": 0.2473,
-      "AMZN": 0.0539,
-      "XOM": 0.0539,
-      "QQQ": 0.3,
-      "BTC": 0.1282,
-      "COIN": 0.109
-    },
-    "confidence": 0.5374
-  },
-  {
-    "date": "2026-01-01",
-    "portfolio_value": 963.9981,
-    "benchmark_value": 942.2003,
-    "allocations": {
-      "AAPL": 0.0618,
-      "NVDA": 0.0618,
-      "META": 0.27,
-      "AMZN": 0.0618,
-      "XOM": 0.0618,
-      "QQQ": 0.3,
-      "BTC": 0.0618,
-      "COIN": 0.1212
-    },
-    "confidence": 0.5307
-  },
-  {
-    "date": "2026-01-02",
-    "portfolio_value": 965.1098,
-    "benchmark_value": 943.0575,
-    "allocations": {
-      "AAPL": 0.0949,
-      "NVDA": 0.0893,
-      "META": 0.0893,
-      "AMZN": 0.0893,
-      "XOM": 0.0893,
-      "QQQ": 0.3,
-      "BTC": 0.1585,
-      "COIN": 0.0893
-    },
-    "confidence": 0.5339
-  },
-  {
-    "date": "2026-01-03",
-    "portfolio_value": 965.9465,
-    "benchmark_value": 944.0887,
-    "allocations": {
-      "AAPL": 0.1054,
-      "NVDA": 0.0991,
-      "META": 0.0991,
-      "AMZN": 0.0991,
-      "XOM": 0.0991,
-      "QQQ": 0.3,
-      "BTC": 0.0991,
-      "COIN": 0.0991
-    },
-    "confidence": 0.5268
-  },
-  {
-    "date": "2026-01-04",
-    "portfolio_value": 983.2807,
-    "benchmark_value": 962.8837,
-    "allocations": {
-      "AAPL": 0.0893,
-      "NVDA": 0.0836,
-      "META": 0.0836,
-      "AMZN": 0.0836,
-      "XOM": 0.0836,
-      "QQQ": 0.3,
-      "BTC": 0.1929,
-      "COIN": 0.0836
-    },
-    "confidence": 0.5445
-  },
-  {
-    "date": "2026-01-05",
-    "portfolio_value": 981.9378,
-    "benchmark_value": 959.3317,
-    "allocations": {
-      "AAPL": 0.1818,
-      "NVDA": 0.0495,
-      "META": 0.169,
-      "AMZN": 0.0495,
-      "XOM": 0.0495,
-      "QQQ": 0.3,
-      "BTC": 0.1512,
-      "COIN": 0.0495
-    },
-    "confidence": 0.5364
-  },
-  {
-    "date": "2026-01-06",
-    "portfolio_value": 973.9023,
-    "benchmark_value": 949.9383,
-    "allocations": {
-      "AAPL": 0.2853,
-      "NVDA": 0.004,
-      "META": 0.004,
-      "AMZN": 0.3,
-      "XOM": 0.004,
-      "QQQ": 0.1503,
-      "BTC": 0.2485,
-      "COIN": 0.004
-    },
-    "confidence": 0.5758
-  },
-  {
-    "date": "2026-01-07",
-    "portfolio_value": 976.2566,
-    "benchmark_value": 951.7763,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.076,
-      "META": 0.076,
-      "AMZN": 0.2005,
-      "XOM": 0.076,
-      "QQQ": 0.076,
-      "BTC": 0.076,
-      "COIN": 0.1196
-    },
-    "confidence": 0.5574
-  },
-  {
-    "date": "2026-01-08",
-    "portfolio_value": 978.7195,
-    "benchmark_value": 953.3894,
-    "allocations": {
-      "AAPL": 0.2546,
-      "NVDA": 0.0523,
-      "META": 0.0523,
-      "AMZN": 0.1217,
-      "XOM": 0.0523,
-      "QQQ": 0.3,
-      "BTC": 0.0523,
-      "COIN": 0.1145
-    },
-    "confidence": 0.5377
-  },
-  {
-    "date": "2026-01-09",
-    "portfolio_value": 978.6567,
-    "benchmark_value": 953.2513,
-    "allocations": {
-      "AAPL": 0.0554,
-      "NVDA": 0.0554,
-      "META": 0.3,
-      "AMZN": 0.1179,
-      "XOM": 0.0554,
-      "QQQ": 0.3,
-      "BTC": 0.0554,
-      "COIN": 0.0604
-    },
-    "confidence": 0.5159
-  },
-  {
-    "date": "2026-01-10",
-    "portfolio_value": 978.9112,
-    "benchmark_value": 953.8105,
-    "allocations": {
-      "AAPL": 0.0554,
-      "NVDA": 0.0554,
-      "META": 0.3,
-      "AMZN": 0.1179,
-      "XOM": 0.0554,
-      "QQQ": 0.3,
-      "BTC": 0.0554,
-      "COIN": 0.0604
-    },
-    "confidence": 0.5159
-  },
-  {
-    "date": "2026-01-11",
-    "portfolio_value": 975.3256,
-    "benchmark_value": 952.8561,
-    "allocations": {
-      "AAPL": 0.0382,
-      "NVDA": 0.0382,
-      "META": 0.2723,
-      "AMZN": 0.0934,
-      "XOM": 0.0382,
-      "QQQ": 0.3,
-      "BTC": 0.1778,
-      "COIN": 0.042
-    },
-    "confidence": 0.5216
-  },
-  {
-    "date": "2026-01-12",
-    "portfolio_value": 982.9569,
-    "benchmark_value": 962.3365,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0296,
-      "META": 0.0296,
-      "AMZN": 0.2315,
-      "XOM": 0.2332,
-      "QQQ": 0.0296,
-      "BTC": 0.0526,
-      "COIN": 0.0939
-    },
-    "confidence": 0.5432
-  },
-  {
-    "date": "2026-01-13",
-    "portfolio_value": 981.8084,
-    "benchmark_value": 960.0417,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0311,
-      "META": 0.0311,
-      "AMZN": 0.2081,
-      "XOM": 0.0311,
-      "QQQ": 0.0311,
-      "BTC": 0.2923,
-      "COIN": 0.0752
-    },
-    "confidence": 0.5782
-  },
-  {
-    "date": "2026-01-14",
-    "portfolio_value": 973.6148,
-    "benchmark_value": 953.616,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0291,
-      "META": 0.0291,
-      "AMZN": 0.188,
-      "XOM": 0.3,
-      "QQQ": 0.0291,
-      "BTC": 0.0394,
-      "COIN": 0.0853
-    },
-    "confidence": 0.5864
-  },
-  {
-    "date": "2026-01-15",
-    "portfolio_value": 975.4392,
-    "benchmark_value": 953.5209,
-    "allocations": {
-      "AAPL": 0.0363,
-      "NVDA": 0.0363,
-      "META": 0.3,
-      "AMZN": 0.2184,
-      "XOM": 0.3,
-      "QQQ": 0.0363,
-      "BTC": 0.0363,
-      "COIN": 0.0363
-    },
-    "confidence": 0.5744
-  },
-  {
-    "date": "2026-01-16",
-    "portfolio_value": 975.2006,
-    "benchmark_value": 952.9807,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.089,
-      "META": 0.3,
-      "AMZN": 0.0952,
-      "XOM": 0.054,
-      "QQQ": 0.054,
-      "BTC": 0.054,
-      "COIN": 0.054
-    },
-    "confidence": 0.6279
-  },
-  {
-    "date": "2026-01-17",
-    "portfolio_value": 974.3789,
-    "benchmark_value": 951.1212,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0896,
-      "META": 0.3,
-      "AMZN": 0.0945,
-      "XOM": 0.054,
-      "QQQ": 0.054,
-      "BTC": 0.054,
-      "COIN": 0.054
-    },
-    "confidence": 0.6279
-  },
-  {
-    "date": "2026-01-18",
-    "portfolio_value": 973.7387,
-    "benchmark_value": 949.7675,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0893,
-      "META": 0.3,
-      "AMZN": 0.0913,
-      "XOM": 0.0539,
-      "QQQ": 0.0539,
-      "BTC": 0.0577,
-      "COIN": 0.0539
-    },
-    "confidence": 0.6279
-  },
-  {
-    "date": "2026-01-19",
-    "portfolio_value": 943.2949,
-    "benchmark_value": 919.7741,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0886,
-      "META": 0.3,
-      "AMZN": 0.0906,
-      "XOM": 0.0533,
-      "QQQ": 0.0533,
-      "BTC": 0.0609,
-      "COIN": 0.0533
-    },
-    "confidence": 0.6279
-  },
-  {
-    "date": "2026-01-20",
-    "portfolio_value": 954.5274,
-    "benchmark_value": 930.3814,
-    "allocations": {
-      "AAPL": 0.1084,
-      "NVDA": 0.0794,
-      "META": 0.1801,
-      "AMZN": 0.0794,
-      "XOM": 0.0794,
-      "QQQ": 0.3,
-      "BTC": 0.0939,
-      "COIN": 0.0794
-    },
-    "confidence": 0.5411
-  },
-  {
-    "date": "2026-01-21",
-    "portfolio_value": 973.2553,
-    "benchmark_value": 938.7421,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0387,
-      "META": 0.3,
-      "AMZN": 0.0387,
-      "XOM": 0.0387,
-      "QQQ": 0.2067,
-      "BTC": 0.0387,
-      "COIN": 0.0387
-    },
-    "confidence": 0.6005
-  },
-  {
-    "date": "2026-01-22",
-    "portfolio_value": 968.9207,
-    "benchmark_value": 943.198,
-    "allocations": {
-      "AAPL": 0.0431,
-      "NVDA": 0.0431,
+      "NVDA": 0.3,
       "META": 0.0431,
-      "AMZN": 0.0431,
-      "XOM": 0.0431,
-      "QQQ": 0.3,
-      "BTC": 0.1915,
-      "COIN": 0.293
+      "AMZN": 0.1215,
+      "XOM": 0.0822,
+      "QQQ": 0.0263,
+      "BTC": 0.0263,
+      "COIN": 0.2639
     },
-    "confidence": 0.5876
+    "confidence": 0.5453
   },
   {
-    "date": "2026-01-23",
-    "portfolio_value": 968.6444,
-    "benchmark_value": 942.7415,
+    "date": "2024-01-21",
+    "portfolio_value": 1046.1545,
+    "benchmark_value": 1010.9892,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0085,
-      "META": 0.2934,
-      "AMZN": 0.0085,
-      "XOM": 0.0085,
-      "QQQ": 0.089,
-      "BTC": 0.0736,
-      "COIN": 0.2185
+      "AAPL": 0.1394,
+      "NVDA": 0.3,
+      "META": 0.0457,
+      "AMZN": 0.1213,
+      "XOM": 0.0832,
+      "QQQ": 0.0263,
+      "BTC": 0.0263,
+      "COIN": 0.2578
     },
-    "confidence": 0.6368
+    "confidence": 0.5453
   },
   {
-    "date": "2026-01-24",
-    "portfolio_value": 967.6836,
-    "benchmark_value": 939.308,
+    "date": "2024-01-22",
+    "portfolio_value": 1052.4796,
+    "benchmark_value": 1013.5049,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0123,
-      "META": 0.3,
-      "AMZN": 0.0123,
-      "XOM": 0.0123,
-      "QQQ": 0.0956,
-      "BTC": 0.034,
-      "COIN": 0.2334
+      "AAPL": 0.0955,
+      "NVDA": 0.2157,
+      "META": 0.0039,
+      "AMZN": 0.1918,
+      "XOM": 0.2745,
+      "QQQ": 0.0,
+      "BTC": 0.1707,
+      "COIN": 0.048
     },
-    "confidence": 0.6295
+    "confidence": 0.5957
   },
   {
-    "date": "2026-01-25",
-    "portfolio_value": 980.9975,
-    "benchmark_value": 945.0239,
+    "date": "2024-01-23",
+    "portfolio_value": 1061.3969,
+    "benchmark_value": 1019.4318,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0081,
-      "META": 0.2923,
-      "AMZN": 0.0081,
-      "XOM": 0.0081,
-      "QQQ": 0.0808,
-      "BTC": 0.0895,
-      "COIN": 0.2131
-    },
-    "confidence": 0.6413
-  },
-  {
-    "date": "2026-01-26",
-    "portfolio_value": 982.0454,
-    "benchmark_value": 953.2847,
-    "allocations": {
-      "AAPL": 0.1602,
-      "NVDA": 0.0234,
-      "META": 0.3,
-      "AMZN": 0.0234,
-      "XOM": 0.0234,
-      "QQQ": 0.0234,
-      "BTC": 0.146,
-      "COIN": 0.3
-    },
-    "confidence": 0.6031
-  },
-  {
-    "date": "2026-01-27",
-    "portfolio_value": 979.7555,
-    "benchmark_value": 953.173,
-    "allocations": {
-      "AAPL": 0.2085,
-      "NVDA": 0.0245,
-      "META": 0.0245,
-      "AMZN": 0.0245,
-      "XOM": 0.0245,
-      "QQQ": 0.2349,
-      "BTC": 0.1586,
-      "COIN": 0.3
-    },
-    "confidence": 0.5829
-  },
-  {
-    "date": "2026-01-28",
-    "portfolio_value": 995.6923,
-    "benchmark_value": 956.0196,
-    "allocations": {
-      "AAPL": 0.2867,
-      "NVDA": 0.0181,
-      "META": 0.3,
-      "AMZN": 0.0181,
-      "XOM": 0.0181,
-      "QQQ": 0.0181,
-      "BTC": 0.1598,
-      "COIN": 0.1813
-    },
-    "confidence": 0.5884
-  },
-  {
-    "date": "2026-01-29",
-    "portfolio_value": 989.2929,
-    "benchmark_value": 947.6323,
-    "allocations": {
-      "AAPL": 0.0159,
-      "NVDA": 0.0159,
-      "META": 0.0159,
-      "AMZN": 0.3,
+      "AAPL": 0.1649,
+      "NVDA": 0.0948,
+      "META": 0.1435,
+      "AMZN": 0.1821,
       "XOM": 0.3,
-      "QQQ": 0.0159,
-      "BTC": 0.1699,
-      "COIN": 0.1666
-    },
-    "confidence": 0.5393
-  },
-  {
-    "date": "2026-01-30",
-    "portfolio_value": 987.7503,
-    "benchmark_value": 940.0102,
-    "allocations": {
-      "AAPL": 0.0242,
-      "NVDA": 0.0242,
-      "META": 0.2499,
-      "AMZN": 0.3,
-      "XOM": 0.0531,
-      "QQQ": 0.0242,
-      "BTC": 0.0242,
-      "COIN": 0.3
-    },
-    "confidence": 0.5238
-  },
-  {
-    "date": "2026-01-31",
-    "portfolio_value": 981.5585,
-    "benchmark_value": 937.5549,
-    "allocations": {
-      "AAPL": 0.0055,
-      "NVDA": 0.0055,
-      "META": 0.1536,
-      "AMZN": 0.246,
-      "XOM": 0.0283,
-      "QQQ": 0.0055,
-      "BTC": 0.3,
-      "COIN": 0.2557
-    },
-    "confidence": 0.5704
-  },
-  {
-    "date": "2026-02-01",
-    "portfolio_value": 964.7737,
-    "benchmark_value": 935.3853,
-    "allocations": {
-      "AAPL": 0.023,
-      "NVDA": 0.023,
-      "META": 0.2484,
-      "AMZN": 0.3,
-      "XOM": 0.0597,
-      "QQQ": 0.023,
-      "BTC": 0.023,
-      "COIN": 0.3
-    },
-    "confidence": 0.5238
-  },
-  {
-    "date": "2026-02-02",
-    "portfolio_value": 946.8806,
-    "benchmark_value": 920.4212,
-    "allocations": {
-      "AAPL": 0.2264,
-      "NVDA": 0.0228,
-      "META": 0.3,
-      "AMZN": 0.1919,
-      "XOM": 0.0228,
-      "QQQ": 0.0228,
-      "BTC": 0.1905,
-      "COIN": 0.0228
-    },
-    "confidence": 0.5443
-  },
-  {
-    "date": "2026-02-03",
-    "portfolio_value": 934.592,
-    "benchmark_value": 902.9537,
-    "allocations": {
-      "AAPL": 0.0202,
-      "NVDA": 0.0202,
-      "META": 0.1927,
-      "AMZN": 0.0202,
-      "XOM": 0.293,
-      "QQQ": 0.3,
-      "BTC": 0.033,
-      "COIN": 0.1207
-    },
-    "confidence": 0.5799
-  },
-  {
-    "date": "2026-02-04",
-    "portfolio_value": 910.2224,
-    "benchmark_value": 862.8842,
-    "allocations": {
-      "AAPL": 0.2121,
-      "NVDA": 0.0067,
-      "META": 0.3,
-      "AMZN": 0.0067,
-      "XOM": 0.3,
-      "QQQ": 0.0067,
-      "BTC": 0.0067,
-      "COIN": 0.1611
-    },
-    "confidence": 0.5906
-  },
-  {
-    "date": "2026-02-05",
-    "portfolio_value": 957.6236,
-    "benchmark_value": 896.4431,
-    "allocations": {
-      "AAPL": 0.0586,
-      "NVDA": 0.0586,
-      "META": 0.0586,
-      "AMZN": 0.1069,
-      "XOM": 0.3,
-      "QQQ": 0.0586,
-      "BTC": 0.0586,
-      "COIN": 0.3
-    },
-    "confidence": 0.5749
-  },
-  {
-    "date": "2026-02-06",
-    "portfolio_value": 956.3591,
-    "benchmark_value": 894.4246,
-    "allocations": {
-      "AAPL": 0.0733,
-      "NVDA": 0.0733,
-      "META": 0.0733,
-      "AMZN": 0.2322,
-      "XOM": 0.0733,
-      "QQQ": 0.3,
-      "BTC": 0.0733,
-      "COIN": 0.1013
-    },
-    "confidence": 0.5602
-  },
-  {
-    "date": "2026-02-07",
-    "portfolio_value": 957.4407,
-    "benchmark_value": 896.1615,
-    "allocations": {
-      "AAPL": 0.0728,
-      "NVDA": 0.0728,
-      "META": 0.0728,
-      "AMZN": 0.2366,
-      "XOM": 0.0728,
-      "QQQ": 0.3,
-      "BTC": 0.0728,
-      "COIN": 0.0994
-    },
-    "confidence": 0.5602
-  },
-  {
-    "date": "2026-02-08",
-    "portfolio_value": 961.9813,
-    "benchmark_value": 902.714,
-    "allocations": {
-      "AAPL": 0.0685,
-      "NVDA": 0.0685,
-      "META": 0.0685,
-      "AMZN": 0.2265,
-      "XOM": 0.0685,
-      "QQQ": 0.3,
-      "BTC": 0.1056,
-      "COIN": 0.0939
-    },
-    "confidence": 0.5607
-  },
-  {
-    "date": "2026-02-09",
-    "portfolio_value": 949.5972,
-    "benchmark_value": 894.2578,
-    "allocations": {
-      "AAPL": 0.0205,
-      "NVDA": 0.0205,
-      "META": 0.0205,
-      "AMZN": 0.3,
-      "XOM": 0.0205,
-      "QQQ": 0.2976,
-      "BTC": 0.0205,
-      "COIN": 0.3
-    },
-    "confidence": 0.5036
-  },
-  {
-    "date": "2026-02-10",
-    "portfolio_value": 930.3609,
-    "benchmark_value": 887.7206,
-    "allocations": {
-      "AAPL": 0.0424,
-      "NVDA": 0.0424,
-      "META": 0.3,
-      "AMZN": 0.1879,
-      "XOM": 0.0424,
-      "QQQ": 0.0424,
-      "BTC": 0.0424,
-      "COIN": 0.3
-    },
-    "confidence": 0.5768
-  },
-  {
-    "date": "2026-02-11",
-    "portfolio_value": 892.6308,
-    "benchmark_value": 858.1903,
-    "allocations": {
-      "AAPL": 0.1019,
-      "NVDA": 0.0009,
-      "META": 0.0009,
-      "AMZN": 0.2044,
-      "XOM": 0.3,
-      "QQQ": 0.1919,
-      "BTC": 0.0009,
-      "COIN": 0.1993
-    },
-    "confidence": 0.5644
-  },
-  {
-    "date": "2026-02-12",
-    "portfolio_value": 919.5256,
-    "benchmark_value": 872.6646,
-    "allocations": {
-      "AAPL": 0.0842,
-      "NVDA": 0.0842,
-      "META": 0.0842,
-      "AMZN": 0.0842,
-      "XOM": 0.0842,
-      "QQQ": 0.3,
-      "BTC": 0.0842,
-      "COIN": 0.1945
-    },
-    "confidence": 0.5483
-  },
-  {
-    "date": "2026-02-13",
-    "portfolio_value": 919.7408,
-    "benchmark_value": 874.1012,
-    "allocations": {
-      "AAPL": 0.2717,
-      "NVDA": 0.0178,
-      "META": 0.0178,
-      "AMZN": 0.0677,
-      "XOM": 0.0178,
-      "QQQ": 0.3,
-      "BTC": 0.0178,
-      "COIN": 0.2894
-    },
-    "confidence": 0.6208
-  },
-  {
-    "date": "2026-02-14",
-    "portfolio_value": 919.0138,
-    "benchmark_value": 872.508,
-    "allocations": {
-      "AAPL": 0.2531,
-      "NVDA": 0.0152,
-      "META": 0.0152,
-      "AMZN": 0.0678,
-      "XOM": 0.0152,
-      "QQQ": 0.3,
-      "BTC": 0.0542,
-      "COIN": 0.2793
-    },
-    "confidence": 0.6208
-  },
-  {
-    "date": "2026-02-15",
-    "portfolio_value": 919.245,
-    "benchmark_value": 872.6683,
-    "allocations": {
-      "AAPL": 0.2141,
-      "NVDA": 0.0074,
-      "META": 0.0074,
-      "AMZN": 0.0552,
-      "XOM": 0.0074,
-      "QQQ": 0.3,
-      "BTC": 0.1711,
-      "COIN": 0.2374
-    },
-    "confidence": 0.6417
-  },
-  {
-    "date": "2026-02-16",
-    "portfolio_value": 929.5924,
-    "benchmark_value": 875.9034,
-    "allocations": {
-      "AAPL": 0.2623,
-      "NVDA": 0.0168,
-      "META": 0.0168,
-      "AMZN": 0.0737,
-      "XOM": 0.0168,
-      "QQQ": 0.3,
-      "BTC": 0.0236,
-      "COIN": 0.29
-    },
-    "confidence": 0.6208
-  },
-  {
-    "date": "2026-02-17",
-    "portfolio_value": 932.9212,
-    "benchmark_value": 881.4795,
-    "allocations": {
-      "AAPL": 0.0392,
-      "NVDA": 0.0392,
-      "META": 0.3,
-      "AMZN": 0.0392,
-      "XOM": 0.0392,
-      "QQQ": 0.3,
-      "BTC": 0.0392,
-      "COIN": 0.2042
-    },
-    "confidence": 0.5233
-  },
-  {
-    "date": "2026-02-18",
-    "portfolio_value": 933.3568,
-    "benchmark_value": 882.2142,
-    "allocations": {
-      "AAPL": 0.0201,
-      "NVDA": 0.0201,
-      "META": 0.3,
-      "AMZN": 0.245,
-      "XOM": 0.0406,
-      "QQQ": 0.3,
-      "BTC": 0.0201,
-      "COIN": 0.0542
-    },
-    "confidence": 0.5529
-  },
-  {
-    "date": "2026-02-19",
-    "portfolio_value": 947.2211,
-    "benchmark_value": 893.4814,
-    "allocations": {
-      "AAPL": 0.051,
-      "NVDA": 0.051,
-      "META": 0.051,
-      "AMZN": 0.2281,
-      "XOM": 0.051,
-      "QQQ": 0.3,
-      "BTC": 0.2029,
-      "COIN": 0.0651
-    },
-    "confidence": 0.5183
-  },
-  {
-    "date": "2026-02-20",
-    "portfolio_value": 947.1977,
-    "benchmark_value": 893.4675,
-    "allocations": {
-      "AAPL": 0.0157,
-      "NVDA": 0.0157,
-      "META": 0.3,
-      "AMZN": 0.0538,
-      "XOM": 0.1002,
-      "QQQ": 0.3,
-      "BTC": 0.199,
-      "COIN": 0.0157
-    },
-    "confidence": 0.6418
-  },
-  {
-    "date": "2026-02-21",
-    "portfolio_value": 946.474,
-    "benchmark_value": 892.9626,
-    "allocations": {
-      "AAPL": 0.0207,
-      "NVDA": 0.0207,
-      "META": 0.3,
-      "AMZN": 0.0606,
-      "XOM": 0.1085,
-      "QQQ": 0.3,
-      "BTC": 0.169,
-      "COIN": 0.0207
-    },
-    "confidence": 0.6307
-  },
-  {
-    "date": "2026-02-22",
-    "portfolio_value": 932.6442,
-    "benchmark_value": 878.0138,
-    "allocations": {
-      "AAPL": 0.0417,
-      "NVDA": 0.0417,
-      "META": 0.3,
-      "AMZN": 0.0894,
-      "XOM": 0.1439,
-      "QQQ": 0.3,
-      "BTC": 0.0417,
-      "COIN": 0.0417
-    },
-    "confidence": 0.6008
-  },
-  {
-    "date": "2026-02-23",
-    "portfolio_value": 939.0657,
-    "benchmark_value": 883.5738,
-    "allocations": {
-      "AAPL": 0.0031,
-      "NVDA": 0.0031,
-      "META": 0.2833,
-      "AMZN": 0.3,
-      "XOM": 0.1476,
-      "QQQ": 0.2567,
-      "BTC": 0.0031,
-      "COIN": 0.0031
-    },
-    "confidence": 0.5324
-  },
-  {
-    "date": "2026-02-24",
-    "portfolio_value": 960.2833,
-    "benchmark_value": 912.87,
-    "allocations": {
-      "AAPL": 0.0476,
-      "NVDA": 0.0476,
-      "META": 0.1513,
-      "AMZN": 0.3,
-      "XOM": 0.0476,
-      "QQQ": 0.3,
-      "BTC": 0.0476,
-      "COIN": 0.0581
-    },
-    "confidence": 0.5326
-  },
-  {
-    "date": "2026-02-25",
-    "portfolio_value": 955.2341,
-    "benchmark_value": 900.6321,
-    "allocations": {
-      "AAPL": 0.02,
-      "NVDA": 0.02,
-      "META": 0.3,
-      "AMZN": 0.0204,
-      "XOM": 0.3,
-      "QQQ": 0.2202,
-      "BTC": 0.0305,
-      "COIN": 0.0889
-    },
-    "confidence": 0.5729
-  },
-  {
-    "date": "2026-02-26",
-    "portfolio_value": 936.3683,
-    "benchmark_value": 888.7687,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0344,
-      "META": 0.3,
-      "AMZN": 0.0753,
-      "XOM": 0.0344,
-      "QQQ": 0.0344,
-      "BTC": 0.0404,
-      "COIN": 0.181
-    },
-    "confidence": 0.5821
-  },
-  {
-    "date": "2026-02-27",
-    "portfolio_value": 936.7845,
-    "benchmark_value": 890.5876,
-    "allocations": {
-      "AAPL": 0.0271,
-      "NVDA": 0.2643,
-      "META": 0.0271,
-      "AMZN": 0.3,
-      "XOM": 0.3,
-      "QQQ": 0.0271,
-      "BTC": 0.0271,
-      "COIN": 0.0271
-    },
-    "confidence": 0.523
-  },
-  {
-    "date": "2026-02-28",
-    "portfolio_value": 936.3133,
-    "benchmark_value": 888.5174,
-    "allocations": {
-      "AAPL": 0.027,
-      "NVDA": 0.2648,
-      "META": 0.027,
-      "AMZN": 0.3,
-      "XOM": 0.3,
-      "QQQ": 0.027,
-      "BTC": 0.027,
-      "COIN": 0.027
-    },
-    "confidence": 0.523
-  },
-  {
-    "date": "2026-03-01",
-    "portfolio_value": 946.9178,
-    "benchmark_value": 904.2711,
-    "allocations": {
-      "AAPL": 0.0264,
-      "NVDA": 0.2682,
-      "META": 0.0264,
-      "AMZN": 0.3,
-      "XOM": 0.3,
-      "QQQ": 0.0264,
-      "BTC": 0.0264,
-      "COIN": 0.0264
-    },
-    "confidence": 0.523
-  },
-  {
-    "date": "2026-03-02",
-    "portfolio_value": 942.9684,
-    "benchmark_value": 897.4975,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0667,
-      "META": 0.0667,
-      "AMZN": 0.3,
-      "XOM": 0.0667,
-      "QQQ": 0.0667,
-      "BTC": 0.0667,
-      "COIN": 0.0667
-    },
-    "confidence": 0.5239
-  },
-  {
-    "date": "2026-03-03",
-    "portfolio_value": 966.5885,
-    "benchmark_value": 928.9336,
-    "allocations": {
-      "AAPL": 0.288,
-      "NVDA": 0.037,
-      "META": 0.3,
-      "AMZN": 0.1942,
-      "XOM": 0.037,
-      "QQQ": 0.037,
-      "BTC": 0.037,
-      "COIN": 0.0697
-    },
-    "confidence": 0.5375
-  },
-  {
-    "date": "2026-03-04",
-    "portfolio_value": 957.9517,
-    "benchmark_value": 923.7788,
-    "allocations": {
-      "AAPL": 0.151,
-      "NVDA": 0.0475,
-      "META": 0.3,
-      "AMZN": 0.0907,
-      "XOM": 0.0475,
-      "QQQ": 0.0475,
-      "BTC": 0.0799,
-      "COIN": 0.2359
+      "QQQ": 0.0041,
+      "BTC": 0.0342,
+      "COIN": 0.0763
     },
     "confidence": 0.582
   },
   {
-    "date": "2026-03-05",
-    "portfolio_value": 929.6518,
-    "benchmark_value": 902.5804,
+    "date": "2024-01-24",
+    "portfolio_value": 1071.7697,
+    "benchmark_value": 1023.8593,
     "allocations": {
-      "AAPL": 0.0063,
-      "NVDA": 0.0063,
-      "META": 0.2614,
-      "AMZN": 0.3,
-      "XOM": 0.0063,
-      "QQQ": 0.0593,
-      "BTC": 0.1829,
-      "COIN": 0.1773
-    },
-    "confidence": 0.5939
-  },
-  {
-    "date": "2026-03-06",
-    "portfolio_value": 928.5815,
-    "benchmark_value": 901.1694,
-    "allocations": {
-      "AAPL": 0.0764,
-      "NVDA": 0.0764,
-      "META": 0.3,
-      "AMZN": 0.0764,
-      "XOM": 0.0764,
-      "QQQ": 0.0764,
-      "BTC": 0.0921,
-      "COIN": 0.2261
-    },
-    "confidence": 0.5148
-  },
-  {
-    "date": "2026-03-07",
-    "portfolio_value": 923.2942,
-    "benchmark_value": 899.0314,
-    "allocations": {
-      "AAPL": 0.0494,
-      "NVDA": 0.0494,
-      "META": 0.3,
-      "AMZN": 0.0494,
-      "XOM": 0.0494,
-      "QQQ": 0.0494,
-      "BTC": 0.3,
-      "COIN": 0.1531
-    },
-    "confidence": 0.5402
-  },
-  {
-    "date": "2026-03-08",
-    "portfolio_value": 933.3433,
-    "benchmark_value": 910.4326,
-    "allocations": {
-      "AAPL": 0.0784,
-      "NVDA": 0.0784,
-      "META": 0.3,
-      "AMZN": 0.0784,
-      "XOM": 0.0784,
-      "QQQ": 0.0784,
-      "BTC": 0.0784,
-      "COIN": 0.2293
-    },
-    "confidence": 0.5148
-  },
-  {
-    "date": "2026-03-09",
-    "portfolio_value": 937.5712,
-    "benchmark_value": 912.7084,
-    "allocations": {
-      "AAPL": 0.0413,
-      "NVDA": 0.0413,
-      "META": 0.0413,
-      "AMZN": 0.2093,
-      "XOM": 0.0413,
-      "QQQ": 0.3,
-      "BTC": 0.2227,
-      "COIN": 0.1027
+      "AAPL": 0.0375,
+      "NVDA": 0.1615,
+      "META": 0.1408,
+      "AMZN": 0.1896,
+      "XOM": 0.3,
+      "QQQ": 0.0169,
+      "BTC": 0.0181,
+      "COIN": 0.1356
     },
     "confidence": 0.5515
   },
   {
-    "date": "2026-03-10",
-    "portfolio_value": 940.0673,
-    "benchmark_value": 916.9892,
+    "date": "2024-01-25",
+    "portfolio_value": 1087.3056,
+    "benchmark_value": 1033.7067,
     "allocations": {
-      "AAPL": 0.0009,
-      "NVDA": 0.0009,
-      "META": 0.0474,
-      "AMZN": 0.3,
-      "XOM": 0.1615,
-      "QQQ": 0.276,
-      "BTC": 0.1518,
-      "COIN": 0.0616
-    },
-    "confidence": 0.5198
-  },
-  {
-    "date": "2026-03-11",
-    "portfolio_value": 925.9093,
-    "benchmark_value": 905.3296,
-    "allocations": {
-      "AAPL": 0.0512,
-      "NVDA": 0.0512,
-      "META": 0.0512,
-      "AMZN": 0.3,
-      "XOM": 0.0512,
-      "QQQ": 0.3,
-      "BTC": 0.0679,
-      "COIN": 0.1275
-    },
-    "confidence": 0.513
-  },
-  {
-    "date": "2026-03-12",
-    "portfolio_value": 919.1915,
-    "benchmark_value": 899.089,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0049,
-      "META": 0.0049,
-      "AMZN": 0.1089,
-      "XOM": 0.0049,
-      "QQQ": 0.3,
-      "BTC": 0.1721,
-      "COIN": 0.1041
-    },
-    "confidence": 0.5379
-  },
-  {
-    "date": "2026-03-13",
-    "portfolio_value": 920.1361,
-    "benchmark_value": 899.5562,
-    "allocations": {
-      "AAPL": 0.0432,
-      "NVDA": 0.0432,
-      "META": 0.1144,
-      "AMZN": 0.0935,
-      "XOM": 0.0432,
-      "QQQ": 0.3,
-      "BTC": 0.2472,
-      "COIN": 0.1155
-    },
-    "confidence": 0.5693
-  },
-  {
-    "date": "2026-03-14",
-    "portfolio_value": 926.1148,
-    "benchmark_value": 901.9916,
-    "allocations": {
-      "AAPL": 0.0367,
-      "NVDA": 0.0367,
-      "META": 0.1029,
-      "AMZN": 0.0831,
-      "XOM": 0.0367,
-      "QQQ": 0.3,
-      "BTC": 0.3,
+      "AAPL": 0.0206,
+      "NVDA": 0.1402,
+      "META": 0.1339,
+      "AMZN": 0.1068,
+      "XOM": 0.3,
+      "QQQ": 0.0108,
+      "BTC": 0.1839,
       "COIN": 0.1039
     },
-    "confidence": 0.5826
+    "confidence": 0.5944
   },
   {
-    "date": "2026-03-15",
-    "portfolio_value": 945.2874,
-    "benchmark_value": 919.4408,
+    "date": "2024-01-26",
+    "portfolio_value": 1088.5859,
+    "benchmark_value": 1034.6436,
     "allocations": {
-      "AAPL": 0.0451,
-      "NVDA": 0.0451,
-      "META": 0.1182,
-      "AMZN": 0.0961,
-      "XOM": 0.0451,
+      "AAPL": 0.0182,
+      "NVDA": 0.1541,
+      "META": 0.1494,
+      "AMZN": 0.0463,
+      "XOM": 0.3,
+      "QQQ": 0.0182,
+      "BTC": 0.1624,
+      "COIN": 0.1515
+    },
+    "confidence": 0.6016
+  },
+  {
+    "date": "2024-01-27",
+    "portfolio_value": 1088.2207,
+    "benchmark_value": 1034.3842,
+    "allocations": {
+      "AAPL": 0.0175,
+      "NVDA": 0.1533,
+      "META": 0.149,
+      "AMZN": 0.0474,
+      "XOM": 0.3,
+      "QQQ": 0.0175,
+      "BTC": 0.1673,
+      "COIN": 0.148
+    },
+    "confidence": 0.6036
+  },
+  {
+    "date": "2024-01-28",
+    "portfolio_value": 1111.4904,
+    "benchmark_value": 1054.1642,
+    "allocations": {
+      "AAPL": 0.019,
+      "NVDA": 0.16,
+      "META": 0.1532,
+      "AMZN": 0.0499,
+      "XOM": 0.3,
+      "QQQ": 0.019,
+      "BTC": 0.1423,
+      "COIN": 0.1566
+    },
+    "confidence": 0.5927
+  },
+  {
+    "date": "2024-01-29",
+    "portfolio_value": 1112.535,
+    "benchmark_value": 1048.4325,
+    "allocations": {
+      "AAPL": 0.0173,
+      "NVDA": 0.2017,
+      "META": 0.1729,
+      "AMZN": 0.0173,
+      "XOM": 0.3,
+      "QQQ": 0.0173,
+      "BTC": 0.0222,
+      "COIN": 0.2513
+    },
+    "confidence": 0.5752
+  },
+  {
+    "date": "2024-01-30",
+    "portfolio_value": 1089.3479,
+    "benchmark_value": 1028.0402,
+    "allocations": {
+      "AAPL": 0.0096,
+      "NVDA": 0.1387,
+      "META": 0.0645,
+      "AMZN": 0.2315,
+      "XOM": 0.3,
+      "QQQ": 0.0096,
+      "BTC": 0.0162,
+      "COIN": 0.2298
+    },
+    "confidence": 0.6188
+  },
+  {
+    "date": "2024-01-31",
+    "portfolio_value": 1105.0409,
+    "benchmark_value": 1041.0223,
+    "allocations": {
+      "AAPL": 0.0117,
+      "NVDA": 0.2054,
+      "META": 0.0117,
+      "AMZN": 0.3,
+      "XOM": 0.1687,
+      "QQQ": 0.0117,
+      "BTC": 0.0117,
+      "COIN": 0.2792
+    },
+    "confidence": 0.6582
+  },
+  {
+    "date": "2024-02-01",
+    "portfolio_value": 1149.8084,
+    "benchmark_value": 1085.7336,
+    "allocations": {
+      "AAPL": 0.0044,
+      "NVDA": 0.1859,
+      "META": 0.0407,
+      "AMZN": 0.3,
+      "XOM": 0.2621,
+      "QQQ": 0.0044,
+      "BTC": 0.0044,
+      "COIN": 0.1982
+    },
+    "confidence": 0.6448
+  },
+  {
+    "date": "2024-02-02",
+    "portfolio_value": 1149.0161,
+    "benchmark_value": 1085.1251,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.158,
+      "META": 0.1328,
+      "AMZN": 0.2623,
+      "XOM": 0.044,
+      "QQQ": 0.0,
+      "BTC": 0.1537,
+      "COIN": 0.2491
+    },
+    "confidence": 0.568
+  },
+  {
+    "date": "2024-02-03",
+    "portfolio_value": 1147.1732,
+    "benchmark_value": 1083.8358,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1542,
+      "META": 0.1247,
+      "AMZN": 0.2724,
+      "XOM": 0.0424,
+      "QQQ": 0.0,
+      "BTC": 0.1687,
+      "COIN": 0.2376
+    },
+    "confidence": 0.5735
+  },
+  {
+    "date": "2024-02-04",
+    "portfolio_value": 1123.9004,
+    "benchmark_value": 1073.0452,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1529,
+      "META": 0.1233,
+      "AMZN": 0.2674,
+      "XOM": 0.0435,
+      "QQQ": 0.0,
+      "BTC": 0.1812,
+      "COIN": 0.2318
+    },
+    "confidence": 0.5773
+  },
+  {
+    "date": "2024-02-05",
+    "portfolio_value": 1125.8352,
+    "benchmark_value": 1074.6167,
+    "allocations": {
+      "AAPL": 0.0595,
+      "NVDA": 0.2559,
+      "META": 0.0014,
+      "AMZN": 0.2768,
+      "XOM": 0.048,
+      "QQQ": 0.0068,
+      "BTC": 0.0516,
+      "COIN": 0.3
+    },
+    "confidence": 0.6859
+  },
+  {
+    "date": "2024-02-06",
+    "portfolio_value": 1147.598,
+    "benchmark_value": 1091.6225,
+    "allocations": {
+      "AAPL": 0.0739,
+      "NVDA": 0.2142,
+      "META": 0.0,
+      "AMZN": 0.1797,
+      "XOM": 0.0,
+      "QQQ": 0.0501,
+      "BTC": 0.2335,
+      "COIN": 0.2485
+    },
+    "confidence": 0.7338
+  },
+  {
+    "date": "2024-02-07",
+    "portfolio_value": 1180.166,
+    "benchmark_value": 1106.8439,
+    "allocations": {
+      "AAPL": 0.0697,
+      "NVDA": 0.2735,
+      "META": 0.0027,
+      "AMZN": 0.0071,
+      "XOM": 0.2712,
+      "QQQ": 0.0731,
+      "BTC": 0.0027,
+      "COIN": 0.3
+    },
+    "confidence": 0.6671
+  },
+  {
+    "date": "2024-02-08",
+    "portfolio_value": 1228.188,
+    "benchmark_value": 1129.4848,
+    "allocations": {
+      "AAPL": 0.0409,
+      "NVDA": 0.3,
+      "META": 0.0107,
+      "AMZN": 0.0853,
+      "XOM": 0.0107,
+      "QQQ": 0.1264,
+      "BTC": 0.126,
+      "COIN": 0.3
+    },
+    "confidence": 0.6776
+  },
+  {
+    "date": "2024-02-09",
+    "portfolio_value": 1229.4935,
+    "benchmark_value": 1131.3536,
+    "allocations": {
+      "AAPL": 0.2808,
+      "NVDA": 0.2218,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.2185,
+      "QQQ": 0.0,
+      "BTC": 0.0803,
+      "COIN": 0.1986
+    },
+    "confidence": 0.6684
+  },
+  {
+    "date": "2024-02-10",
+    "portfolio_value": 1229.5016,
+    "benchmark_value": 1132.9008,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2385,
+      "META": 0.0006,
+      "AMZN": 0.0006,
+      "XOM": 0.2203,
+      "QQQ": 0.0006,
+      "BTC": 0.0006,
+      "COIN": 0.2388
+    },
+    "confidence": 0.6472
+  },
+  {
+    "date": "2024-02-11",
+    "portfolio_value": 1242.0907,
+    "benchmark_value": 1141.9581,
+    "allocations": {
+      "AAPL": 0.2922,
+      "NVDA": 0.2323,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.2191,
+      "QQQ": 0.0,
+      "BTC": 0.0397,
+      "COIN": 0.2166
+    },
+    "confidence": 0.6546
+  },
+  {
+    "date": "2024-02-12",
+    "portfolio_value": 1223.5462,
+    "benchmark_value": 1123.5968,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1948,
+      "META": 0.2038,
+      "AMZN": 0.0,
+      "XOM": 0.1753,
+      "QQQ": 0.0,
+      "BTC": 0.2517,
+      "COIN": 0.1744
+    },
+    "confidence": 0.5575
+  },
+  {
+    "date": "2024-02-13",
+    "portfolio_value": 1246.9782,
+    "benchmark_value": 1159.0586,
+    "allocations": {
+      "AAPL": 0.0126,
+      "NVDA": 0.1153,
+      "META": 0.0552,
+      "AMZN": 0.0126,
+      "XOM": 0.2696,
       "QQQ": 0.3,
-      "BTC": 0.2309,
-      "COIN": 0.1196
+      "BTC": 0.2061,
+      "COIN": 0.0284
     },
-    "confidence": 0.5654
+    "confidence": 0.5372
   },
   {
-    "date": "2026-03-16",
-    "portfolio_value": 946.2716,
-    "benchmark_value": 924.6215,
+    "date": "2024-02-14",
+    "portfolio_value": 1263.3721,
+    "benchmark_value": 1168.3616,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0132,
-      "META": 0.152,
-      "AMZN": 0.0132,
-      "XOM": 0.0132,
-      "QQQ": 0.2012,
-      "BTC": 0.2432,
-      "COIN": 0.064
+      "AAPL": 0.0072,
+      "NVDA": 0.2703,
+      "META": 0.2108,
+      "AMZN": 0.0072,
+      "XOM": 0.3,
+      "QQQ": 0.0072,
+      "BTC": 0.0703,
+      "COIN": 0.1271
     },
-    "confidence": 0.6202
+    "confidence": 0.503
   },
   {
-    "date": "2026-03-17",
-    "portfolio_value": 929.7994,
-    "benchmark_value": 906.3965,
+    "date": "2024-02-15",
+    "portfolio_value": 1291.6105,
+    "benchmark_value": 1175.7637,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0097,
+      "AAPL": 0.087,
+      "NVDA": 0.3,
+      "META": 0.1381,
+      "AMZN": 0.0335,
+      "XOM": 0.0886,
+      "QQQ": 0.0264,
+      "BTC": 0.0264,
+      "COIN": 0.3
+    },
+    "confidence": 0.5
+  },
+  {
+    "date": "2024-02-16",
+    "portfolio_value": 1290.9627,
+    "benchmark_value": 1174.3628,
+    "allocations": {
+      "AAPL": 0.0526,
+      "NVDA": 0.2625,
+      "META": 0.0596,
+      "AMZN": 0.0526,
+      "XOM": 0.3,
+      "QQQ": 0.0526,
+      "BTC": 0.0526,
+      "COIN": 0.1675
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-02-17",
+    "portfolio_value": 1291.5853,
+    "benchmark_value": 1175.6685,
+    "allocations": {
+      "AAPL": 0.0542,
+      "NVDA": 0.2672,
+      "META": 0.0552,
+      "AMZN": 0.0542,
+      "XOM": 0.3,
+      "QQQ": 0.0542,
+      "BTC": 0.0542,
+      "COIN": 0.1608
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-02-18",
+    "portfolio_value": 1290.7935,
+    "benchmark_value": 1174.7003,
+    "allocations": {
+      "AAPL": 0.0507,
+      "NVDA": 0.2565,
+      "META": 0.0518,
+      "AMZN": 0.0507,
+      "XOM": 0.3,
+      "QQQ": 0.0507,
+      "BTC": 0.093,
+      "COIN": 0.1464
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-02-19",
+    "portfolio_value": 1268.0436,
+    "benchmark_value": 1158.3419,
+    "allocations": {
+      "AAPL": 0.0449,
+      "NVDA": 0.2369,
+      "META": 0.0449,
+      "AMZN": 0.0449,
+      "XOM": 0.3,
+      "QQQ": 0.0449,
+      "BTC": 0.1617,
+      "COIN": 0.122
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-02-20",
+    "portfolio_value": 1265.2213,
+    "benchmark_value": 1147.1863,
+    "allocations": {
+      "AAPL": 0.0556,
+      "NVDA": 0.0556,
+      "META": 0.0556,
+      "AMZN": 0.0556,
+      "XOM": 0.3,
+      "QQQ": 0.3,
+      "BTC": 0.0964,
+      "COIN": 0.0812
+    },
+    "confidence": 0.5914
+  },
+  {
+    "date": "2024-02-21",
+    "portfolio_value": 1299.2025,
+    "benchmark_value": 1193.0601,
+    "allocations": {
+      "AAPL": 0.058,
+      "NVDA": 0.058,
+      "META": 0.058,
+      "AMZN": 0.058,
+      "XOM": 0.3,
+      "QQQ": 0.3,
+      "BTC": 0.0787,
+      "COIN": 0.0895
+    },
+    "confidence": 0.5741
+  },
+  {
+    "date": "2024-02-22",
+    "portfolio_value": 1289.3463,
+    "benchmark_value": 1184.0831,
+    "allocations": {
+      "AAPL": 0.0365,
+      "NVDA": 0.1379,
       "META": 0.3,
-      "AMZN": 0.0097,
-      "XOM": 0.0097,
-      "QQQ": 0.2302,
-      "BTC": 0.0097,
-      "COIN": 0.1312
+      "AMZN": 0.0365,
+      "XOM": 0.3,
+      "QQQ": 0.0365,
+      "BTC": 0.0365,
+      "COIN": 0.1162
+    },
+    "confidence": 0.562
+  },
+  {
+    "date": "2024-02-23",
+    "portfolio_value": 1289.4122,
+    "benchmark_value": 1186.5314,
+    "allocations": {
+      "AAPL": 0.0031,
+      "NVDA": 0.2849,
+      "META": 0.2122,
+      "AMZN": 0.015,
+      "XOM": 0.3,
+      "QQQ": 0.1324,
+      "BTC": 0.0031,
+      "COIN": 0.0492
+    },
+    "confidence": 0.5949
+  },
+  {
+    "date": "2024-02-24",
+    "portfolio_value": 1290.5709,
+    "benchmark_value": 1186.9977,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.2073,
+      "META": 0.1368,
+      "AMZN": 0.0063,
+      "XOM": 0.2498,
+      "QQQ": 0.1139,
+      "BTC": 0.2858,
+      "COIN": 0.0
+    },
+    "confidence": 0.6432
+  },
+  {
+    "date": "2024-02-25",
+    "portfolio_value": 1310.5317,
+    "benchmark_value": 1218.9889,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.2136,
+      "META": 0.1426,
+      "AMZN": 0.0073,
+      "XOM": 0.2562,
+      "QQQ": 0.1122,
+      "BTC": 0.2681,
+      "COIN": 0.0
+    },
+    "confidence": 0.6359
+  },
+  {
+    "date": "2024-02-26",
+    "portfolio_value": 1323.1511,
+    "benchmark_value": 1231.4698,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.2443,
+      "META": 0.1977,
+      "AMZN": 0.0,
+      "XOM": 0.1138,
+      "QQQ": 0.2519,
+      "BTC": 0.1545,
+      "COIN": 0.0378
+    },
+    "confidence": 0.6
+  },
+  {
+    "date": "2024-02-27",
+    "portfolio_value": 1353.7476,
+    "benchmark_value": 1242.5691,
+    "allocations": {
+      "AAPL": 0.0006,
+      "NVDA": 0.0006,
+      "META": 0.0536,
+      "AMZN": 0.1717,
+      "XOM": 0.2005,
+      "QQQ": 0.3,
+      "BTC": 0.2611,
+      "COIN": 0.0119
+    },
+    "confidence": 0.5999
+  },
+  {
+    "date": "2024-02-28",
+    "portfolio_value": 1357.905,
+    "benchmark_value": 1250.6005,
+    "allocations": {
+      "AAPL": 0.0268,
+      "NVDA": 0.0268,
+      "META": 0.0268,
+      "AMZN": 0.1859,
+      "XOM": 0.1729,
+      "QQQ": 0.3,
+      "BTC": 0.2315,
+      "COIN": 0.0294
+    },
+    "confidence": 0.6197
+  },
+  {
+    "date": "2024-02-29",
+    "portfolio_value": 1379.5788,
+    "benchmark_value": 1270.287,
+    "allocations": {
+      "AAPL": 0.0427,
+      "NVDA": 0.0427,
+      "META": 0.0427,
+      "AMZN": 0.0427,
+      "XOM": 0.2134,
+      "QQQ": 0.3,
+      "BTC": 0.26,
+      "COIN": 0.0557
+    },
+    "confidence": 0.5647
+  },
+  {
+    "date": "2024-03-01",
+    "portfolio_value": 1377.6505,
+    "benchmark_value": 1269.2424,
+    "allocations": {
+      "AAPL": 0.0066,
+      "NVDA": 0.3,
+      "META": 0.1963,
+      "AMZN": 0.0612,
+      "XOM": 0.1447,
+      "QQQ": 0.0066,
+      "BTC": 0.2125,
+      "COIN": 0.0722
+    },
+    "confidence": 0.5587
+  },
+  {
+    "date": "2024-03-02",
+    "portfolio_value": 1381.5105,
+    "benchmark_value": 1272.1518,
+    "allocations": {
+      "AAPL": 0.0101,
+      "NVDA": 0.3,
+      "META": 0.2112,
+      "AMZN": 0.0699,
+      "XOM": 0.1529,
+      "QQQ": 0.0101,
+      "BTC": 0.1528,
+      "COIN": 0.0932
+    },
+    "confidence": 0.5375
+  },
+  {
+    "date": "2024-03-03",
+    "portfolio_value": 1413.8455,
+    "benchmark_value": 1300.235,
+    "allocations": {
+      "AAPL": 0.0153,
+      "NVDA": 0.3,
+      "META": 0.2585,
+      "AMZN": 0.0861,
+      "XOM": 0.1641,
+      "QQQ": 0.0153,
+      "BTC": 0.0153,
+      "COIN": 0.1455
+    },
+    "confidence": 0.5283
+  },
+  {
+    "date": "2024-03-04",
+    "portfolio_value": 1404.2411,
+    "benchmark_value": 1270.7618,
+    "allocations": {
+      "AAPL": 0.0197,
+      "NVDA": 0.3,
+      "META": 0.1943,
+      "AMZN": 0.0197,
+      "XOM": 0.3,
+      "QQQ": 0.0197,
+      "BTC": 0.059,
+      "COIN": 0.0874
+    },
+    "confidence": 0.5713
+  },
+  {
+    "date": "2024-03-05",
+    "portfolio_value": 1440.1583,
+    "benchmark_value": 1300.6267,
+    "allocations": {
+      "AAPL": 0.0117,
+      "NVDA": 0.3,
+      "META": 0.2527,
+      "AMZN": 0.1112,
+      "XOM": 0.1743,
+      "QQQ": 0.0117,
+      "BTC": 0.037,
+      "COIN": 0.1014
+    },
+    "confidence": 0.5372
+  },
+  {
+    "date": "2024-03-06",
+    "portfolio_value": 1464.7838,
+    "benchmark_value": 1324.3324,
+    "allocations": {
+      "AAPL": 0.145,
+      "NVDA": 0.2618,
+      "META": 0.0014,
+      "AMZN": 0.0014,
+      "XOM": 0.3,
+      "QQQ": 0.0171,
+      "BTC": 0.2552,
+      "COIN": 0.018
+    },
+    "confidence": 0.6061
+  },
+  {
+    "date": "2024-03-07",
+    "portfolio_value": 1452.7339,
+    "benchmark_value": 1325.5703,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.2684,
+      "META": 0.1936,
+      "AMZN": 0.0,
+      "XOM": 0.2745,
+      "QQQ": 0.0,
+      "BTC": 0.2358,
+      "COIN": 0.0277
+    },
+    "confidence": 0.5867
+  },
+  {
+    "date": "2024-03-08",
+    "portfolio_value": 1453.3952,
+    "benchmark_value": 1326.0526,
+    "allocations": {
+      "AAPL": 0.0021,
+      "NVDA": 0.0021,
+      "META": 0.088,
+      "AMZN": 0.1043,
+      "XOM": 0.2973,
+      "QQQ": 0.3,
+      "BTC": 0.1564,
+      "COIN": 0.0498
+    },
+    "confidence": 0.5816
+  },
+  {
+    "date": "2024-03-09",
+    "portfolio_value": 1455.9519,
+    "benchmark_value": 1327.3131,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.0702,
+      "AMZN": 0.0934,
+      "XOM": 0.276,
+      "QQQ": 0.2997,
+      "BTC": 0.2313,
+      "COIN": 0.0294
+    },
+    "confidence": 0.608
+  },
+  {
+    "date": "2024-03-10",
+    "portfolio_value": 1443.8873,
+    "benchmark_value": 1321.6529,
+    "allocations": {
+      "AAPL": 0.0115,
+      "NVDA": 0.0115,
+      "META": 0.1322,
+      "AMZN": 0.1326,
+      "XOM": 0.3,
+      "QQQ": 0.3,
+      "BTC": 0.0115,
+      "COIN": 0.1006
+    },
+    "confidence": 0.5711
+  },
+  {
+    "date": "2024-03-11",
+    "portfolio_value": 1461.9388,
+    "benchmark_value": 1343.868,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0603,
+      "META": 0.2039,
+      "AMZN": 0.187,
+      "XOM": 0.2945,
+      "QQQ": 0.0,
+      "BTC": 0.1464,
+      "COIN": 0.1078
+    },
+    "confidence": 0.637
+  },
+  {
+    "date": "2024-03-12",
+    "portfolio_value": 1457.8827,
+    "benchmark_value": 1341.1322,
+    "allocations": {
+      "AAPL": 0.1656,
+      "NVDA": 0.0537,
+      "META": 0.3,
+      "AMZN": 0.099,
+      "XOM": 0.2853,
+      "QQQ": 0.0031,
+      "BTC": 0.0031,
+      "COIN": 0.0902
+    },
+    "confidence": 0.6121
+  },
+  {
+    "date": "2024-03-13",
+    "portfolio_value": 1441.599,
+    "benchmark_value": 1324.9981,
+    "allocations": {
+      "AAPL": 0.0278,
+      "NVDA": 0.0981,
+      "META": 0.3,
+      "AMZN": 0.06,
+      "XOM": 0.3,
+      "QQQ": 0.0278,
+      "BTC": 0.0278,
+      "COIN": 0.1586
+    },
+    "confidence": 0.5832
+  },
+  {
+    "date": "2024-03-14",
+    "portfolio_value": 1425.9699,
+    "benchmark_value": 1317.0882,
+    "allocations": {
+      "AAPL": 0.0073,
+      "NVDA": 0.0804,
+      "META": 0.3,
+      "AMZN": 0.0073,
+      "XOM": 0.2753,
+      "QQQ": 0.0073,
+      "BTC": 0.265,
+      "COIN": 0.0575
+    },
+    "confidence": 0.6137
+  },
+  {
+    "date": "2024-03-15",
+    "portfolio_value": 1424.6875,
+    "benchmark_value": 1307.3893,
+    "allocations": {
+      "AAPL": 0.0153,
+      "NVDA": 0.0865,
+      "META": 0.3,
+      "AMZN": 0.0684,
+      "XOM": 0.3,
+      "QQQ": 0.0153,
+      "BTC": 0.0153,
+      "COIN": 0.1994
+    },
+    "confidence": 0.582
+  },
+  {
+    "date": "2024-03-16",
+    "portfolio_value": 1429.086,
+    "benchmark_value": 1315.0845,
+    "allocations": {
+      "AAPL": 0.0114,
+      "NVDA": 0.0804,
+      "META": 0.3,
+      "AMZN": 0.0636,
+      "XOM": 0.29,
+      "QQQ": 0.0114,
+      "BTC": 0.0656,
+      "COIN": 0.1776
+    },
+    "confidence": 0.5913
+  },
+  {
+    "date": "2024-03-17",
+    "portfolio_value": 1441.8687,
+    "benchmark_value": 1320.9259,
+    "allocations": {
+      "AAPL": 0.0158,
+      "NVDA": 0.086,
+      "META": 0.3,
+      "AMZN": 0.066,
+      "XOM": 0.2887,
+      "QQQ": 0.0158,
+      "BTC": 0.0158,
+      "COIN": 0.2118
+    },
+    "confidence": 0.582
+  },
+  {
+    "date": "2024-03-18",
+    "portfolio_value": 1434.7949,
+    "benchmark_value": 1307.2777,
+    "allocations": {
+      "AAPL": 0.2409,
+      "NVDA": 0.0129,
+      "META": 0.2515,
+      "AMZN": 0.0129,
+      "XOM": 0.057,
+      "QQQ": 0.3,
+      "BTC": 0.097,
+      "COIN": 0.0277
+    },
+    "confidence": 0.6556
+  },
+  {
+    "date": "2024-03-19",
+    "portfolio_value": 1487.0555,
+    "benchmark_value": 1353.2418,
+    "allocations": {
+      "AAPL": 0.0496,
+      "NVDA": 0.0496,
+      "META": 0.1897,
+      "AMZN": 0.0496,
+      "XOM": 0.0942,
+      "QQQ": 0.3,
+      "BTC": 0.1854,
+      "COIN": 0.0819
+    },
+    "confidence": 0.6007
+  },
+  {
+    "date": "2024-03-20",
+    "portfolio_value": 1491.9825,
+    "benchmark_value": 1347.957,
+    "allocations": {
+      "AAPL": 0.0315,
+      "NVDA": 0.0315,
+      "META": 0.3,
+      "AMZN": 0.0315,
+      "XOM": 0.1841,
+      "QQQ": 0.3,
+      "BTC": 0.0315,
+      "COIN": 0.0899
+    },
+    "confidence": 0.6155
+  },
+  {
+    "date": "2024-03-21",
+    "portfolio_value": 1493.2541,
+    "benchmark_value": 1347.0087,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1423,
+      "META": 0.2232,
+      "AMZN": 0.0527,
+      "XOM": 0.2607,
+      "QQQ": 0.1388,
+      "BTC": 0.1772,
+      "COIN": 0.0051
+    },
+    "confidence": 0.7166
+  },
+  {
+    "date": "2024-03-22",
+    "portfolio_value": 1494.2545,
+    "benchmark_value": 1347.757,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1617,
+      "META": 0.2136,
+      "AMZN": 0.0927,
+      "XOM": 0.2544,
+      "QQQ": 0.1264,
+      "BTC": 0.1507,
+      "COIN": 0.0005
+    },
+    "confidence": 0.725
+  },
+  {
+    "date": "2024-03-23",
+    "portfolio_value": 1494.2545,
+    "benchmark_value": 1356.0986,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1862,
+      "META": 0.2781,
+      "AMZN": 0.1081,
+      "XOM": 0.287,
+      "QQQ": 0.1031,
+      "BTC": 0.0,
+      "COIN": 0.0376
+    },
+    "confidence": 0.6939
+  },
+  {
+    "date": "2024-03-24",
+    "portfolio_value": 1499.6832,
+    "benchmark_value": 1378.629,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1877,
+      "META": 0.2682,
+      "AMZN": 0.1095,
+      "XOM": 0.2904,
+      "QQQ": 0.1143,
+      "BTC": 0.0043,
+      "COIN": 0.0256
+    },
+    "confidence": 0.6939
+  },
+  {
+    "date": "2024-03-25",
+    "portfolio_value": 1487.1809,
+    "benchmark_value": 1359.5298,
+    "allocations": {
+      "AAPL": 0.0012,
+      "NVDA": 0.0142,
+      "META": 0.3,
+      "AMZN": 0.1034,
+      "XOM": 0.1208,
+      "QQQ": 0.3,
+      "BTC": 0.1371,
+      "COIN": 0.0234
+    },
+    "confidence": 0.642
+  },
+  {
+    "date": "2024-03-26",
+    "portfolio_value": 1490.19,
+    "benchmark_value": 1354.2631,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0256,
+      "META": 0.1479,
+      "AMZN": 0.2165,
+      "XOM": 0.2731,
+      "QQQ": 0.1383,
+      "BTC": 0.1859,
+      "COIN": 0.0126
+    },
+    "confidence": 0.6934
+  },
+  {
+    "date": "2024-03-27",
+    "portfolio_value": 1495.5721,
+    "benchmark_value": 1360.6076,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0208,
+      "META": 0.1606,
+      "AMZN": 0.148,
+      "XOM": 0.2698,
+      "QQQ": 0.2442,
+      "BTC": 0.1292,
+      "COIN": 0.0274
+    },
+    "confidence": 0.6371
+  },
+  {
+    "date": "2024-03-28",
+    "portfolio_value": 1495.5721,
+    "benchmark_value": 1358.5591,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.2056,
+      "AMZN": 0.2805,
+      "XOM": 0.1894,
+      "QQQ": 0.2093,
+      "BTC": 0.0,
+      "COIN": 0.1152
+    },
+    "confidence": 0.5867
+  },
+  {
+    "date": "2024-03-29",
+    "portfolio_value": 1495.5721,
+    "benchmark_value": 1357.9577,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.2113,
+      "AMZN": 0.2792,
+      "XOM": 0.1882,
+      "QQQ": 0.2,
+      "BTC": 0.0,
+      "COIN": 0.1213
+    },
+    "confidence": 0.5867
+  },
+  {
+    "date": "2024-03-30",
+    "portfolio_value": 1499.5889,
+    "benchmark_value": 1362.0726,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.1678,
+      "AMZN": 0.253,
+      "XOM": 0.1739,
+      "QQQ": 0.2097,
+      "BTC": 0.1108,
+      "COIN": 0.0849
+    },
+    "confidence": 0.5934
+  },
+  {
+    "date": "2024-03-31",
+    "portfolio_value": 1498.1238,
+    "benchmark_value": 1352.4361,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.1991,
+      "AMZN": 0.2786,
+      "XOM": 0.1779,
+      "QQQ": 0.2132,
+      "BTC": 0.0222,
+      "COIN": 0.109
+    },
+    "confidence": 0.5867
+  },
+  {
+    "date": "2024-04-01",
+    "portfolio_value": 1493.5216,
+    "benchmark_value": 1338.6836,
+    "allocations": {
+      "AAPL": 0.0055,
+      "NVDA": 0.0406,
+      "META": 0.1635,
+      "AMZN": 0.2868,
+      "XOM": 0.3,
+      "QQQ": 0.0055,
+      "BTC": 0.1404,
+      "COIN": 0.0577
+    },
+    "confidence": 0.5778
+  },
+  {
+    "date": "2024-04-02",
+    "portfolio_value": 1508.4772,
+    "benchmark_value": 1348.9945,
+    "allocations": {
+      "AAPL": 0.0096,
+      "NVDA": 0.028,
+      "META": 0.3,
+      "AMZN": 0.2732,
+      "XOM": 0.2886,
+      "QQQ": 0.0096,
+      "BTC": 0.0214,
+      "COIN": 0.0695
+    },
+    "confidence": 0.5926
+  },
+  {
+    "date": "2024-04-03",
+    "portfolio_value": 1506.6997,
+    "benchmark_value": 1344.6901,
+    "allocations": {
+      "AAPL": 0.0306,
+      "NVDA": 0.0875,
+      "META": 0.3,
+      "AMZN": 0.0979,
+      "XOM": 0.3,
+      "QQQ": 0.0306,
+      "BTC": 0.0306,
+      "COIN": 0.1228
+    },
+    "confidence": 0.5785
+  },
+  {
+    "date": "2024-04-04",
+    "portfolio_value": 1531.0834,
+    "benchmark_value": 1356.4833,
+    "allocations": {
+      "AAPL": 0.0071,
+      "NVDA": 0.0071,
+      "META": 0.2987,
+      "AMZN": 0.1596,
+      "XOM": 0.3,
+      "QQQ": 0.0071,
+      "BTC": 0.2132,
+      "COIN": 0.0071
+    },
+    "confidence": 0.608
+  },
+  {
+    "date": "2024-04-05",
+    "portfolio_value": 1537.2091,
+    "benchmark_value": 1359.1289,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0138,
+      "META": 0.0869,
+      "AMZN": 0.2995,
+      "XOM": 0.287,
+      "QQQ": 0.0565,
+      "BTC": 0.2564,
+      "COIN": 0.0
+    },
+    "confidence": 0.6119
+  },
+  {
+    "date": "2024-04-06",
+    "portfolio_value": 1537.9374,
+    "benchmark_value": 1360.2792,
+    "allocations": {
+      "AAPL": 0.0207,
+      "NVDA": 0.0413,
+      "META": 0.1681,
+      "AMZN": 0.3,
+      "XOM": 0.3,
+      "QQQ": 0.041,
+      "BTC": 0.07,
+      "COIN": 0.0589
+    },
+    "confidence": 0.5752
+  },
+  {
+    "date": "2024-04-07",
+    "portfolio_value": 1539.1105,
+    "benchmark_value": 1370.7773,
+    "allocations": {
+      "AAPL": 0.0254,
+      "NVDA": 0.0468,
+      "META": 0.1941,
+      "AMZN": 0.3,
+      "XOM": 0.3,
+      "QQQ": 0.0279,
+      "BTC": 0.0254,
+      "COIN": 0.0804
+    },
+    "confidence": 0.5752
+  },
+  {
+    "date": "2024-04-08",
+    "portfolio_value": 1533.5192,
+    "benchmark_value": 1354.3949,
+    "allocations": {
+      "AAPL": 0.2182,
+      "NVDA": 0.026,
+      "META": 0.3,
+      "AMZN": 0.2553,
+      "XOM": 0.059,
+      "QQQ": 0.05,
+      "BTC": 0.026,
+      "COIN": 0.0655
+    },
+    "confidence": 0.6292
+  },
+  {
+    "date": "2024-04-09",
+    "portfolio_value": 1536.5931,
+    "benchmark_value": 1366.1639,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0107,
+      "META": 0.3,
+      "AMZN": 0.1682,
+      "XOM": 0.1441,
+      "QQQ": 0.0107,
+      "BTC": 0.0107,
+      "COIN": 0.0555
+    },
+    "confidence": 0.6492
+  },
+  {
+    "date": "2024-04-10",
+    "portfolio_value": 1575.1544,
+    "benchmark_value": 1393.5688,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0372,
+      "META": 0.2379,
+      "AMZN": 0.1767,
+      "XOM": 0.0603,
+      "QQQ": 0.0307,
+      "BTC": 0.0307,
+      "COIN": 0.1265
+    },
+    "confidence": 0.6067
+  },
+  {
+    "date": "2024-04-11",
+    "portfolio_value": 1550.3923,
+    "benchmark_value": 1360.5981,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.1151,
+      "META": 0.2184,
+      "AMZN": 0.1185,
+      "XOM": 0.1189,
+      "QQQ": 0.0066,
+      "BTC": 0.0338,
+      "COIN": 0.0886
+    },
+    "confidence": 0.5568
+  },
+  {
+    "date": "2024-04-12",
+    "portfolio_value": 1537.2441,
+    "benchmark_value": 1352.0574,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.1473,
+      "META": 0.0874,
+      "AMZN": 0.1729,
+      "XOM": 0.0565,
+      "QQQ": 0.0024,
+      "BTC": 0.1689,
+      "COIN": 0.0646
+    },
+    "confidence": 0.5876
+  },
+  {
+    "date": "2024-04-13",
+    "portfolio_value": 1542.115,
+    "benchmark_value": 1357.1345,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.1575,
+      "META": 0.1057,
+      "AMZN": 0.1839,
+      "XOM": 0.0612,
+      "QQQ": 0.0047,
+      "BTC": 0.1055,
+      "COIN": 0.0815
+    },
+    "confidence": 0.563
+  },
+  {
+    "date": "2024-04-14",
+    "portfolio_value": 1500.5015,
+    "benchmark_value": 1317.9151,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.1623,
+      "META": 0.1158,
+      "AMZN": 0.189,
+      "XOM": 0.0648,
+      "QQQ": 0.0058,
+      "BTC": 0.0719,
+      "COIN": 0.0904
+    },
+    "confidence": 0.5509
+  },
+  {
+    "date": "2024-04-15",
+    "portfolio_value": 1504.0368,
+    "benchmark_value": 1313.3191,
+    "allocations": {
+      "AAPL": 0.0264,
+      "NVDA": 0.191,
+      "META": 0.3,
+      "AMZN": 0.0264,
+      "XOM": 0.0723,
+      "QQQ": 0.0264,
+      "BTC": 0.3,
+      "COIN": 0.0577
+    },
+    "confidence": 0.5836
+  },
+  {
+    "date": "2024-04-16",
+    "portfolio_value": 1471.8393,
+    "benchmark_value": 1289.5743,
+    "allocations": {
+      "AAPL": 0.0544,
+      "NVDA": 0.2382,
+      "META": 0.3,
+      "AMZN": 0.0544,
+      "XOM": 0.0544,
+      "QQQ": 0.0544,
+      "BTC": 0.088,
+      "COIN": 0.1562
+    },
+    "confidence": 0.5569
+  },
+  {
+    "date": "2024-04-17",
+    "portfolio_value": 1492.1493,
+    "benchmark_value": 1298.5856,
+    "allocations": {
+      "AAPL": 0.0259,
+      "NVDA": 0.3,
+      "META": 0.3,
+      "AMZN": 0.0259,
+      "XOM": 0.0791,
+      "QQQ": 0.0259,
+      "BTC": 0.1627,
+      "COIN": 0.0807
+    },
+    "confidence": 0.6141
+  },
+  {
+    "date": "2024-04-18",
+    "portfolio_value": 1427.2152,
+    "benchmark_value": 1263.5877,
+    "allocations": {
+      "AAPL": 0.0182,
+      "NVDA": 0.2508,
+      "META": 0.3,
+      "AMZN": 0.0182,
+      "XOM": 0.0493,
+      "QQQ": 0.1745,
+      "BTC": 0.1017,
+      "COIN": 0.0873
+    },
+    "confidence": 0.6266
+  },
+  {
+    "date": "2024-04-19",
+    "portfolio_value": 1427.781,
+    "benchmark_value": 1266.4349,
+    "allocations": {
+      "AAPL": 0.022,
+      "NVDA": 0.2704,
+      "META": 0.3,
+      "AMZN": 0.022,
+      "XOM": 0.2068,
+      "QQQ": 0.022,
+      "BTC": 0.022,
+      "COIN": 0.1349
+    },
+    "confidence": 0.6113
+  },
+  {
+    "date": "2024-04-20",
+    "portfolio_value": 1427.7482,
+    "benchmark_value": 1266.2698,
+    "allocations": {
+      "AAPL": 0.0221,
+      "NVDA": 0.2704,
+      "META": 0.3,
+      "AMZN": 0.0221,
+      "XOM": 0.2064,
+      "QQQ": 0.0221,
+      "BTC": 0.0221,
+      "COIN": 0.135
+    },
+    "confidence": 0.6113
+  },
+  {
+    "date": "2024-04-21",
+    "portfolio_value": 1461.3752,
+    "benchmark_value": 1294.8295,
+    "allocations": {
+      "AAPL": 0.0215,
+      "NVDA": 0.277,
+      "META": 0.3,
+      "AMZN": 0.0215,
+      "XOM": 0.2129,
+      "QQQ": 0.0215,
+      "BTC": 0.025,
+      "COIN": 0.1206
+    },
+    "confidence": 0.6113
+  },
+  {
+    "date": "2024-04-22",
+    "portfolio_value": 1503.1747,
+    "benchmark_value": 1318.2932,
+    "allocations": {
+      "AAPL": 0.1483,
+      "NVDA": 0.2134,
+      "META": 0.3,
+      "AMZN": 0.0162,
+      "XOM": 0.0182,
+      "QQQ": 0.0162,
+      "BTC": 0.0578,
+      "COIN": 0.2299
+    },
+    "confidence": 0.7076
+  },
+  {
+    "date": "2024-04-23",
+    "portfolio_value": 1471.2562,
+    "benchmark_value": 1298.2187,
+    "allocations": {
+      "AAPL": 0.0076,
+      "NVDA": 0.1858,
+      "META": 0.3,
+      "AMZN": 0.0076,
+      "XOM": 0.16,
+      "QQQ": 0.0233,
+      "BTC": 0.135,
+      "COIN": 0.1807
+    },
+    "confidence": 0.7186
+  },
+  {
+    "date": "2024-04-24",
+    "portfolio_value": 1437.3797,
+    "benchmark_value": 1284.8095,
+    "allocations": {
+      "AAPL": 0.011,
+      "NVDA": 0.2424,
+      "META": 0.3,
+      "AMZN": 0.011,
+      "XOM": 0.1876,
+      "QQQ": 0.011,
+      "BTC": 0.0329,
+      "COIN": 0.2042
+    },
+    "confidence": 0.644
+  },
+  {
+    "date": "2024-04-25",
+    "portfolio_value": 1482.3589,
+    "benchmark_value": 1305.704,
+    "allocations": {
+      "AAPL": 0.011,
+      "NVDA": 0.2833,
+      "META": 0.3,
+      "AMZN": 0.011,
+      "XOM": 0.1073,
+      "QQQ": 0.011,
+      "BTC": 0.011,
+      "COIN": 0.2656
+    },
+    "confidence": 0.6838
+  },
+  {
+    "date": "2024-04-26",
+    "portfolio_value": 1482.2011,
+    "benchmark_value": 1304.8433,
+    "allocations": {
+      "AAPL": 0.1084,
+      "NVDA": 0.3,
+      "META": 0.0202,
+      "AMZN": 0.0202,
+      "XOM": 0.3,
+      "QQQ": 0.0202,
+      "BTC": 0.0202,
+      "COIN": 0.2108
+    },
+    "confidence": 0.6144
+  },
+  {
+    "date": "2024-04-27",
+    "portfolio_value": 1482.0565,
+    "benchmark_value": 1304.0566,
+    "allocations": {
+      "AAPL": 0.1094,
+      "NVDA": 0.3,
+      "META": 0.0202,
+      "AMZN": 0.0202,
+      "XOM": 0.3,
+      "QQQ": 0.0202,
+      "BTC": 0.0202,
+      "COIN": 0.2097
+    },
+    "confidence": 0.6144
+  },
+  {
+    "date": "2024-04-28",
+    "portfolio_value": 1474.0886,
+    "benchmark_value": 1297.7709,
+    "allocations": {
+      "AAPL": 0.0971,
+      "NVDA": 0.3,
+      "META": 0.013,
+      "AMZN": 0.013,
+      "XOM": 0.3,
+      "QQQ": 0.013,
+      "BTC": 0.094,
+      "COIN": 0.1699
+    },
+    "confidence": 0.6154
+  },
+  {
+    "date": "2024-04-29",
+    "portfolio_value": 1415.5552,
+    "benchmark_value": 1262.4009,
+    "allocations": {
+      "AAPL": 0.01,
+      "NVDA": 0.3,
+      "META": 0.01,
+      "AMZN": 0.1363,
+      "XOM": 0.01,
+      "QQQ": 0.01,
+      "BTC": 0.2734,
+      "COIN": 0.2502
+    },
+    "confidence": 0.6272
+  },
+  {
+    "date": "2024-04-30",
+    "portfolio_value": 1401.0244,
+    "benchmark_value": 1256.6598,
+    "allocations": {
+      "AAPL": 0.0056,
+      "NVDA": 0.2469,
+      "META": 0.0056,
+      "AMZN": 0.1076,
+      "XOM": 0.0056,
+      "QQQ": 0.3,
+      "BTC": 0.1562,
+      "COIN": 0.1725
+    },
+    "confidence": 0.6404
+  },
+  {
+    "date": "2024-05-01",
+    "portfolio_value": 1444.8114,
+    "benchmark_value": 1289.9423,
+    "allocations": {
+      "AAPL": 0.0362,
+      "NVDA": 0.2217,
+      "META": 0.0362,
+      "AMZN": 0.0362,
+      "XOM": 0.0362,
+      "QQQ": 0.3,
+      "BTC": 0.1612,
+      "COIN": 0.1723
+    },
+    "confidence": 0.6461
+  },
+  {
+    "date": "2024-05-02",
+    "portfolio_value": 1480.0789,
+    "benchmark_value": 1319.4589,
+    "allocations": {
+      "AAPL": 0.1421,
+      "NVDA": 0.291,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.0737,
+      "QQQ": 0.1015,
+      "BTC": 0.1535,
+      "COIN": 0.2383
+    },
+    "confidence": 0.6448
+  },
+  {
+    "date": "2024-05-03",
+    "portfolio_value": 1485.6591,
+    "benchmark_value": 1322.0857,
+    "allocations": {
+      "AAPL": 0.0126,
+      "NVDA": 0.2078,
+      "META": 0.0126,
+      "AMZN": 0.0126,
+      "XOM": 0.0879,
+      "QQQ": 0.3,
+      "BTC": 0.2367,
+      "COIN": 0.13
     },
     "confidence": 0.5768
   },
   {
-    "date": "2026-03-18",
-    "portfolio_value": 921.5204,
-    "benchmark_value": 900.8548,
+    "date": "2024-05-04",
+    "portfolio_value": 1485.7216,
+    "benchmark_value": 1322.447,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0501,
-      "META": 0.3,
-      "AMZN": 0.0501,
-      "XOM": 0.0501,
-      "QQQ": 0.0501,
-      "BTC": 0.1494,
-      "COIN": 0.0501
-    },
-    "confidence": 0.5954
-  },
-  {
-    "date": "2026-03-19",
-    "portfolio_value": 910.4021,
-    "benchmark_value": 889.7972,
-    "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0559,
-      "META": 0.0559,
-      "AMZN": 0.0892,
-      "XOM": 0.0559,
+      "AAPL": 0.0192,
+      "NVDA": 0.2776,
+      "META": 0.0192,
+      "AMZN": 0.0192,
+      "XOM": 0.1169,
       "QQQ": 0.3,
-      "BTC": 0.0559,
-      "COIN": 0.0874
+      "BTC": 0.0192,
+      "COIN": 0.2286
     },
-    "confidence": 0.5695
+    "confidence": 0.5405
   },
   {
-    "date": "2026-03-20",
-    "portfolio_value": 908.5748,
-    "benchmark_value": 887.2223,
+    "date": "2024-05-05",
+    "portfolio_value": 1512.3626,
+    "benchmark_value": 1337.7694,
+    "allocations": {
+      "AAPL": 0.0212,
+      "NVDA": 0.2719,
+      "META": 0.0212,
+      "AMZN": 0.0212,
+      "XOM": 0.1233,
+      "QQQ": 0.3,
+      "BTC": 0.0373,
+      "COIN": 0.2038
+    },
+    "confidence": 0.5405
+  },
+  {
+    "date": "2024-05-06",
+    "portfolio_value": 1498.7869,
+    "benchmark_value": 1324.2271,
+    "allocations": {
+      "AAPL": 0.0254,
+      "NVDA": 0.2053,
+      "META": 0.0825,
+      "AMZN": 0.0254,
+      "XOM": 0.0254,
+      "QQQ": 0.3,
+      "BTC": 0.3,
+      "COIN": 0.0359
+    },
+    "confidence": 0.5536
+  },
+  {
+    "date": "2024-05-07",
+    "portfolio_value": 1492.9719,
+    "benchmark_value": 1319.5543,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.1581,
+      "AMZN": 0.1053,
+      "XOM": 0.2679,
+      "QQQ": 0.2028,
+      "BTC": 0.2314,
+      "COIN": 0.0345
+    },
+    "confidence": 0.5682
+  },
+  {
+    "date": "2024-05-08",
+    "portfolio_value": 1517.4543,
+    "benchmark_value": 1328.5143,
+    "allocations": {
+      "AAPL": 0.0106,
+      "NVDA": 0.0106,
+      "META": 0.3,
+      "AMZN": 0.0694,
+      "XOM": 0.2912,
+      "QQQ": 0.0106,
+      "BTC": 0.2787,
+      "COIN": 0.0288
+    },
+    "confidence": 0.6079
+  },
+  {
+    "date": "2024-05-09",
+    "portfolio_value": 1496.1025,
+    "benchmark_value": 1314.2423,
+    "allocations": {
+      "AAPL": 0.0035,
+      "NVDA": 0.0035,
+      "META": 0.2419,
+      "AMZN": 0.0035,
+      "XOM": 0.0717,
+      "QQQ": 0.2856,
+      "BTC": 0.3,
+      "COIN": 0.0904
+    },
+    "confidence": 0.5815
+  },
+  {
+    "date": "2024-05-10",
+    "portfolio_value": 1496.1044,
+    "benchmark_value": 1314.2448,
+    "allocations": {
+      "AAPL": 0.0433,
+      "NVDA": 0.0433,
+      "META": 0.0433,
+      "AMZN": 0.0933,
+      "XOM": 0.196,
+      "QQQ": 0.3,
+      "BTC": 0.0822,
+      "COIN": 0.1985
+    },
+    "confidence": 0.583
+  },
+  {
+    "date": "2024-05-11",
+    "portfolio_value": 1497.4594,
+    "benchmark_value": 1316.0139,
+    "allocations": {
+      "AAPL": 0.0429,
+      "NVDA": 0.0429,
+      "META": 0.0429,
+      "AMZN": 0.094,
+      "XOM": 0.1957,
+      "QQQ": 0.3,
+      "BTC": 0.0841,
+      "COIN": 0.1974
+    },
+    "confidence": 0.583
+  },
+  {
+    "date": "2024-05-12",
+    "portfolio_value": 1504.1143,
+    "benchmark_value": 1319.2878,
+    "allocations": {
+      "AAPL": 0.0334,
+      "NVDA": 0.0334,
+      "META": 0.0334,
+      "AMZN": 0.0754,
+      "XOM": 0.17,
+      "QQQ": 0.3,
+      "BTC": 0.211,
+      "COIN": 0.1435
+    },
+    "confidence": 0.6296
+  },
+  {
+    "date": "2024-05-13",
+    "portfolio_value": 1510.3416,
+    "benchmark_value": 1325.2988,
+    "allocations": {
+      "AAPL": 0.0583,
+      "NVDA": 0.0583,
+      "META": 0.0583,
+      "AMZN": 0.0583,
+      "XOM": 0.0939,
+      "QQQ": 0.3,
+      "BTC": 0.1681,
+      "COIN": 0.2048
+    },
+    "confidence": 0.5932
+  },
+  {
+    "date": "2024-05-14",
+    "portfolio_value": 1574.5627,
+    "benchmark_value": 1366.0207,
+    "allocations": {
+      "AAPL": 0.055,
+      "NVDA": 0.055,
+      "META": 0.0644,
+      "AMZN": 0.055,
+      "XOM": 0.055,
+      "QQQ": 0.3,
+      "BTC": 0.1155,
+      "COIN": 0.3
+    },
+    "confidence": 0.5737
+  },
+  {
+    "date": "2024-05-15",
+    "portfolio_value": 1537.5416,
+    "benchmark_value": 1340.3839,
+    "allocations": {
+      "AAPL": 0.1528,
+      "NVDA": 0.0633,
+      "META": 0.3,
+      "AMZN": 0.0424,
+      "XOM": 0.1887,
+      "QQQ": 0.0424,
+      "BTC": 0.0424,
+      "COIN": 0.1679
+    },
+    "confidence": 0.5575
+  },
+  {
+    "date": "2024-05-16",
+    "portfolio_value": 1556.6134,
+    "benchmark_value": 1351.7826,
+    "allocations": {
+      "AAPL": 0.0164,
+      "NVDA": 0.0749,
+      "META": 0.0164,
+      "AMZN": 0.0164,
+      "XOM": 0.2779,
+      "QQQ": 0.3,
+      "BTC": 0.1939,
+      "COIN": 0.1041
+    },
+    "confidence": 0.534
+  },
+  {
+    "date": "2024-05-17",
+    "portfolio_value": 1555.9581,
+    "benchmark_value": 1351.5027,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.224,
+      "AMZN": 0.0,
+      "XOM": 0.0813,
+      "QQQ": 0.2686,
+      "BTC": 0.2541,
+      "COIN": 0.1719
+    },
+    "confidence": 0.5276
+  },
+  {
+    "date": "2024-05-18",
+    "portfolio_value": 1555.3354,
+    "benchmark_value": 1349.8309,
+    "allocations": {
+      "AAPL": 0.0034,
+      "NVDA": 0.0034,
+      "META": 0.3,
+      "AMZN": 0.0034,
+      "XOM": 0.0949,
+      "QQQ": 0.2908,
+      "BTC": 0.0404,
+      "COIN": 0.2637
+    },
+    "confidence": 0.5031
+  },
+  {
+    "date": "2024-05-19",
+    "portfolio_value": 1611.1842,
+    "benchmark_value": 1380.1775,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.0,
+      "META": 0.2093,
+      "AMZN": 0.0,
+      "XOM": 0.0752,
+      "QQQ": 0.2672,
+      "BTC": 0.2928,
+      "COIN": 0.1555
+    },
+    "confidence": 0.5375
+  },
+  {
+    "date": "2024-05-20",
+    "portfolio_value": 1609.6179,
+    "benchmark_value": 1376.9781,
+    "allocations": {
+      "AAPL": 0.0632,
+      "NVDA": 0.2104,
+      "META": 0.0632,
+      "AMZN": 0.0632,
+      "XOM": 0.0632,
+      "QQQ": 0.3,
+      "BTC": 0.1344,
+      "COIN": 0.1023
+    },
+    "confidence": 0.5781
+  },
+  {
+    "date": "2024-05-21",
+    "portfolio_value": 1602.6142,
+    "benchmark_value": 1374.4258,
+    "allocations": {
+      "AAPL": 0.0432,
+      "NVDA": 0.2203,
+      "META": 0.0432,
+      "AMZN": 0.0432,
+      "XOM": 0.0877,
+      "QQQ": 0.3,
+      "BTC": 0.2043,
+      "COIN": 0.058
+    },
+    "confidence": 0.588
+  },
+  {
+    "date": "2024-05-22",
+    "portfolio_value": 1630.424,
+    "benchmark_value": 1368.0777,
+    "allocations": {
+      "AAPL": 0.0151,
+      "NVDA": 0.3,
+      "META": 0.0447,
+      "AMZN": 0.0151,
+      "XOM": 0.3,
+      "QQQ": 0.1153,
+      "BTC": 0.192,
+      "COIN": 0.0179
+    },
+    "confidence": 0.5588
+  },
+  {
+    "date": "2024-05-23",
+    "portfolio_value": 1680.7577,
+    "benchmark_value": 1397.2624,
+    "allocations": {
+      "AAPL": 0.0397,
+      "NVDA": 0.2823,
+      "META": 0.0397,
+      "AMZN": 0.0397,
+      "XOM": 0.0397,
+      "QQQ": 0.3,
+      "BTC": 0.0397,
+      "COIN": 0.219
+    },
+    "confidence": 0.5924
+  },
+  {
+    "date": "2024-05-24",
+    "portfolio_value": 1685.3201,
+    "benchmark_value": 1399.1481,
+    "allocations": {
+      "AAPL": 0.026,
+      "NVDA": 0.3,
+      "META": 0.026,
+      "AMZN": 0.026,
+      "XOM": 0.026,
+      "QQQ": 0.138,
+      "BTC": 0.2514,
+      "COIN": 0.2065
+    },
+    "confidence": 0.56
+  },
+  {
+    "date": "2024-05-25",
+    "portfolio_value": 1680.5332,
+    "benchmark_value": 1397.2598,
+    "allocations": {
+      "AAPL": 0.0263,
+      "NVDA": 0.3,
+      "META": 0.0263,
+      "AMZN": 0.0263,
+      "XOM": 0.0263,
+      "QQQ": 0.1254,
+      "BTC": 0.2631,
+      "COIN": 0.2062
+    },
+    "confidence": 0.5619
+  },
+  {
+    "date": "2024-05-26",
+    "portfolio_value": 1686.9823,
+    "benchmark_value": 1399.4939,
+    "allocations": {
+      "AAPL": 0.0255,
+      "NVDA": 0.3,
+      "META": 0.0255,
+      "AMZN": 0.0255,
+      "XOM": 0.0255,
+      "QQQ": 0.1333,
+      "BTC": 0.3,
+      "COIN": 0.1645
+    },
+    "confidence": 0.5852
+  },
+  {
+    "date": "2024-05-27",
+    "portfolio_value": 1724.4503,
+    "benchmark_value": 1419.2148,
+    "allocations": {
+      "AAPL": 0.0264,
+      "NVDA": 0.3,
+      "META": 0.0264,
+      "AMZN": 0.0264,
+      "XOM": 0.0264,
+      "QQQ": 0.1372,
+      "BTC": 0.3,
+      "COIN": 0.1573
+    },
+    "confidence": 0.5903
+  },
+  {
+    "date": "2024-05-28",
+    "portfolio_value": 1716.1435,
+    "benchmark_value": 1407.6905,
+    "allocations": {
+      "AAPL": 0.1942,
+      "NVDA": 0.2495,
+      "META": 0.0851,
+      "AMZN": 0.072,
+      "XOM": 0.0806,
+      "QQQ": 0.0,
+      "BTC": 0.2381,
+      "COIN": 0.0805
+    },
+    "confidence": 0.5357
+  },
+  {
+    "date": "2024-05-29",
+    "portfolio_value": 1696.2973,
+    "benchmark_value": 1395.9817,
+    "allocations": {
+      "AAPL": 0.0197,
+      "NVDA": 0.3,
+      "META": 0.0246,
+      "AMZN": 0.0901,
+      "XOM": 0.3,
+      "QQQ": 0.0197,
+      "BTC": 0.131,
+      "COIN": 0.115
+    },
+    "confidence": 0.5416
+  },
+  {
+    "date": "2024-05-30",
+    "portfolio_value": 1698.669,
+    "benchmark_value": 1388.4842,
+    "allocations": {
+      "AAPL": 0.02,
+      "NVDA": 0.3,
+      "META": 0.02,
+      "AMZN": 0.02,
+      "XOM": 0.3,
+      "QQQ": 0.02,
+      "BTC": 0.3,
+      "COIN": 0.02
+    },
+    "confidence": 0.5825
+  },
+  {
+    "date": "2024-05-31",
+    "portfolio_value": 1700.2963,
+    "benchmark_value": 1389.0384,
+    "allocations": {
+      "AAPL": 0.0069,
+      "NVDA": 0.2149,
+      "META": 0.2878,
+      "AMZN": 0.1642,
+      "XOM": 0.0125,
+      "QQQ": 0.0069,
+      "BTC": 0.3,
+      "COIN": 0.0069
+    },
+    "confidence": 0.612
+  },
+  {
+    "date": "2024-06-01",
+    "portfolio_value": 1700.3216,
+    "benchmark_value": 1389.153,
+    "allocations": {
+      "AAPL": 0.0226,
+      "NVDA": 0.3,
+      "META": 0.3,
+      "AMZN": 0.2463,
+      "XOM": 0.0226,
+      "QQQ": 0.0226,
+      "BTC": 0.0226,
+      "COIN": 0.0635
+    },
+    "confidence": 0.561
+  },
+  {
+    "date": "2024-06-02",
+    "portfolio_value": 1744.2745,
+    "benchmark_value": 1408.7711,
+    "allocations": {
+      "AAPL": 0.0228,
+      "NVDA": 0.3,
+      "META": 0.3,
+      "AMZN": 0.2459,
+      "XOM": 0.0228,
+      "QQQ": 0.0228,
+      "BTC": 0.0228,
+      "COIN": 0.0629
+    },
+    "confidence": 0.561
+  },
+  {
+    "date": "2024-06-03",
+    "portfolio_value": 1769.6865,
+    "benchmark_value": 1424.069,
+    "allocations": {
+      "AAPL": 0.0275,
+      "NVDA": 0.3,
+      "META": 0.0275,
+      "AMZN": 0.0275,
+      "XOM": 0.3,
+      "QQQ": 0.0275,
+      "BTC": 0.0275,
+      "COIN": 0.2626
+    },
+    "confidence": 0.5926
+  },
+  {
+    "date": "2024-06-04",
+    "portfolio_value": 1812.779,
+    "benchmark_value": 1454.1551,
+    "allocations": {
+      "AAPL": 0.0821,
+      "NVDA": 0.0108,
+      "META": 0.273,
+      "AMZN": 0.0108,
+      "XOM": 0.1038,
+      "QQQ": 0.3,
+      "BTC": 0.0108,
+      "COIN": 0.2085
+    },
+    "confidence": 0.6062
+  },
+  {
+    "date": "2024-06-05",
+    "portfolio_value": 1822.0092,
+    "benchmark_value": 1458.5543,
     "allocations": {
       "AAPL": 0.3,
+      "NVDA": 0.0539,
+      "META": 0.0539,
+      "AMZN": 0.0539,
+      "XOM": 0.0539,
+      "QQQ": 0.1305,
+      "BTC": 0.0539,
+      "COIN": 0.3
+    },
+    "confidence": 0.542
+  },
+  {
+    "date": "2024-06-06",
+    "portfolio_value": 1799.9114,
+    "benchmark_value": 1444.7419,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0174,
+      "META": 0.0174,
+      "AMZN": 0.0174,
+      "XOM": 0.0751,
+      "QQQ": 0.1204,
+      "BTC": 0.2613,
+      "COIN": 0.191
+    },
+    "confidence": 0.5812
+  },
+  {
+    "date": "2024-06-07",
+    "portfolio_value": 1799.6631,
+    "benchmark_value": 1444.646,
+    "allocations": {
+      "AAPL": 0.2695,
+      "NVDA": 0.018,
+      "META": 0.3,
+      "AMZN": 0.018,
+      "XOM": 0.0385,
+      "QQQ": 0.018,
+      "BTC": 0.2599,
+      "COIN": 0.0781
+    },
+    "confidence": 0.5896
+  },
+  {
+    "date": "2024-06-08",
+    "portfolio_value": 1800.027,
+    "benchmark_value": 1445.5377,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.041,
+      "META": 0.3,
+      "AMZN": 0.041,
+      "XOM": 0.041,
+      "QQQ": 0.041,
+      "BTC": 0.041,
+      "COIN": 0.1952
+    },
+    "confidence": 0.5602
+  },
+  {
+    "date": "2024-06-09",
+    "portfolio_value": 1805.6454,
+    "benchmark_value": 1454.7535,
+    "allocations": {
+      "AAPL": 0.2947,
+      "NVDA": 0.0245,
+      "META": 0.3,
+      "AMZN": 0.0245,
+      "XOM": 0.0433,
+      "QQQ": 0.0245,
+      "BTC": 0.1815,
+      "COIN": 0.1071
+    },
+    "confidence": 0.5698
+  },
+  {
+    "date": "2024-06-10",
+    "portfolio_value": 1841.3291,
+    "benchmark_value": 1458.5899,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.2083,
+      "META": 0.0279,
+      "AMZN": 0.0279,
+      "XOM": 0.0279,
+      "QQQ": 0.3,
+      "BTC": 0.0279,
+      "COIN": 0.0801
+    },
+    "confidence": 0.5912
+  },
+  {
+    "date": "2024-06-11",
+    "portfolio_value": 1868.9247,
+    "benchmark_value": 1481.2984,
+    "allocations": {
+      "AAPL": 0.0983,
+      "NVDA": 0.1036,
+      "META": 0.0267,
+      "AMZN": 0.0947,
+      "XOM": 0.05,
+      "QQQ": 0.3,
+      "BTC": 0.3,
+      "COIN": 0.0267
+    },
+    "confidence": 0.595
+  },
+  {
+    "date": "2024-06-12",
+    "portfolio_value": 1873.2416,
+    "benchmark_value": 1474.2539,
+    "allocations": {
+      "AAPL": 0.288,
+      "NVDA": 0.2751,
+      "META": 0.0,
+      "AMZN": 0.2905,
+      "XOM": 0.0,
+      "QQQ": 0.0,
+      "BTC": 0.0,
+      "COIN": 0.1465
+    },
+    "confidence": 0.5
+  },
+  {
+    "date": "2024-06-13",
+    "portfolio_value": 1866.9758,
+    "benchmark_value": 1471.014,
+    "allocations": {
+      "AAPL": 0.2303,
+      "NVDA": 0.1537,
+      "META": 0.0,
+      "AMZN": 0.2378,
+      "XOM": 0.164,
+      "QQQ": 0.0,
+      "BTC": 0.1096,
+      "COIN": 0.1046
+    },
+    "confidence": 0.5183
+  },
+  {
+    "date": "2024-06-14",
+    "portfolio_value": 1867.7339,
+    "benchmark_value": 1471.5151,
+    "allocations": {
+      "AAPL": 0.1962,
+      "NVDA": 0.1858,
+      "META": 0.0,
+      "AMZN": 0.2277,
+      "XOM": 0.058,
+      "QQQ": 0.0,
+      "BTC": 0.149,
+      "COIN": 0.1831
+    },
+    "confidence": 0.5269
+  },
+  {
+    "date": "2024-06-15",
+    "portfolio_value": 1868.7581,
+    "benchmark_value": 1472.7602,
+    "allocations": {
+      "AAPL": 0.2088,
+      "NVDA": 0.2023,
+      "META": 0.0,
+      "AMZN": 0.241,
+      "XOM": 0.056,
+      "QQQ": 0.0,
+      "BTC": 0.081,
+      "COIN": 0.2108
+    },
+    "confidence": 0.5116
+  },
+  {
+    "date": "2024-06-16",
+    "portfolio_value": 1875.7364,
+    "benchmark_value": 1477.4587,
+    "allocations": {
+      "AAPL": 0.2237,
+      "NVDA": 0.2213,
+      "META": 0.0,
+      "AMZN": 0.2569,
+      "XOM": 0.0479,
+      "QQQ": 0.0,
+      "BTC": 0.0,
+      "COIN": 0.2503
+    },
+    "confidence": 0.5074
+  },
+  {
+    "date": "2024-06-17",
+    "portfolio_value": 1849.6256,
+    "benchmark_value": 1469.2117,
+    "allocations": {
+      "AAPL": 0.195,
+      "NVDA": 0.0079,
+      "META": 0.3,
+      "AMZN": 0.1654,
+      "XOM": 0.1122,
+      "QQQ": 0.0079,
+      "BTC": 0.0079,
+      "COIN": 0.2037
+    },
+    "confidence": 0.5537
+  },
+  {
+    "date": "2024-06-18",
+    "portfolio_value": 1849.6171,
+    "benchmark_value": 1468.7029,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0017,
+      "META": 0.2779,
+      "AMZN": 0.1922,
+      "XOM": 0.0632,
+      "QQQ": 0.0017,
+      "BTC": 0.0017,
+      "COIN": 0.1617
+    },
+    "confidence": 0.5812
+  },
+  {
+    "date": "2024-06-19",
+    "portfolio_value": 1847.4136,
+    "benchmark_value": 1463.8282,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0013,
+      "META": 0.2794,
+      "AMZN": 0.1899,
+      "XOM": 0.0609,
+      "QQQ": 0.0013,
+      "BTC": 0.0013,
+      "COIN": 0.166
+    },
+    "confidence": 0.5812
+  },
+  {
+    "date": "2024-06-20",
+    "portfolio_value": 1815.8428,
+    "benchmark_value": 1445.1314,
+    "allocations": {
+      "AAPL": 0.1015,
+      "NVDA": 0.0331,
+      "META": 0.3,
+      "AMZN": 0.1165,
+      "XOM": 0.0896,
+      "QQQ": 0.0331,
+      "BTC": 0.0331,
+      "COIN": 0.2933
+    },
+    "confidence": 0.5366
+  },
+  {
+    "date": "2024-06-21",
+    "portfolio_value": 1815.9316,
+    "benchmark_value": 1445.5721,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0481,
+      "META": 0.1924,
+      "AMZN": 0.0801,
+      "XOM": 0.2371,
+      "QQQ": 0.02,
+      "BTC": 0.02,
+      "COIN": 0.1022
+    },
+    "confidence": 0.5353
+  },
+  {
+    "date": "2024-06-22",
+    "portfolio_value": 1815.2479,
+    "benchmark_value": 1442.5579,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0448,
+      "META": 0.1964,
+      "AMZN": 0.0805,
+      "XOM": 0.2352,
+      "QQQ": 0.0202,
+      "BTC": 0.0226,
+      "COIN": 0.1003
+    },
+    "confidence": 0.5353
+  },
+  {
+    "date": "2024-06-23",
+    "portfolio_value": 1810.9079,
+    "benchmark_value": 1413.427,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0438,
+      "META": 0.1949,
+      "AMZN": 0.082,
+      "XOM": 0.2339,
+      "QQQ": 0.0201,
+      "BTC": 0.0201,
+      "COIN": 0.105
+    },
+    "confidence": 0.5353
+  },
+  {
+    "date": "2024-06-24",
+    "portfolio_value": 1832.1755,
+    "benchmark_value": 1445.8414,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0325,
+      "META": 0.0325,
+      "AMZN": 0.1631,
+      "XOM": 0.3,
+      "QQQ": 0.0325,
+      "BTC": 0.0325,
+      "COIN": 0.1069
+    },
+    "confidence": 0.5599
+  },
+  {
+    "date": "2024-06-25",
+    "portfolio_value": 1845.1193,
+    "benchmark_value": 1449.5617,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0067,
+      "META": 0.2391,
+      "AMZN": 0.0616,
+      "XOM": 0.3,
+      "QQQ": 0.0067,
+      "BTC": 0.0067,
+      "COIN": 0.0791
+    },
+    "confidence": 0.575
+  },
+  {
+    "date": "2024-06-26",
+    "portfolio_value": 1863.2157,
+    "benchmark_value": 1464.6341,
+    "allocations": {
+      "AAPL": 0.2764,
+      "NVDA": 0.0157,
+      "META": 0.2756,
+      "AMZN": 0.0191,
+      "XOM": 0.3,
+      "QQQ": 0.0157,
+      "BTC": 0.0157,
+      "COIN": 0.082
+    },
+    "confidence": 0.5466
+  },
+  {
+    "date": "2024-06-27",
+    "portfolio_value": 1831.3296,
+    "benchmark_value": 1445.4675,
+    "allocations": {
+      "AAPL": 0.2039,
+      "NVDA": 0.0386,
+      "META": 0.2754,
+      "AMZN": 0.1745,
+      "XOM": 0.0979,
+      "QQQ": 0.0,
+      "BTC": 0.0,
+      "COIN": 0.2096
+    },
+    "confidence": 0.5025
+  },
+  {
+    "date": "2024-06-28",
+    "portfolio_value": 1831.7395,
+    "benchmark_value": 1447.1667,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0238,
+      "META": 0.3,
+      "AMZN": 0.0377,
+      "XOM": 0.1239,
+      "QQQ": 0.0238,
+      "BTC": 0.0238,
+      "COIN": 0.167
+    },
+    "confidence": 0.5622
+  },
+  {
+    "date": "2024-06-29",
+    "portfolio_value": 1833.0037,
+    "benchmark_value": 1452.4875,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0235,
+      "META": 0.3,
+      "AMZN": 0.0382,
+      "XOM": 0.1228,
+      "QQQ": 0.0235,
+      "BTC": 0.0235,
+      "COIN": 0.1686
+    },
+    "confidence": 0.5622
+  },
+  {
+    "date": "2024-06-30",
+    "portfolio_value": 1863.3308,
+    "benchmark_value": 1473.1824,
+    "allocations": {
+      "AAPL": 0.2957,
+      "NVDA": 0.0175,
+      "META": 0.3,
+      "AMZN": 0.033,
+      "XOM": 0.1229,
+      "QQQ": 0.0175,
+      "BTC": 0.0791,
+      "COIN": 0.1343
+    },
+    "confidence": 0.5678
+  },
+  {
+    "date": "2024-07-01",
+    "portfolio_value": 1870.2873,
+    "benchmark_value": 1471.7803,
+    "allocations": {
+      "AAPL": 0.1403,
+      "NVDA": 0.0116,
+      "META": 0.3,
+      "AMZN": 0.136,
+      "XOM": 0.0409,
+      "QQQ": 0.1759,
+      "BTC": 0.0116,
+      "COIN": 0.1835
+    },
+    "confidence": 0.6413
+  },
+  {
+    "date": "2024-07-02",
+    "portfolio_value": 1869.4774,
+    "benchmark_value": 1474.1002,
+    "allocations": {
+      "AAPL": 0.1651,
+      "NVDA": 0.0155,
+      "META": 0.3,
+      "AMZN": 0.1339,
+      "XOM": 0.2187,
+      "QQQ": 0.0155,
+      "BTC": 0.0155,
+      "COIN": 0.1359
+    },
+    "confidence": 0.6389
+  },
+  {
+    "date": "2024-07-03",
+    "portfolio_value": 1868.0701,
+    "benchmark_value": 1464.3129,
+    "allocations": {
+      "AAPL": 0.2581,
+      "NVDA": 0.0142,
+      "META": 0.3,
+      "AMZN": 0.1829,
+      "XOM": 0.1061,
+      "QQQ": 0.0142,
+      "BTC": 0.0142,
+      "COIN": 0.1104
+    },
+    "confidence": 0.596
+  },
+  {
+    "date": "2024-07-04",
+    "portfolio_value": 1911.6885,
+    "benchmark_value": 1475.4102,
+    "allocations": {
+      "AAPL": 0.2588,
+      "NVDA": 0.0141,
+      "META": 0.3,
+      "AMZN": 0.1835,
+      "XOM": 0.1071,
+      "QQQ": 0.0141,
+      "BTC": 0.0141,
+      "COIN": 0.1082
+    },
+    "confidence": 0.596
+  },
+  {
+    "date": "2024-07-05",
+    "portfolio_value": 1913.9549,
+    "benchmark_value": 1480.7519,
+    "allocations": {
+      "AAPL": 0.2483,
+      "NVDA": 0.0409,
+      "META": 0.3,
+      "AMZN": 0.1406,
+      "XOM": 0.0409,
+      "QQQ": 0.0409,
+      "BTC": 0.0409,
+      "COIN": 0.1473
+    },
+    "confidence": 0.5762
+  },
+  {
+    "date": "2024-07-06",
+    "portfolio_value": 1910.6622,
+    "benchmark_value": 1472.9599,
+    "allocations": {
+      "AAPL": 0.248,
+      "NVDA": 0.0409,
+      "META": 0.3,
+      "AMZN": 0.1391,
+      "XOM": 0.0409,
+      "QQQ": 0.0409,
+      "BTC": 0.0409,
+      "COIN": 0.1494
+    },
+    "confidence": 0.5762
+  },
+  {
+    "date": "2024-07-07",
+    "portfolio_value": 1899.506,
+    "benchmark_value": 1472.1256,
+    "allocations": {
+      "AAPL": 0.244,
+      "NVDA": 0.0415,
+      "META": 0.3,
+      "AMZN": 0.1358,
+      "XOM": 0.0415,
+      "QQQ": 0.0415,
+      "BTC": 0.0415,
+      "COIN": 0.1541
+    },
+    "confidence": 0.5762
+  },
+  {
+    "date": "2024-07-08",
+    "portfolio_value": 1901.1323,
+    "benchmark_value": 1479.5323,
+    "allocations": {
+      "AAPL": 0.2013,
+      "NVDA": 0.0164,
+      "META": 0.3,
+      "AMZN": 0.1261,
+      "XOM": 0.0931,
+      "QQQ": 0.0164,
+      "BTC": 0.0369,
+      "COIN": 0.2098
+    },
+    "confidence": 0.6512
+  },
+  {
+    "date": "2024-07-09",
+    "portfolio_value": 1919.1874,
+    "benchmark_value": 1492.3999,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0137,
+      "META": 0.3,
+      "AMZN": 0.0137,
+      "XOM": 0.1382,
+      "QQQ": 0.0137,
+      "BTC": 0.0546,
+      "COIN": 0.1661
+    },
+    "confidence": 0.6738
+  },
+  {
+    "date": "2024-07-10",
+    "portfolio_value": 1873.0192,
+    "benchmark_value": 1458.2379,
+    "allocations": {
+      "AAPL": 0.24,
+      "NVDA": 0.0205,
+      "META": 0.3,
+      "AMZN": 0.0306,
+      "XOM": 0.1,
+      "QQQ": 0.0205,
+      "BTC": 0.0938,
+      "COIN": 0.1945
+    },
+    "confidence": 0.6676
+  },
+  {
+    "date": "2024-07-11",
+    "portfolio_value": 1871.8118,
+    "benchmark_value": 1463.5539,
+    "allocations": {
+      "AAPL": 0.2048,
+      "NVDA": 0.02,
+      "META": 0.3,
+      "AMZN": 0.02,
+      "XOM": 0.124,
+      "QQQ": 0.02,
+      "BTC": 0.0836,
+      "COIN": 0.2277
+    },
+    "confidence": 0.6893
+  },
+  {
+    "date": "2024-07-12",
+    "portfolio_value": 1872.7984,
+    "benchmark_value": 1467.7642,
+    "allocations": {
+      "AAPL": 0.1471,
+      "NVDA": 0.0229,
+      "META": 0.3,
+      "AMZN": 0.0229,
+      "XOM": 0.2541,
+      "QQQ": 0.0229,
+      "BTC": 0.0229,
+      "COIN": 0.2072
+    },
+    "confidence": 0.6421
+  },
+  {
+    "date": "2024-07-13",
+    "portfolio_value": 1878.9813,
+    "benchmark_value": 1472.5834,
+    "allocations": {
+      "AAPL": 0.1243,
+      "NVDA": 0.0151,
+      "META": 0.3,
+      "AMZN": 0.0151,
+      "XOM": 0.2548,
+      "QQQ": 0.0151,
+      "BTC": 0.1257,
+      "COIN": 0.1499
+    },
+    "confidence": 0.6838
+  },
+  {
+    "date": "2024-07-14",
+    "portfolio_value": 1936.4485,
+    "benchmark_value": 1508.8239,
+    "allocations": {
+      "AAPL": 0.1161,
+      "NVDA": 0.0125,
+      "META": 0.3,
+      "AMZN": 0.0125,
+      "XOM": 0.2504,
+      "QQQ": 0.0125,
+      "BTC": 0.1618,
+      "COIN": 0.1341
+    },
+    "confidence": 0.6995
+  },
+  {
+    "date": "2024-07-15",
+    "portfolio_value": 1934.9702,
+    "benchmark_value": 1512.7808,
+    "allocations": {
+      "AAPL": 0.0287,
       "NVDA": 0.0672,
       "META": 0.3,
-      "AMZN": 0.076,
-      "XOM": 0.0319,
-      "QQQ": 0.0319,
-      "BTC": 0.0867,
-      "COIN": 0.1063
+      "AMZN": 0.0287,
+      "XOM": 0.3,
+      "QQQ": 0.0287,
+      "BTC": 0.2142,
+      "COIN": 0.0326
     },
-    "confidence": 0.5931
+    "confidence": 0.6671
   },
   {
-    "date": "2026-03-21",
-    "portfolio_value": 907.3139,
-    "benchmark_value": 885.5655,
+    "date": "2024-07-16",
+    "portfolio_value": 1896.957,
+    "benchmark_value": 1472.1694,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0651,
+      "AAPL": 0.02,
+      "NVDA": 0.02,
       "META": 0.3,
-      "AMZN": 0.0757,
-      "XOM": 0.031,
-      "QQQ": 0.031,
-      "BTC": 0.0929,
-      "COIN": 0.1044
+      "AMZN": 0.02,
+      "XOM": 0.3,
+      "QQQ": 0.02,
+      "BTC": 0.1385,
+      "COIN": 0.1814
     },
-    "confidence": 0.5948
+    "confidence": 0.7
   },
   {
-    "date": "2026-03-22",
-    "portfolio_value": 923.2856,
-    "benchmark_value": 901.9377,
+    "date": "2024-07-17",
+    "portfolio_value": 1901.2572,
+    "benchmark_value": 1463.465,
     "allocations": {
-      "AAPL": 0.3,
-      "NVDA": 0.0695,
+      "AAPL": 0.2617,
+      "NVDA": 0.0,
+      "META": 0.2653,
+      "AMZN": 0.0,
+      "XOM": 0.262,
+      "QQQ": 0.0,
+      "BTC": 0.1715,
+      "COIN": 0.0395
+    },
+    "confidence": 0.6649
+  },
+  {
+    "date": "2024-07-18",
+    "portfolio_value": 1922.1782,
+    "benchmark_value": 1479.7948,
+    "allocations": {
+      "AAPL": 0.242,
+      "NVDA": 0.0055,
       "META": 0.3,
-      "AMZN": 0.0801,
-      "XOM": 0.0341,
-      "QQQ": 0.0341,
-      "BTC": 0.0728,
-      "COIN": 0.1094
+      "AMZN": 0.0055,
+      "XOM": 0.2631,
+      "QQQ": 0.0055,
+      "BTC": 0.036,
+      "COIN": 0.1424
     },
-    "confidence": 0.5893
+    "confidence": 0.7204
   },
   {
-    "date": "2026-03-23",
-    "portfolio_value": 915.8568,
-    "benchmark_value": 888.8787,
+    "date": "2024-07-19",
+    "portfolio_value": 1922.4447,
+    "benchmark_value": 1481.0523,
+    "allocations": {
+      "AAPL": 0.2109,
+      "NVDA": 0.0204,
+      "META": 0.3,
+      "AMZN": 0.0204,
+      "XOM": 0.204,
+      "QQQ": 0.0204,
+      "BTC": 0.0204,
+      "COIN": 0.2036
+    },
+    "confidence": 0.6469
+  },
+  {
+    "date": "2024-07-20",
+    "portfolio_value": 1925.3412,
+    "benchmark_value": 1483.7835,
+    "allocations": {
+      "AAPL": 0.1955,
+      "NVDA": 0.0145,
+      "META": 0.3,
+      "AMZN": 0.0145,
+      "XOM": 0.2098,
+      "QQQ": 0.0145,
+      "BTC": 0.1021,
+      "COIN": 0.1492
+    },
+    "confidence": 0.6809
+  },
+  {
+    "date": "2024-07-21",
+    "portfolio_value": 1945.467,
+    "benchmark_value": 1501.088,
+    "allocations": {
+      "AAPL": 0.2057,
+      "NVDA": 0.0182,
+      "META": 0.3,
+      "AMZN": 0.0182,
+      "XOM": 0.2119,
+      "QQQ": 0.0182,
+      "BTC": 0.0549,
+      "COIN": 0.173
+    },
+    "confidence": 0.6616
+  },
+  {
+    "date": "2024-07-22",
+    "portfolio_value": 1943.6205,
+    "benchmark_value": 1491.3764,
+    "allocations": {
+      "AAPL": 0.2799,
+      "NVDA": 0.0078,
+      "META": 0.3,
+      "AMZN": 0.1592,
+      "XOM": 0.0078,
+      "QQQ": 0.0078,
+      "BTC": 0.1375,
+      "COIN": 0.1001
+    },
+    "confidence": 0.6528
+  },
+  {
+    "date": "2024-07-23",
+    "portfolio_value": 1872.8511,
+    "benchmark_value": 1442.5694,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.0298,
-      "META": 0.0298,
-      "AMZN": 0.251,
-      "XOM": 0.0298,
+      "NVDA": 0.0227,
+      "META": 0.3,
+      "AMZN": 0.0227,
+      "XOM": 0.0542,
+      "QQQ": 0.0227,
+      "BTC": 0.1206,
+      "COIN": 0.1571
+    },
+    "confidence": 0.629
+  },
+  {
+    "date": "2024-07-24",
+    "portfolio_value": 1849.3452,
+    "benchmark_value": 1427.504,
+    "allocations": {
+      "AAPL": 0.0359,
+      "NVDA": 0.0359,
+      "META": 0.3,
+      "AMZN": 0.2847,
+      "XOM": 0.086,
+      "QQQ": 0.0359,
+      "BTC": 0.0932,
+      "COIN": 0.1284
+    },
+    "confidence": 0.5702
+  },
+  {
+    "date": "2024-07-25",
+    "portfolio_value": 1897.4098,
+    "benchmark_value": 1452.8584,
+    "allocations": {
+      "AAPL": 0.0219,
+      "NVDA": 0.0219,
+      "META": 0.3,
+      "AMZN": 0.2435,
+      "XOM": 0.0219,
+      "QQQ": 0.1164,
+      "BTC": 0.0371,
+      "COIN": 0.2372
+    },
+    "confidence": 0.639
+  },
+  {
+    "date": "2024-07-26",
+    "portfolio_value": 1897.2945,
+    "benchmark_value": 1452.5944,
+    "allocations": {
+      "AAPL": 0.0418,
+      "NVDA": 0.0418,
+      "META": 0.3,
+      "AMZN": 0.0418,
+      "XOM": 0.3,
+      "QQQ": 0.0418,
+      "BTC": 0.0418,
+      "COIN": 0.1911
+    },
+    "confidence": 0.6114
+  },
+  {
+    "date": "2024-07-27",
+    "portfolio_value": 1897.7764,
+    "benchmark_value": 1453.7793,
+    "allocations": {
+      "AAPL": 0.0389,
+      "NVDA": 0.0389,
+      "META": 0.3,
+      "AMZN": 0.0389,
+      "XOM": 0.3,
+      "QQQ": 0.0389,
+      "BTC": 0.0389,
+      "COIN": 0.2054
+    },
+    "confidence": 0.6114
+  },
+  {
+    "date": "2024-07-28",
+    "portfolio_value": 1875.9886,
+    "benchmark_value": 1440.4575,
+    "allocations": {
+      "AAPL": 0.0395,
+      "NVDA": 0.0395,
+      "META": 0.3,
+      "AMZN": 0.0395,
+      "XOM": 0.3,
+      "QQQ": 0.0395,
+      "BTC": 0.0395,
+      "COIN": 0.2026
+    },
+    "confidence": 0.6114
+  },
+  {
+    "date": "2024-07-29",
+    "portfolio_value": 1863.3291,
+    "benchmark_value": 1417.3801,
+    "allocations": {
+      "AAPL": 0.0334,
+      "NVDA": 0.0258,
+      "META": 0.3,
+      "AMZN": 0.0258,
+      "XOM": 0.3,
+      "QQQ": 0.0258,
+      "BTC": 0.1191,
+      "COIN": 0.1702
+    },
+    "confidence": 0.6739
+  },
+  {
+    "date": "2024-07-30",
+    "portfolio_value": 1890.1609,
+    "benchmark_value": 1453.887,
+    "allocations": {
+      "AAPL": 0.0116,
+      "NVDA": 0.0116,
+      "META": 0.3,
+      "AMZN": 0.0116,
+      "XOM": 0.264,
+      "QQQ": 0.1456,
+      "BTC": 0.0116,
+      "COIN": 0.244
+    },
+    "confidence": 0.6353
+  },
+  {
+    "date": "2024-07-31",
+    "portfolio_value": 1864.9323,
+    "benchmark_value": 1430.3215,
+    "allocations": {
+      "AAPL": 0.0778,
+      "NVDA": 0.1317,
+      "META": 0.3,
+      "AMZN": 0.0437,
+      "XOM": 0.0593,
+      "QQQ": 0.0437,
+      "BTC": 0.0437,
+      "COIN": 0.3
+    },
+    "confidence": 0.609
+  },
+  {
+    "date": "2024-08-01",
+    "portfolio_value": 1821.5857,
+    "benchmark_value": 1387.189,
+    "allocations": {
+      "AAPL": 0.114,
+      "NVDA": 0.1795,
+      "META": 0.3,
+      "AMZN": 0.0397,
+      "XOM": 0.0753,
+      "QQQ": 0.0397,
+      "BTC": 0.0397,
+      "COIN": 0.2121
+    },
+    "confidence": 0.5631
+  },
+  {
+    "date": "2024-08-02",
+    "portfolio_value": 1821.2956,
+    "benchmark_value": 1385.1139,
+    "allocations": {
+      "AAPL": 0.0133,
+      "NVDA": 0.047,
+      "META": 0.3,
+      "AMZN": 0.0133,
+      "XOM": 0.1603,
+      "QQQ": 0.1678,
+      "BTC": 0.0133,
+      "COIN": 0.2849
+    },
+    "confidence": 0.6091
+  },
+  {
+    "date": "2024-08-03",
+    "portfolio_value": 1820.3308,
+    "benchmark_value": 1377.8005,
+    "allocations": {
+      "AAPL": 0.0125,
+      "NVDA": 0.0455,
+      "META": 0.3,
+      "AMZN": 0.0125,
+      "XOM": 0.1473,
+      "QQQ": 0.2108,
+      "BTC": 0.0125,
+      "COIN": 0.2588
+    },
+    "confidence": 0.6091
+  },
+  {
+    "date": "2024-08-04",
+    "portfolio_value": 1746.8464,
+    "benchmark_value": 1314.0386,
+    "allocations": {
+      "AAPL": 0.0123,
+      "NVDA": 0.0468,
+      "META": 0.3,
+      "AMZN": 0.0123,
+      "XOM": 0.148,
+      "QQQ": 0.2112,
+      "BTC": 0.0123,
+      "COIN": 0.2572
+    },
+    "confidence": 0.6091
+  },
+  {
+    "date": "2024-08-05",
+    "portfolio_value": 1778.1719,
+    "benchmark_value": 1336.9044,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.2547,
+      "META": 0.0708,
+      "AMZN": 0.2017,
+      "XOM": 0.1271,
+      "QQQ": 0.2279,
+      "BTC": 0.0,
+      "COIN": 0.1179
+    },
+    "confidence": 0.5839
+  },
+  {
+    "date": "2024-08-06",
+    "portfolio_value": 1726.3537,
+    "benchmark_value": 1313.8302,
+    "allocations": {
+      "AAPL": 0.0373,
+      "NVDA": 0.3,
+      "META": 0.0373,
+      "AMZN": 0.0576,
+      "XOM": 0.2795,
+      "QQQ": 0.0373,
+      "BTC": 0.0373,
+      "COIN": 0.2137
+    },
+    "confidence": 0.5406
+  },
+  {
+    "date": "2024-08-07",
+    "portfolio_value": 1822.8814,
+    "benchmark_value": 1377.0528,
+    "allocations": {
+      "AAPL": 0.0107,
+      "NVDA": 0.2938,
+      "META": 0.0107,
+      "AMZN": 0.0398,
+      "XOM": 0.1006,
       "QQQ": 0.3,
-      "BTC": 0.0298,
-      "COIN": 0.0298
+      "BTC": 0.1532,
+      "COIN": 0.0912
     },
-    "confidence": 0.5292
+    "confidence": 0.5939
   },
   {
-    "date": "2026-03-24",
-    "portfolio_value": 915.6769,
-    "benchmark_value": 894.7239,
+    "date": "2024-08-08",
+    "portfolio_value": 1831.4079,
+    "benchmark_value": 1386.528,
+    "allocations": {
+      "AAPL": 0.2907,
+      "NVDA": 0.2635,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.2776,
+      "QQQ": 0.0,
+      "BTC": 0.1319,
+      "COIN": 0.0364
+    },
+    "confidence": 0.6576
+  },
+  {
+    "date": "2024-08-09",
+    "portfolio_value": 1831.8257,
+    "benchmark_value": 1386.715,
+    "allocations": {
+      "AAPL": 0.2275,
+      "NVDA": 0.2061,
+      "META": 0.0,
+      "AMZN": 0.0685,
+      "XOM": 0.2011,
+      "QQQ": 0.0854,
+      "BTC": 0.2114,
+      "COIN": 0.0
+    },
+    "confidence": 0.7012
+  },
+  {
+    "date": "2024-08-10",
+    "portfolio_value": 1825.6372,
+    "benchmark_value": 1380.383,
+    "allocations": {
+      "AAPL": 0.2855,
+      "NVDA": 0.2514,
+      "META": 0.0,
+      "AMZN": 0.083,
+      "XOM": 0.2218,
+      "QQQ": 0.0582,
+      "BTC": 0.0925,
+      "COIN": 0.0076
+    },
+    "confidence": 0.6486
+  },
+  {
+    "date": "2024-08-11",
+    "portfolio_value": 1849.7386,
+    "benchmark_value": 1386.3515,
+    "allocations": {
+      "AAPL": 0.2478,
+      "NVDA": 0.228,
+      "META": 0.0,
+      "AMZN": 0.0751,
+      "XOM": 0.2093,
+      "QQQ": 0.0754,
+      "BTC": 0.1644,
+      "COIN": 0.0
+    },
+    "confidence": 0.675
+  },
+  {
+    "date": "2024-08-12",
+    "portfolio_value": 1892.4962,
+    "benchmark_value": 1420.3484,
+    "allocations": {
+      "AAPL": 0.2249,
+      "NVDA": 0.1916,
+      "META": 0.0,
+      "AMZN": 0.1389,
+      "XOM": 0.1959,
+      "QQQ": 0.0333,
+      "BTC": 0.1817,
+      "COIN": 0.0337
+    },
+    "confidence": 0.7128
+  },
+  {
+    "date": "2024-08-13",
+    "portfolio_value": 1894.3203,
+    "benchmark_value": 1417.3807,
+    "allocations": {
+      "AAPL": 0.1966,
+      "NVDA": 0.1912,
+      "META": 0.0064,
+      "AMZN": 0.117,
+      "XOM": 0.3,
+      "QQQ": 0.013,
+      "BTC": 0.1694,
+      "COIN": 0.0064
+    },
+    "confidence": 0.6612
+  },
+  {
+    "date": "2024-08-14",
+    "portfolio_value": 1914.8543,
+    "benchmark_value": 1441.3767,
+    "allocations": {
+      "AAPL": 0.1576,
+      "NVDA": 0.1179,
+      "META": 0.096,
+      "AMZN": 0.0999,
+      "XOM": 0.2825,
+      "QQQ": 0.0,
+      "BTC": 0.2155,
+      "COIN": 0.0306
+    },
+    "confidence": 0.7062
+  },
+  {
+    "date": "2024-08-15",
+    "portfolio_value": 1921.2913,
+    "benchmark_value": 1452.1481,
+    "allocations": {
+      "AAPL": 0.2098,
+      "NVDA": 0.1707,
+      "META": 0.3,
+      "AMZN": 0.003,
+      "XOM": 0.11,
+      "QQQ": 0.003,
+      "BTC": 0.1451,
+      "COIN": 0.0584
+    },
+    "confidence": 0.6274
+  },
+  {
+    "date": "2024-08-16",
+    "portfolio_value": 1926.5126,
+    "benchmark_value": 1453.9507,
+    "allocations": {
+      "AAPL": 0.0253,
+      "NVDA": 0.3,
+      "META": 0.0253,
+      "AMZN": 0.0253,
+      "XOM": 0.3,
+      "QQQ": 0.0253,
+      "BTC": 0.2737,
+      "COIN": 0.0253
+    },
+    "confidence": 0.5573
+  },
+  {
+    "date": "2024-08-17",
+    "portfolio_value": 1917.3076,
+    "benchmark_value": 1450.9103,
+    "allocations": {
+      "AAPL": 0.0236,
+      "NVDA": 0.3,
+      "META": 0.0236,
+      "AMZN": 0.0236,
+      "XOM": 0.2962,
+      "QQQ": 0.0236,
+      "BTC": 0.2856,
+      "COIN": 0.0236
+    },
+    "confidence": 0.562
+  },
+  {
+    "date": "2024-08-18",
+    "portfolio_value": 1948.251,
+    "benchmark_value": 1465.8148,
+    "allocations": {
+      "AAPL": 0.0633,
+      "NVDA": 0.3,
+      "META": 0.0633,
+      "AMZN": 0.0633,
+      "XOM": 0.3,
+      "QQQ": 0.0633,
+      "BTC": 0.0633,
+      "COIN": 0.0834
+    },
+    "confidence": 0.5381
+  },
+  {
+    "date": "2024-08-19",
+    "portfolio_value": 1921.0149,
+    "benchmark_value": 1447.8054,
+    "allocations": {
+      "AAPL": 0.1087,
+      "NVDA": 0.3,
+      "META": 0.3,
+      "AMZN": 0.0352,
+      "XOM": 0.1506,
+      "QQQ": 0.0352,
+      "BTC": 0.0352,
+      "COIN": 0.0352
+    },
+    "confidence": 0.5959
+  },
+  {
+    "date": "2024-08-20",
+    "portfolio_value": 1941.1831,
+    "benchmark_value": 1468.1977,
+    "allocations": {
+      "AAPL": 0.0603,
+      "NVDA": 0.0603,
+      "META": 0.3,
+      "AMZN": 0.0603,
+      "XOM": 0.3,
+      "QQQ": 0.0603,
+      "BTC": 0.0983,
+      "COIN": 0.0603
+    },
+    "confidence": 0.5793
+  },
+  {
+    "date": "2024-08-21",
+    "portfolio_value": 1915.793,
+    "benchmark_value": 1443.9082,
+    "allocations": {
+      "AAPL": 0.0406,
+      "NVDA": 0.0406,
+      "META": 0.3,
+      "AMZN": 0.0406,
+      "XOM": 0.0406,
+      "QQQ": 0.3,
+      "BTC": 0.197,
+      "COIN": 0.0406
+    },
+    "confidence": 0.5041
+  },
+  {
+    "date": "2024-08-22",
+    "portfolio_value": 1943.5307,
+    "benchmark_value": 1480.9291,
+    "allocations": {
+      "AAPL": 0.2606,
+      "NVDA": 0.0167,
+      "META": 0.3,
+      "AMZN": 0.0167,
+      "XOM": 0.0167,
+      "QQQ": 0.2185,
+      "BTC": 0.1541,
+      "COIN": 0.0167
+    },
+    "confidence": 0.5784
+  },
+  {
+    "date": "2024-08-23",
+    "portfolio_value": 1944.3006,
+    "benchmark_value": 1481.1735,
+    "allocations": {
+      "AAPL": 0.0667,
+      "NVDA": 0.0667,
+      "META": 0.3,
+      "AMZN": 0.0667,
+      "XOM": 0.0667,
+      "QQQ": 0.0667,
+      "BTC": 0.3,
+      "COIN": 0.0667
+    },
+    "confidence": 0.5162
+  },
+  {
+    "date": "2024-08-24",
+    "portfolio_value": 1945.7052,
+    "benchmark_value": 1481.6194,
+    "allocations": {
+      "AAPL": 0.0667,
+      "NVDA": 0.0667,
+      "META": 0.3,
+      "AMZN": 0.0667,
+      "XOM": 0.0667,
+      "QQQ": 0.0667,
+      "BTC": 0.3,
+      "COIN": 0.0667
+    },
+    "confidence": 0.5363
+  },
+  {
+    "date": "2024-08-25",
+    "portfolio_value": 1918.0422,
+    "benchmark_value": 1465.2079,
+    "allocations": {
+      "AAPL": 0.0667,
+      "NVDA": 0.0667,
+      "META": 0.3,
+      "AMZN": 0.0667,
+      "XOM": 0.0667,
+      "QQQ": 0.0667,
+      "BTC": 0.3,
+      "COIN": 0.0667
+    },
+    "confidence": 0.5375
+  },
+  {
+    "date": "2024-08-26",
+    "portfolio_value": 1878.855,
+    "benchmark_value": 1449.2173,
+    "allocations": {
+      "AAPL": 0.0204,
+      "NVDA": 0.0204,
+      "META": 0.3,
+      "AMZN": 0.0204,
+      "XOM": 0.3,
+      "QQQ": 0.0204,
+      "BTC": 0.298,
+      "COIN": 0.0204
+    },
+    "confidence": 0.6306
+  },
+  {
+    "date": "2024-08-27",
+    "portfolio_value": 1862.1177,
+    "benchmark_value": 1428.2671,
+    "allocations": {
+      "AAPL": 0.1527,
+      "NVDA": 0.0203,
+      "META": 0.3,
+      "AMZN": 0.1117,
+      "XOM": 0.3,
+      "QQQ": 0.0203,
+      "BTC": 0.0747,
+      "COIN": 0.0203
+    },
+    "confidence": 0.5935
+  },
+  {
+    "date": "2024-08-28",
+    "portfolio_value": 1878.8013,
+    "benchmark_value": 1422.8403,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0133,
+      "META": 0.1898,
+      "AMZN": 0.1214,
+      "XOM": 0.2581,
+      "QQQ": 0.0133,
+      "BTC": 0.0909,
+      "COIN": 0.0133
+    },
+    "confidence": 0.5638
+  },
+  {
+    "date": "2024-08-29",
+    "portfolio_value": 1887.0001,
+    "benchmark_value": 1428.9558,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0241,
+      "META": 0.0618,
+      "AMZN": 0.1608,
+      "XOM": 0.3,
+      "QQQ": 0.0241,
+      "BTC": 0.1049,
+      "COIN": 0.0241
+    },
+    "confidence": 0.5448
+  },
+  {
+    "date": "2024-08-30",
+    "portfolio_value": 1886.7572,
+    "benchmark_value": 1428.5038,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0509,
+      "META": 0.3,
+      "AMZN": 0.0509,
+      "XOM": 0.077,
+      "QQQ": 0.0509,
+      "BTC": 0.0509,
+      "COIN": 0.1195
+    },
+    "confidence": 0.505
+  },
+  {
+    "date": "2024-08-31",
+    "portfolio_value": 1884.1076,
+    "benchmark_value": 1423.5245,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0504,
+      "META": 0.3,
+      "AMZN": 0.0504,
+      "XOM": 0.081,
+      "QQQ": 0.0504,
+      "BTC": 0.0504,
+      "COIN": 0.1176
+    },
+    "confidence": 0.505
+  },
+  {
+    "date": "2024-09-01",
+    "portfolio_value": 1891.1393,
+    "benchmark_value": 1429.0714,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0427,
+      "META": 0.2873,
+      "AMZN": 0.0427,
+      "XOM": 0.0965,
+      "QQQ": 0.0427,
+      "BTC": 0.1197,
+      "COIN": 0.0683
+    },
+    "confidence": 0.505
+  },
+  {
+    "date": "2024-09-02",
+    "portfolio_value": 1838.3268,
+    "benchmark_value": 1373.5635,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0188,
+      "META": 0.1592,
+      "AMZN": 0.0188,
+      "XOM": 0.082,
+      "QQQ": 0.1023,
+      "BTC": 0.3,
+      "COIN": 0.0188
+    },
+    "confidence": 0.5213
+  },
+  {
+    "date": "2024-09-03",
+    "portfolio_value": 1815.3805,
+    "benchmark_value": 1359.7958,
+    "allocations": {
+      "AAPL": 0.273,
+      "NVDA": 0.0027,
+      "META": 0.3,
+      "AMZN": 0.1668,
+      "XOM": 0.0393,
+      "QQQ": 0.0027,
+      "BTC": 0.0027,
+      "COIN": 0.2127
+    },
+    "confidence": 0.5502
+  },
+  {
+    "date": "2024-09-04",
+    "portfolio_value": 1826.9384,
+    "benchmark_value": 1358.2679,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0106,
+      "META": 0.1491,
+      "AMZN": 0.3,
+      "XOM": 0.0106,
+      "QQQ": 0.0106,
+      "BTC": 0.0106,
+      "COIN": 0.2086
+    },
+    "confidence": 0.5426
+  },
+  {
+    "date": "2024-09-05",
+    "portfolio_value": 1764.8853,
+    "benchmark_value": 1313.3276,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0365,
+      "META": 0.3,
+      "AMZN": 0.0365,
+      "XOM": 0.0365,
+      "QQQ": 0.0365,
+      "BTC": 0.0365,
+      "COIN": 0.2175
+    },
+    "confidence": 0.523
+  },
+  {
+    "date": "2024-09-06",
+    "portfolio_value": 1766.7591,
+    "benchmark_value": 1313.9086,
+    "allocations": {
+      "AAPL": 0.02,
+      "NVDA": 0.02,
+      "META": 0.02,
+      "AMZN": 0.02,
+      "XOM": 0.02,
+      "QQQ": 0.3,
+      "BTC": 0.3,
+      "COIN": 0.3
+    },
+    "confidence": 0.6163
+  },
+  {
+    "date": "2024-09-07",
+    "portfolio_value": 1772.8079,
+    "benchmark_value": 1316.0378,
+    "allocations": {
+      "AAPL": 0.0272,
+      "NVDA": 0.0272,
+      "META": 0.0272,
+      "AMZN": 0.0272,
+      "XOM": 0.0272,
+      "QQQ": 0.3,
+      "BTC": 0.2641,
+      "COIN": 0.3
+    },
+    "confidence": 0.5898
+  },
+  {
+    "date": "2024-09-08",
+    "portfolio_value": 1830.2344,
+    "benchmark_value": 1347.9696,
+    "allocations": {
+      "AAPL": 0.0277,
+      "NVDA": 0.0277,
+      "META": 0.0277,
+      "AMZN": 0.0277,
+      "XOM": 0.0277,
+      "QQQ": 0.3,
+      "BTC": 0.2615,
+      "COIN": 0.3
+    },
+    "confidence": 0.5886
+  },
+  {
+    "date": "2024-09-09",
+    "portfolio_value": 1850.7483,
+    "benchmark_value": 1354.9092,
+    "allocations": {
+      "AAPL": 0.05,
+      "NVDA": 0.05,
+      "META": 0.05,
+      "AMZN": 0.1479,
+      "XOM": 0.05,
+      "QQQ": 0.3,
+      "BTC": 0.1429,
+      "COIN": 0.2091
+    },
+    "confidence": 0.5644
+  },
+  {
+    "date": "2024-09-10",
+    "portfolio_value": 1881.4562,
+    "benchmark_value": 1377.4232,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1924,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.236,
+      "QQQ": 0.2485,
+      "BTC": 0.1779,
+      "COIN": 0.1451
+    },
+    "confidence": 0.6601
+  },
+  {
+    "date": "2024-09-11",
+    "portfolio_value": 1930.1918,
+    "benchmark_value": 1400.4559,
+    "allocations": {
+      "AAPL": 0.0023,
+      "NVDA": 0.2612,
+      "META": 0.3,
+      "AMZN": 0.0023,
+      "XOM": 0.1296,
+      "QQQ": 0.0023,
+      "BTC": 0.0023,
+      "COIN": 0.3
+    },
+    "confidence": 0.6062
+  },
+  {
+    "date": "2024-09-12",
+    "portfolio_value": 1933.0223,
+    "benchmark_value": 1407.5727,
+    "allocations": {
+      "AAPL": 0.0419,
+      "NVDA": 0.3,
+      "META": 0.0419,
+      "AMZN": 0.1904,
+      "XOM": 0.0419,
+      "QQQ": 0.0419,
+      "BTC": 0.0419,
+      "COIN": 0.3
+    },
+    "confidence": 0.5662
+  },
+  {
+    "date": "2024-09-13",
+    "portfolio_value": 1932.2352,
+    "benchmark_value": 1405.9281,
+    "allocations": {
+      "AAPL": 0.0436,
+      "NVDA": 0.3,
+      "META": 0.0436,
+      "AMZN": 0.2197,
+      "XOM": 0.1063,
+      "QQQ": 0.0436,
+      "BTC": 0.0436,
+      "COIN": 0.1997
+    },
+    "confidence": 0.5175
+  },
+  {
+    "date": "2024-09-14",
+    "portfolio_value": 1924.8334,
+    "benchmark_value": 1403.5198,
+    "allocations": {
+      "AAPL": 0.0249,
+      "NVDA": 0.3,
+      "META": 0.0249,
+      "AMZN": 0.1502,
+      "XOM": 0.1278,
+      "QQQ": 0.0249,
+      "BTC": 0.2795,
+      "COIN": 0.0679
+    },
+    "confidence": 0.536
+  },
+  {
+    "date": "2024-09-15",
+    "portfolio_value": 1903.2834,
+    "benchmark_value": 1393.8742,
+    "allocations": {
+      "AAPL": 0.0249,
+      "NVDA": 0.3,
+      "META": 0.0249,
+      "AMZN": 0.1446,
+      "XOM": 0.1271,
+      "QQQ": 0.0249,
+      "BTC": 0.3,
+      "COIN": 0.0536
+    },
+    "confidence": 0.5506
+  },
+  {
+    "date": "2024-09-16",
+    "portfolio_value": 1929.9745,
+    "benchmark_value": 1405.0708,
+    "allocations": {
+      "AAPL": 0.0267,
+      "NVDA": 0.0267,
+      "META": 0.0267,
+      "AMZN": 0.1513,
+      "XOM": 0.1686,
+      "QQQ": 0.3,
+      "BTC": 0.2734,
+      "COIN": 0.0267
+    },
+    "confidence": 0.5928
+  },
+  {
+    "date": "2024-09-17",
+    "portfolio_value": 1945.662,
+    "benchmark_value": 1408.9341,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0203,
+      "META": 0.1229,
+      "AMZN": 0.0203,
+      "XOM": 0.187,
+      "QQQ": 0.1957,
+      "BTC": 0.1334,
+      "COIN": 0.0203
+    },
+    "confidence": 0.6101
+  },
+  {
+    "date": "2024-09-18",
+    "portfolio_value": 2003.8805,
+    "benchmark_value": 1449.0135,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0037,
+      "META": 0.2732,
+      "AMZN": 0.0037,
+      "XOM": 0.1651,
+      "QQQ": 0.0978,
+      "BTC": 0.1528,
+      "COIN": 0.0037
+    },
+    "confidence": 0.692
+  },
+  {
+    "date": "2024-09-19",
+    "portfolio_value": 2004.2784,
+    "benchmark_value": 1449.2228,
+    "allocations": {
+      "AAPL": 0.0463,
+      "NVDA": 0.0112,
+      "META": 0.3,
+      "AMZN": 0.0112,
+      "XOM": 0.2467,
+      "QQQ": 0.1464,
+      "BTC": 0.2269,
+      "COIN": 0.0112
+    },
+    "confidence": 0.6303
+  },
+  {
+    "date": "2024-09-20",
+    "portfolio_value": 2005.7987,
+    "benchmark_value": 1449.8014,
+    "allocations": {
+      "AAPL": 0.0678,
+      "NVDA": 0.0057,
+      "META": 0.3,
+      "AMZN": 0.0057,
+      "XOM": 0.2805,
+      "QQQ": 0.0972,
+      "BTC": 0.2375,
+      "COIN": 0.0057
+    },
+    "confidence": 0.6368
+  },
+  {
+    "date": "2024-09-21",
+    "portfolio_value": 2006.5549,
+    "benchmark_value": 1450.5272,
+    "allocations": {
+      "AAPL": 0.1366,
+      "NVDA": 0.0411,
+      "META": 0.3,
+      "AMZN": 0.0411,
+      "XOM": 0.3,
+      "QQQ": 0.046,
+      "BTC": 0.0941,
+      "COIN": 0.0411
+    },
+    "confidence": 0.5831
+  },
+  {
+    "date": "2024-09-22",
+    "portfolio_value": 2019.1749,
+    "benchmark_value": 1455.7032,
+    "allocations": {
+      "AAPL": 0.1372,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.3,
+      "QQQ": 0.0433,
+      "BTC": 0.0953,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5831
+  },
+  {
+    "date": "2024-09-23",
+    "portfolio_value": 2038.3893,
+    "benchmark_value": 1468.1196,
+    "allocations": {
+      "AAPL": 0.0495,
+      "NVDA": 0.122,
+      "META": 0.0495,
+      "AMZN": 0.072,
+      "XOM": 0.1472,
+      "QQQ": 0.3,
+      "BTC": 0.186,
+      "COIN": 0.0738
+    },
+    "confidence": 0.5346
+  },
+  {
+    "date": "2024-09-24",
+    "portfolio_value": 2028.5125,
+    "benchmark_value": 1459.9612,
+    "allocations": {
+      "AAPL": 0.0619,
+      "NVDA": 0.128,
+      "META": 0.0619,
+      "AMZN": 0.0619,
+      "XOM": 0.1598,
+      "QQQ": 0.3,
+      "BTC": 0.1648,
+      "COIN": 0.0619
+    },
+    "confidence": 0.5339
+  },
+  {
+    "date": "2024-09-25",
+    "portfolio_value": 2045.3756,
+    "benchmark_value": 1478.3859,
+    "allocations": {
+      "AAPL": 0.0508,
+      "NVDA": 0.056,
+      "META": 0.1214,
+      "AMZN": 0.0508,
+      "XOM": 0.1988,
+      "QQQ": 0.3,
+      "BTC": 0.1712,
+      "COIN": 0.0508
+    },
+    "confidence": 0.5352
+  },
+  {
+    "date": "2024-09-26",
+    "portfolio_value": 2058.7727,
+    "benchmark_value": 1488.6869,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.1126,
+      "META": 0.0297,
+      "AMZN": 0.1443,
+      "XOM": 0.1568,
+      "QQQ": 0.1,
+      "BTC": 0.0461,
+      "COIN": 0.1106
+    },
+    "confidence": 0.5322
+  },
+  {
+    "date": "2024-09-27",
+    "portfolio_value": 2059.6832,
+    "benchmark_value": 1488.9612,
+    "allocations": {
+      "AAPL": 0.0308,
+      "NVDA": 0.0834,
+      "META": 0.1041,
+      "AMZN": 0.1025,
+      "XOM": 0.3,
+      "QQQ": 0.0308,
+      "BTC": 0.3,
+      "COIN": 0.0485
+    },
+    "confidence": 0.5534
+  },
+  {
+    "date": "2024-09-28",
+    "portfolio_value": 2057.3167,
+    "benchmark_value": 1488.2484,
+    "allocations": {
+      "AAPL": 0.0162,
+      "NVDA": 0.0734,
+      "META": 0.1183,
+      "AMZN": 0.1007,
+      "XOM": 0.3,
+      "QQQ": 0.0162,
+      "BTC": 0.3,
+      "COIN": 0.0752
+    },
+    "confidence": 0.5267
+  },
+  {
+    "date": "2024-09-29",
+    "portfolio_value": 2037.2981,
+    "benchmark_value": 1476.1201,
+    "allocations": {
+      "AAPL": 0.0321,
+      "NVDA": 0.0757,
+      "META": 0.1043,
+      "AMZN": 0.1016,
+      "XOM": 0.3,
+      "QQQ": 0.0321,
+      "BTC": 0.3,
+      "COIN": 0.0543
+    },
+    "confidence": 0.5521
+  },
+  {
+    "date": "2024-09-30",
+    "portfolio_value": 2019.7144,
+    "benchmark_value": 1444.9119,
+    "allocations": {
+      "AAPL": 0.0296,
+      "NVDA": 0.1288,
+      "META": 0.1939,
+      "AMZN": 0.0838,
+      "XOM": 0.3,
+      "QQQ": 0.0296,
+      "BTC": 0.2001,
+      "COIN": 0.0343
+    },
+    "confidence": 0.5451
+  },
+  {
+    "date": "2024-10-01",
+    "portfolio_value": 2026.8106,
+    "benchmark_value": 1448.1675,
+    "allocations": {
+      "AAPL": 0.131,
+      "NVDA": 0.0236,
+      "META": 0.0611,
+      "AMZN": 0.1715,
+      "XOM": 0.3,
+      "QQQ": 0.1282,
+      "BTC": 0.1611,
+      "COIN": 0.0236
+    },
+    "confidence": 0.5405
+  },
+  {
+    "date": "2024-10-02",
+    "portfolio_value": 2035.1383,
+    "benchmark_value": 1454.0922,
+    "allocations": {
+      "AAPL": 0.0991,
+      "NVDA": 0.0592,
+      "META": 0.1728,
+      "AMZN": 0.1896,
+      "XOM": 0.3,
+      "QQQ": 0.0393,
+      "BTC": 0.1007,
+      "COIN": 0.0393
+    },
+    "confidence": 0.5558
+  },
+  {
+    "date": "2024-10-03",
+    "portfolio_value": 2072.9119,
+    "benchmark_value": 1484.8332,
+    "allocations": {
+      "AAPL": 0.1766,
+      "NVDA": 0.0677,
+      "META": 0.0636,
+      "AMZN": 0.2164,
+      "XOM": 0.3,
+      "QQQ": 0.0238,
+      "BTC": 0.128,
+      "COIN": 0.0238
+    },
+    "confidence": 0.5647
+  },
+  {
+    "date": "2024-10-04",
+    "portfolio_value": 2072.9904,
+    "benchmark_value": 1484.9004,
+    "allocations": {
+      "AAPL": 0.0108,
+      "NVDA": 0.282,
+      "META": 0.1068,
+      "AMZN": 0.0108,
+      "XOM": 0.3,
+      "QQQ": 0.0108,
+      "BTC": 0.1046,
+      "COIN": 0.1744
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-10-05",
+    "portfolio_value": 2073.225,
+    "benchmark_value": 1487.0797,
+    "allocations": {
+      "AAPL": 0.0096,
+      "NVDA": 0.3,
+      "META": 0.1206,
+      "AMZN": 0.0096,
+      "XOM": 0.3,
+      "QQQ": 0.0096,
+      "BTC": 0.0096,
+      "COIN": 0.2408
+    },
+    "confidence": 0.539
+  },
+  {
+    "date": "2024-10-06",
+    "portfolio_value": 2076.8769,
+    "benchmark_value": 1472.8118,
+    "allocations": {
+      "AAPL": 0.009,
+      "NVDA": 0.268,
+      "META": 0.09,
+      "AMZN": 0.009,
+      "XOM": 0.3,
+      "QQQ": 0.009,
+      "BTC": 0.1622,
+      "COIN": 0.1528
+    },
+    "confidence": 0.5533
+  },
+  {
+    "date": "2024-10-07",
+    "portfolio_value": 2087.4385,
+    "benchmark_value": 1484.3698,
+    "allocations": {
+      "AAPL": 0.0,
+      "NVDA": 0.1944,
+      "META": 0.0,
+      "AMZN": 0.2299,
+      "XOM": 0.2753,
+      "QQQ": 0.1688,
+      "BTC": 0.0939,
+      "COIN": 0.0378
+    },
+    "confidence": 0.6863
+  },
+  {
+    "date": "2024-10-08",
+    "portfolio_value": 2093.1846,
+    "benchmark_value": 1484.987,
+    "allocations": {
+      "AAPL": 0.0463,
+      "NVDA": 0.3,
+      "META": 0.0164,
+      "AMZN": 0.2288,
+      "XOM": 0.3,
+      "QQQ": 0.0164,
+      "BTC": 0.0164,
+      "COIN": 0.0758
+    },
+    "confidence": 0.6402
+  },
+  {
+    "date": "2024-10-09",
+    "portfolio_value": 2095.7082,
+    "benchmark_value": 1484.4305,
+    "allocations": {
+      "AAPL": 0.0157,
+      "NVDA": 0.3,
+      "META": 0.1497,
+      "AMZN": 0.0157,
+      "XOM": 0.135,
+      "QQQ": 0.0157,
+      "BTC": 0.2467,
+      "COIN": 0.1217
+    },
+    "confidence": 0.5337
+  },
+  {
+    "date": "2024-10-10",
+    "portfolio_value": 2141.2102,
+    "benchmark_value": 1508.6714,
+    "allocations": {
+      "AAPL": 0.2844,
+      "NVDA": 0.3,
+      "META": 0.0231,
+      "AMZN": 0.0231,
+      "XOM": 0.0231,
+      "QQQ": 0.0231,
+      "BTC": 0.0231,
+      "COIN": 0.3
+    },
+    "confidence": 0.5789
+  },
+  {
+    "date": "2024-10-11",
+    "portfolio_value": 2147.4152,
+    "benchmark_value": 1510.9302,
+    "allocations": {
+      "AAPL": 0.2864,
+      "NVDA": 0.1965,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.0523,
+      "QQQ": 0.0,
+      "BTC": 0.2419,
+      "COIN": 0.2229
+    },
+    "confidence": 0.6079
+  },
+  {
+    "date": "2024-10-12",
+    "portfolio_value": 2145.4586,
+    "benchmark_value": 1509.9091,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.226,
+      "META": 0.0053,
+      "AMZN": 0.0053,
+      "XOM": 0.0053,
+      "QQQ": 0.0053,
+      "BTC": 0.1685,
+      "COIN": 0.2844
+    },
+    "confidence": 0.5866
+  },
+  {
+    "date": "2024-10-13",
+    "portfolio_value": 2245.0569,
+    "benchmark_value": 1549.7332,
+    "allocations": {
+      "AAPL": 0.2512,
+      "NVDA": 0.184,
+      "META": 0.0,
+      "AMZN": 0.0,
+      "XOM": 0.0388,
+      "QQQ": 0.0386,
+      "BTC": 0.2859,
+      "COIN": 0.2015
+    },
+    "confidence": 0.6213
+  },
+  {
+    "date": "2024-10-14",
+    "portfolio_value": 2244.3685,
+    "benchmark_value": 1536.0802,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0323,
+      "META": 0.1836,
+      "AMZN": 0.1232,
+      "XOM": 0.0736,
+      "QQQ": 0.0323,
+      "BTC": 0.1155,
+      "COIN": 0.1395
+    },
+    "confidence": 0.5257
+  },
+  {
+    "date": "2024-10-15",
+    "portfolio_value": 2235.3165,
+    "benchmark_value": 1552.4519,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0129,
+      "META": 0.2901,
+      "AMZN": 0.0129,
+      "XOM": 0.1717,
+      "QQQ": 0.0129,
+      "BTC": 0.1865,
+      "COIN": 0.0129
+    },
+    "confidence": 0.5654
+  },
+  {
+    "date": "2024-10-16",
+    "portfolio_value": 2233.3036,
+    "benchmark_value": 1548.4383,
+    "allocations": {
+      "AAPL": 0.2617,
+      "NVDA": 0.0196,
+      "META": 0.3,
+      "AMZN": 0.0196,
+      "XOM": 0.1232,
+      "QQQ": 0.0196,
+      "BTC": 0.2366,
+      "COIN": 0.0196
+    },
+    "confidence": 0.6239
+  },
+  {
+    "date": "2024-10-17",
+    "portfolio_value": 2249.9385,
+    "benchmark_value": 1572.503,
+    "allocations": {
+      "AAPL": 0.2865,
+      "NVDA": 0.0,
+      "META": 0.294,
+      "AMZN": 0.0,
+      "XOM": 0.0222,
+      "QQQ": 0.2075,
+      "BTC": 0.1897,
+      "COIN": 0.0
+    },
+    "confidence": 0.6948
+  },
+  {
+    "date": "2024-10-18",
+    "portfolio_value": 2249.575,
+    "benchmark_value": 1572.342,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0125,
+      "META": 0.2056,
+      "AMZN": 0.0303,
+      "XOM": 0.1588,
+      "QQQ": 0.0832,
+      "BTC": 0.1972,
+      "COIN": 0.0125
+    },
+    "confidence": 0.6257
+  },
+  {
+    "date": "2024-10-19",
+    "portfolio_value": 2254.2734,
+    "benchmark_value": 1574.179,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0065,
+      "META": 0.1802,
+      "AMZN": 0.0205,
+      "XOM": 0.1623,
+      "QQQ": 0.1005,
+      "BTC": 0.2235,
+      "COIN": 0.0065
+    },
+    "confidence": 0.647
+  },
+  {
+    "date": "2024-10-20",
+    "portfolio_value": 2245.4988,
+    "benchmark_value": 1573.2305,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0053,
+      "META": 0.1942,
+      "AMZN": 0.0208,
+      "XOM": 0.1445,
+      "QQQ": 0.0903,
+      "BTC": 0.2395,
+      "COIN": 0.0053
+    },
+    "confidence": 0.6486
+  },
+  {
+    "date": "2024-10-21",
+    "portfolio_value": 2249.635,
+    "benchmark_value": 1573.9986,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0322,
+      "META": 0.141,
+      "AMZN": 0.1549,
+      "XOM": 0.1723,
+      "QQQ": 0.0322,
+      "BTC": 0.1353,
+      "COIN": 0.0322
+    },
+    "confidence": 0.5697
+  },
+  {
+    "date": "2024-10-22",
+    "portfolio_value": 2173.4445,
+    "benchmark_value": 1535.4153,
+    "allocations": {
+      "AAPL": 0.0346,
+      "NVDA": 0.0346,
+      "META": 0.3,
+      "AMZN": 0.2666,
+      "XOM": 0.0346,
+      "QQQ": 0.0346,
+      "BTC": 0.0346,
+      "COIN": 0.2602
+    },
+    "confidence": 0.5169
+  },
+  {
+    "date": "2024-10-23",
+    "portfolio_value": 2199.7732,
+    "benchmark_value": 1554.89,
+    "allocations": {
+      "AAPL": 0.0495,
+      "NVDA": 0.0495,
+      "META": 0.3,
+      "AMZN": 0.0982,
+      "XOM": 0.0495,
+      "QQQ": 0.3,
+      "BTC": 0.0495,
+      "COIN": 0.104
+    },
+    "confidence": 0.5937
+  },
+  {
+    "date": "2024-10-24",
+    "portfolio_value": 2207.011,
+    "benchmark_value": 1553.4097,
+    "allocations": {
+      "AAPL": 0.0573,
+      "NVDA": 0.0573,
+      "META": 0.3,
+      "AMZN": 0.0573,
+      "XOM": 0.1111,
+      "QQQ": 0.3,
+      "BTC": 0.0573,
+      "COIN": 0.0596
+    },
+    "confidence": 0.5692
+  },
+  {
+    "date": "2024-10-25",
+    "portfolio_value": 2208.0088,
+    "benchmark_value": 1554.4944,
+    "allocations": {
+      "AAPL": 0.0394,
+      "NVDA": 0.0394,
+      "META": 0.3,
+      "AMZN": 0.0394,
+      "XOM": 0.1062,
+      "QQQ": 0.3,
+      "BTC": 0.0809,
+      "COIN": 0.0947
+    },
+    "confidence": 0.5367
+  },
+  {
+    "date": "2024-10-26",
+    "portfolio_value": 2215.0239,
+    "benchmark_value": 1557.1464,
+    "allocations": {
+      "AAPL": 0.0153,
+      "NVDA": 0.0153,
+      "META": 0.3,
+      "AMZN": 0.0153,
+      "XOM": 0.1058,
+      "QQQ": 0.3,
+      "BTC": 0.2328,
+      "COIN": 0.0153
+    },
+    "confidence": 0.5777
+  },
+  {
+    "date": "2024-10-27",
+    "portfolio_value": 2235.7074,
+    "benchmark_value": 1574.9036,
+    "allocations": {
+      "AAPL": 0.0243,
+      "NVDA": 0.0243,
+      "META": 0.3,
+      "AMZN": 0.0243,
+      "XOM": 0.1072,
+      "QQQ": 0.3,
+      "BTC": 0.1902,
+      "COIN": 0.0297
+    },
+    "confidence": 0.5504
+  },
+  {
+    "date": "2024-10-28",
+    "portfolio_value": 2284.1349,
+    "benchmark_value": 1594.2253,
+    "allocations": {
+      "AAPL": 0.0573,
+      "NVDA": 0.0573,
+      "META": 0.3,
+      "AMZN": 0.0573,
+      "XOM": 0.0876,
+      "QQQ": 0.0573,
+      "BTC": 0.2963,
+      "COIN": 0.0867
+    },
+    "confidence": 0.5849
+  },
+  {
+    "date": "2024-10-29",
+    "portfolio_value": 2258.9144,
+    "benchmark_value": 1579.2354,
+    "allocations": {
+      "AAPL": 0.0574,
+      "NVDA": 0.0574,
+      "META": 0.3,
+      "AMZN": 0.0574,
+      "XOM": 0.0574,
+      "QQQ": 0.0574,
+      "BTC": 0.2078,
+      "COIN": 0.2053
+    },
+    "confidence": 0.5529
+  },
+  {
+    "date": "2024-10-30",
+    "portfolio_value": 2180.6106,
+    "benchmark_value": 1510.8382,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.019,
+      "META": 0.3,
+      "AMZN": 0.019,
+      "XOM": 0.0946,
+      "QQQ": 0.019,
+      "BTC": 0.1864,
+      "COIN": 0.0621
+    },
+    "confidence": 0.6142
+  },
+  {
+    "date": "2024-10-31",
+    "portfolio_value": 2187.0818,
+    "benchmark_value": 1523.9195,
+    "allocations": {
+      "AAPL": 0.0408,
+      "NVDA": 0.0408,
+      "META": 0.3,
+      "AMZN": 0.0886,
+      "XOM": 0.1649,
+      "QQQ": 0.1445,
+      "BTC": 0.1795,
+      "COIN": 0.0408
+    },
+    "confidence": 0.5597
+  },
+  {
+    "date": "2024-11-01",
+    "portfolio_value": 2186.68,
+    "benchmark_value": 1523.3898,
+    "allocations": {
+      "AAPL": 0.0512,
+      "NVDA": 0.0512,
+      "META": 0.3,
+      "AMZN": 0.204,
+      "XOM": 0.0512,
+      "QQQ": 0.2168,
+      "BTC": 0.0661,
+      "COIN": 0.0595
+    },
+    "confidence": 0.5632
+  },
+  {
+    "date": "2024-11-02",
+    "portfolio_value": 2185.8127,
+    "benchmark_value": 1521.8834,
+    "allocations": {
+      "AAPL": 0.0501,
+      "NVDA": 0.0501,
+      "META": 0.3,
+      "AMZN": 0.2102,
+      "XOM": 0.0501,
+      "QQQ": 0.2145,
+      "BTC": 0.0501,
+      "COIN": 0.0748
+    },
+    "confidence": 0.5632
+  },
+  {
+    "date": "2024-11-03",
+    "portfolio_value": 2177.2563,
+    "benchmark_value": 1524.2452,
+    "allocations": {
+      "AAPL": 0.0489,
+      "NVDA": 0.0489,
+      "META": 0.3,
+      "AMZN": 0.2071,
+      "XOM": 0.0489,
+      "QQQ": 0.2184,
+      "BTC": 0.0489,
+      "COIN": 0.0791
+    },
+    "confidence": 0.5632
+  },
+  {
+    "date": "2024-11-04",
+    "portfolio_value": 2227.2953,
+    "benchmark_value": 1553.7082,
+    "allocations": {
+      "AAPL": 0.0288,
+      "NVDA": 0.0288,
+      "META": 0.3,
+      "AMZN": 0.0288,
+      "XOM": 0.0288,
+      "QQQ": 0.3,
+      "BTC": 0.0288,
+      "COIN": 0.2562
+    },
+    "confidence": 0.6382
+  },
+  {
+    "date": "2024-11-05",
+    "portfolio_value": 2372.6794,
+    "benchmark_value": 1654.8641,
+    "allocations": {
+      "AAPL": 0.0216,
+      "NVDA": 0.0063,
+      "META": 0.3,
+      "AMZN": 0.0063,
+      "XOM": 0.0723,
+      "QQQ": 0.3,
+      "BTC": 0.1618,
+      "COIN": 0.1318
+    },
+    "confidence": 0.7383
+  },
+  {
+    "date": "2024-11-06",
+    "portfolio_value": 2413.6131,
+    "benchmark_value": 1679.266,
+    "allocations": {
+      "AAPL": 0.2819,
+      "NVDA": 0.1507,
+      "META": 0.1894,
+      "AMZN": 0.0,
+      "XOM": 0.2108,
+      "QQQ": 0.0225,
+      "BTC": 0.0017,
+      "COIN": 0.143
+    },
+    "confidence": 0.7791
+  },
+  {
+    "date": "2024-11-07",
+    "portfolio_value": 2408.6535,
+    "benchmark_value": 1688.9466,
+    "allocations": {
+      "AAPL": 0.2907,
+      "NVDA": 0.1372,
+      "META": 0.2322,
+      "AMZN": 0.0,
+      "XOM": 0.2851,
+      "QQQ": 0.0,
+      "BTC": 0.0548,
+      "COIN": 0.0
+    },
+    "confidence": 0.7003
+  },
+  {
+    "date": "2024-11-08",
+    "portfolio_value": 2409.7766,
+    "benchmark_value": 1689.5903,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0163,
+      "META": 0.2975,
+      "AMZN": 0.0163,
+      "XOM": 0.1844,
+      "QQQ": 0.0163,
+      "BTC": 0.1529,
+      "COIN": 0.0163
+    },
+    "confidence": 0.6443
+  },
+  {
+    "date": "2024-11-09",
+    "portfolio_value": 2414.8709,
+    "benchmark_value": 1699.7552,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0384,
+      "META": 0.3,
+      "AMZN": 0.0384,
+      "XOM": 0.2025,
+      "QQQ": 0.0384,
+      "BTC": 0.0439,
+      "COIN": 0.0384
+    },
+    "confidence": 0.6185
+  },
+  {
+    "date": "2024-11-10",
+    "portfolio_value": 2429.4509,
+    "benchmark_value": 1752.657,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.031,
+      "META": 0.3,
+      "AMZN": 0.031,
+      "XOM": 0.1938,
+      "QQQ": 0.031,
+      "BTC": 0.0822,
+      "COIN": 0.031
+    },
+    "confidence": 0.6185
+  },
+  {
+    "date": "2024-11-11",
+    "portfolio_value": 2430.7457,
+    "benchmark_value": 1754.1301,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0384,
+      "META": 0.3,
+      "AMZN": 0.0384,
+      "XOM": 0.1683,
+      "QQQ": 0.0384,
+      "BTC": 0.0783,
+      "COIN": 0.0384
+    },
+    "confidence": 0.62
+  },
+  {
+    "date": "2024-11-12",
+    "portfolio_value": 2436.8522,
+    "benchmark_value": 1740.3221,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0209,
+      "META": 0.3,
+      "AMZN": 0.0209,
+      "XOM": 0.1756,
+      "QQQ": 0.0209,
+      "BTC": 0.1407,
+      "COIN": 0.0209
+    },
+    "confidence": 0.6717
+  },
+  {
+    "date": "2024-11-13",
+    "portfolio_value": 2429.0056,
+    "benchmark_value": 1726.4531,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0467,
+      "META": 0.3,
+      "AMZN": 0.0467,
+      "XOM": 0.0978,
+      "QQQ": 0.0467,
+      "BTC": 0.1152,
+      "COIN": 0.0467
+    },
+    "confidence": 0.6294
+  },
+  {
+    "date": "2024-11-14",
+    "portfolio_value": 2404.184,
+    "benchmark_value": 1721.6605,
     "allocations": {
       "AAPL": 0.3,
       "NVDA": 0.0251,
-      "META": 0.1727,
-      "AMZN": 0.0151,
-      "XOM": 0.3,
-      "QQQ": 0.0151,
-      "BTC": 0.1039,
-      "COIN": 0.0681
+      "META": 0.3,
+      "AMZN": 0.0251,
+      "XOM": 0.1306,
+      "QQQ": 0.0251,
+      "BTC": 0.1692,
+      "COIN": 0.0251
     },
-    "confidence": 0.6237
+    "confidence": 0.6221
   },
   {
-    "date": "2026-03-25",
-    "portfolio_value": 885.2924,
-    "benchmark_value": 869.0165,
+    "date": "2024-11-15",
+    "portfolio_value": 2402.987,
+    "benchmark_value": 1720.4611,
     "allocations": {
       "AAPL": 0.3,
-      "NVDA": 0.0402,
-      "META": 0.2373,
-      "AMZN": 0.0402,
-      "XOM": 0.0402,
-      "QQQ": 0.0402,
-      "BTC": 0.1879,
-      "COIN": 0.1139
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6224
+  },
+  {
+    "date": "2024-11-16",
+    "portfolio_value": 2401.2975,
+    "benchmark_value": 1718.7687,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6584
+  },
+  {
+    "date": "2024-11-17",
+    "portfolio_value": 2421.2844,
+    "benchmark_value": 1736.742,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6598
+  },
+  {
+    "date": "2024-11-18",
+    "portfolio_value": 2437.0462,
+    "benchmark_value": 1755.5877,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6227
+  },
+  {
+    "date": "2024-11-19",
+    "portfolio_value": 2451.7791,
+    "benchmark_value": 1759.1446,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6807
+  },
+  {
+    "date": "2024-11-20",
+    "portfolio_value": 2452.3204,
+    "benchmark_value": 1750.4517,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6632
+  },
+  {
+    "date": "2024-11-21",
+    "portfolio_value": 2451.6803,
+    "benchmark_value": 1749.947,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6209
+  },
+  {
+    "date": "2024-11-22",
+    "portfolio_value": 2448.9802,
+    "benchmark_value": 1747.2505,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6176
+  },
+  {
+    "date": "2024-11-23",
+    "portfolio_value": 2449.5095,
+    "benchmark_value": 1747.7788,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6531
+  },
+  {
+    "date": "2024-11-24",
+    "portfolio_value": 2451.3369,
+    "benchmark_value": 1740.204,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6218
+  },
+  {
+    "date": "2024-11-25",
+    "portfolio_value": 2458.9545,
+    "benchmark_value": 1735.5987,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5909
+  },
+  {
+    "date": "2024-11-26",
+    "portfolio_value": 2464.6468,
+    "benchmark_value": 1749.3084,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.57
+  },
+  {
+    "date": "2024-11-27",
+    "portfolio_value": 2463.9353,
+    "benchmark_value": 1748.6019,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6358
+  },
+  {
+    "date": "2024-11-28",
+    "portfolio_value": 2482.5198,
+    "benchmark_value": 1756.0083,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6358
+  },
+  {
+    "date": "2024-11-29",
+    "portfolio_value": 2480.2157,
+    "benchmark_value": 1753.728,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6206
+  },
+  {
+    "date": "2024-11-30",
+    "portfolio_value": 2482.1243,
+    "benchmark_value": 1755.6162,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6178
+  },
+  {
+    "date": "2024-12-01",
+    "portfolio_value": 2514.5942,
+    "benchmark_value": 1771.9461,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6178
+  },
+  {
+    "date": "2024-12-02",
+    "portfolio_value": 2555.7639,
+    "benchmark_value": 1793.7753,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.7017
+  },
+  {
+    "date": "2024-12-03",
+    "portfolio_value": 2567.6458,
+    "benchmark_value": 1825.3374,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6691
+  },
+  {
+    "date": "2024-12-04",
+    "portfolio_value": 2555.725,
+    "benchmark_value": 1814.1442,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6563
+  },
+  {
+    "date": "2024-12-05",
+    "portfolio_value": 2587.4724,
+    "benchmark_value": 1845.8062,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
     },
     "confidence": 0.6048
   },
   {
-    "date": "2026-03-26",
-    "portfolio_value": 856.3115,
-    "benchmark_value": 846.308,
+    "date": "2024-12-06",
+    "portfolio_value": 2587.4784,
+    "benchmark_value": 1845.8123,
     "allocations": {
-      "AAPL": 0.1473,
-      "NVDA": 0.0126,
-      "META": 0.2794,
-      "AMZN": 0.0126,
-      "XOM": 0.0126,
-      "QQQ": 0.3,
-      "BTC": 0.0981,
-      "COIN": 0.1373
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
     },
-    "confidence": 0.6535
+    "confidence": 0.5979
+  },
+  {
+    "date": "2024-12-07",
+    "portfolio_value": 2590.5153,
+    "benchmark_value": 1848.8433,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5979
+  },
+  {
+    "date": "2024-12-08",
+    "portfolio_value": 2565.0787,
+    "benchmark_value": 1807.8316,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5979
+  },
+  {
+    "date": "2024-12-09",
+    "portfolio_value": 2566.4522,
+    "benchmark_value": 1794.8639,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5682
+  },
+  {
+    "date": "2024-12-10",
+    "portfolio_value": 2598.9598,
+    "benchmark_value": 1832.2024,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.545
+  },
+  {
+    "date": "2024-12-11",
+    "portfolio_value": 2595.243,
+    "benchmark_value": 1823.5012,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5251
+  },
+  {
+    "date": "2024-12-12",
+    "portfolio_value": 2579.7527,
+    "benchmark_value": 1814.4939,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6038
+  },
+  {
+    "date": "2024-12-13",
+    "portfolio_value": 2579.5567,
+    "benchmark_value": 1814.301,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5158
+  },
+  {
+    "date": "2024-12-14",
+    "portfolio_value": 2586.208,
+    "benchmark_value": 1820.8463,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5158
+  },
+  {
+    "date": "2024-12-15",
+    "portfolio_value": 2600.5531,
+    "benchmark_value": 1832.4413,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5158
+  },
+  {
+    "date": "2024-12-16",
+    "portfolio_value": 2596.9194,
+    "benchmark_value": 1823.9556,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5363
+  },
+  {
+    "date": "2024-12-17",
+    "portfolio_value": 2512.3787,
+    "benchmark_value": 1749.8766,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5299
+  },
+  {
+    "date": "2024-12-18",
+    "portfolio_value": 2506.8418,
+    "benchmark_value": 1743.5046,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.6016
+  },
+  {
+    "date": "2024-12-19",
+    "portfolio_value": 2516.4754,
+    "benchmark_value": 1759.1742,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5566
+  },
+  {
+    "date": "2024-12-20",
+    "portfolio_value": 2515.2537,
+    "benchmark_value": 1757.9793,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5617
+  },
+  {
+    "date": "2024-12-21",
+    "portfolio_value": 2510.3542,
+    "benchmark_value": 1753.1881,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5617
+  },
+  {
+    "date": "2024-12-22",
+    "portfolio_value": 2532.9165,
+    "benchmark_value": 1761.3063,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.571
+  },
+  {
+    "date": "2024-12-23",
+    "portfolio_value": 2569.6977,
+    "benchmark_value": 1793.3901,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5817
+  },
+  {
+    "date": "2024-12-24",
+    "portfolio_value": 2571.1474,
+    "benchmark_value": 1794.8057,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5843
+  },
+  {
+    "date": "2024-12-25",
+    "portfolio_value": 2557.0217,
+    "benchmark_value": 1779.4121,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5843
+  },
+  {
+    "date": "2024-12-26",
+    "portfolio_value": 2529.9378,
+    "benchmark_value": 1753.4716,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5152
+  },
+  {
+    "date": "2024-12-27",
+    "portfolio_value": 2532.3359,
+    "benchmark_value": 1755.7971,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.523
+  },
+  {
+    "date": "2024-12-28",
+    "portfolio_value": 2528.4519,
+    "benchmark_value": 1752.0293,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.523
+  },
+  {
+    "date": "2024-12-29",
+    "portfolio_value": 2496.7643,
+    "benchmark_value": 1729.5283,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.523
+  },
+  {
+    "date": "2024-12-30",
+    "portfolio_value": 2485.2134,
+    "benchmark_value": 1716.5656,
+    "allocations": {
+      "AAPL": 0.3,
+      "NVDA": 0.0414,
+      "META": 0.3,
+      "AMZN": 0.0414,
+      "XOM": 0.1452,
+      "QQQ": 0.0414,
+      "BTC": 0.0893,
+      "COIN": 0.0414
+    },
+    "confidence": 0.5718
   }
 ]
