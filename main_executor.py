@@ -50,7 +50,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Constantes globales ───────────────────────────────────────────────────────
-TRAIN_CUTOFF = pd.Timestamp("2024-01-01")   # Datos disponibles hasta 2024-12-31
+TRAIN_CUTOFF = pd.Timestamp("2025-01-01")   # Entrena 2024, testea 2025+
 DATA_PATH    = ROOT / "data" / "dataset_completo.csv"
 PROFILES_DIR = ROOT / "configs"
 OUTPUT_DIR   = ROOT / "results"
@@ -65,15 +65,15 @@ PROFILE_FILES = {
 CACHE_DIR = ROOT / "cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-# ── Configuración base del pipeline para datos diarios ───────────────────────
+# ── Configuración base del pipeline (auto-adapta a frecuencia detectada) ────────
 BASE_PIPELINE_CONFIG: dict = {
-    "frequency": "1d",
+    "frequency": "1h",  # Se detecta automáticamente, pero default es 1h para datos nuevos
     "ingestion": {
         "source": "csv",
     },
     "features": {
-        "timeframes": ["1d", "5d"],          # FAST: solo 2 timeframes
-        "indicators": ["rsi", "macd", "bbands", "atr", "adx"],  # FAST: 5 indicadores clave
+        "timeframes": ["1h", "4h", "1d"],     # 1h, 4h, 1d para datos horarios
+        "indicators": ["rsi", "macd", "bbands", "atr", "adx"],  # 5 indicadores clave
         "indicator_params": {
             "rsi":    {"period": [14]},
             "macd":   {"fast": [12], "slow": [26], "signal": [9]},
@@ -83,7 +83,7 @@ BASE_PIPELINE_CONFIG: dict = {
         },
         "normalize": {
             "methods": ["zscore"],
-            "window": 60,       # 60 días para zscore rolling
+            "window": 240,      # 240 horas = 10 días para zscore rolling
         },
         "drop_na_threshold": 0.5,
     },
@@ -91,14 +91,14 @@ BASE_PIPELINE_CONFIG: dict = {
         "method":     "adaptive_cusum",
         "cusum_mode": "symmetric",
         "k_Px":       0.7,
-        "lookback":   20,       # 20 días
+        "lookback":   240,      # 240 horas = 10 días
         "min_events": 30,
     },
     "labeling": {
         "pt_sl":              [1.5, 1.0],
         "min_ret":            0.0,
-        "vertical_bars":      20,   # 20 días (1 mes)
-        "vol_span":           60,
+        "vertical_bars":      240,  # 240 horas = 10 días de datos horarios
+        "vol_span":           240,  # 240 horas
         "use_sample_weights": False,
     },
     "splitting": {
@@ -131,7 +131,7 @@ BASE_PIPELINE_CONFIG: dict = {
     },
     "evaluation": {
         "risk_free_rate":   0.045,
-        "periods_per_year": 252,
+        "periods_per_year": 8760,  # Horas por año (para datos horarios)
         "n_trials_dsr":     10,
         "pbo_partitions":   6,
         "commission_bps":   5.0,
