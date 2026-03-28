@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Check } from "lucide-react";
+
+export const AI_MODELS = [
+  { id: "low", name: "Modelo Conservador", fee: "1%", desc: "Dedicamos el 1% de tus ganancias. Estable.", features: ["Bajo riesgo", "Retiros gratis", "Soporte 24/7"] },
+  { id: "mid", name: "Modelo Dinámico", fee: "10%", desc: "Dedicamos el 10% de tus ganancias. Balance perfecto.", features: ["Volatilidad media", "Ajustes diarios", "Prioridad de red"] },
+  { id: "high", name: "Modelo Agresivo", fee: "30%", desc: "Dedicamos el 30% de tus ganancias. Da más plata.", features: ["Alto riesgo", "Algoritmo avanzado", "Asesor IA VIP"] },
+];
 
 const ConversionSection = () => {
   const [howOpen, setHowOpen] = useState(false);
@@ -33,6 +40,60 @@ const ConversionSection = () => {
           </button>
         </div>
       </motion.div>
+
+      {/* Pricing Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="mt-24 text-center max-w-2xl mx-auto mb-16"
+      >
+        <h1 className="text-3xl sm:text-4xl font-semibold mb-4 text-foreground">Elige tu IA de Inversión</h1>
+        <p className="text-muted-foreground">
+          Solo cobramos un porcentaje de tus ganancias. Si tú no ganas, nosotros tampoco. Empecemos con tu simulación.
+        </p>
+      </motion.div>
+
+      {/* Pricing Cards */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
+      >
+        {AI_MODELS.map(model => (
+          <div
+            key={model.id}
+            className="relative flex flex-col p-6 rounded-2xl border bg-card border-border hover:border-primary/50 transition-all text-left"
+          >
+            <h3 className="text-lg font-medium text-foreground">{model.name}</h3>
+            <div className="mt-4 flex items-baseline text-4xl font-bold text-foreground">
+              {model.fee}
+              <span className="ml-1 text-sm font-medium text-muted-foreground">de las ganancias</span>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground flex-1">{model.desc}</p>
+
+            <ul className="mt-6 space-y-3 mb-8">
+              {model.features.map(feat => (
+                <li key={feat} className="flex gap-3 text-sm text-foreground">
+                  <Check size={16} className="text-primary flex-shrink-0" />
+                  <span>{feat}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              to="/simulacion"
+              state={{ selectedModelId: model.id }}
+              className="w-full py-3 rounded-lg font-medium text-center transition-colors bg-muted text-foreground hover:bg-muted/80 border border-border mt-auto"
+            >
+              Elegir y Simular Modelo
+            </Link>
+          </div>
+        ))}
+      </motion.section>
 
       {/* How it works — collapsible */}
       <motion.div

@@ -1,20 +1,24 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
-import { ArrowLeft, Play, Square, RefreshCcw, Check } from "lucide-react";
+import { ArrowLeft, Play, Square, RefreshCcw } from "lucide-react";
 
+// Redefining the full capabilities since we extracted UI to landing page
 const AI_MODELS = [
-    { id: "low", name: "Modelo Conservador", fee: "1%", desc: "Dedicamos el 1% de tus ganancias. Estable, ideal para empezar.", multiplier: 1.0005, volatility: 0.002, features: ["Bajo riesgo", "Retiros gratis", "Soporte 24/7"] },
-    { id: "mid", name: "Modelo Dinámico", fee: "10%", desc: "Dedicamos el 10% de tus ganancias. Balance perfecto riesgo-retorno.", multiplier: 1.002, volatility: 0.01, features: ["Volatilidad media", "Ajustes diarios", "Prioridad de red"] },
-    { id: "high", name: "Modelo Agresivo", fee: "30%", desc: "Dedicamos el 30% de tus ganancias. Más poderoso. Da más plata.", multiplier: 1.005, volatility: 0.03, features: ["Alto riesgo", "Algoritmo avanzado", "Asesor IA VIP"] },
+    { id: "low", name: "Modelo Conservador", fee: "1%", multiplier: 1.0005, volatility: 0.002, desc: "Bajo riesgo" },
+    { id: "mid", name: "Modelo Dinámico", fee: "10%", multiplier: 1.002, volatility: 0.01, desc: "Balance medio" },
+    { id: "high", name: "Modelo Agresivo", fee: "30%", multiplier: 1.005, volatility: 0.03, desc: "Alto riesgo" },
 ];
 
 type DataPoint = { day: number; value: number; neto: number; feePaga: number };
 
 export default function Simulacion() {
+    const location = useLocation();
     const [capitalInput, setCapitalInput] = useState<number>(6000);
-    const [selectedModel, setSelectedModel] = useState(AI_MODELS[1]);
+    const [selectedModel, setSelectedModel] = useState(
+        AI_MODELS.find(m => m.id === location.state?.selectedModelId) || AI_MODELS[1]
+    );
     const [isPlaying, setIsPlaying] = useState(false);
     const [gameData, setGameData] = useState<DataPoint[]>([]);
     const [dayCounter, setDayCounter] = useState(0);
@@ -108,67 +112,40 @@ export default function Simulacion() {
             </header>
 
             <main className="flex-1 max-w-7xl w-full mx-auto p-6 lg:p-12">
-
-                {/* Pricing Header */}
-                {!isPlaying && dayCounter === 0 && (
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h1 className="text-3xl sm:text-4xl font-semibold mb-4">Elige tu IA de Inversión</h1>
-                        <p className="text-muted-foreground">
-                            Solo cobramos un porcentaje de tus ganancias. Si tú no ganas, nosotros tampoco. Empecemos con tu simulación.
-                        </p>
-                    </div>
-                )}
-
-                {/* Pricing Cards */}
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                    {AI_MODELS.map(model => (
-                        <div
-                            key={model.id}
-                            onClick={() => !isPlaying && setSelectedModel(model)}
-                            className={`relative flex flex-col p-6 rounded-2xl border transition-all cursor-pointer ${selectedModel.id === model.id
-                                    ? "bg-card border-primary ring-1 ring-primary shadow-lg scale-[1.02]"
-                                    : "bg-card border-border hover:border-primary/50"
-                                } ${isPlaying ? 'opacity-50 cursor-not-allowed' : ''}`}
-                        >
-                            {selectedModel.id === model.id && (
-                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
-                                    Seleccionado
-                                </div>
-                            )}
-                            <h3 className="text-lg font-medium">{model.name}</h3>
-                            <div className="mt-4 flex items-baseline text-4xl font-bold">
-                                {model.fee}
-                                <span className="ml-1 text-sm font-medium text-muted-foreground">de las ganancias</span>
-                            </div>
-                            <p className="mt-4 text-sm text-muted-foreground flex-1">{model.desc}</p>
-
-                            <ul className="mt-6 space-y-3 mb-8">
-                                {model.features.map(feat => (
-                                    <li key={feat} className="flex gap-3 text-sm">
-                                        <Check size={16} className="text-primary flex-shrink-0" />
-                                        <span>{feat}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <button
-                                disabled={isPlaying}
-                                className={`w-full py-3 rounded-lg font-medium transition-colors ${selectedModel.id === model.id ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-muted text-muted-foreground hover:bg-muted/80"
-                                    }`}
-                            >
-                                {selectedModel.id === model.id ? "Modelo Elegido" : "Elegir Modelo"}
-                            </button>
-                        </div>
-                    ))}
-                </section>
-
                 {/* Simulador Dashboard */}
                 <section className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
                     {/* Controles Laterales */}
                     <div className="lg:col-span-1 space-y-8">
+                        <div>
+                            <h1 className="text-3xl font-semibold mb-2">Simulador de Pruebas</h1>
+                            <p className="text-muted-foreground text-sm">
+                                Observa cómo opera la IA.
+                            </p>
+                        </div>
+
                         <div className="space-y-4">
-                            <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">Capital Inicial</h3>
+                            <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">1. Selecciona Modelo</h3>
+                            <div className="space-y-3">
+                                {AI_MODELS.map(model => (
+                                    <button
+                                        key={model.id}
+                                        onClick={() => setSelectedModel(model)}
+                                        disabled={isPlaying}
+                                        className={`w-full text-left p-4 rounded-xl border transition-all ${selectedModel.id === model.id
+                                                ? "bg-primary/10 border-primary"
+                                                : "bg-card border-border hover:border-border/80"
+                                            } disabled:opacity-50`}
+                                    >
+                                        <div className="font-semibold text-foreground">{model.name}</div>
+                                        <div className="text-xs text-muted-foreground mt-1">Comisión del {model.fee}</div>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="space-y-4">
+                            <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">2. Capital Inicial</h3>
                             <div className="relative">
                                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
                                 <input
