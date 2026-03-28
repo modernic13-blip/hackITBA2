@@ -1,0 +1,96 @@
+# =============================================================================
+# Perfil: LOW RISK — Conservador
+# =============================================================================
+# Orientado a activos defensivos y ETFs con alta diversificación.
+# Alta aversión al riesgo, pesos más concentrados en ETFs y acciones estables.
+# =============================================================================
+
+profile_name:          low_risk
+risk_tolerance:        0.3          # Baja tolerancia al riesgo
+max_weight_per_asset:  0.25         # Máx 25% por activo
+confidence_level:      0.65         # Confianza moderada en las vistas ML
+initial_capital:       1000.0
+
+# ── Parámetros Black-Litterman ─────────────────────────────────────────────
+black_litterman:
+  delta: 3.5        # Alta aversión al riesgo (δ elevado)
+  tau:   0.05       # Incertidumbre en el prior del mercado
+
+# ── Activos del portafolio ─────────────────────────────────────────────────
+assets:
+  - AAPL
+  - NVDA
+  - AMZN
+  - XOM
+  - GLD
+  - QQQ
+  - TLT
+
+# ── Hiperparámetros específicos por activo (custom_assets) ────────────────
+# Cada clave corresponde a una sección del pipeline config (modeling, filtering, etc.)
+custom_assets:
+
+  AAPL:
+    modeling:
+      model: lightgbm
+      max_combinations: 10
+      param_grid:
+        n_estimators:  [100, 200]
+        max_depth:     [3, 5]
+        learning_rate: [0.05, 0.1]
+        num_leaves:    [31, 63]
+
+  GLD:
+    # Oro es menos volátil → CUSUM menos sensible
+    filtering:
+      k_Px: 0.9
+      lookback: 200
+    labeling:
+      pt_sl: [1.0, 1.0]
+      vertical_bars: 96     # 4 días a 1h
+    modeling:
+      model: random_forest
+      param_grid:
+        n_estimators: [100, 200]
+        max_depth:    [3, 5]
+
+  TLT:
+    # Bonos 20Y: muy baja volatilidad
+    filtering:
+      k_Px: 1.0
+      lookback: 240
+    labeling:
+      pt_sl: [1.0, 0.8]
+      vertical_bars: 120    # 5 días
+    modeling:
+      model: random_forest
+      param_grid:
+        n_estimators: [100, 200]
+        max_depth:    [3, 5]
+
+  XOM:
+    modeling:
+      model: xgboost
+      param_grid:
+        n_estimators:  [100, 200]
+        max_depth:     [3, 5]
+        learning_rate: [0.05, 0.1]
+
+  QQQ:
+    modeling:
+      model: lightgbm
+      param_grid:
+        n_estimators: [100, 200]
+        max_depth:    [3, 5]
+
+# ── Overrides globales del pipeline para este perfil ──────────────────────
+pipeline:
+  labeling:
+    pt_sl:         [1.2, 1.0]   # Targets conservadores
+    vertical_bars: 96            # 4 días a 1h
+  filtering:
+    k_Px:    0.7                 # CUSUM moderadamente sensible
+    lookback: 180
+  evaluation:
+    risk_free_rate:   0.045      # Tasa libre de riesgo ~4.5%
+    commission_bps:   3.0
