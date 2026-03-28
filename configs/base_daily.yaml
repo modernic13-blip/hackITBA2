@@ -1,0 +1,152 @@
+# =============================================================================
+# Configuración Base para Datos Diarios
+# =============================================================================
+# Período de entrenamiento: 2020-01-01 → 2024-12-31
+# Período de test / demo:   2025-01-01 → 2025-12-31
+#
+# Este archivo es la base para todos los activos.
+# Cada activo sobreescribe los parámetros que necesite.
+# =============================================================================
+
+asset: "TICKER"
+period:
+  - "2020-01-01"
+  - "2024-12-31"
+frequency: "1d"
+
+# =============================================================================
+# M1 Ingesta
+# =============================================================================
+ingestion:
+  source: "csv"
+  csv_path: "data/TICKER.csv"   # reemplazar TICKER por el activo
+
+# =============================================================================
+# M2 Features
+# Datos diarios → timeframes semanales y mensuales
+# =============================================================================
+features:
+  timeframes:
+    - "1d"    # Diario (base)
+    - "5d"    # Semanal
+    - "20d"   # Mensual
+
+  indicators: "all"
+
+  indicator_params:
+    rsi:
+      period: [14, 21]
+    macd:
+      fast: [12]
+      slow: [26]
+      signal: [9]
+    cci:
+      period: [20]
+    willr:
+      period: [14]
+    bbands:
+      period: [20]
+      num_std: [2.0]
+    adx:
+      period: [14]
+    atr:
+      period: [14]
+    supertrend:
+      period: [10]
+      multiplier: [3.0]
+    cmf:
+      period: [20]
+    mfi:
+      period: [14]
+    ofi:
+      period: [20]
+
+  normalize:
+    methods:
+      - "zscore"
+    window: 60    # 60 días de ventana de normalización
+
+  drop_na_threshold: 0.3
+
+# =============================================================================
+# M3 Filtrado CUSUM
+# Con datos diarios, sensibilidad un poco más alta
+# =============================================================================
+filtering:
+  method: "adaptive_cusum"
+  cusum_mode: "symmetric"
+  k_Px: 0.8           # Mayor que intraday (menos ruido en datos diarios)
+  lookback: 60        # 60 días para estimar volatilidad del threshold
+  min_events: 30
+
+# =============================================================================
+# M4 Etiquetado Triple Barrera
+# Holding period de 20 días (1 mes)
+# =============================================================================
+labeling:
+  pt_sl:
+    - 1.5             # Objetivo de ganancia: 1.5x volatilidad
+    - 1.0             # Stop-loss: 1.0x volatilidad
+  min_ret: 0.0
+  vertical_bars: 20   # 20 días de holding máximo
+  vol_span: 60        # Volatilidad EWM con 60 días
+  use_sample_weights: true
+
+# =============================================================================
+# M5 Partición Walk-Forward
+# 5 folds × 1 año = 5 años de entrenamiento
+# =============================================================================
+splitting:
+  n_splits: 5
+  test_size: 0.2      # 20% de test por fold ≈ 1 año
+  purge_hours: 24     # 1 día de purging (apropiado para diarios)
+  embargo_pct: 0.01
+  expanding: true
+  min_train_size: 200 # Mínimo 200 días (~1 año) de entrenamiento
+
+# =============================================================================
+# M6 Selección de Features
+# =============================================================================
+feature_selection:
+  max_features: 25
+  min_improvement: 0.002
+  n_estimators: 100
+  max_depth: 5
+  use_sample_weights: true
+  verbose: false
+
+# =============================================================================
+# M7 Modelado — XGBoost (mejor para datos financieros diarios)
+# =============================================================================
+modeling:
+  model: "xgboost"
+  max_combinations: 40
+  use_sample_weights: true
+  use_selected_features: true
+  verbose: false
+  param_grid:
+    n_estimators: [200, 400]
+    max_depth: [3, 5]
+    learning_rate: [0.01, 0.05]
+    subsample: [0.8]
+    colsample_bytree: [0.8]
+
+# =============================================================================
+# M8 Evaluación
+# =============================================================================
+evaluation:
+  risk_free_rate: 0.04      # 4% tasa libre de riesgo (FED actual)
+  periods_per_year: 252
+  n_trials_dsr: 10
+  pbo_partitions: 8
+  commission_bps: 5.0       # 5 bps por operación (0.05%)
+  use_selected_features: true
+
+# =============================================================================
+# Risk Optimization
+# =============================================================================
+risk_optimization:
+  risk_profile: "low"
+  optimizer: "markowitz"
+  penalty: 0.001
+  capital: 100000

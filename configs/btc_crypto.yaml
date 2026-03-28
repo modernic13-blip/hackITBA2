@@ -1,0 +1,116 @@
+# =============================================================================
+# Config para BTC — Perfil Crypto (Alta Volatilidad)
+# =============================================================================
+# BTC es el activo más volátil → muchos eventos, holding corto,
+# thresholds amplios, lookback corto
+
+asset: "BTC"
+period:
+  - "2020-01-01"
+  - "2024-12-31"
+frequency: "1d"
+
+ingestion:
+  source: "csv"
+  csv_path: "data/BTC.csv"
+
+features:
+  timeframes:
+    - "1d"
+    - "5d"
+    - "20d"
+  indicators: "all"
+  indicator_params:
+    rsi:
+      period: [14, 21]
+    macd:
+      fast: [12]
+      slow: [26]
+      signal: [9]
+    cci:
+      period: [20]
+    willr:
+      period: [14]
+    bbands:
+      period: [20]
+      num_std: [2.0]
+    adx:
+      period: [14]
+    atr:
+      period: [14]
+    supertrend:
+      period: [10]
+      multiplier: [3.0]
+    cmf:
+      period: [20]
+    mfi:
+      period: [14]
+    ofi:
+      period: [20]
+  normalize:
+    methods:
+      - "zscore"
+    window: 60
+  drop_na_threshold: 0.3
+
+filtering:
+  method: "adaptive_cusum"
+  cusum_mode: "symmetric"
+  k_Px: 0.6          # Muy sensible para detectar movimientos de BTC
+  lookback: 50        # Lookback corto (mercado crypto cambia rápido)
+  min_events: 50
+
+labeling:
+  pt_sl:
+    - 2.0            # BTC puede subir/bajar mucho
+    - 2.0            # Stop loss también amplio
+  min_ret: 0.01      # Retorno mínimo 1% (filtrar señales débiles en BTC)
+  vertical_bars: 10  # 10 días de holding (crypto se mueve rápido)
+  vol_span: 50       # Volatilidad con 50 días
+  use_sample_weights: true
+
+splitting:
+  n_splits: 5
+  test_size: 0.2
+  purge_hours: 24
+  embargo_pct: 0.01
+  expanding: true
+  min_train_size: 150  # Menos mínimo (crypto tiene menos historia)
+
+feature_selection:
+  max_features: 25
+  min_improvement: 0.002
+  n_estimators: 100
+  max_depth: 5
+  use_sample_weights: true
+  verbose: false
+
+modeling:
+  model: "xgboost"
+  max_combinations: 50
+  use_sample_weights: true
+  use_selected_features: true
+  verbose: false
+  param_grid:
+    n_estimators: [300, 500]
+    max_depth: [4, 6]
+    learning_rate: [0.01, 0.05]
+    subsample: [0.7, 0.9]
+    colsample_bytree: [0.7, 0.9]
+    min_child_weight: [3, 5]  # Regularización extra para crypto
+
+evaluation:
+  risk_free_rate: 0.04
+  periods_per_year: 365      # Crypto opera 365 días al año
+  n_trials_dsr: 10
+  pbo_partitions: 8
+  commission_bps: 10.0       # Comisiones más altas en crypto
+  use_selected_features: true
+
+risk_optimization:
+  risk_profile: "high"
+  optimizer: "hrp"           # HRP mejor para activos muy volátiles
+  lookback_days: 120
+  rebalance_threshold: 0.01  # Rebalanceo muy dinámico para BTC
+  penalty: 0.001
+  capital: 100000
