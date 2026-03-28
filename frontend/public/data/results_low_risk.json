@@ -1,1022 +1,34 @@
 [
   {
-    "date": "2024-01-02",
-    "portfolio_value": 994.2984,
-    "benchmark_value": 993.6318,
+    "date": "2025-10-01",
+    "portfolio_value": 1003.8202,
+    "benchmark_value": 1004.4646,
     "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
+      "AAPL": 0.1394,
+      "NVDA": 0.1297,
       "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.551
-  },
-  {
-    "date": "2024-01-03",
-    "portfolio_value": 985.4142,
-    "benchmark_value": 984.9246,
-    "allocations": {
-      "AAPL": 0.1531,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0969
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-01-04",
-    "portfolio_value": 992.5947,
-    "benchmark_value": 990.3877,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5514
-  },
-  {
-    "date": "2024-01-05",
-    "portfolio_value": 1016.5702,
-    "benchmark_value": 1013.9667,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5437
-  },
-  {
-    "date": "2024-01-08",
-    "portfolio_value": 1021.5691,
-    "benchmark_value": 1017.9263,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6298
-  },
-  {
-    "date": "2024-01-09",
-    "portfolio_value": 1030.9736,
-    "benchmark_value": 1026.2687,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.2105,
-      "QQQ": 0.0395
-    },
-    "confidence": 0.581
-  },
-  {
-    "date": "2024-01-10",
-    "portfolio_value": 1034.56,
-    "benchmark_value": 1029.7113,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2177,
       "XOM": 0.231,
-      "QQQ": 0.0514
+      "QQQ": 0.25
     },
-    "confidence": 0.5886
+    "confidence": 0.5946
   },
   {
-    "date": "2024-01-11",
-    "portfolio_value": 1037.1427,
-    "benchmark_value": 1031.6908,
+    "date": "2025-10-02",
+    "portfolio_value": 1004.2083,
+    "benchmark_value": 1003.799,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1962,
-      "XOM": 0.25,
-      "QQQ": 0.0538
-    },
-    "confidence": 0.5793
-  },
-  {
-    "date": "2024-01-12",
-    "portfolio_value": 1034.6432,
-    "benchmark_value": 1028.8212,
-    "allocations": {
-      "AAPL": 0.1647,
-      "NVDA": 0.25,
+      "AAPL": 0.201,
+      "NVDA": 0.049,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.0853
+      "QQQ": 0.25
     },
-    "confidence": 0.5357
+    "confidence": 0.6418
   },
   {
-    "date": "2024-01-16",
-    "portfolio_value": 1027.4207,
-    "benchmark_value": 1021.9518,
-    "allocations": {
-      "AAPL": 0.1544,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0956
-    },
-    "confidence": 0.587
-  },
-  {
-    "date": "2024-01-17",
-    "portfolio_value": 1040.8103,
-    "benchmark_value": 1037.3856,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6253
-  },
-  {
-    "date": "2024-01-18",
-    "portfolio_value": 1059.7958,
-    "benchmark_value": 1056.1927,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5482
-  },
-  {
-    "date": "2024-01-19",
-    "portfolio_value": 1061.9979,
-    "benchmark_value": 1058.5719,
-    "allocations": {
-      "AAPL": 0.2121,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0379
-    },
-    "confidence": 0.5218
-  },
-  {
-    "date": "2024-01-22",
-    "portfolio_value": 1069.8182,
-    "benchmark_value": 1065.7159,
-    "allocations": {
-      "AAPL": 0.2347,
-      "NVDA": 0.2427,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0226
-    },
-    "confidence": 0.6232
-  },
-  {
-    "date": "2024-01-23",
-    "portfolio_value": 1080.77,
-    "benchmark_value": 1076.2971,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2093,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0407
-    },
-    "confidence": 0.6624
-  },
-  {
-    "date": "2024-01-24",
-    "portfolio_value": 1089.6452,
-    "benchmark_value": 1083.7647,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2307,
-      "AMZN": 0.2274,
-      "XOM": 0.25,
-      "QQQ": 0.0419
-    },
-    "confidence": 0.6288
-  },
-  {
-    "date": "2024-01-25",
-    "portfolio_value": 1088.8359,
-    "benchmark_value": 1082.1873,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2328,
-      "AMZN": 0.2176,
-      "XOM": 0.25,
-      "QQQ": 0.0496
-    },
-    "confidence": 0.6449
-  },
-  {
-    "date": "2024-01-26",
-    "portfolio_value": 1099.5379,
-    "benchmark_value": 1091.897,
-    "allocations": {
-      "AAPL": 0.1651,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0849
-    },
-    "confidence": 0.5809
-  },
-  {
-    "date": "2024-01-29",
-    "portfolio_value": 1097.1234,
-    "benchmark_value": 1087.9024,
-    "allocations": {
-      "AAPL": 0.1934,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0566
-    },
-    "confidence": 0.5504
-  },
-  {
-    "date": "2024-01-30",
-    "portfolio_value": 1074.4663,
-    "benchmark_value": 1065.6734,
-    "allocations": {
-      "AAPL": 0.2205,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0295
-    },
-    "confidence": 0.5752
-  },
-  {
-    "date": "2024-01-31",
-    "portfolio_value": 1090.3525,
-    "benchmark_value": 1080.955,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.8201
-  },
-  {
-    "date": "2024-02-01",
-    "portfolio_value": 1125.7949,
-    "benchmark_value": 1110.3071,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.645
-  },
-  {
-    "date": "2024-02-02",
-    "portfolio_value": 1136.8742,
-    "benchmark_value": 1119.997,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-02-05",
-    "portfolio_value": 1133.2927,
-    "benchmark_value": 1117.9162,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6833
-  },
-  {
-    "date": "2024-02-06",
-    "portfolio_value": 1144.8519,
-    "benchmark_value": 1128.2534,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6821
-  },
-  {
-    "date": "2024-02-07",
-    "portfolio_value": 1146.1652,
-    "benchmark_value": 1128.8485,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6246
-  },
-  {
-    "date": "2024-02-08",
-    "portfolio_value": 1160.1568,
-    "benchmark_value": 1141.4248,
-    "allocations": {
-      "AAPL": 0.1209,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1291
-    },
-    "confidence": 0.6344
-  },
-  {
-    "date": "2024-02-09",
-    "portfolio_value": 1159.2281,
-    "benchmark_value": 1139.2198,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6819
-  },
-  {
-    "date": "2024-02-12",
-    "portfolio_value": 1146.1362,
-    "benchmark_value": 1125.8658,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-02-13",
-    "portfolio_value": 1158.0132,
-    "benchmark_value": 1134.782,
-    "allocations": {
-      "AAPL": 0.0452,
-      "NVDA": 0.25,
-      "AMZN": 0.24,
-      "XOM": 0.25,
-      "QQQ": 0.2149
-    },
-    "confidence": 0.5672
-  },
-  {
-    "date": "2024-02-14",
-    "portfolio_value": 1159.6496,
-    "benchmark_value": 1136.224,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-02-15",
-    "portfolio_value": 1156.2438,
-    "benchmark_value": 1131.7189,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2499,
-      "AMZN": 0.2164,
-      "XOM": 0.25,
-      "QQQ": 0.0336
-    },
-    "confidence": 0.5668
-  },
-  {
-    "date": "2024-02-16",
-    "portfolio_value": 1136.2149,
-    "benchmark_value": 1113.8428,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2425,
-      "AMZN": 0.2109,
-      "XOM": 0.25,
-      "QQQ": 0.0466
-    },
-    "confidence": 0.619
-  },
-  {
-    "date": "2024-02-20",
-    "portfolio_value": 1136.8531,
-    "benchmark_value": 1114.0993,
-    "allocations": {
-      "AAPL": 0.1613,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0887
-    },
-    "confidence": 0.7454
-  },
-  {
-    "date": "2024-02-21",
-    "portfolio_value": 1198.2233,
-    "benchmark_value": 1167.3978,
-    "allocations": {
-      "AAPL": 0.1667,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0833
-    },
-    "confidence": 0.7022
-  },
-  {
-    "date": "2024-02-22",
-    "portfolio_value": 1194.0808,
-    "benchmark_value": 1163.6948,
-    "allocations": {
-      "AAPL": 0.2489,
-      "NVDA": 0.25,
-      "AMZN": 0.2054,
-      "XOM": 0.25,
-      "QQQ": 0.0457
-    },
-    "confidence": 0.6216
-  },
-  {
-    "date": "2024-02-23",
-    "portfolio_value": 1194.3663,
-    "benchmark_value": 1163.2232,
-    "allocations": {
-      "AAPL": 0.1636,
-      "NVDA": 0.25,
-      "AMZN": 0.2333,
-      "XOM": 0.25,
-      "QQQ": 0.103
-    },
-    "confidence": 0.6055
-  },
-  {
-    "date": "2024-02-26",
-    "portfolio_value": 1191.7648,
-    "benchmark_value": 1162.4451,
-    "allocations": {
-      "AAPL": 0.1203,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1297
-    },
-    "confidence": 0.5822
-  },
-  {
-    "date": "2024-02-27",
-    "portfolio_value": 1186.2333,
-    "benchmark_value": 1156.7396,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5827
-  },
-  {
-    "date": "2024-02-28",
-    "portfolio_value": 1200.1671,
-    "benchmark_value": 1167.4373,
-    "allocations": {
-      "AAPL": 0.0601,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1899
-    },
-    "confidence": 0.6098
-  },
-  {
-    "date": "2024-02-29",
-    "portfolio_value": 1220.6137,
-    "benchmark_value": 1183.7691,
-    "allocations": {
-      "AAPL": 0.0929,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1571
-    },
-    "confidence": 0.5551
-  },
-  {
-    "date": "2024-03-01",
-    "portfolio_value": 1218.4775,
-    "benchmark_value": 1181.2659,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2037,
-      "XOM": 0.25,
-      "QQQ": 0.0463
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-03-04",
-    "portfolio_value": 1211.6151,
-    "benchmark_value": 1170.6267,
-    "allocations": {
-      "AAPL": 0.1414,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1086
-    },
-    "confidence": 0.586
-  },
-  {
-    "date": "2024-03-05",
-    "portfolio_value": 1223.4766,
-    "benchmark_value": 1179.8573,
-    "allocations": {
-      "AAPL": 0.1263,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1237
-    },
-    "confidence": 0.5597
-  },
-  {
-    "date": "2024-03-06",
-    "portfolio_value": 1246.9298,
-    "benchmark_value": 1199.6581,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6517
-  },
-  {
-    "date": "2024-03-07",
-    "portfolio_value": 1229.3222,
-    "benchmark_value": 1185.6023,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5989
-  },
-  {
-    "date": "2024-03-08",
-    "portfolio_value": 1222.1259,
-    "benchmark_value": 1179.5918,
-    "allocations": {
-      "AAPL": 0.1339,
-      "NVDA": 0.25,
-      "AMZN": 0.1629,
-      "XOM": 0.25,
-      "QQQ": 0.2032
-    },
-    "confidence": 0.6462
-  },
-  {
-    "date": "2024-03-11",
-    "portfolio_value": 1245.5235,
-    "benchmark_value": 1203.7053,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2007,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0493
-    },
-    "confidence": 0.7447
-  },
-  {
-    "date": "2024-03-12",
-    "portfolio_value": 1244.0317,
-    "benchmark_value": 1200.5469,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2037,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0463
-    },
-    "confidence": 0.677
-  },
-  {
-    "date": "2024-03-13",
-    "portfolio_value": 1246.1271,
-    "benchmark_value": 1202.0189,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2179,
-      "XOM": 0.25,
-      "QQQ": 0.0321
-    },
-    "confidence": 0.5665
-  },
-  {
-    "date": "2024-03-14",
-    "portfolio_value": 1237.721,
-    "benchmark_value": 1192.0858,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2004,
-      "XOM": 0.25,
-      "QQQ": 0.0496
-    },
-    "confidence": 0.5728
-  },
-  {
-    "date": "2024-03-15",
-    "portfolio_value": 1245.054,
-    "benchmark_value": 1199.8455,
-    "allocations": {
-      "AAPL": 0.1956,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0544
-    },
-    "confidence": 0.6565
-  },
-  {
-    "date": "2024-03-18",
-    "portfolio_value": 1256.4311,
-    "benchmark_value": 1209.9027,
-    "allocations": {
-      "AAPL": 0.1854,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0646
-    },
-    "confidence": 0.7241
-  },
-  {
-    "date": "2024-03-19",
-    "portfolio_value": 1267.9863,
-    "benchmark_value": 1221.8488,
-    "allocations": {
-      "AAPL": 0.1866,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0634
-    },
-    "confidence": 0.686
-  },
-  {
-    "date": "2024-03-20",
-    "portfolio_value": 1263.2076,
-    "benchmark_value": 1216.9767,
-    "allocations": {
-      "AAPL": 0.1974,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0526
-    },
-    "confidence": 0.6741
-  },
-  {
-    "date": "2024-03-21",
-    "portfolio_value": 1275.6172,
-    "benchmark_value": 1227.1284,
-    "allocations": {
-      "AAPL": 0.1738,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0762
-    },
-    "confidence": 0.7316
-  },
-  {
-    "date": "2024-03-22",
-    "portfolio_value": 1280.6328,
-    "benchmark_value": 1229.7176,
-    "allocations": {
-      "AAPL": 0.1671,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0829
-    },
-    "confidence": 0.7756
-  },
-  {
-    "date": "2024-03-25",
-    "portfolio_value": 1265.9804,
-    "benchmark_value": 1217.1864,
-    "allocations": {
-      "AAPL": 0.1083,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1417
-    },
-    "confidence": 0.6507
-  },
-  {
-    "date": "2024-03-26",
-    "portfolio_value": 1267.0901,
-    "benchmark_value": 1221.715,
-    "allocations": {
-      "AAPL": 0.0859,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1641
-    },
-    "confidence": 0.6535
-  },
-  {
-    "date": "2024-03-27",
-    "portfolio_value": 1270.2742,
-    "benchmark_value": 1222.4178,
-    "allocations": {
-      "AAPL": 0.0971,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1529
-    },
-    "confidence": 0.637
-  },
-  {
-    "date": "2024-03-28",
-    "portfolio_value": 1272.7692,
-    "benchmark_value": 1223.2642,
-    "allocations": {
-      "AAPL": 0.096,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.154
-    },
-    "confidence": 0.5798
-  },
-  {
-    "date": "2024-04-01",
-    "portfolio_value": 1273.1228,
-    "benchmark_value": 1221.3845,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2217,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0283
-    },
-    "confidence": 0.6571
-  },
-  {
-    "date": "2024-04-02",
-    "portfolio_value": 1275.6936,
-    "benchmark_value": 1224.1382,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2173,
-      "XOM": 0.25,
-      "QQQ": 0.0327
-    },
-    "confidence": 0.6001
-  },
-  {
-    "date": "2024-04-03",
-    "portfolio_value": 1259.9554,
-    "benchmark_value": 1208.4058,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2044,
-      "XOM": 0.25,
-      "QQQ": 0.0456
-    },
-    "confidence": 0.6191
-  },
-  {
-    "date": "2024-04-04",
-    "portfolio_value": 1281.758,
-    "benchmark_value": 1228.3965,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2162,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0338
-    },
-    "confidence": 0.735
-  },
-  {
-    "date": "2024-04-05",
-    "portfolio_value": 1275.5945,
-    "benchmark_value": 1222.8887,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6103
-  },
-  {
-    "date": "2024-04-08",
-    "portfolio_value": 1273.3213,
-    "benchmark_value": 1222.4834,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6724
-  },
-  {
-    "date": "2024-04-09",
-    "portfolio_value": 1279.6029,
-    "benchmark_value": 1224.8792,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.627
-  },
-  {
-    "date": "2024-04-10",
-    "portfolio_value": 1310.5885,
-    "benchmark_value": 1252.7211,
-    "allocations": {
-      "AAPL": 0.2425,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0075
-    },
-    "confidence": 0.622
-  },
-  {
-    "date": "2024-04-11",
-    "portfolio_value": 1295.7135,
-    "benchmark_value": 1237.3787,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1971,
-      "XOM": 0.25,
-      "QQQ": 0.0529
-    },
-    "confidence": 0.5884
-  },
-  {
-    "date": "2024-04-12",
-    "portfolio_value": 1274.6958,
-    "benchmark_value": 1217.009,
-    "allocations": {
-      "AAPL": 0.205,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.045
-    },
-    "confidence": 0.6522
-  },
-  {
-    "date": "2024-04-15",
-    "portfolio_value": 1270.7791,
-    "benchmark_value": 1213.9571,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2007,
-      "XOM": 0.25,
-      "QQQ": 0.0493
-    },
-    "confidence": 0.5448
-  },
-  {
-    "date": "2024-04-16",
-    "portfolio_value": 1252.0331,
-    "benchmark_value": 1196.8042,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2213,
-      "XOM": 0.2407,
-      "QQQ": 0.038
-    },
-    "confidence": 0.5466
-  },
-  {
-    "date": "2024-04-17",
-    "portfolio_value": 1248.7672,
-    "benchmark_value": 1192.9402,
-    "allocations": {
-      "AAPL": 0.1528,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0972
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-04-18",
-    "portfolio_value": 1207.9846,
-    "benchmark_value": 1157.8477,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-04-19",
-    "portfolio_value": 1229.6311,
-    "benchmark_value": 1176.2,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.529
-  },
-  {
-    "date": "2024-04-22",
-    "portfolio_value": 1249.0001,
-    "benchmark_value": 1193.7912,
-    "allocations": {
-      "AAPL": 0.1577,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0923
-    },
-    "confidence": 0.65
-  },
-  {
-    "date": "2024-04-23",
-    "portfolio_value": 1238.7404,
-    "benchmark_value": 1185.7948,
-    "allocations": {
-      "AAPL": 0.2009,
-      "NVDA": 0.25,
-      "AMZN": 0.1762,
-      "XOM": 0.25,
-      "QQQ": 0.123
-    },
-    "confidence": 0.6311
-  },
-  {
-    "date": "2024-04-24",
-    "portfolio_value": 1246.547,
-    "benchmark_value": 1191.2927,
+    "date": "2025-10-03",
+    "portfolio_value": 1004.6951,
+    "benchmark_value": 1004.9798,
     "allocations": {
       "AAPL": 0.1797,
       "NVDA": 0.25,
@@ -1024,935 +36,532 @@
       "XOM": 0.25,
       "QQQ": 0.0703
     },
-    "confidence": 0.6617
+    "confidence": 0.5647
   },
   {
-    "date": "2024-04-25",
-    "portfolio_value": 1268.8816,
-    "benchmark_value": 1210.4009,
+    "date": "2025-10-06",
+    "portfolio_value": 1004.6494,
+    "benchmark_value": 1004.0905,
     "allocations": {
-      "AAPL": 0.1587,
+      "AAPL": 0.1922,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.0913
+      "QQQ": 0.0578
     },
-    "confidence": 0.8093
+    "confidence": 0.6108
   },
   {
-    "date": "2024-04-26",
-    "portfolio_value": 1281.7902,
-    "benchmark_value": 1222.7037,
+    "date": "2025-10-07",
+    "portfolio_value": 1015.5066,
+    "benchmark_value": 1014.7835,
     "allocations": {
-      "AAPL": 0.1769,
+      "AAPL": 0.1816,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.0731
+      "QQQ": 0.0684
     },
-    "confidence": 0.778
+    "confidence": 0.5845
   },
   {
-    "date": "2024-04-29",
-    "portfolio_value": 1256.4169,
-    "benchmark_value": 1198.9946,
+    "date": "2025-10-08",
+    "portfolio_value": 1017.4043,
+    "benchmark_value": 1015.407,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
       "AMZN": 0.25,
-      "XOM": 0.2134,
-      "QQQ": 0.0366
+      "XOM": 0.1575,
+      "QQQ": 0.0925
     },
-    "confidence": 0.7502
+    "confidence": 0.5381
   },
   {
-    "date": "2024-04-30",
-    "portfolio_value": 1243.4342,
-    "benchmark_value": 1187.4219,
+    "date": "2025-10-09",
+    "portfolio_value": 978.9732,
+    "benchmark_value": 977.2177,
     "allocations": {
-      "AAPL": 0.186,
-      "NVDA": 0.25,
+      "AAPL": 0.25,
+      "NVDA": 0.211,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.064
+      "QQQ": 0.039
     },
-    "confidence": 0.7933
+    "confidence": 0.5453
   },
   {
-    "date": "2024-05-01",
-    "portfolio_value": 1270.4285,
-    "benchmark_value": 1211.6429,
+    "date": "2025-10-10",
+    "portfolio_value": 997.2561,
+    "benchmark_value": 994.8177,
     "allocations": {
-      "AAPL": 0.1856,
+      "AAPL": 0.1826,
       "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0644
-    },
-    "confidence": 0.7925
-  },
-  {
-    "date": "2024-05-02",
-    "portfolio_value": 1298.128,
-    "benchmark_value": 1240.8551,
-    "allocations": {
-      "AAPL": 0.1667,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0833
-    },
-    "confidence": 0.5662
-  },
-  {
-    "date": "2024-05-03",
-    "portfolio_value": 1314.762,
-    "benchmark_value": 1255.6028,
-    "allocations": {
-      "AAPL": 0.2153,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0347
-    },
-    "confidence": 0.5866
-  },
-  {
-    "date": "2024-05-06",
-    "portfolio_value": 1308.9495,
-    "benchmark_value": 1251.1061,
-    "allocations": {
-      "AAPL": 0.2377,
-      "NVDA": 0.2419,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0204
-    },
-    "confidence": 0.5339
-  },
-  {
-    "date": "2024-05-07",
-    "portfolio_value": 1307.3404,
-    "benchmark_value": 1249.9819,
-    "allocations": {
-      "AAPL": 0.1466,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1034
-    },
-    "confidence": 0.5835
-  },
-  {
-    "date": "2024-05-08",
-    "portfolio_value": 1312.5807,
-    "benchmark_value": 1255.3504,
-    "allocations": {
-      "AAPL": 0.146,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.104
-    },
-    "confidence": 0.5808
-  },
-  {
-    "date": "2024-05-09",
-    "portfolio_value": 1311.1913,
-    "benchmark_value": 1253.7185,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.528
-  },
-  {
-    "date": "2024-05-10",
-    "portfolio_value": 1313.9878,
-    "benchmark_value": 1258.8516,
-    "allocations": {
-      "AAPL": 0.0634,
-      "NVDA": 0.25,
-      "AMZN": 0.1866,
-      "XOM": 0.25,
+      "AMZN": 0.0729,
+      "XOM": 0.2445,
       "QQQ": 0.25
-    },
-    "confidence": 0.6199
-  },
-  {
-    "date": "2024-05-13",
-    "portfolio_value": 1322.489,
-    "benchmark_value": 1266.8938,
-    "allocations": {
-      "AAPL": 0.1954,
-      "NVDA": 0.25,
-      "AMZN": 0.2292,
-      "XOM": 0.25,
-      "QQQ": 0.0754
-    },
-    "confidence": 0.5683
-  },
-  {
-    "date": "2024-05-14",
-    "portfolio_value": 1340.1893,
-    "benchmark_value": 1283.5271,
-    "allocations": {
-      "AAPL": 0.1583,
-      "NVDA": 0.25,
-      "AMZN": 0.2235,
-      "XOM": 0.25,
-      "QQQ": 0.1182
-    },
-    "confidence": 0.5661
-  },
-  {
-    "date": "2024-05-15",
-    "portfolio_value": 1333.218,
-    "benchmark_value": 1277.6386,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2197,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0303
-    },
-    "confidence": 0.6379
-  },
-  {
-    "date": "2024-05-16",
-    "portfolio_value": 1333.8434,
-    "benchmark_value": 1277.7896,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.233,
-      "AMZN": 0.2292,
-      "XOM": 0.25,
-      "QQQ": 0.0378
-    },
-    "confidence": 0.6325
-  },
-  {
-    "date": "2024-05-17",
-    "portfolio_value": 1339.8699,
-    "benchmark_value": 1283.8279,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.242,
-      "AMZN": 0.2125,
-      "XOM": 0.25,
-      "QQQ": 0.0455
-    },
-    "confidence": 0.5948
-  },
-  {
-    "date": "2024-05-20",
-    "portfolio_value": 1342.0401,
-    "benchmark_value": 1285.4128,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1114,
-      "XOM": 0.25,
-      "QQQ": 0.1386
-    },
-    "confidence": 0.7211
-  },
-  {
-    "date": "2024-05-21",
-    "portfolio_value": 1331.1787,
-    "benchmark_value": 1277.0509,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1251,
-      "XOM": 0.25,
-      "QQQ": 0.1249
-    },
-    "confidence": 0.6805
-  },
-  {
-    "date": "2024-05-22",
-    "portfolio_value": 1346.6296,
-    "benchmark_value": 1287.0688,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1514,
-      "XOM": 0.25,
-      "QQQ": 0.0986
-    },
-    "confidence": 0.7035
-  },
-  {
-    "date": "2024-05-23",
-    "portfolio_value": 1361.6182,
-    "benchmark_value": 1299.7637,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1452,
-      "XOM": 0.25,
-      "QQQ": 0.1048
-    },
-    "confidence": 0.7046
-  },
-  {
-    "date": "2024-05-24",
-    "portfolio_value": 1392.0936,
-    "benchmark_value": 1324.2191,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2014,
-      "XOM": 0.25,
-      "QQQ": 0.0486
-    },
-    "confidence": 0.685
-  },
-  {
-    "date": "2024-05-28",
-    "portfolio_value": 1391.11,
-    "benchmark_value": 1321.8939,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2068,
-      "XOM": 0.25,
-      "QQQ": 0.0432
-    },
-    "confidence": 0.6374
-  },
-  {
-    "date": "2024-05-29",
-    "portfolio_value": 1376.1172,
-    "benchmark_value": 1307.4087,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1914,
-      "XOM": 0.25,
-      "QQQ": 0.0586
-    },
-    "confidence": 0.6804
-  },
-  {
-    "date": "2024-05-30",
-    "portfolio_value": 1381.1821,
-    "benchmark_value": 1309.4844,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1633,
-      "XOM": 0.25,
-      "QQQ": 0.0867
-    },
-    "confidence": 0.6039
-  },
-  {
-    "date": "2024-05-31",
-    "portfolio_value": 1397.7538,
-    "benchmark_value": 1322.6807,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.2246,
-      "QQQ": 0.0254
-    },
-    "confidence": 0.6213
-  },
-  {
-    "date": "2024-06-03",
-    "portfolio_value": 1398.9106,
-    "benchmark_value": 1324.5154,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1726,
-      "XOM": 0.25,
-      "QQQ": 0.0774
-    },
-    "confidence": 0.666
-  },
-  {
-    "date": "2024-06-04",
-    "portfolio_value": 1422.5289,
-    "benchmark_value": 1349.5086,
-    "allocations": {
-      "AAPL": 0.2387,
-      "NVDA": 0.1926,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0688
-    },
-    "confidence": 0.6886
-  },
-  {
-    "date": "2024-06-05",
-    "portfolio_value": 1426.4986,
-    "benchmark_value": 1351.888,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2062,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0438
-    },
-    "confidence": 0.58
-  },
-  {
-    "date": "2024-06-06",
-    "portfolio_value": 1425.6831,
-    "benchmark_value": 1350.8361,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.188,
-      "XOM": 0.25,
-      "QQQ": 0.062
-    },
-    "confidence": 0.5485
-  },
-  {
-    "date": "2024-06-07",
-    "portfolio_value": 1427.1321,
-    "benchmark_value": 1353.6068,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2008,
-      "XOM": 0.25,
-      "QQQ": 0.0492
-    },
-    "confidence": 0.5496
-  },
-  {
-    "date": "2024-06-10",
-    "portfolio_value": 1448.8834,
-    "benchmark_value": 1371.2658,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1409,
-      "XOM": 0.25,
-      "QQQ": 0.1091
-    },
-    "confidence": 0.6186
-  },
-  {
-    "date": "2024-06-11",
-    "portfolio_value": 1469.6359,
-    "benchmark_value": 1388.8965,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1477,
-      "XOM": 0.25,
-      "QQQ": 0.1023
-    },
-    "confidence": 0.5958
-  },
-  {
-    "date": "2024-06-12",
-    "portfolio_value": 1478.0918,
-    "benchmark_value": 1394.9351,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1732,
-      "XOM": 0.25,
-      "QQQ": 0.0768
-    },
-    "confidence": 0.5761
-  },
-  {
-    "date": "2024-06-13",
-    "portfolio_value": 1477.554,
-    "benchmark_value": 1396.3721,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2135,
-      "AMZN": 0.2346,
-      "XOM": 0.25,
-      "QQQ": 0.0519
-    },
-    "confidence": 0.572
-  },
-  {
-    "date": "2024-06-14",
-    "portfolio_value": 1481.7232,
-    "benchmark_value": 1402.0695,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1722,
-      "XOM": 0.25,
-      "QQQ": 0.0778
-    },
-    "confidence": 0.6031
-  },
-  {
-    "date": "2024-06-17",
-    "portfolio_value": 1490.6274,
-    "benchmark_value": 1409.6594,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2257,
-      "AMZN": 0.2268,
-      "XOM": 0.25,
-      "QQQ": 0.0475
-    },
-    "confidence": 0.555
-  },
-  {
-    "date": "2024-06-18",
-    "portfolio_value": 1486.2999,
-    "benchmark_value": 1402.5966,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.1983,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0517
-    },
-    "confidence": 0.5734
-  },
-  {
-    "date": "2024-06-20",
-    "portfolio_value": 1475.3981,
-    "benchmark_value": 1391.9165,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.1987,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0513
-    },
-    "confidence": 0.5656
-  },
-  {
-    "date": "2024-06-21",
-    "portfolio_value": 1457.426,
-    "benchmark_value": 1374.1133,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2359,
-      "AMZN": 0.2249,
-      "XOM": 0.25,
-      "QQQ": 0.0391
-    },
-    "confidence": 0.5371
-  },
-  {
-    "date": "2024-06-24",
-    "portfolio_value": 1487.174,
-    "benchmark_value": 1398.9635,
-    "allocations": {
-      "AAPL": 0.1546,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0954
-    },
-    "confidence": 0.6194
-  },
-  {
-    "date": "2024-06-25",
-    "portfolio_value": 1508.3237,
-    "benchmark_value": 1416.8371,
-    "allocations": {
-      "AAPL": 0.1812,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0688
-    },
-    "confidence": 0.6558
-  },
-  {
-    "date": "2024-06-26",
-    "portfolio_value": 1511.5825,
-    "benchmark_value": 1420.7145,
-    "allocations": {
-      "AAPL": 0.2044,
-      "NVDA": 0.25,
-      "AMZN": 0.2215,
-      "XOM": 0.25,
-      "QQQ": 0.0741
-    },
-    "confidence": 0.5822
-  },
-  {
-    "date": "2024-06-27",
-    "portfolio_value": 1497.7359,
-    "benchmark_value": 1407.5276,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1866,
-      "XOM": 0.25,
-      "QQQ": 0.0634
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-06-28",
-    "portfolio_value": 1516.4723,
-    "benchmark_value": 1424.4662,
-    "allocations": {
-      "AAPL": 0.2041,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0459
-    },
-    "confidence": 0.532
-  },
-  {
-    "date": "2024-07-01",
-    "portfolio_value": 1520.2993,
-    "benchmark_value": 1430.4603,
-    "allocations": {
-      "AAPL": 0.2306,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0194
-    },
-    "confidence": 0.7107
-  },
-  {
-    "date": "2024-07-02",
-    "portfolio_value": 1537.7152,
-    "benchmark_value": 1445.5975,
-    "allocations": {
-      "AAPL": 0.2465,
-      "NVDA": 0.2489,
-      "AMZN": 0.233,
-      "XOM": 0.25,
-      "QQQ": 0.0216
-    },
-    "confidence": 0.7268
-  },
-  {
-    "date": "2024-07-03",
-    "portfolio_value": 1538.6858,
-    "benchmark_value": 1449.3657,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2384,
-      "XOM": 0.25,
-      "QQQ": 0.0116
-    },
-    "confidence": 0.6425
-  },
-  {
-    "date": "2024-07-05",
-    "portfolio_value": 1543.2815,
-    "benchmark_value": 1453.3384,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2238,
-      "XOM": 0.25,
-      "QQQ": 0.0262
-    },
-    "confidence": 0.6842
-  },
-  {
-    "date": "2024-07-08",
-    "portfolio_value": 1550.1556,
-    "benchmark_value": 1458.757,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2339,
-      "XOM": 0.25,
-      "QQQ": 0.0161
-    },
-    "confidence": 0.7033
-  },
-  {
-    "date": "2024-07-09",
-    "portfolio_value": 1572.9782,
-    "benchmark_value": 1478.3597,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1849,
-      "XOM": 0.25,
-      "QQQ": 0.0651
-    },
-    "confidence": 0.6405
-  },
-  {
-    "date": "2024-07-10",
-    "portfolio_value": 1537.4495,
-    "benchmark_value": 1445.0496,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1969,
-      "XOM": 0.25,
-      "QQQ": 0.0531
-    },
-    "confidence": 0.5725
-  },
-  {
-    "date": "2024-07-11",
-    "portfolio_value": 1547.4894,
-    "benchmark_value": 1453.9147,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2122,
-      "XOM": 0.25,
-      "QQQ": 0.0378
-    },
-    "confidence": 0.5831
-  },
-  {
-    "date": "2024-07-12",
-    "portfolio_value": 1555.5178,
-    "benchmark_value": 1460.0989,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2039,
-      "XOM": 0.25,
-      "QQQ": 0.0461
-    },
-    "confidence": 0.5962
-  },
-  {
-    "date": "2024-07-15",
-    "portfolio_value": 1553.2204,
-    "benchmark_value": 1458.5633,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1933,
-      "XOM": 0.25,
-      "QQQ": 0.0567
-    },
-    "confidence": 0.6057
-  },
-  {
-    "date": "2024-07-16",
-    "portfolio_value": 1512.6013,
-    "benchmark_value": 1419.6278,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.2091,
-      "XOM": 0.25,
-      "QQQ": 0.0409
-    },
-    "confidence": 0.554
-  },
-  {
-    "date": "2024-07-17",
-    "portfolio_value": 1511.2413,
-    "benchmark_value": 1416.3979,
-    "allocations": {
-      "AAPL": 0.2241,
-      "NVDA": 0.25,
-      "AMZN": 0.2299,
-      "XOM": 0.25,
-      "QQQ": 0.046
-    },
-    "confidence": 0.5623
-  },
-  {
-    "date": "2024-07-18",
-    "portfolio_value": 1490.8711,
-    "benchmark_value": 1399.1933,
-    "allocations": {
-      "AAPL": 0.2244,
-      "NVDA": 0.25,
-      "AMZN": 0.2009,
-      "XOM": 0.25,
-      "QQQ": 0.0747
-    },
-    "confidence": 0.559
-  },
-  {
-    "date": "2024-07-19",
-    "portfolio_value": 1505.3089,
-    "benchmark_value": 1413.4226,
-    "allocations": {
-      "AAPL": 0.2077,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0423
-    },
-    "confidence": 0.674
-  },
-  {
-    "date": "2024-07-22",
-    "portfolio_value": 1506.0198,
-    "benchmark_value": 1412.9937,
-    "allocations": {
-      "AAPL": 0.2321,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.2407,
-      "QQQ": 0.0273
     },
     "confidence": 0.5457
   },
   {
-    "date": "2024-07-23",
-    "portfolio_value": 1463.2295,
-    "benchmark_value": 1371.0328,
-    "allocations": {
-      "AAPL": 0.2135,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0365
-    },
-    "confidence": 0.5214
-  },
-  {
-    "date": "2024-07-24",
-    "portfolio_value": 1459.1476,
-    "benchmark_value": 1366.2471,
-    "allocations": {
-      "AAPL": 0.0635,
-      "NVDA": 0.25,
-      "AMZN": 0.2459,
-      "XOM": 0.25,
-      "QQQ": 0.1906
-    },
-    "confidence": 0.5554
-  },
-  {
-    "date": "2024-07-25",
-    "portfolio_value": 1469.3486,
-    "benchmark_value": 1375.3317,
-    "allocations": {
-      "AAPL": 0.0642,
-      "NVDA": 0.25,
-      "AMZN": 0.1918,
-      "XOM": 0.25,
-      "QQQ": 0.244
-    },
-    "confidence": 0.6177
-  },
-  {
-    "date": "2024-07-26",
-    "portfolio_value": 1462.7355,
-    "benchmark_value": 1370.8327,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5838
-  },
-  {
-    "date": "2024-07-29",
-    "portfolio_value": 1440.9194,
-    "benchmark_value": 1351.1187,
+    "date": "2025-10-13",
+    "portfolio_value": 983.907,
+    "benchmark_value": 981.8946,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1837,
+      "AMZN": 0.125,
       "XOM": 0.25,
-      "QQQ": 0.0663
+      "QQQ": 0.125
     },
-    "confidence": 0.5592
+    "confidence": 0.6159
   },
   {
-    "date": "2024-07-30",
-    "portfolio_value": 1506.0665,
-    "benchmark_value": 1406.5853,
+    "date": "2025-10-14",
+    "portfolio_value": 983.8947,
+    "benchmark_value": 982.3889,
     "allocations": {
-      "AAPL": 0.1613,
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1486,
+      "XOM": 0.25,
+      "QQQ": 0.1014
+    },
+    "confidence": 0.622
+  },
+  {
+    "date": "2025-10-15",
+    "portfolio_value": 981.2163,
+    "benchmark_value": 979.4264,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1817,
+      "XOM": 0.2452,
+      "QQQ": 0.0731
+    },
+    "confidence": 0.5168
+  },
+  {
+    "date": "2025-10-16",
+    "portfolio_value": 991.4362,
+    "benchmark_value": 987.5739,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5177
+  },
+  {
+    "date": "2025-10-17",
+    "portfolio_value": 1004.9067,
+    "benchmark_value": 1001.1464,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5601
+  },
+  {
+    "date": "2025-10-20",
+    "portfolio_value": 1007.3351,
+    "benchmark_value": 1005.1619,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1479,
+      "XOM": 0.2302,
+      "QQQ": 0.1219
+    },
+    "confidence": 0.5825
+  },
+  {
+    "date": "2025-10-21",
+    "portfolio_value": 998.1429,
+    "benchmark_value": 998.8085,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1176,
+      "QQQ": 0.1324
+    },
+    "confidence": 0.6116
+  },
+  {
+    "date": "2025-10-22",
+    "portfolio_value": 1008.5961,
+    "benchmark_value": 1008.5598,
+    "allocations": {
+      "AAPL": 0.1488,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.0887
+      "QQQ": 0.1012
     },
-    "confidence": 0.5687
+    "confidence": 0.5453
   },
   {
-    "date": "2024-07-31",
-    "portfolio_value": 1462.8311,
-    "benchmark_value": 1368.0153,
+    "date": "2025-10-23",
+    "portfolio_value": 1019.465,
+    "benchmark_value": 1019.5012,
     "allocations": {
-      "AAPL": 0.2194,
+      "AAPL": 0.1502,
       "NVDA": 0.25,
-      "AMZN": 0.2202,
-      "XOM": 0.25,
-      "QQQ": 0.0604
-    },
-    "confidence": 0.5302
-  },
-  {
-    "date": "2024-08-01",
-    "portfolio_value": 1430.0019,
-    "benchmark_value": 1334.3416,
-    "allocations": {
-      "AAPL": 0.2077,
-      "NVDA": 0.25,
-      "AMZN": 0.1925,
+      "AMZN": 0.25,
       "XOM": 0.25,
       "QQQ": 0.0998
     },
-    "confidence": 0.5796
+    "confidence": 0.5328
   },
   {
-    "date": "2024-08-02",
-    "portfolio_value": 1372.4803,
-    "benchmark_value": 1280.8103,
+    "date": "2025-10-24",
+    "portfolio_value": 1036.8301,
+    "benchmark_value": 1036.8706,
     "allocations": {
-      "AAPL": 0.1155,
+      "AAPL": 0.2498,
+      "NVDA": 0.25,
+      "AMZN": 0.211,
+      "XOM": 0.25,
+      "QQQ": 0.0391
+    },
+    "confidence": 0.5732
+  },
+  {
+    "date": "2025-10-27",
+    "portfolio_value": 1046.1463,
+    "benchmark_value": 1049.5726,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.1461,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.1039
+    },
+    "confidence": 0.5341
+  },
+  {
+    "date": "2025-10-28",
+    "portfolio_value": 1059.1806,
+    "benchmark_value": 1061.1202,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.2175,
+      "XOM": 0.2374,
+      "QQQ": 0.0451
+    },
+    "confidence": 0.5698
+  },
+  {
+    "date": "2025-10-29",
+    "portfolio_value": 1042.3673,
+    "benchmark_value": 1044.3842,
+    "allocations": {
+      "AAPL": 0.2421,
+      "NVDA": 0.25,
+      "AMZN": 0.2433,
+      "XOM": 0.2381,
+      "QQQ": 0.0265
+    },
+    "confidence": 0.5102
+  },
+  {
+    "date": "2025-10-30",
+    "portfolio_value": 1066.2704,
+    "benchmark_value": 1063.7084,
+    "allocations": {
+      "AAPL": 0.2334,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1333,
+      "QQQ": 0.1333
+    },
+    "confidence": 0.5026
+  },
+  {
+    "date": "2025-10-31",
+    "portfolio_value": 1080.1749,
+    "benchmark_value": 1076.2311,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.2213,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.0287
+    },
+    "confidence": 0.5035
+  },
+  {
+    "date": "2025-11-03",
+    "portfolio_value": 1064.9564,
+    "benchmark_value": 1060.5306,
+    "allocations": {
+      "AAPL": 0.2262,
+      "NVDA": 0.1746,
+      "AMZN": 0.1746,
+      "XOM": 0.1746,
+      "QQQ": 0.25
+    },
+    "confidence": 0.568
+  },
+  {
+    "date": "2025-11-04",
+    "portfolio_value": 1060.7586,
+    "benchmark_value": 1058.2216,
+    "allocations": {
+      "AAPL": 0.1908,
+      "NVDA": 0.2464,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.0629
+    },
+    "confidence": 0.5443
+  },
+  {
+    "date": "2025-11-05",
+    "portfolio_value": 1042.6406,
+    "benchmark_value": 1041.749,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1606,
+      "QQQ": 0.0894
+    },
+    "confidence": 0.557
+  },
+  {
+    "date": "2025-11-06",
+    "portfolio_value": 1049.3247,
+    "benchmark_value": 1046.3082,
+    "allocations": {
+      "AAPL": 0.1412,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.1345
+      "QQQ": 0.1088
     },
-    "confidence": 0.6274
+    "confidence": 0.5994
   },
   {
-    "date": "2024-08-05",
-    "portfolio_value": 1385.9411,
-    "benchmark_value": 1290.5376,
+    "date": "2025-11-07",
+    "portfolio_value": 1072.3456,
+    "benchmark_value": 1068.8383,
     "allocations": {
-      "AAPL": 0.11,
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.2109,
+      "QQQ": 0.0391
+    },
+    "confidence": 0.6006
+  },
+  {
+    "date": "2025-11-10",
+    "portfolio_value": 1073.3731,
+    "benchmark_value": 1070.19,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1682,
+      "QQQ": 0.0818
+    },
+    "confidence": 0.558
+  },
+  {
+    "date": "2025-11-11",
+    "portfolio_value": 1065.1903,
+    "benchmark_value": 1062.1278,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5768
+  },
+  {
+    "date": "2025-11-12",
+    "portfolio_value": 1047.1907,
+    "benchmark_value": 1045.2805,
+    "allocations": {
+      "AAPL": 0.1349,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.14
+      "QQQ": 0.1151
     },
-    "confidence": 0.5946
+    "confidence": 0.6181
   },
   {
-    "date": "2024-08-06",
-    "portfolio_value": 1374.6943,
-    "benchmark_value": 1282.5228,
+    "date": "2025-11-13",
+    "portfolio_value": 1049.2518,
+    "benchmark_value": 1047.0884,
     "allocations": {
-      "AAPL": 0.1189,
-      "NVDA": 0.25,
+      "AAPL": 0.2151,
+      "NVDA": 0.2456,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.1311
+      "QQQ": 0.0393
     },
-    "confidence": 0.5968
+    "confidence": 0.575
   },
   {
-    "date": "2024-08-07",
-    "portfolio_value": 1418.8864,
-    "benchmark_value": 1320.0267,
+    "date": "2025-11-14",
+    "portfolio_value": 1034.2951,
+    "benchmark_value": 1032.9416,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.148,
+      "QQQ": 0.102
+    },
+    "confidence": 0.543
+  },
+  {
+    "date": "2025-11-17",
+    "portfolio_value": 1019.5183,
+    "benchmark_value": 1017.8852,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1644,
+      "XOM": 0.1711,
+      "QQQ": 0.1644
+    },
+    "confidence": 0.5
+  },
+  {
+    "date": "2025-11-18",
+    "portfolio_value": 1025.3395,
+    "benchmark_value": 1023.1938,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5359
+  },
+  {
+    "date": "2025-11-19",
+    "portfolio_value": 1006.5843,
+    "benchmark_value": 1004.6138,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1639,
+      "XOM": 0.1722,
+      "QQQ": 0.1639
+    },
+    "confidence": 0.5249
+  },
+  {
+    "date": "2025-11-20",
+    "portfolio_value": 1013.4712,
+    "benchmark_value": 1011.2234,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.2205,
+      "AMZN": 0.25,
+      "XOM": 0.2473,
+      "QQQ": 0.0323
+    },
+    "confidence": 0.5558
+  },
+  {
+    "date": "2025-11-21",
+    "portfolio_value": 1026.5867,
+    "benchmark_value": 1026.7944,
+    "allocations": {
+      "AAPL": 0.2393,
+      "NVDA": 0.25,
+      "AMZN": 0.2411,
+      "XOM": 0.25,
+      "QQQ": 0.0196
+    },
+    "confidence": 0.6133
+  },
+  {
+    "date": "2025-11-24",
+    "portfolio_value": 1019.379,
+    "benchmark_value": 1024.0698,
+    "allocations": {
+      "AAPL": 0.2361,
+      "NVDA": 0.25,
+      "AMZN": 0.0139,
+      "XOM": 0.25,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5497
+  },
+  {
+    "date": "2025-11-25",
+    "portfolio_value": 1025.5786,
+    "benchmark_value": 1029.0641,
+    "allocations": {
+      "AAPL": 0.1803,
+      "NVDA": 0.25,
+      "AMZN": 0.1294,
+      "XOM": 0.1903,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5811
+  },
+  {
+    "date": "2025-11-26",
+    "portfolio_value": 1026.9121,
+    "benchmark_value": 1031.3857,
+    "allocations": {
+      "AAPL": 0.2449,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.2105,
+      "QQQ": 0.0445
+    },
+    "confidence": 0.5355
+  },
+  {
+    "date": "2025-11-28",
+    "portfolio_value": 1036.0143,
+    "benchmark_value": 1041.9224,
+    "allocations": {
+      "AAPL": 0.1193,
+      "NVDA": 0.25,
+      "AMZN": 0.1307,
+      "XOM": 0.25,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6106
+  },
+  {
+    "date": "2025-12-01",
+    "portfolio_value": 1038.2513,
+    "benchmark_value": 1045.3574,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.1995,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.0505
+    },
+    "confidence": 0.53
+  },
+  {
+    "date": "2025-12-02",
+    "portfolio_value": 1039.883,
+    "benchmark_value": 1045.02,
     "allocations": {
       "AAPL": 0.125,
       "NVDA": 0.25,
@@ -1960,805 +569,571 @@
       "XOM": 0.25,
       "QQQ": 0.25
     },
-    "confidence": 0.5741
+    "confidence": 0.5819
   },
   {
-    "date": "2024-08-08",
-    "portfolio_value": 1426.5711,
-    "benchmark_value": 1328.4435,
-    "allocations": {
-      "AAPL": 0.1033,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1467
-    },
-    "confidence": 0.6784
-  },
-  {
-    "date": "2024-08-09",
-    "portfolio_value": 1442.8743,
-    "benchmark_value": 1341.853,
-    "allocations": {
-      "AAPL": 0.1192,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1308
-    },
-    "confidence": 0.7145
-  },
-  {
-    "date": "2024-08-12",
-    "portfolio_value": 1477.9706,
-    "benchmark_value": 1373.6009,
+    "date": "2025-12-03",
+    "portfolio_value": 1040.1034,
+    "benchmark_value": 1042.4394,
     "allocations": {
       "AAPL": 0.125,
       "NVDA": 0.25,
-      "AMZN": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5753
+  },
+  {
+    "date": "2025-12-04",
+    "portfolio_value": 1037.563,
+    "benchmark_value": 1040.0638,
+    "allocations": {
+      "AAPL": 0.1782,
+      "NVDA": 0.25,
+      "AMZN": 0.1104,
+      "XOM": 0.2114,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5812
+  },
+  {
+    "date": "2025-12-05",
+    "portfolio_value": 1038.4792,
+    "benchmark_value": 1039.4141,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
       "XOM": 0.25,
       "QQQ": 0.125
     },
-    "confidence": 0.7498
+    "confidence": 0.5191
   },
   {
-    "date": "2024-08-13",
-    "portfolio_value": 1487.8495,
-    "benchmark_value": 1381.1685,
+    "date": "2025-12-08",
+    "portfolio_value": 1042.7687,
+    "benchmark_value": 1043.3605,
     "allocations": {
-      "AAPL": 0.1789,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.25,
+      "AMZN": 0.1536,
       "XOM": 0.25,
-      "QQQ": 0.0711
+      "QQQ": 0.0964
     },
-    "confidence": 0.7778
+    "confidence": 0.6321
   },
   {
-    "date": "2024-08-14",
-    "portfolio_value": 1528.0903,
-    "benchmark_value": 1416.9392,
+    "date": "2025-12-09",
+    "portfolio_value": 1049.1505,
+    "benchmark_value": 1049.6976,
     "allocations": {
-      "AAPL": 0.1657,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
+      "AAPL": 0.25,
+      "NVDA": 0.2417,
+      "AMZN": 0.204,
       "XOM": 0.25,
-      "QQQ": 0.0843
+      "QQQ": 0.0544
     },
-    "confidence": 0.7677
+    "confidence": 0.6231
   },
   {
-    "date": "2024-08-15",
-    "portfolio_value": 1531.8768,
-    "benchmark_value": 1420.7657,
+    "date": "2025-12-10",
+    "portfolio_value": 1043.8214,
+    "benchmark_value": 1044.0572,
     "allocations": {
-      "AAPL": 0.1256,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
+      "AAPL": 0.1839,
+      "NVDA": 0.2122,
+      "AMZN": 0.1039,
       "XOM": 0.25,
-      "QQQ": 0.1244
+      "QQQ": 0.25
     },
-    "confidence": 0.5553
+    "confidence": 0.6219
   },
   {
-    "date": "2024-08-16",
-    "portfolio_value": 1554.5938,
-    "benchmark_value": 1439.3869,
+    "date": "2025-12-11",
+    "portfolio_value": 1029.1252,
+    "benchmark_value": 1028.4418,
     "allocations": {
-      "AAPL": 0.125,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.25,
+      "AMZN": 0.125,
       "XOM": 0.25,
       "QQQ": 0.125
     },
-    "confidence": 0.5865
+    "confidence": 0.5164
   },
   {
-    "date": "2024-08-19",
-    "portfolio_value": 1535.6242,
-    "benchmark_value": 1424.9558,
+    "date": "2025-12-12",
+    "portfolio_value": 1021.7718,
+    "benchmark_value": 1020.5297,
     "allocations": {
-      "AAPL": 0.2098,
+      "AAPL": 0.1955,
+      "NVDA": 0.1909,
+      "AMZN": 0.1333,
+      "XOM": 0.2303,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5421
+  },
+  {
+    "date": "2025-12-15",
+    "portfolio_value": 1020.8701,
+    "benchmark_value": 1017.3603,
+    "allocations": {
+      "AAPL": 0.25,
       "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.512
+  },
+  {
+    "date": "2025-12-16",
+    "portfolio_value": 1008.181,
+    "benchmark_value": 1007.7949,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5184
+  },
+  {
+    "date": "2025-12-17",
+    "portfolio_value": 1017.553,
+    "benchmark_value": 1018.1556,
+    "allocations": {
+      "AAPL": 0.2356,
+      "NVDA": 0.2242,
       "AMZN": 0.25,
       "XOM": 0.25,
       "QQQ": 0.0402
     },
-    "confidence": 0.5432
+    "confidence": 0.5999
   },
   {
-    "date": "2024-08-20",
-    "portfolio_value": 1539.7983,
-    "benchmark_value": 1429.0901,
-    "allocations": {
-      "AAPL": 0.2,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.05
-    },
-    "confidence": 0.5295
-  },
-  {
-    "date": "2024-08-21",
-    "portfolio_value": 1516.7967,
-    "benchmark_value": 1407.5035,
-    "allocations": {
-      "AAPL": 0.2377,
-      "NVDA": 0.25,
-      "AMZN": 0.2383,
-      "XOM": 0.25,
-      "QQQ": 0.024
-    },
-    "confidence": 0.5008
-  },
-  {
-    "date": "2024-08-22",
-    "portfolio_value": 1545.224,
-    "benchmark_value": 1431.6161,
-    "allocations": {
-      "AAPL": 0.1806,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0694
-    },
-    "confidence": 0.535
-  },
-  {
-    "date": "2024-08-23",
-    "portfolio_value": 1542.1039,
-    "benchmark_value": 1426.4637,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2432,
-      "AMZN": 0.2161,
-      "XOM": 0.25,
-      "QQQ": 0.0407
-    },
-    "confidence": 0.5308
-  },
-  {
-    "date": "2024-08-26",
-    "portfolio_value": 1539.5131,
-    "benchmark_value": 1425.9521,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2081,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0419
-    },
-    "confidence": 0.5399
-  },
-  {
-    "date": "2024-08-27",
-    "portfolio_value": 1520.762,
-    "benchmark_value": 1408.1774,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.1913,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0587
-    },
-    "confidence": 0.5839
-  },
-  {
-    "date": "2024-08-28",
-    "portfolio_value": 1514.6149,
-    "benchmark_value": 1399.9547,
-    "allocations": {
-      "AAPL": 0.2259,
-      "NVDA": 0.1975,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0766
-    },
-    "confidence": 0.5809
-  },
-  {
-    "date": "2024-08-29",
-    "portfolio_value": 1532.4881,
-    "benchmark_value": 1416.4958,
-    "allocations": {
-      "AAPL": 0.2356,
-      "NVDA": 0.1846,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0798
-    },
-    "confidence": 0.597
-  },
-  {
-    "date": "2024-08-30",
-    "portfolio_value": 1472.529,
-    "benchmark_value": 1363.699,
-    "allocations": {
-      "AAPL": 0.2105,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0395
-    },
-    "confidence": 0.5326
-  },
-  {
-    "date": "2024-09-03",
-    "portfolio_value": 1453.2089,
-    "benchmark_value": 1348.2702,
-    "allocations": {
-      "AAPL": 0.2074,
-      "NVDA": 0.25,
-      "AMZN": 0.2417,
-      "XOM": 0.25,
-      "QQQ": 0.0509
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-09-04",
-    "portfolio_value": 1465.1773,
-    "benchmark_value": 1357.919,
-    "allocations": {
-      "AAPL": 0.1705,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0795
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-09-05",
-    "portfolio_value": 1433.1748,
-    "benchmark_value": 1326.448,
+    "date": "2025-12-18",
+    "portfolio_value": 1032.1527,
+    "benchmark_value": 1030.8804,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.2058,
-      "XOM": 0.25,
-      "QQQ": 0.0442
+      "AMZN": 0.2245,
+      "XOM": 0.1071,
+      "QQQ": 0.1684
     },
-    "confidence": 0.5049
+    "confidence": 0.6496
   },
   {
-    "date": "2024-09-06",
-    "portfolio_value": 1463.6202,
-    "benchmark_value": 1351.1473,
+    "date": "2025-12-19",
+    "portfolio_value": 1037.0977,
+    "benchmark_value": 1035.8888,
     "allocations": {
-      "AAPL": 0.0929,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1766,
-      "XOM": 0.25,
-      "QQQ": 0.2304
+      "AMZN": 0.2236,
+      "XOM": 0.2001,
+      "QQQ": 0.0763
     },
-    "confidence": 0.597
+    "confidence": 0.5407
   },
   {
-    "date": "2024-09-09",
-    "portfolio_value": 1465.7607,
-    "benchmark_value": 1353.3519,
+    "date": "2025-12-22",
+    "portfolio_value": 1053.3161,
+    "benchmark_value": 1049.883,
     "allocations": {
-      "AAPL": 0.1153,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1347
-    },
-    "confidence": 0.7178
-  },
-  {
-    "date": "2024-09-10",
-    "portfolio_value": 1508.5856,
-    "benchmark_value": 1389.2303,
-    "allocations": {
-      "AAPL": 0.1012,
+      "AAPL": 0.2072,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.1488
+      "QQQ": 0.0428
     },
-    "confidence": 0.7671
+    "confidence": 0.5706
   },
   {
-    "date": "2024-09-11",
-    "portfolio_value": 1528.0159,
-    "benchmark_value": 1404.977,
+    "date": "2025-12-23",
+    "portfolio_value": 1055.6022,
+    "benchmark_value": 1053.0051,
     "allocations": {
-      "AAPL": 0.125,
+      "AAPL": 0.1553,
       "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5995
-  },
-  {
-    "date": "2024-09-12",
-    "portfolio_value": 1527.1952,
-    "benchmark_value": 1404.8324,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5638
-  },
-  {
-    "date": "2024-09-13",
-    "portfolio_value": 1515.6953,
-    "benchmark_value": 1391.847,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5582
-  },
-  {
-    "date": "2024-09-16",
-    "portfolio_value": 1521.1974,
-    "benchmark_value": 1396.3889,
-    "allocations": {
-      "AAPL": 0.0219,
-      "NVDA": 0.2365,
-      "AMZN": 0.2416,
+      "AMZN": 0.0947,
       "XOM": 0.25,
       "QQQ": 0.25
     },
-    "confidence": 0.5595
+    "confidence": 0.6174
   },
   {
-    "date": "2024-09-17",
-    "portfolio_value": 1516.9074,
-    "benchmark_value": 1395.1461,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5193
-  },
-  {
-    "date": "2024-09-18",
-    "portfolio_value": 1555.4798,
-    "benchmark_value": 1432.2257,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5777
-  },
-  {
-    "date": "2024-09-19",
-    "portfolio_value": 1549.9117,
-    "benchmark_value": 1427.1048,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2071,
-      "AMZN": 0.2332,
-      "XOM": 0.25,
-      "QQQ": 0.0597
-    },
-    "confidence": 0.5631
-  },
-  {
-    "date": "2024-09-20",
-    "portfolio_value": 1558.8092,
-    "benchmark_value": 1434.9089,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2276,
-      "AMZN": 0.2023,
-      "XOM": 0.25,
-      "QQQ": 0.0701
-    },
-    "confidence": 0.5806
-  },
-  {
-    "date": "2024-09-23",
-    "portfolio_value": 1575.1075,
-    "benchmark_value": 1448.1735,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6015
-  },
-  {
-    "date": "2024-09-24",
-    "portfolio_value": 1572.8651,
-    "benchmark_value": 1445.7171,
-    "allocations": {
-      "AAPL": 0.1264,
-      "NVDA": 0.25,
-      "AMZN": 0.2174,
-      "XOM": 0.25,
-      "QQQ": 0.1561
-    },
-    "confidence": 0.6442
-  },
-  {
-    "date": "2024-09-25",
-    "portfolio_value": 1568.2223,
-    "benchmark_value": 1443.5786,
-    "allocations": {
-      "AAPL": 0.1298,
-      "NVDA": 0.25,
-      "AMZN": 0.217,
-      "XOM": 0.25,
-      "QQQ": 0.1532
-    },
-    "confidence": 0.6602
-  },
-  {
-    "date": "2024-09-26",
-    "portfolio_value": 1563.3177,
-    "benchmark_value": 1439.0838,
-    "allocations": {
-      "AAPL": 0.1325,
-      "NVDA": 0.25,
-      "AMZN": 0.2349,
-      "XOM": 0.25,
-      "QQQ": 0.1325
-    },
-    "confidence": 0.6237
-  },
-  {
-    "date": "2024-09-27",
-    "portfolio_value": 1570.5011,
-    "benchmark_value": 1447.5101,
-    "allocations": {
-      "AAPL": 0.1485,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1015
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-09-30",
-    "portfolio_value": 1554.2387,
-    "benchmark_value": 1429.284,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.547
-  },
-  {
-    "date": "2024-10-01",
-    "portfolio_value": 1565.5214,
-    "benchmark_value": 1438.1466,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6076
-  },
-  {
-    "date": "2024-10-02",
-    "portfolio_value": 1574.956,
-    "benchmark_value": 1444.3543,
-    "allocations": {
-      "AAPL": 0.1429,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1071
-    },
-    "confidence": 0.6108
-  },
-  {
-    "date": "2024-10-03",
-    "portfolio_value": 1601.3401,
-    "benchmark_value": 1466.6309,
-    "allocations": {
-      "AAPL": 0.1767,
-      "NVDA": 0.2385,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0848
-    },
-    "confidence": 0.6126
-  },
-  {
-    "date": "2024-10-04",
-    "portfolio_value": 1593.1349,
-    "benchmark_value": 1455.7435,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6043
-  },
-  {
-    "date": "2024-10-07",
-    "portfolio_value": 1609.3734,
-    "benchmark_value": 1472.594,
-    "allocations": {
-      "AAPL": 0.0936,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1564
-    },
-    "confidence": 0.7425
-  },
-  {
-    "date": "2024-10-08",
-    "portfolio_value": 1619.1486,
-    "benchmark_value": 1483.3672,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.7495
-  },
-  {
-    "date": "2024-10-09",
-    "portfolio_value": 1631.7858,
-    "benchmark_value": 1492.1375,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.7012
-  },
-  {
-    "date": "2024-10-10",
-    "portfolio_value": 1637.0474,
-    "benchmark_value": 1495.2491,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6434
-  },
-  {
-    "date": "2024-10-11",
-    "portfolio_value": 1650.8465,
-    "benchmark_value": 1509.0511,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.6349
-  },
-  {
-    "date": "2024-10-14",
-    "portfolio_value": 1618.9469,
-    "benchmark_value": 1485.3699,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-10-15",
-    "portfolio_value": 1629.1687,
-    "benchmark_value": 1491.576,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5169
-  },
-  {
-    "date": "2024-10-16",
-    "portfolio_value": 1633.6875,
-    "benchmark_value": 1495.1736,
-    "allocations": {
-      "AAPL": 0.1747,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.0753
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-10-17",
-    "portfolio_value": 1642.8567,
-    "benchmark_value": 1504.6248,
-    "allocations": {
-      "AAPL": 0.1463,
-      "NVDA": 0.2404,
-      "AMZN": 0.2138,
-      "XOM": 0.25,
-      "QQQ": 0.1495
-    },
-    "confidence": 0.6285
-  },
-  {
-    "date": "2024-10-18",
-    "portfolio_value": 1662.9642,
-    "benchmark_value": 1519.8524,
+    "date": "2025-12-24",
+    "portfolio_value": 1055.2189,
+    "benchmark_value": 1052.6005,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.2039,
+      "AMZN": 0.168,
       "XOM": 0.25,
-      "QQQ": 0.0461
+      "QQQ": 0.082
     },
-    "confidence": 0.5995
+    "confidence": 0.5221
   },
   {
-    "date": "2024-10-21",
-    "portfolio_value": 1665.3375,
-    "benchmark_value": 1521.7152,
+    "date": "2025-12-26",
+    "portfolio_value": 1055.3747,
+    "benchmark_value": 1051.6282,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.163,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.087
-    },
-    "confidence": 0.5645
-  },
-  {
-    "date": "2024-10-22",
-    "portfolio_value": 1633.5267,
-    "benchmark_value": 1492.8391,
-    "allocations": {
-      "AAPL": 0.125,
-      "NVDA": 0.25,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.125
-    },
-    "confidence": 0.5
-  },
-  {
-    "date": "2024-10-23",
-    "portfolio_value": 1639.7295,
-    "benchmark_value": 1497.8441,
-    "allocations": {
-      "AAPL": 0.0867,
-      "NVDA": 0.1633,
-      "AMZN": 0.25,
+      "AAPL": 0.2246,
+      "NVDA": 0.1582,
+      "AMZN": 0.1172,
       "XOM": 0.25,
       "QQQ": 0.25
     },
-    "confidence": 0.5793
+    "confidence": 0.5923
   },
   {
-    "date": "2024-10-24",
-    "portfolio_value": 1647.927,
-    "benchmark_value": 1505.2519,
+    "date": "2025-12-29",
+    "portfolio_value": 1054.3635,
+    "benchmark_value": 1050.9613,
     "allocations": {
-      "AAPL": 0.0618,
-      "NVDA": 0.1882,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.25
-    },
-    "confidence": 0.5581
-  },
-  {
-    "date": "2024-10-25",
-    "portfolio_value": 1646.1577,
-    "benchmark_value": 1505.131,
-    "allocations": {
-      "AAPL": 0.0744,
-      "NVDA": 0.1756,
-      "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.25
-    },
-    "confidence": 0.5461
-  },
-  {
-    "date": "2024-10-28",
-    "portfolio_value": 1650.2022,
-    "benchmark_value": 1509.7328,
-    "allocations": {
-      "AAPL": 0.1263,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.2475,
+      "AMZN": 0.1529,
+      "XOM": 0.1942,
+      "QQQ": 0.1529
+    },
+    "confidence": 0.5021
+  },
+  {
+    "date": "2025-12-30",
+    "portfolio_value": 1048.2208,
+    "benchmark_value": 1044.445,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
       "XOM": 0.25,
-      "QQQ": 0.1263
+      "QQQ": 0.125
     },
     "confidence": 0.5
   },
   {
-    "date": "2024-10-29",
-    "portfolio_value": 1639.1312,
-    "benchmark_value": 1500.2421,
+    "date": "2025-12-31",
+    "portfolio_value": 1052.954,
+    "benchmark_value": 1046.052,
     "allocations": {
-      "AAPL": 0.1649,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1702,
+      "AMZN": 0.125,
       "XOM": 0.25,
-      "QQQ": 0.1649
+      "QQQ": 0.125
     },
-    "confidence": 0.5144
+    "confidence": 0.5395
   },
   {
-    "date": "2024-10-30",
-    "portfolio_value": 1599.253,
-    "benchmark_value": 1463.4119,
+    "date": "2026-01-02",
+    "portfolio_value": 1059.1232,
+    "benchmark_value": 1054.8092,
     "allocations": {
-      "AAPL": 0.1667,
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5244
+  },
+  {
+    "date": "2026-01-05",
+    "portfolio_value": 1057.2489,
+    "benchmark_value": 1052.0827,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.2154,
+      "XOM": 0.1423,
+      "QQQ": 0.1423
+    },
+    "confidence": 0.5188
+  },
+  {
+    "date": "2026-01-06",
+    "portfolio_value": 1053.9656,
+    "benchmark_value": 1048.6246,
+    "allocations": {
+      "AAPL": 0.2499,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.2002,
+      "QQQ": 0.0499
+    },
+    "confidence": 0.5487
+  },
+  {
+    "date": "2026-01-07",
+    "portfolio_value": 1057.7239,
+    "benchmark_value": 1053.6965,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.1921,
+      "AMZN": 0.0579,
+      "XOM": 0.25,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6134
+  },
+  {
+    "date": "2026-01-08",
+    "portfolio_value": 1062.0082,
+    "benchmark_value": 1059.585,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1391,
+      "QQQ": 0.1109
+    },
+    "confidence": 0.5652
+  },
+  {
+    "date": "2026-01-09",
+    "portfolio_value": 1061.4033,
+    "benchmark_value": 1058.6561,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5531
+  },
+  {
+    "date": "2026-01-12",
+    "portfolio_value": 1064.2628,
+    "benchmark_value": 1061.0482,
+    "allocations": {
+      "AAPL": 0.1376,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.1124
+    },
+    "confidence": 0.5397
+  },
+  {
+    "date": "2026-01-13",
+    "portfolio_value": 1058.5053,
+    "benchmark_value": 1056.0312,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1975,
+      "QQQ": 0.0525
+    },
+    "confidence": 0.6369
+  },
+  {
+    "date": "2026-01-14",
+    "portfolio_value": 1063.5755,
+    "benchmark_value": 1059.529,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5316
+  },
+  {
+    "date": "2026-01-15",
+    "portfolio_value": 1061.4975,
+    "benchmark_value": 1057.959,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1983,
+      "QQQ": 0.0517
+    },
+    "confidence": 0.5577
+  },
+  {
+    "date": "2026-01-16",
+    "portfolio_value": 1029.9473,
+    "benchmark_value": 1031.084,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5494
+  },
+  {
+    "date": "2026-01-20",
+    "portfolio_value": 1046.3679,
+    "benchmark_value": 1045.7002,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5618
+  },
+  {
+    "date": "2026-01-21",
+    "portfolio_value": 1051.7727,
+    "benchmark_value": 1052.1454,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.125,
+      "XOM": 0.25,
+      "QQQ": 0.125
+    },
+    "confidence": 0.6053
+  },
+  {
+    "date": "2026-01-22",
+    "portfolio_value": 1061.4987,
+    "benchmark_value": 1062.3607,
+    "allocations": {
+      "AAPL": 0.25,
       "NVDA": 0.25,
       "AMZN": 0.1667,
-      "XOM": 0.25,
+      "XOM": 0.1667,
       "QQQ": 0.1667
     },
-    "confidence": 0.522
+    "confidence": 0.5785
   },
   {
-    "date": "2024-10-31",
-    "portfolio_value": 1614.7167,
-    "benchmark_value": 1481.0286,
+    "date": "2026-01-23",
+    "portfolio_value": 1067.7243,
+    "benchmark_value": 1067.3703,
     "allocations": {
-      "AAPL": 0.1455,
+      "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1455,
-      "XOM": 0.25,
-      "QQQ": 0.2089
+      "AMZN": 0.1667,
+      "XOM": 0.1667,
+      "QQQ": 0.1667
     },
-    "confidence": 0.5426
+    "confidence": 0.5784
   },
   {
-    "date": "2024-11-01",
-    "portfolio_value": 1623.7271,
-    "benchmark_value": 1486.6054,
+    "date": "2026-01-26",
+    "portfolio_value": 1081.4314,
+    "benchmark_value": 1082.841,
     "allocations": {
-      "AAPL": 0.121,
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1094,
+      "XOM": 0.1406,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6017
+  },
+  {
+    "date": "2026-01-27",
+    "portfolio_value": 1083.3245,
+    "benchmark_value": 1085.1489,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1903,
+      "QQQ": 0.0597
+    },
+    "confidence": 0.5429
+  },
+  {
+    "date": "2026-01-28",
+    "portfolio_value": 1085.4998,
+    "benchmark_value": 1089.6137,
+    "allocations": {
+      "AAPL": 0.1397,
+      "NVDA": 0.2205,
+      "AMZN": 0.25,
+      "XOM": 0.1397,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6103
+  },
+  {
+    "date": "2026-01-29",
+    "portfolio_value": 1079.4785,
+    "benchmark_value": 1082.6515,
+    "allocations": {
+      "AAPL": 0.125,
       "NVDA": 0.25,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.129
+      "QQQ": 0.125
     },
-    "confidence": 0.6029
+    "confidence": 0.5819
   },
   {
-    "date": "2024-11-04",
-    "portfolio_value": 1650.0511,
-    "benchmark_value": 1507.2891,
+    "date": "2026-01-30",
+    "portfolio_value": 1081.3583,
+    "benchmark_value": 1088.9252,
+    "allocations": {
+      "AAPL": 0.1559,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.1883,
+      "QQQ": 0.1559
+    },
+    "confidence": 0.5683
+  },
+  {
+    "date": "2026-02-02",
+    "portfolio_value": 1071.3675,
+    "benchmark_value": 1083.3965,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5548
+  },
+  {
+    "date": "2026-02-03",
+    "portfolio_value": 1065.6741,
+    "benchmark_value": 1078.4795,
+    "allocations": {
+      "AAPL": 0.1574,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.0926
+    },
+    "confidence": 0.5354
+  },
+  {
+    "date": "2026-02-04",
+    "portfolio_value": 1046.4984,
+    "benchmark_value": 1060.1018,
+    "allocations": {
+      "AAPL": 0.237,
+      "NVDA": 0.1306,
+      "AMZN": 0.25,
+      "XOM": 0.2476,
+      "QQQ": 0.1349
+    },
+    "confidence": 0.5818
+  },
+  {
+    "date": "2026-02-05",
+    "portfolio_value": 1062.1201,
+    "benchmark_value": 1075.8064,
     "allocations": {
       "AAPL": 0.125,
       "NVDA": 0.25,
@@ -2766,500 +1141,448 @@
       "XOM": 0.125,
       "QQQ": 0.25
     },
-    "confidence": 0.6902
+    "confidence": 0.5496
   },
   {
-    "date": "2024-11-05",
-    "portfolio_value": 1696.6877,
-    "benchmark_value": 1543.4129,
+    "date": "2026-02-06",
+    "portfolio_value": 1067.8934,
+    "benchmark_value": 1081.1339,
     "allocations": {
-      "AAPL": 0.0825,
+      "AAPL": 0.1667,
       "NVDA": 0.25,
       "AMZN": 0.25,
-      "XOM": 0.25,
-      "QQQ": 0.1675
+      "XOM": 0.1667,
+      "QQQ": 0.1667
     },
-    "confidence": 0.6845
+    "confidence": 0.6595
   },
   {
-    "date": "2024-11-06",
-    "portfolio_value": 1720.4943,
-    "benchmark_value": 1566.5971,
+    "date": "2026-02-09",
+    "portfolio_value": 1062.8948,
+    "benchmark_value": 1077.0977,
     "allocations": {
-      "AAPL": 0.0844,
+      "AAPL": 0.125,
       "NVDA": 0.25,
-      "AMZN": 0.1656,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.25
+    },
+    "confidence": 0.5148
+  },
+  {
+    "date": "2026-02-10",
+    "portfolio_value": 1068.2177,
+    "benchmark_value": 1083.1983,
+    "allocations": {
+      "AAPL": 0.1471,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.2059,
+      "QQQ": 0.1471
+    },
+    "confidence": 0.5095
+  },
+  {
+    "date": "2026-02-11",
+    "portfolio_value": 1034.1598,
+    "benchmark_value": 1051.5938,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.1259,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.1241
+    },
+    "confidence": 0.5886
+  },
+  {
+    "date": "2026-02-12",
+    "portfolio_value": 1020.839,
+    "benchmark_value": 1039.919,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5
+  },
+  {
+    "date": "2026-02-13",
+    "portfolio_value": 1030.2591,
+    "benchmark_value": 1048.116,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1834,
+      "XOM": 0.25,
+      "QQQ": 0.0666
+    },
+    "confidence": 0.5483
+  },
+  {
+    "date": "2026-02-17",
+    "portfolio_value": 1045.9082,
+    "benchmark_value": 1063.3692,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.1322,
+      "XOM": 0.25,
+      "QQQ": 0.1178
+    },
+    "confidence": 0.6362
+  },
+  {
+    "date": "2026-02-18",
+    "portfolio_value": 1041.6731,
+    "benchmark_value": 1060.2128,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.2222,
+      "AMZN": 0.1195,
+      "XOM": 0.1583,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6089
+  },
+  {
+    "date": "2026-02-19",
+    "portfolio_value": 1053.1741,
+    "benchmark_value": 1067.9675,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
+    },
+    "confidence": 0.5699
+  },
+  {
+    "date": "2026-02-20",
+    "portfolio_value": 1054.9992,
+    "benchmark_value": 1068.9592,
+    "allocations": {
+      "AAPL": 0.0756,
+      "NVDA": 0.25,
+      "AMZN": 0.1744,
       "XOM": 0.25,
       "QQQ": 0.25
     },
-    "confidence": 0.6805
+    "confidence": 0.6952
   },
   {
-    "date": "2024-11-07",
-    "portfolio_value": 1713.2819,
-    "benchmark_value": 1561.0673,
+    "date": "2026-02-23",
+    "portfolio_value": 1063.0986,
+    "benchmark_value": 1078.5175,
     "allocations": {
-      "AAPL": 0.1155,
-      "NVDA": 0.25,
-      "AMZN": 0.2306,
-      "XOM": 0.25,
-      "QQQ": 0.1539
-    },
-    "confidence": 0.6597
-  },
-  {
-    "date": "2024-11-08",
-    "portfolio_value": 1699.7689,
-    "benchmark_value": 1548.458,
-    "allocations": {
-      "AAPL": 0.0697,
-      "NVDA": 0.25,
+      "AAPL": 0.1625,
+      "NVDA": 0.2175,
       "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.1803
+      "QQQ": 0.1201
     },
-    "confidence": 0.6192
+    "confidence": 0.5484
   },
   {
-    "date": "2024-11-11",
-    "portfolio_value": 1710.53,
-    "benchmark_value": 1557.1482,
+    "date": "2026-02-24",
+    "portfolio_value": 1075.1673,
+    "benchmark_value": 1088.3875,
+    "allocations": {
+      "AAPL": 0.2087,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.0487,
+      "QQQ": 0.2426
+    },
+    "confidence": 0.6076
+  },
+  {
+    "date": "2026-02-25",
+    "portfolio_value": 1057.7695,
+    "benchmark_value": 1069.0912,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.1777,
+      "AMZN": 0.25,
+      "XOM": 0.2302,
+      "QQQ": 0.0921
+    },
+    "confidence": 0.5091
+  },
+  {
+    "date": "2026-02-26",
+    "portfolio_value": 1046.6087,
+    "benchmark_value": 1060.5458,
+    "allocations": {
+      "AAPL": 0.2159,
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.173,
+      "QQQ": 0.1111
+    },
+    "confidence": 0.5137
+  },
+  {
+    "date": "2026-02-27",
+    "portfolio_value": 1053.9663,
+    "benchmark_value": 1067.7436,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1538,
-      "XOM": 0.25,
-      "QQQ": 0.0962
-    },
-    "confidence": 0.5701
-  },
-  {
-    "date": "2024-11-12",
-    "portfolio_value": 1717.0435,
-    "benchmark_value": 1564.3764,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.1614,
-      "XOM": 0.25,
-      "QQQ": 0.0886
-    },
-    "confidence": 0.5701
-  },
-  {
-    "date": "2024-11-13",
-    "portfolio_value": 1720.5595,
-    "benchmark_value": 1563.9376,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.25,
-      "AMZN": 0.125,
-      "XOM": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
       "QQQ": 0.125
     },
-    "confidence": 0.5663
+    "confidence": 0.5091
   },
   {
-    "date": "2024-11-14",
-    "portfolio_value": 1681.8118,
-    "benchmark_value": 1525.5223,
+    "date": "2026-03-02",
+    "portfolio_value": 1046.7346,
+    "benchmark_value": 1059.4013,
     "allocations": {
       "AAPL": 0.25,
       "NVDA": 0.25,
-      "AMZN": 0.1271,
-      "XOM": 0.25,
-      "QQQ": 0.1229
+      "AMZN": 0.25,
+      "XOM": 0.1931,
+      "QQQ": 0.0569
     },
-    "confidence": 0.5692
+    "confidence": 0.5378
   },
   {
-    "date": "2024-11-15",
-    "portfolio_value": 1684.8904,
-    "benchmark_value": 1528.9916,
+    "date": "2026-03-03",
+    "portfolio_value": 1059.8458,
+    "benchmark_value": 1070.1691,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.125
     },
-    "confidence": 0.6205
+    "confidence": 0.5347
   },
   {
-    "date": "2024-11-18",
-    "portfolio_value": 1703.6535,
-    "benchmark_value": 1546.5539,
+    "date": "2026-03-04",
+    "portfolio_value": 1059.7019,
+    "benchmark_value": 1071.711,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6709
-  },
-  {
-    "date": "2024-11-19",
-    "portfolio_value": 1704.6706,
-    "benchmark_value": 1546.786,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.698
-  },
-  {
-    "date": "2024-11-20",
-    "portfolio_value": 1702.293,
-    "benchmark_value": 1546.1822,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6723
-  },
-  {
-    "date": "2024-11-21",
-    "portfolio_value": 1689.9797,
-    "benchmark_value": 1536.2342,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6581
-  },
-  {
-    "date": "2024-11-22",
-    "portfolio_value": 1683.3261,
-    "benchmark_value": 1530.0524,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.655
-  },
-  {
-    "date": "2024-11-25",
-    "portfolio_value": 1696.2752,
-    "benchmark_value": 1541.2336,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.5798
-  },
-  {
-    "date": "2024-11-26",
-    "portfolio_value": 1685.9355,
-    "benchmark_value": 1531.1253,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6995
-  },
-  {
-    "date": "2024-11-27",
-    "portfolio_value": 1704.0201,
-    "benchmark_value": 1547.5096,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.7655
-  },
-  {
-    "date": "2024-11-29",
-    "portfolio_value": 1715.1093,
-    "benchmark_value": 1558.587,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.7003
-  },
-  {
-    "date": "2024-12-02",
-    "portfolio_value": 1729.9653,
-    "benchmark_value": 1570.7518,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.699
-  },
-  {
-    "date": "2024-12-03",
-    "portfolio_value": 1741.3527,
-    "benchmark_value": 1583.9284,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.669
-  },
-  {
-    "date": "2024-12-04",
-    "portfolio_value": 1747.6794,
-    "benchmark_value": 1587.7934,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.7075
-  },
-  {
-    "date": "2024-12-05",
-    "portfolio_value": 1749.2516,
-    "benchmark_value": 1590.621,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6115
-  },
-  {
-    "date": "2024-12-06",
-    "portfolio_value": 1741.8374,
-    "benchmark_value": 1581.9646,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
-    },
-    "confidence": 0.6019
-  },
-  {
-    "date": "2024-12-09",
-    "portfolio_value": 1730.4477,
-    "benchmark_value": 1571.5558,
-    "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.148,
+      "XOM": 0.102,
+      "QQQ": 0.25
     },
     "confidence": 0.6136
   },
   {
-    "date": "2024-12-10",
-    "portfolio_value": 1748.1043,
-    "benchmark_value": 1590.624,
+    "date": "2026-03-05",
+    "portfolio_value": 1042.8037,
+    "benchmark_value": 1054.5177,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "NVDA": 0.2263,
+      "AMZN": 0.25,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.0237
     },
-    "confidence": 0.6968
+    "confidence": 0.6509
   },
   {
-    "date": "2024-12-11",
-    "portfolio_value": 1742.1632,
-    "benchmark_value": 1583.9029,
+    "date": "2026-03-06",
+    "portfolio_value": 1053.2659,
+    "benchmark_value": 1064.5077,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.1263,
+      "XOM": 0.2474,
+      "QQQ": 0.1263
     },
-    "confidence": 0.5725
+    "confidence": 0.5328
   },
   {
-    "date": "2024-12-12",
-    "portfolio_value": 1727.8809,
-    "benchmark_value": 1574.5523,
+    "date": "2026-03-09",
+    "portfolio_value": 1053.4014,
+    "benchmark_value": 1065.2811,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "AAPL": 0.0825,
+      "NVDA": 0.25,
+      "AMZN": 0.1922,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.2253
     },
-    "confidence": 0.6828
+    "confidence": 0.6117
   },
   {
-    "date": "2024-12-13",
-    "portfolio_value": 1728.7252,
-    "benchmark_value": 1578.3421,
+    "date": "2026-03-10",
+    "portfolio_value": 1059.6496,
+    "benchmark_value": 1070.057,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "AAPL": 0.095,
+      "NVDA": 0.25,
+      "AMZN": 0.2011,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.2039
     },
-    "confidence": 0.6135
+    "confidence": 0.642
   },
   {
-    "date": "2024-12-16",
-    "portfolio_value": 1723.0068,
-    "benchmark_value": 1572.419,
+    "date": "2026-03-11",
+    "portfolio_value": 1049.6248,
+    "benchmark_value": 1058.4435,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "AAPL": 0.2189,
+      "NVDA": 0.219,
+      "AMZN": 0.1634,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.1487
     },
-    "confidence": 0.6563
+    "confidence": 0.648
   },
   {
-    "date": "2024-12-17",
-    "portfolio_value": 1681.2712,
-    "benchmark_value": 1531.6753,
+    "date": "2026-03-12",
+    "portfolio_value": 1042.7952,
+    "benchmark_value": 1051.0946,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "AAPL": 0.2169,
+      "NVDA": 0.25,
+      "AMZN": 0.2036,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.0795
     },
-    "confidence": 0.5843
+    "confidence": 0.6022
   },
   {
-    "date": "2024-12-18",
-    "portfolio_value": 1690.5362,
-    "benchmark_value": 1537.8944,
+    "date": "2026-03-13",
+    "portfolio_value": 1057.0864,
+    "benchmark_value": 1064.5861,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.1833,
+      "AMZN": 0.25,
+      "XOM": 0.0667,
+      "QQQ": 0.25
     },
-    "confidence": 0.729
+    "confidence": 0.5631
   },
   {
-    "date": "2024-12-19",
-    "portfolio_value": 1714.7066,
-    "benchmark_value": 1559.1243,
+    "date": "2026-03-16",
+    "portfolio_value": 1064.7389,
+    "benchmark_value": 1071.1479,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.125,
+      "AMZN": 0.25,
+      "XOM": 0.125,
+      "QQQ": 0.25
     },
-    "confidence": 0.7191
+    "confidence": 0.6058
   },
   {
-    "date": "2024-12-20",
-    "portfolio_value": 1732.2338,
-    "benchmark_value": 1576.084,
+    "date": "2026-03-17",
+    "portfolio_value": 1047.5714,
+    "benchmark_value": 1055.563,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.1428,
+      "AMZN": 0.25,
+      "XOM": 0.1072,
+      "QQQ": 0.25
     },
-    "confidence": 0.7132
+    "confidence": 0.5818
   },
   {
-    "date": "2024-12-23",
-    "portfolio_value": 1747.5682,
-    "benchmark_value": 1591.1026,
+    "date": "2026-03-18",
+    "portfolio_value": 1042.5948,
+    "benchmark_value": 1051.5587,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.2442,
+      "XOM": 0.1279,
+      "QQQ": 0.1279
     },
-    "confidence": 0.7723
+    "confidence": 0.6241
   },
   {
-    "date": "2024-12-24",
-    "portfolio_value": 1744.7222,
-    "benchmark_value": 1588.7294,
+    "date": "2026-03-19",
+    "portfolio_value": 1032.1028,
+    "benchmark_value": 1039.3101,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "NVDA": 0.25,
+      "AMZN": 0.1952,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.0548
     },
-    "confidence": 0.6842
+    "confidence": 0.605
   },
   {
-    "date": "2024-12-26",
-    "portfolio_value": 1723.9349,
-    "benchmark_value": 1569.0193,
+    "date": "2026-03-20",
+    "portfolio_value": 1047.3127,
+    "benchmark_value": 1053.8297,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.2256,
+      "XOM": 0.1401,
+      "QQQ": 0.1343
     },
-    "confidence": 0.5592
+    "confidence": 0.5862
   },
   {
-    "date": "2024-12-27",
-    "portfolio_value": 1711.0634,
-    "benchmark_value": 1556.225,
+    "date": "2026-03-23",
+    "portfolio_value": 1049.836,
+    "benchmark_value": 1055.0508,
     "allocations": {
-      "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
+      "AAPL": 0.1136,
+      "NVDA": 0.2174,
+      "AMZN": 0.1689,
       "XOM": 0.25,
-      "QQQ": 0.0374
+      "QQQ": 0.25
     },
-    "confidence": 0.5749
+    "confidence": 0.6447
   },
   {
-    "date": "2024-12-30",
-    "portfolio_value": 1702.6109,
-    "benchmark_value": 1546.7807,
+    "date": "2026-03-24",
+    "portfolio_value": 1058.01,
+    "benchmark_value": 1062.9678,
     "allocations": {
       "AAPL": 0.25,
-      "NVDA": 0.2147,
-      "AMZN": 0.2479,
-      "XOM": 0.25,
-      "QQQ": 0.0374
+      "NVDA": 0.25,
+      "AMZN": 0.2332,
+      "XOM": 0.2353,
+      "QQQ": 0.0315
     },
-    "confidence": 0.6031
+    "confidence": 0.5492
+  },
+  {
+    "date": "2026-03-25",
+    "portfolio_value": 1039.0467,
+    "benchmark_value": 1047.8664,
+    "allocations": {
+      "AAPL": 0.2014,
+      "NVDA": 0.25,
+      "AMZN": 0.1734,
+      "XOM": 0.1253,
+      "QQQ": 0.25
+    },
+    "confidence": 0.6339
+  },
+  {
+    "date": "2026-03-26",
+    "portfolio_value": 1027.4297,
+    "benchmark_value": 1034.3502,
+    "allocations": {
+      "AAPL": 0.25,
+      "NVDA": 0.2266,
+      "AMZN": 0.25,
+      "XOM": 0.25,
+      "QQQ": 0.0234
+    },
+    "confidence": 0.5225
   }
 ]

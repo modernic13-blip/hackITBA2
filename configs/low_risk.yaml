@@ -1,10 +1,3 @@
-# =============================================================================
-# Perfil: LOW RISK — Conservador  (datos HORARIOS)
-# =============================================================================
-# Orientado a activos defensivos y ETFs con alta diversificación.
-# Parámetros ajustados para barras de 1 hora.
-# =============================================================================
-
 profile_name:          low_risk
 risk_tolerance:        0.3
 max_weight_per_asset:  0.25
@@ -39,28 +32,30 @@ custom_assets:
   GLD:
     filtering:
       k_Px:    0.9
-      lookback: 480       # 20 días a 1h
+      lookback: 480
     labeling:
       pt_sl:         [1.0, 1.0]
-      vertical_bars: 96   # 4 días a 1h
+      vertical_bars: 96
     modeling:
       model: random_forest
       param_grid:
         n_estimators: [100, 200]
         max_depth:    [3, 5]
+        # sin learning_rate: random_forest no lo soporta
 
   TLT:
     filtering:
       k_Px:    1.0
-      lookback: 480       # 20 días a 1h
+      lookback: 480
     labeling:
       pt_sl:         [1.0, 0.8]
-      vertical_bars: 120  # 5 días a 1h
+      vertical_bars: 120
     modeling:
       model: random_forest
       param_grid:
         n_estimators: [100, 200]
         max_depth:    [3, 5]
+        # sin learning_rate: random_forest no lo soporta
 
   XOM:
     modeling:
@@ -80,10 +75,10 @@ custom_assets:
 pipeline:
   labeling:
     pt_sl:         [1.2, 1.0]
-    vertical_bars: 96           # 4 días a 1h
+    vertical_bars: 96
   filtering:
     k_Px:    0.7
-    lookback: 360               # 15 días a 1h
+    lookback: 360
   evaluation:
     risk_free_rate:   0.045
     periods_per_year: 8760

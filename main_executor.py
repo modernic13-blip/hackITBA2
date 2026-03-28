@@ -632,17 +632,25 @@ class MainExecutor:
                 logger.warning(f"[{ticker}] No se generó modelo")
                 return None
 
-            auc = metrics.get("auc_roc", 0.0)
+            # Log completo de métricas de training (CV)
             logger.info(
-                f"[{ticker}] Entrenamiento OK | "
-                f"AUC={auc:.4f} | features={len(selected_features)}"
+                f"[{ticker}] TRAIN | "
+                f"AUC={metrics.get('mean_auc', 0):.4f}±{metrics.get('std_auc', 0):.4f} | "
+                f"Acc={metrics.get('mean_accuracy', 0):.4f} | "
+                f"F1={metrics.get('mean_f1', 0):.4f} | "
+                f"Sharpe(CV)={metrics.get('mean_sharpe', 0):.4f}±{metrics.get('std_sharpe', 0):.4f} | "
+                f"MaxDD={metrics.get('max_drawdown', 0):.4f} | "
+                f"TotalReturn(CV)={metrics.get('total_return', 0):.4f} | "
+                f"DSR={metrics.get('dsr', 0):.4f} | "
+                f"PBO={metrics.get('pbo', 0):.4f} | "
+                f"features={len(selected_features)}"
             )
 
             return {
                 "ticker":            ticker,
                 "model":             model,
                 "selected_features": selected_features,
-                "features_df_full":  features_df,   # Para inferencia 2025
+                "features_df_full":  features_df,
                 "close":             close,
                 "metrics":           metrics,
             }
@@ -1009,6 +1017,7 @@ class MainExecutor:
                 all_results[profile_name] = []
 
         self._print_summary(all_results)
+        self._print_train_vs_test(all_results)
         self._copy_to_frontend(all_results)
         return all_results
 
@@ -1038,28 +1047,103 @@ class MainExecutor:
 
     @staticmethod
     def _print_summary(all_results: Dict[str, List[dict]]):
-        """Imprime tabla resumen de resultados por perfil."""
-        print(f"\n{'='*70}")
-        print("RESUMEN FINAL")
-        print(f"{'='*70}")
-        print(f"{'Perfil':<15} {'Días':>6} {'Portafolio Final':>18} "
-              f"{'Benchmark':>12} {'Retorno':>9}")
-        print(f"{'-'*70}")
+        """Imprime tabla resumen de resultados de backtest (TEST)."""
+        print(f"\n{'='*75}")
+        print("RESUMEN FINAL — BACKTEST (TEST)")
+        print(f"{'='*75}")
+        print(f"{'Perfil':<15} {'Días':>6} {'Portafolio':>12} {'Benchmark':>12} "
+              f"{'Retorno':>9} {'vs Bench':>9}")
+        print(f"{'-'*75}")
         for name, results in all_results.items():
             if not results:
                 print(f"{name:<15} {'N/A':>6}")
                 continue
-            last       = results[-1]
-            final_port = last["portfolio_value"]
-            final_bench= last["benchmark_value"]
-            ret_pct    = (final_port / INITIAL_CAPITAL - 1) * 100
+            last        = results[-1]
+            final_port  = last["portfolio_value"]
+            final_bench = last["benchmark_value"]
+            ret_pct     = (final_port  / INITIAL_CAPITAL - 1) * 100
+            bench_pct   = (final_bench / INITIAL_CAPITAL - 1) * 100
+            vs_bench    = ret_pct - bench_pct
+
+            # Sharpe del test
+            vals = [d["portfolio_value"] for d in results]
+            rets = [(vals[i] - vals[i-1]) / vals[i-1] for i in range(1, len(vals))]
+            if len(rets) > 1:
+                mean_r = float(np.mean(rets))
+                std_r  = float(np.std(rets))
+                sharpe_test = (mean_r / std_r) * np.sqrt(8760) if std_r > 0 else 0
+            else:
+                sharpe_test = 0
+
             print(
                 f"{name:<15} {len(results):>6} "
-                f"${final_port:>16,.2f} "
+                f"${final_port:>10,.2f} "
                 f"${final_bench:>10,.2f} "
-                f"{ret_pct:>+8.1f}%"
+                f"{ret_pct:>+8.1f}% "
+                f"{vs_bench:>+8.1f}%  "
+                f"Sharpe(test)={sharpe_test:.2f}"
             )
-        print(f"{'='*70}\n")
+        print(f"{'='*75}\n")
+
+    def _print_train_vs_test(self, all_results: Dict[str, List[dict]]):
+        """Imprime comparativa de métricas TRAINING (CV) vs TEST (backtest)."""
+        print(f"\n{'='*90}")
+        print("COMPARATIVA TRAINING (Cross-Validation) vs TEST (Backtest)")
+        print(f"{'='*90}")
+
+        for profile_name, results in all_results.items():
+            print(f"\n── {profile_name.upper()} ──")
+
+            # Métricas de training por activo
+            models = self.profile_models.get(profile_name, {})
+            if models:
+                print(f"  {'Activo':<8} {'AUC(CV)':>9} {'Acc(CV)':>9} "
+                      f"{'F1(CV)':>8} {'Sharpe(CV)':>11} {'MaxDD(CV)':>10} "
+                      f"{'Return(CV)':>11} {'DSR':>7} {'PBO':>7}")
+                print(f"  {'-'*83}")
+                for ticker, trained in sorted(models.items()):
+                    m = trained.get("metrics", {})
+                    print(
+                        f"  {ticker:<8} "
+                        f"{m.get('mean_auc', 0):>9.4f} "
+                        f"{m.get('mean_accuracy', 0):>9.4f} "
+                        f"{m.get('mean_f1', 0):>8.4f} "
+                        f"{m.get('mean_sharpe', 0):>11.4f} "
+                        f"{m.get('max_drawdown', 0):>10.4f} "
+                        f"{m.get('total_return', 0):>+11.4f} "
+                        f"{m.get('dsr', 0):>7.4f} "
+                        f"{m.get('pbo', 0):>7.4f}"
+                    )
+
+            # Métricas del backtest (TEST)
+            if results:
+                vals   = [d["portfolio_value"] for d in results]
+                rets   = [(vals[i] - vals[i-1]) / vals[i-1] for i in range(1, len(vals))]
+                mean_r = float(np.mean(rets)) if rets else 0
+                std_r  = float(np.std(rets))  if rets else 0
+                sharpe_test = (mean_r / std_r) * np.sqrt(8760) if std_r > 0 else 0
+
+                peak = vals[0]
+                max_dd = 0.0
+                for v in vals:
+                    if v > peak: peak = v
+                    dd = (v - peak) / peak
+                    if dd < max_dd: max_dd = dd
+
+                total_ret = (vals[-1] / vals[0] - 1)
+                n_days    = len(results)
+                avg_conf  = np.mean([d["confidence"] for d in results])
+
+                print(f"\n  TEST (backtest):")
+                print(f"    Días           : {n_days}")
+                print(f"    Retorno total  : {total_ret:+.4f} ({total_ret*100:+.1f}%)")
+                print(f"    Sharpe (test)  : {sharpe_test:.4f}")
+                print(f"    Max Drawdown   : {max_dd:.4f} ({max_dd*100:.1f}%)")
+                print(f"    Confianza media: {avg_conf:.4f}")
+            else:
+                print(f"\n  TEST: Sin resultados")
+
+        print(f"\n{'='*90}\n")
 
 
 # =============================================================================

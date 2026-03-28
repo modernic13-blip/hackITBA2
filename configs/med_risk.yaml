@@ -1,10 +1,3 @@
-# =============================================================================
-# Perfil: MED RISK — Balanceado  (datos HORARIOS)
-# =============================================================================
-# Mix de acciones tech, commodities, cripto y ETFs.
-# Parámetros ajustados para barras de 1 hora.
-# =============================================================================
-
 profile_name:          med_risk
 risk_tolerance:        0.55
 max_weight_per_asset:  0.30
@@ -31,10 +24,10 @@ custom_assets:
   BTC:
     filtering:
       k_Px:    0.45
-      lookback: 240       # 10 días a 1h
+      lookback: 240
     labeling:
       pt_sl:         [1.8, 1.2]
-      vertical_bars: 48   # 2 días a 1h
+      vertical_bars: 48
     modeling:
       model: xgboost
       max_combinations: 4
@@ -94,10 +87,10 @@ custom_assets:
 pipeline:
   labeling:
     pt_sl:         [1.5, 1.0]
-    vertical_bars: 72           # 3 días a 1h
+    vertical_bars: 72
   filtering:
     k_Px:     0.55
-    lookback: 240               # 10 días a 1h
+    lookback: 240
   evaluation:
     risk_free_rate:   0.045
     periods_per_year: 8760
