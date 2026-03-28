@@ -50,7 +50,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Constantes globales ───────────────────────────────────────────────────────
-TRAIN_CUTOFF = pd.Timestamp("2025-01-01")   # Entrena 2024, testea 2025+
+TRAIN_CUTOFF = pd.Timestamp("2025-10-01")   # Entrena abr2024-sep2025, testea oct2025+
 DATA_PATH    = ROOT / "data" / "dataset_completo.csv"
 PROFILES_DIR = ROOT / "configs"
 OUTPUT_DIR   = ROOT / "results"
@@ -335,25 +335,36 @@ class MainExecutor:
     def _load_individual_csvs(self):
         """
         Carga CSVs individuales por activo.
+        Prioriza archivos *_1h.csv (datos horarios) sobre los diarios si ambos existen.
         Maneja el formato con doble header (fila 0: columnas, fila 1: tickers repetidos).
         """
         data_dir = self.data_path.parent
         skip     = {"dataset_completo.csv", "README.md", "dd.csv"}
 
+        # Construir mapa: ticker → archivo preferido (1h > diario)
+        csv_map: dict = {}
         for csv_file in sorted(data_dir.glob("*.csv")):
             if csv_file.name in skip:
                 continue
-            ticker = csv_file.stem.replace("-USD", "").replace("-", "")
+            stem   = csv_file.stem            # ej: "AAPL_1h" o "AAPL"
+            is_1h  = stem.endswith("_1h")
+            ticker = stem.replace("_1h", "").replace("-USD", "").replace("-", "")
+            # Prefiere horario sobre diario
+            if ticker not in csv_map or is_1h:
+                csv_map[ticker] = csv_file
+
+        for ticker, csv_file in sorted(csv_map.items()):
             try:
-                # Leer sin parsear fechas para detectar el doble-header
-                raw = pd.read_csv(csv_file, header=0)
+                raw      = pd.read_csv(csv_file, header=0)
                 date_col = raw.columns[0]
 
                 # Detectar y eliminar fila de tickers repetidos (ej: ",AAPL,AAPL,...")
-                if str(raw.iloc[0, 0]) in ("", "nan") or str(raw.iloc[0, 0]).upper() == ticker.upper():
+                if str(raw.iloc[0, 0]) in ("", "nan") or str(raw.iloc[0, 0]).strip().upper() == ticker.upper():
                     raw = raw.iloc[1:].reset_index(drop=True)
 
-                raw[date_col] = pd.to_datetime(raw[date_col], errors="coerce")
+                # Parsear fechas con timezone → normalizar a UTC naive
+                raw[date_col] = pd.to_datetime(raw[date_col], errors="coerce", utc=True)
+                raw[date_col] = raw[date_col].dt.tz_localize(None)   # quitar timezone
                 raw = raw.dropna(subset=[date_col])
                 raw = raw.set_index(date_col).sort_index()
                 raw.columns = [c.lower() for c in raw.columns]
@@ -365,7 +376,8 @@ class MainExecutor:
                 ohlcv = self._extract_ohlcv(raw)
                 if len(ohlcv) >= 100:
                     self.raw_data[ticker] = ohlcv
-                    logger.info(f"  {ticker}: {len(ohlcv)} barras ({ohlcv.index[0].date()} → {ohlcv.index[-1].date()})")
+                    freq_tag = "1h" if csv_file.stem.endswith("_1h") else "1d"
+                    logger.info(f"  {ticker} [{freq_tag}]: {len(ohlcv)} barras ({ohlcv.index[0].date()} → {ohlcv.index[-1].date()})")
             except Exception as exc:
                 logger.warning(f"No se pudo cargar {csv_file.name}: {exc}")
 
@@ -1004,8 +1016,7 @@ class MainExecutor:
     def _copy_to_frontend(all_results: Dict[str, List[dict]]):
         """Copia los JSON generados a public/data/ para el frontend React."""
         frontend_dirs = [
-            ROOT / "public" / "data",
-            ROOT / "smart-capital" / "public" / "data",
+            ROOT / "frontend" / "public" / "data",
         ]
         copied_to = []
         for dest_dir in frontend_dirs:

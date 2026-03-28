@@ -1,22 +1,20 @@
 # =============================================================================
-# Perfil: LOW RISK — Conservador
+# Perfil: LOW RISK — Conservador  (datos HORARIOS)
 # =============================================================================
 # Orientado a activos defensivos y ETFs con alta diversificación.
-# Alta aversión al riesgo, pesos más concentrados en ETFs y acciones estables.
+# Parámetros ajustados para barras de 1 hora.
 # =============================================================================
 
 profile_name:          low_risk
-risk_tolerance:        0.3          # Baja tolerancia al riesgo
-max_weight_per_asset:  0.25         # Máx 25% por activo
-confidence_level:      0.65         # Confianza moderada en las vistas ML
+risk_tolerance:        0.3
+max_weight_per_asset:  0.25
+confidence_level:      0.65
 initial_capital:       1000.0
 
-# ── Parámetros Black-Litterman ─────────────────────────────────────────────
 black_litterman:
-  delta: 3.5        # Alta aversión al riesgo (δ elevado)
-  tau:   0.05       # Incertidumbre en el prior del mercado
+  delta: 3.5
+  tau:   0.05
 
-# ── Activos del portafolio ─────────────────────────────────────────────────
 assets:
   - AAPL
   - NVDA
@@ -26,14 +24,12 @@ assets:
   - QQQ
   - TLT
 
-# ── Hiperparámetros específicos por activo (custom_assets) ────────────────
-# Cada clave corresponde a una sección del pipeline config (modeling, filtering, etc.)
 custom_assets:
 
   AAPL:
     modeling:
       model: lightgbm
-      max_combinations: 10
+      max_combinations: 4
       param_grid:
         n_estimators:  [100, 200]
         max_depth:     [3, 5]
@@ -41,13 +37,12 @@ custom_assets:
         num_leaves:    [31, 63]
 
   GLD:
-    # Oro es menos volátil → CUSUM menos sensible
     filtering:
-      k_Px: 0.9
-      lookback: 200
+      k_Px:    0.9
+      lookback: 480       # 20 días a 1h
     labeling:
-      pt_sl: [1.0, 1.0]
-      vertical_bars: 96     # 4 días a 1h
+      pt_sl:         [1.0, 1.0]
+      vertical_bars: 96   # 4 días a 1h
     modeling:
       model: random_forest
       param_grid:
@@ -55,13 +50,12 @@ custom_assets:
         max_depth:    [3, 5]
 
   TLT:
-    # Bonos 20Y: muy baja volatilidad
     filtering:
-      k_Px: 1.0
-      lookback: 240
+      k_Px:    1.0
+      lookback: 480       # 20 días a 1h
     labeling:
-      pt_sl: [1.0, 0.8]
-      vertical_bars: 120    # 5 días
+      pt_sl:         [1.0, 0.8]
+      vertical_bars: 120  # 5 días a 1h
     modeling:
       model: random_forest
       param_grid:
@@ -83,14 +77,14 @@ custom_assets:
         n_estimators: [100, 200]
         max_depth:    [3, 5]
 
-# ── Overrides globales del pipeline para este perfil ──────────────────────
 pipeline:
   labeling:
-    pt_sl:         [1.2, 1.0]   # Targets conservadores
-    vertical_bars: 96            # 4 días a 1h
+    pt_sl:         [1.2, 1.0]
+    vertical_bars: 96           # 4 días a 1h
   filtering:
-    k_Px:    0.7                 # CUSUM moderadamente sensible
-    lookback: 180
+    k_Px:    0.7
+    lookback: 360               # 15 días a 1h
   evaluation:
-    risk_free_rate:   0.045      # Tasa libre de riesgo ~4.5%
+    risk_free_rate:   0.045
+    periods_per_year: 8760
     commission_bps:   3.0

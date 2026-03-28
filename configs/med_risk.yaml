@@ -1,23 +1,20 @@
 # =============================================================================
-# Perfil: MED RISK — Balanceado
+# Perfil: MED RISK — Balanceado  (datos HORARIOS)
 # =============================================================================
 # Mix de acciones tech, commodities, cripto y ETFs.
-# Riesgo moderado, busca rendimiento superior al benchmark manteniendo
-# exposición diversificada. BTC incluido con peso limitado.
+# Parámetros ajustados para barras de 1 hora.
 # =============================================================================
 
 profile_name:          med_risk
-risk_tolerance:        0.55         # Tolerancia moderada al riesgo
-max_weight_per_asset:  0.30         # Máx 30% por activo
-confidence_level:      0.70         # Confianza estándar en las vistas ML
+risk_tolerance:        0.55
+max_weight_per_asset:  0.30
+confidence_level:      0.70
 initial_capital:       1000.0
 
-# ── Parámetros Black-Litterman ─────────────────────────────────────────────
 black_litterman:
-  delta: 2.5        # Aversión al riesgo estándar (He & Litterman, 1999)
+  delta: 2.5
   tau:   0.05
 
-# ── Activos del portafolio ─────────────────────────────────────────────────
 assets:
   - AAPL
   - NVDA
@@ -29,47 +26,42 @@ assets:
   - BTC
   - COIN
 
-# ── Hiperparámetros específicos por activo (custom_assets) ────────────────
 custom_assets:
 
   BTC:
-    # Crypto de alta volatilidad: CUSUM más sensible, árbol más profundo
     filtering:
       k_Px:    0.45
-      lookback: 120
+      lookback: 240       # 10 días a 1h
     labeling:
       pt_sl:         [1.8, 1.2]
-      vertical_bars: 48       # 2 días a 1h
+      vertical_bars: 48   # 2 días a 1h
     modeling:
       model: xgboost
-      max_combinations: 15
+      max_combinations: 4
       param_grid:
-        n_estimators:      [200, 300]
-        max_depth:         [7, 9]
-        learning_rate:     [0.01, 0.05]
-        subsample:         [0.7, 0.8]
-        colsample_bytree:  [0.7, 0.8]
+        n_estimators:  [100, 200]
+        max_depth:     [5, 7]
+        learning_rate: [0.05, 0.1]
 
   COIN:
     filtering:
       k_Px:    0.50
-      lookback: 130
+      lookback: 240
     labeling:
       pt_sl:         [1.5, 1.2]
       vertical_bars: 48
     modeling:
       model: xgboost
       param_grid:
-        n_estimators:  [150, 250]
+        n_estimators:  [100, 200]
         max_depth:     [5, 7]
         learning_rate: [0.05, 0.1]
 
   NVDA:
-    # Alta volatilidad dentro de acciones: LightGBM más hojas
     modeling:
       model: lightgbm
       param_grid:
-        n_estimators:  [200, 300]
+        n_estimators:  [100, 200]
         max_depth:     [5, 7]
         num_leaves:    [63, 127]
         learning_rate: [0.05, 0.1]
@@ -99,14 +91,14 @@ custom_assets:
         n_estimators: [100, 200]
         max_depth:    [3, 5]
 
-# ── Overrides globales del pipeline para este perfil ──────────────────────
 pipeline:
   labeling:
     pt_sl:         [1.5, 1.0]
-    vertical_bars: 72            # 3 días a 1h
+    vertical_bars: 72           # 3 días a 1h
   filtering:
     k_Px:     0.55
-    lookback: 168
+    lookback: 240               # 10 días a 1h
   evaluation:
-    risk_free_rate: 0.045
-    commission_bps: 5.0
+    risk_free_rate:   0.045
+    periods_per_year: 8760
+    commission_bps:   5.0
