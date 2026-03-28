@@ -31,10 +31,11 @@ const AssetCard = ({ asset, index }: { asset: Asset; index: number }) => (
 
 const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: OnboardingFlowProps) => {
   const assets = getPortfolioAllocation(capital, risk);
-  const riskLabel = risk < 30 ? "Conservative" : risk < 70 ? "Balanced" : "Aggressive";
+  const riskLabel = risk < 30 ? "Conservador" : risk < 70 ? "Balanceado" : "Agresivo";
 
-  const handleCapitalChange = useCallback((value: number[]) => {
-    onCapitalChange(value[0]);
+  const handleCapitalInput = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = parseInt(e.target.value.replace(/[^0-9]/g, ""), 10);
+    onCapitalChange(isNaN(val) ? 0 : val);
   }, [onCapitalChange]);
 
   const handleRiskChange = useCallback((value: number[]) => {
@@ -57,29 +58,28 @@ const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: Onboar
             >
               <div>
                 <h2 className="text-3xl sm:text-4xl font-semibold text-foreground">
-                  Let's define your position.
+                  Definamos tu posición.
                 </h2>
                 <p className="mt-3 text-muted-foreground text-sm">
-                  How much capital would you like to allocate?
+                  ¿Cuánto capital te gustaría asignar?
                 </p>
               </div>
               <div className="space-y-6">
                 <div>
-                  <span className="text-5xl font-semibold text-foreground tabular-nums">
-                    {capital >= 100000 ? "$100k+" : `$${capital.toLocaleString()}`}
-                  </span>
+                  <div className="relative inline-flex items-center">
+                    <span className="absolute left-6 text-5xl font-semibold text-muted-foreground pointer-events-none">$</span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={capital === 0 ? "" : capital}
+                      onChange={handleCapitalInput}
+                      className="bg-transparent border-none outline-none text-5xl font-semibold text-foreground tracking-tight w-full py-2 pl-16 focus:ring-0 placeholder:text-muted-foreground/30"
+                      placeholder="6000"
+                    />
+                  </div>
                 </div>
-                <Slider
-                  value={[capital]}
-                  onValueChange={handleCapitalChange}
-                  min={1000}
-                  max={100000}
-                  step={1000}
-                  className="w-full"
-                />
-                <div className="flex justify-between text-xs text-muted-foreground">
-                  <span>$1,000</span>
-                  <span>$100,000+</span>
+                <div className="flex justify-between text-xs text-muted-foreground pt-4">
+                  <span>Introduce tu capital inicial (Ej. $6000)</span>
                 </div>
               </div>
             </motion.div>
@@ -94,10 +94,10 @@ const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: Onboar
             >
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-foreground">
-                  How do you handle volatility?
+                  ¿Cómo manejas la volatilidad?
                 </h2>
                 <p className="mt-3 text-muted-foreground text-sm">
-                  Define your comfort with market fluctuations.
+                  Define tu nivel de comodidad con las fluctuaciones del mercado.
                 </p>
               </div>
               <div className="space-y-6">
@@ -111,8 +111,8 @@ const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: Onboar
                   className="w-full"
                 />
                 <div className="flex justify-between text-xs text-muted-foreground">
-                  <span>Conservative</span>
-                  <span>Aggressive</span>
+                  <span>Conservador</span>
+                  <span>Agresivo</span>
                 </div>
               </div>
             </motion.div>
@@ -127,7 +127,7 @@ const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: Onboar
             className="space-y-3 lg:sticky lg:top-24 lg:self-start"
           >
             <span className="text-xs text-muted-foreground uppercase tracking-wider">
-              Your allocation
+              Tu distribución
             </span>
             <div className="space-y-2 mt-4">
               {assets.map((asset, i) => (

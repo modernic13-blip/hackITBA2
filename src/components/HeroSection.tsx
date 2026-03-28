@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const PortfolioLine = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -84,6 +84,16 @@ const PortfolioLine = () => {
 };
 
 const HeroSection = () => {
+  const words = ["MÁS", "MEJOR", "MÁS PROFUNDO", "COMO IA"];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [words.length]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <PortfolioLine />
@@ -94,17 +104,39 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-4xl sm:text-5xl md:text-6xl font-semibold text-foreground tracking-tight leading-[1.1]"
         >
-          The market moves.
+          El mercado se mueve.
           <br />
-          Your strategy should too.
+          Tu estrategia también debería.
         </motion.h1>
+        
+        <motion.div 
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
+          className="mt-6 text-xl md:text-2xl font-medium tracking-wide flex items-center justify-center gap-2 text-foreground"
+        >
+          <span>PIENSA</span>
+          <div className="relative inline-flex overflow-hidden h-8 items-center text-primary">
+            <AnimatePresence mode="popLayout">
+              <motion.span
+                key={words[index]}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+                className="font-bold whitespace-nowrap"
+              >
+                {words[index]}
+              </motion.span>
+            </AnimatePresence>
+          </div>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
           className="mt-6 text-base text-muted-foreground max-w-md mx-auto"
         >
-          Your personal AI trader — built on real market data.
+          Tu trader personal de IA — construido sobre datos reales del mercado.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}

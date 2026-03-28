@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ConversionSection = () => {
   const [howOpen, setHowOpen] = useState(false);
@@ -16,19 +17,19 @@ const ConversionSection = () => {
       >
         <div>
           <h2 className="text-3xl sm:text-4xl font-semibold text-foreground">
-            Ready when you are.
+            Listos cuando tú lo estés.
           </h2>
           <p className="mt-3 text-muted-foreground text-sm">
-            No commitment. Start with a simulation and go live when you're confident.
+            Sin compromisos. Empieza con una simulación y da el salto cuando confíes en el sistema.
           </p>
         </div>
 
         <div className="flex flex-col items-center gap-4">
-          <button className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-10 py-4 text-sm font-medium transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
-            Start with simulation
-          </button>
+          <Link to="/simulacion" className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-10 py-4 text-sm font-medium transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
+            Iniciar Simulación
+          </Link>
           <button className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
-            Go live when you're ready.
+            Invierte con dinero real.
           </button>
         </div>
       </motion.div>
@@ -43,7 +44,7 @@ const ConversionSection = () => {
       >
         <Collapsible open={howOpen} onOpenChange={setHowOpen}>
           <CollapsibleTrigger className="w-full flex items-center justify-between py-4 text-sm text-muted-foreground hover:text-foreground transition-colors">
-            <span>How does it work?</span>
+            <span>¿Cómo funciona?</span>
             <svg
               className={`w-4 h-4 transition-transform duration-200 ${howOpen ? "rotate-180" : ""}`}
               fill="none"
@@ -58,18 +59,18 @@ const ConversionSection = () => {
             <div className="space-y-8 py-8 border-t border-border">
               <HowStep
                 number="01"
-                title="Data Collection"
-                description="We continuously monitor market data across equities, crypto, and fixed income assets."
+                title="Recolección de Datos"
+                description="Monitoreamos continuamente datos de mercado en acciones, cripto y renta fija."
               />
               <HowStep
                 number="02"
-                title="Pattern Analysis"
-                description="We analyze patterns across assets and adjust your portfolio accordingly. No predictions — just adaptation."
+                title="Análisis de Patrones"
+                description="Analizamos patrones entre activos y ajustamos tu portafolio en consecuencia. Sin predicciones — pura adaptación."
               />
               <HowStep
                 number="03"
-                title="Rebalancing"
-                description="When conditions shift, allocations adjust automatically. The system responds to change so you don't have to."
+                title="Rebalanceo Automático"
+                description="Cuando las condiciones cambian, las posiciones se ajustan automáticamente. El sistema responde al cambio para que tú no tengas que hacerlo."
               />
             </div>
           </CollapsibleContent>
@@ -79,7 +80,7 @@ const ConversionSection = () => {
       {/* Footer */}
       <div className="mt-32 text-center">
         <p className="text-xs text-muted-foreground/50">
-          hackITBA — All simulations use historical data. Past performance does not guarantee future results.
+          hackITBA — Todas las simulaciones utilizan datos históricos. El rendimiento pasado no garantiza resultados futuros.
         </p>
       </div>
     </section>
