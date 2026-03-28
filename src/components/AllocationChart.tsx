@@ -1,0 +1,221 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import {
+  AreaChart, Area, PieChart, Pie, Cell, XAxis, YAxis, ResponsiveContainer,
+  Tooltip, Legend, LineChart, Line,
+} from "recharts";
+import type { BacktestDay } from "@/hooks/useBacktestData";
+
+const COLORS = [
+  "hsl(217, 91%, 60%)",   // Azul
+  "hsl(142, 76%, 36%)",   // Verde
+  "hsl(0, 84%, 60%)",     // Rojo
+  "hsl(39, 100%, 50%)",   // Naranja
+  "hsl(280, 85%, 65%)",   // Púrpura
+  "hsl(197, 100%, 50%)",  // Cian
+  "hsl(12, 100%, 50%)",   // Naranja rojo
+  "hsl(60, 100%, 50%)",   // Amarillo
+];
+
+interface AllocationChartProps {
+  data: BacktestDay[];
+}
+
+const AllocationChart = ({ data }: AllocationChartProps) => {
+  const [chartData, setChartData] = useState<any[]>([]);
+  const [lastDayAllocs, setLastDayAllocs] = useState<Array<{ name: string; value: number }>>([]);
+  const [assets, setAssets] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (data.length === 0) return;
+
+    // Extraer todos los activos
+    const allAssets = new Set<string>();
+    data.forEach((d) => {
+      Object.keys(d.allocations).forEach((a) => allAssets.add(a));
+    });
+    const assetList = Array.from(allAssets).sort();
+    setAssets(assetList);
+
+    // Preprocesar para stacked area chart
+    const processedData = data.map((d, idx) => {
+      const row: any = { day: idx + 1 };
+      assetList.forEach((asset) => {
+        row[asset] = (d.allocations[asset] || 0) * 100; // % format
+      });
+      return row;
+    });
+
+    // Submuestrear cada 10 días para no saturar el gráfico
+    const sampled = processedData.filter((_, i) => i % 10 === 0 || i === processedData.length - 1);
+    setChartData(sampled);
+
+    // Último día para pie chart
+    const lastDay = data[data.length - 1];
+    const pieData = assetList
+      .map((a) => ({ name: a, value: parseFloat(((lastDay.allocations[a] || 0) * 100).toFixed(1)) }))
+      .filter((d) => d.value > 0.1)
+      .sort((a, b) => b.value - a.value);
+    setLastDayAllocs(pieData);
+  }, [data]);
+
+  if (data.length === 0) return null;
+
+  return (
+    <section className="min-h-screen flex items-center justify-center px-6 py-24">
+      <div className="w-full max-w-6xl space-y-16">
+        {/* Título */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <h2 className="text-3xl sm:text-4xl font-semibold text-foreground">
+            Evolución de Allocations
+          </h2>
+          <p className="mt-3 text-muted-foreground text-sm">
+            Cómo el modelo rebalanceó el portafolio a lo largo de 2024
+          </p>
+        </motion.div>
+
+        {/* Stacked Area Chart */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="bg-card border border-border rounded-2xl p-6">
+            <h3 className="text-sm font-semibold text-foreground mb-6">Pesos por Activo (% del portafolio)</h3>
+            <div className="h-[360px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
+                  <XAxis
+                    dataKey="day"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
+                  />
+                  <YAxis
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fontSize: 11, fill: "hsl(220, 9%, 46%)" }}
+                    label={{ value: "% del Portafolio", angle: -90, position: "insideLeft" }}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "hsl(0, 0%, 100%)",
+                      border: "1px solid hsl(220, 13%, 91%)",
+                      borderRadius: "8px",
+                      fontSize: "12px",
+                    }}
+                    formatter={(value: number) => [`${value.toFixed(1)}%`, ""]}
+                  />
+                  <Legend
+                    wrapperStyle={{ fontSize: 12 }}
+                    formatter={(v) => v}
+                  />
+                  {assets.map((asset, idx) => (
+                    <Area
+                      key={asset}
+                      type="monotone"
+                      dataKey={asset}
+                      stackId="1"
+                      stroke={COLORS[idx % COLORS.length]}
+                      fill={COLORS[idx % COLORS.length]}
+                      fillOpacity={0.7}
+                      isAnimationActive={false}
+                    />
+                  ))}
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Grid: Pie Chart + Top Assets */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+        >
+          {/* Pie Chart - Último día */}
+          <div className="bg-card border border-border rounded-2xl p-6">
+            <h3 className="text-sm font-semibold text-foreground mb-6 text-center">
+              Allocations - Último Día
+            </h3>
+            <div className="h-[300px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={lastDayAllocs}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={({ name, value }) => `${name} ${value.toFixed(1)}%`}
+                    outerRadius={100}
+                    fill="#8884d8"
+                    dataKey="value"
+                  >
+                    {lastDayAllocs.map((_, idx) => (
+                      <Cell key={`cell-${idx}`} fill={COLORS[idx % COLORS.length]} />
+                    ))}
+                  </Pie>
+                  <Tooltip formatter={(value: number) => `${value.toFixed(1)}%`} />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Top Assets Table */}
+          <div className="bg-card border border-border rounded-2xl p-6 space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">Top Allocations</h3>
+            <div className="space-y-3">
+              {lastDayAllocs.slice(0, 5).map((item, idx) => (
+                <div key={item.name} className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-3 h-3 rounded-full"
+                      style={{ backgroundColor: COLORS[idx % COLORS.length] }}
+                    />
+                    <span className="text-sm font-medium text-foreground">{item.name}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-24 h-2 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full rounded-full"
+                        style={{
+                          width: `${item.value}%`,
+                          backgroundColor: COLORS[idx % COLORS.length],
+                        }}
+                      />
+                    </div>
+                    <span className="text-sm font-semibold text-foreground w-12 text-right">
+                      {item.value.toFixed(1)}%
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Resumen */}
+            <div className="pt-4 border-t border-border mt-4">
+              <p className="text-xs text-muted-foreground">
+                Total de activos en portafolio: <span className="font-semibold">{lastDayAllocs.length}</span>
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Activos principales: <span className="font-semibold">{lastDayAllocs.slice(0, 3).map(a => a.name).join(", ")}</span>
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default AllocationChart;

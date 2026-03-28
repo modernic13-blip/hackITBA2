@@ -1,114 +1,221 @@
 # hackITBA — Portfolio Inteligente con ML
 
-Sistema de inversión automatizado basado en Machine Learning para la gestión de portafolios multi-activo. El usuario elige su nivel de inversión y riesgo; el modelo entrenado con datos históricos genera señales de compra/venta y optimiza la asignación del portafolio.
+Sistema de inversión automatizado con Machine Learning + Black-Litterman para gestión de portafolios multi-activo. El usuario elige capital y perfil de riesgo; el modelo entrenado con datos históricos genera señales y optimiza la asignación del portafolio.
 
 ---
 
-## Concepto
+## Guía Rápida (nueva PC)
 
-1. **El usuario** entra a la app, elige capital a invertir y perfil de riesgo (bajo / alto)
-2. **El modelo** fue entrenado con datos 2021–2024 sobre 11 activos
-3. **Backtesting 2025**: el usuario ve cuánto hubiera ganado con ese portafolio antes de comprometerse
-4. **Suscripción 2026**: el modelo opera en vivo comprando y vendiendo automáticamente
+> Seguí estos pasos en orden. Nada más es necesario.
 
----
+**Requisitos previos que necesitás tener instalados:**
+- Python 3.10, 3.11 o 3.12 (NO usar 3.13)
+- Node.js 18+ y npm
+- Git
 
-## Activos
+```bash
+# ── 1. CLONAR ────────────────────────────────────────────────────────────────
+git clone https://github.com/dav1dchaparro/hackITBA.git
+cd hackITBA
 
-| Tipo | Activos |
-|------|---------|
-| ETFs | GLD, QQQ, TLT |
-| Acciones | AAPL, NVDA, META, AMZN, XOM, PLTR, COIN |
-| Crypto | BTC |
+# ── 2. ENTORNO PYTHON ────────────────────────────────────────────────────────
+python3 -m venv venv
+source venv/bin/activate          # Linux/macOS
+# venv\Scripts\activate.bat       # Windows
 
----
+# ── 3. DEPENDENCIAS PYTHON ───────────────────────────────────────────────────
+pip install -r requirements.txt
+# Paquetes: numpy, pandas, scikit-learn, xgboost, lightgbm,
+#           PyPortfolioOpt, cvxpy, PyYAML, scipy, packaging
 
-## Arquitectura del Sistema
+# ── 4. DATOS (CSVs ya deben estar en data/) ──────────────────────────────────
+# Verificar que existan:
+ls data/
+# Debe mostrar: AAPL.csv NVDA.csv META.csv AMZN.csv XOM.csv
+#               PLTR.csv COIN.csv GLD.csv QQQ.csv TLT.csv BTC-USD.csv
 
-```
-Datos históricos (2021–2024)
-        │
-        ▼
-┌─────────────────────────────┐
-│     Smart Indicators        │  ← Pipeline de 8 módulos ML
-│  M1 Ingestion               │
-│  M2 Feature Engineering     │  200+ indicadores técnicos
-│  M3 Filtering (CUSUM)       │  multi-timeframe (15min→1d)
-│  M4 Labeling (Triple Barrier│
-│  M5 Walk-Forward Split      │
-│  M6 Feature Selection       │
-│  M7 Model Training          │  XGBoost / LightGBM / RF
-│  M8 Evaluation              │
-└─────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────┐
-│    Risk Optimization        │
-│  HRP / Markowitz penalizado │  → Pesos por activo
-│  Constraints: long-only,    │
-│  leverage ≤ 1, threshold    │
-└─────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────┐
-│    Live Trading Engine      │  Backtesting 2025 / Live 2026
-│  Señales → Órdenes          │
-│  Rebalanceo dinámico        │
-│  Log de operaciones (JSON)  │
-└─────────────────────────────┘
+# ── 5. CORRER EL MODELO ──────────────────────────────────────────────────────
+python main_executor.py                          # Los 3 perfiles (~30-45 min)
+python main_executor.py --profiles low_risk      # Solo uno (~10-15 min)
+
+# Los resultados quedan en results/
+# results_low_risk.json | results_med_risk.json | results_high_risk.json
+
+# ── 6. PASAR RESULTADOS AL FRONTEND ──────────────────────────────────────────
+cp results/results_*.json public/data/
+
+# ── 7. LEVANTAR EL FRONTEND ──────────────────────────────────────────────────
+npm install          # solo la primera vez
+npm run dev          # http://localhost:5173
 ```
 
 ---
 
-## Smart Indicators: Pipeline ML
+## Arquitectura
 
-El núcleo del sistema. Genera señales de trading a partir de datos OHLCV.
-
-### Módulos
-
-| Módulo | Descripción |
-|--------|-------------|
-| M1 Ingestion | Carga datos CSV / AWS S3, soporta time-bars y dollar-bars |
-| M2 Features | 200+ features técnicos en múltiples timeframes |
-| M3 Filtering | Filtro CUSUM para detectar eventos significativos |
-| M4 Labeling | Triple-Barrier Method — etiqueta {-1, +1} por barrera tocada |
-| M5 Splitting | Walk-forward con purging y embargo (sin data leakage) |
-| M6 Feature Selection | Forward selection greedy (~15-30 features finales) |
-| M7 Modeling | XGBoost, LightGBM, CatBoost, RandomForest con grid search |
-| M8 Evaluation | AUC, Sharpe, MaxDrawdown, DSR, PBO |
-
-### Indicadores técnicos (multi-timeframe: 15min, 1h, 4h, 12h, 1d)
-
-- **Momentum**: RSI, MACD, CCI, Williams %R
-- **Volatilidad**: Bollinger Bands, SuperTrend (ATR)
-- **Volumen**: VWAP, CMF, MFI, OBV
-- **Tendencia**: ADX
-- **Microestructura**: OFI, TRANS_RATE, TICK_AUTOCORR
-
----
-
-## Optimización de Riesgo
-
-Dos estrategias según perfil del usuario:
-
-| Parámetro | Bajo Riesgo | Alto Riesgo |
-|-----------|-------------|-------------|
-| Optimizador | Markowitz λ=5-8 / HRP | Markowitz λ=2-4 / HRP |
-| Lookback | 200–250 días | 100–160 días |
-| Umbral rebalanceo | 5% | 1% |
-| Comportamiento | Estable, baja rotación | Dinámico, sigue momentum |
-
-**Constraints**: long-only, leverage ≤ 1.0, umbral mínimo de cambio para rebalancear.
+```
+Datos históricos (2020–2024, OHLCV diario)
+        │
+        ▼
+┌─────────────────────────────────┐
+│  Smart Indicators Pipeline      │
+│  M2 Feature Engineering         │  RSI, MACD, BBands, ATR, ADX
+│  M3 Filtering (CUSUM adaptativo)│
+│  M4 Labeling (Triple Barrier)   │
+│  M5 Walk-Forward Split          │
+│  M6 Feature Selection           │
+│  M7 Model Training              │  XGBoost / LightGBM / RandomForest
+│  M8 Evaluation                  │
+└─────────────────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────┐
+│  Black-Litterman Optimizer      │
+│  Señales ML → vistas absolutas  │
+│  Π = δ·Σ·w_mkt  →  μ_BL        │
+│  Rebalanceo diario 2024         │
+└─────────────────────────────────┘
+        │
+        ▼
+results_low_risk.json / med_risk.json / high_risk.json
+        │
+        ▼
+React Frontend (smart-capital branch)
+```
 
 ---
 
-## Backtesting
+## Activos por Perfil
 
-- **Train**: 2021-01-01 → 2024-12-31
-- **Test**: 2025-01-01 → 2025-12-31
-- **Método**: Walk-forward (5 folds), sin data leakage
-- **Comisión simulada**: 0.01% por operación
-- **Métricas**: Sharpe Ratio, Max Drawdown, AUC-ROC, DSR, PBO
+| Perfil | Activos | Fee |
+|--------|---------|-----|
+| Low Risk | AAPL, NVDA, AMZN, XOM, GLD, QQQ, TLT | 1% sobre ganancias |
+| Med Risk | AAPL, NVDA, META, AMZN, XOM, GLD, QQQ, BTC, COIN | 10% |
+| High Risk | BTC, NVDA, META, PLTR, COIN, AMZN, AAPL | 30% |
+
+---
+
+## Requisitos del Sistema
+
+- Python **3.10, 3.11 o 3.12** (el proyecto NO fue testeado en 3.13)
+- pip >= 23.0
+- ~2 GB RAM disponibles
+
+---
+
+## Instalación (primera vez)
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/dav1dchaparro/hackITBA.git
+cd hackITBA
+
+# 2. Crear entorno virtual
+python3 -m venv venv
+source venv/bin/activate          # Linux / macOS
+# venv\Scripts\activate           # Windows
+
+# 3. Instalar dependencias del backend
+pip install -r requirements.txt
+
+# 4. Instalar dependencias del frontend
+cd smart-capital   # o el subdirectorio donde está el frontend
+npm install
+cd ..
+```
+
+---
+
+## Datos Necesarios
+
+Los CSVs de precios deben estar en `data/` con formato estándar yfinance:
+
+```
+data/
+  AAPL.csv
+  NVDA.csv
+  META.csv
+  AMZN.csv
+  XOM.csv
+  PLTR.csv
+  COIN.csv
+  GLD.csv
+  QQQ.csv
+  TLT.csv
+  BTC-USD.csv
+```
+
+Cada CSV debe tener columnas: `Date, Open, High, Low, Close, Volume`
+Rango mínimo recomendado: **2020-01-01 a 2024-12-31**
+
+Para descargar los datos automáticamente:
+```bash
+python scripts/download_data.py   # si está disponible
+# o manualmente desde Yahoo Finance / yfinance
+```
+
+---
+
+## Correr el Modelo (Backend)
+
+```bash
+# Activar entorno
+source venv/bin/activate
+
+# Correr los 3 perfiles (modo RÁPIDO — ~10-15 min total)
+python main_executor.py
+
+# Correr solo un perfil
+python main_executor.py --profiles low_risk
+python main_executor.py --profiles med_risk
+python main_executor.py --profiles high_risk
+
+# Correr varios perfiles
+python main_executor.py --profiles low_risk med_risk
+```
+
+### Estimación de Tiempos (modo RÁPIDO actual)
+
+| Etapa | Tiempo estimado |
+|-------|-----------------|
+| Cold Start M2+M3 por ticker | ~20–40 seg/activo |
+| Entrenamiento M4-M8 por activo | ~1–2 min/activo |
+| Low Risk (7 activos) | ~10–15 min |
+| Med Risk (9 activos) | ~12–18 min |
+| High Risk (7 activos) | ~10–15 min |
+| **Total 3 perfiles** | **~30–45 min** |
+
+> Activos en común entre perfiles se calculan una sola vez (cache interno).
+
+---
+
+## Copiar Resultados al Frontend
+
+Después de correr el modelo, copiar los JSON generados a la carpeta pública del frontend:
+
+```bash
+# Los resultados se guardan en results/
+ls results/
+# results_low_risk.json
+# results_med_risk.json
+# results_high_risk.json
+
+# Copiar al frontend (ajustar ruta según tu estructura)
+cp results/results_*.json smart-capital/public/data/
+# o
+cp results/results_*.json public/data/
+```
+
+---
+
+## Correr el Frontend
+
+```bash
+cd smart-capital        # directorio del frontend React
+npm run dev             # inicia servidor en http://localhost:5173
+```
+
+El frontend leerá automáticamente `/data/results_{profile}.json` al cambiar de perfil.
 
 ---
 
@@ -116,74 +223,53 @@ Dos estrategias según perfil del usuario:
 
 ```
 hackITBA/
-├── notebooks/
-│   ├── smart_indicators/       # Experimentos por activo (META, BTC, etc.)
-│   └── risk_optimization/      # HRP, Markowitz, HRP vs Equal Weight
-├── src/
-│   └── Pipelines/
-│       ├── smart_indicators/   # Pipeline ML (core del sistema)
-│       ├── risk_optimization/  # Optimizadores de portafolio
-│       └── live_trading/       # Motor de ejecución
-├── tests/                      # Suite de tests unitarios
-├── docs/                       # Documentación técnica
-└── main.ipynb                  # Notebook principal de ejecución
+├── main_executor.py          # Orquestador principal
+├── requirements.txt          # Dependencias Python
+├── configs/
+│   ├── low_risk.yaml         # Perfil conservador
+│   ├── med_risk.yaml         # Perfil balanceado
+│   └── high_risk.yaml        # Perfil agresivo
+├── data/
+│   ├── AAPL.csv              # Datos históricos por activo
+│   ├── NVDA.csv
+│   └── ...
+├── results/                  # JSON generados por main_executor.py
+│   ├── results_low_risk.json
+│   ├── results_med_risk.json
+│   └── results_high_risk.json
+└── src/
+    └── smart_indicators/     # Pipeline ML (M1–M8)
 ```
 
 ---
 
-## Instalación
+## Parámetros Ajustables (configs/\*.yaml)
 
-**Requisitos**: Python >= 3.10
+```yaml
+risk_tolerance: 0.3          # Tolerancia al riesgo [0-1]
+max_weight_per_asset: 0.25   # Máx peso por activo (0.25 = 25%)
+confidence_level: 0.65       # Confianza en señales ML
+initial_capital: 1000.0      # Capital inicial para backtest
 
-```bash
-git clone https://github.com/dav1dchaparro/hackITBA.git
-cd hackITBA
-python -m venv .venv
-source .venv/bin/activate        # Linux/macOS
-# .\.venv\Scripts\Activate.ps1  # Windows
-pip install -e .
+black_litterman:
+  delta: 3.5                 # Aversión al riesgo (más alto = más conservador)
+  tau: 0.05                  # Incertidumbre en el prior del mercado
+
+assets: [AAPL, NVDA, ...]    # Lista de activos del portafolio
 ```
 
 ---
 
-## Uso rápido
+## Dependencias Principales
 
-```python
-from src.Pipelines.risk_optimization.data.s3DataExtractor import S3DataExtractor
-from src.Pipelines.risk_optimization.simulation.walk_forward import walk_forward_grid_search
-from src.Pipelines.live_trading.engine.portfolio_holding_engine import PortfolioHoldingEngine
-
-TICKERS = ["GLD", "QQQ", "TLT", "AAPL", "NVDA", "META", "AMZN", "XOM", "PLTR", "COIN", "BTC"]
-
-# 1. Extraer datos
-extractor = S3DataExtractor(...)
-df_train = extractor.extract_data(assets=TICKERS, start="2021-01-01", end="2024-12-31")
-
-# 2. Optimizar estrategia (walk-forward grid search)
-best_optimizer = walk_forward_grid_search(data=df_train, ...)
-
-# 3. Simular en 2025
-engine = PortfolioHoldingEngine(assets=TICKERS, risk_optimizer=best_optimizer)
-engine.run(df_test)
-engine.export_trading_log("resultado_2025.json")
-```
-
-Ver [main.ipynb](main.ipynb) para el flujo completo.
-
----
-
-## Tests
-
-```bash
-pytest
-```
-
----
-
-## Stack tecnológico
-
-- **ML**: scikit-learn, XGBoost, LightGBM, CatBoost
-- **Optimización**: PyPortfolioOpt, CVXPY
-- **Datos**: yfinance, AWS S3
-- **Tracking**: MLFlow
-- **Data**: pandas, numpy, ta-lib
+| Paquete | Versión | Uso |
+|---------|---------|-----|
+| pandas | 3.0.1 | Manejo de datos |
+| numpy | 2.4.3 | Cálculo numérico |
+| scikit-learn | 1.8.0 | Pipeline ML |
+| xgboost | 3.2.0 | Modelo principal |
+| lightgbm | 4.6.0 | Modelo alternativo |
+| PyPortfolioOpt | 1.6.0 | Optimización Black-Litterman |
+| cvxpy | 1.8.2 | Optimización convexa |
+| PyYAML | 6.0.3 | Lectura de configs |
+| scipy | 1.17.1 | Álgebra lineal |

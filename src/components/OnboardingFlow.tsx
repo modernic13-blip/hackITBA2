@@ -31,7 +31,7 @@ const AssetCard = ({ asset, index }: { asset: Asset; index: number }) => (
 
 const OnboardingFlow = ({ capital, risk, onCapitalChange, onRiskChange }: OnboardingFlowProps) => {
   const assets = getPortfolioAllocation(capital, risk);
-  const riskLabel = risk < 30 ? "Conservador" : risk < 70 ? "Balanceado" : "Agresivo";
+  const riskLabel = risk < 34 ? "Conservador" : risk < 67 ? "Balanceado" : "Agresivo";
 
   const handleCapitalInput = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const val = parseInt(e.target.value.replace(/[^0-9]/g, ""), 10);

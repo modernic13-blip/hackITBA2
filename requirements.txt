@@ -1,0 +1,20 @@
+# ── Core científico ──────────────────────────────────────────────────────────
+numpy==2.4.3
+pandas==3.0.1
+scipy==1.17.1
+scikit-learn==1.8.0
+
+# ── Modelos de boosting ──────────────────────────────────────────────────────
+xgboost==3.2.0
+lightgbm==4.6.0
+
+# ── Optimización de portafolio ───────────────────────────────────────────────
+PyPortfolioOpt==1.6.0
+cvxpy==1.8.2
+
+# ── Configuración y utilidades ───────────────────────────────────────────────
+PyYAML==6.0.3
+packaging==26.0
+
+# ── Datos de mercado (opcional, para descarga online) ───────────────────────
+yfinance==1.2.0

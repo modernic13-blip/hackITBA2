@@ -22,6 +22,8 @@ import os
 import sys
 import json
 import copy
+import pickle
+import hashlib
 import logging
 import warnings
 import argparse
@@ -48,7 +50,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Constantes globales ───────────────────────────────────────────────────────
-TRAIN_CUTOFF = pd.Timestamp("2025-01-01")
+TRAIN_CUTOFF = pd.Timestamp("2024-01-01")   # Datos disponibles hasta 2024-12-31
 DATA_PATH    = ROOT / "data" / "dataset_completo.csv"
 PROFILES_DIR = ROOT / "configs"
 OUTPUT_DIR   = ROOT / "results"
@@ -60,77 +62,76 @@ PROFILE_FILES = {
     "high_risk": "high_risk.yaml",
 }
 
-# ── Configuración base del pipeline para datos de 1 hora ─────────────────────
+CACHE_DIR = ROOT / "cache"
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+# ── Configuración base del pipeline para datos diarios ───────────────────────
 BASE_PIPELINE_CONFIG: dict = {
-    "frequency": "1h",
+    "frequency": "1d",
     "ingestion": {
         "source": "csv",
     },
     "features": {
-        "timeframes": ["1h", "4h", "12h", "1d"],
-        "indicators": "all",
+        "timeframes": ["1d", "5d"],          # FAST: solo 2 timeframes
+        "indicators": ["rsi", "macd", "bbands", "atr", "adx"],  # FAST: 5 indicadores clave
         "indicator_params": {
-            "rsi":          {"period": [14, 21]},
-            "macd":         {"fast": [12], "slow": [26], "signal": [9]},
-            "cci":          {"period": [20]},
-            "willr":        {"period": [14]},
-            "bbands":       {"period": [20], "num_std": [2.0]},
-            "adx":          {"period": [14]},
-            "atr":          {"period": [14]},
-            "supertrend":   {"period": [10], "multiplier": [3.0]},
-            "cmf":          {"period": [20]},
-            "mfi":          {"period": [14]},
-            "ofi":          {"period": [20]},
-            "trans_rate":   {"period": [20]},
-            "tick_autocorr":{"period": [20]},
-            "ems_pct":      {"span": [20, 50]},
+            "rsi":    {"period": [14]},
+            "macd":   {"fast": [12], "slow": [26], "signal": [9]},
+            "bbands": {"period": [20], "num_std": [2.0]},
+            "atr":    {"period": [14]},
+            "adx":    {"period": [14]},
         },
         "normalize": {
             "methods": ["zscore"],
-            "window": 504,      # ~21 días a 1h — suficiente historia para normalizar
+            "window": 60,       # 60 días para zscore rolling
         },
         "drop_na_threshold": 0.5,
     },
     "filtering": {
         "method":     "adaptive_cusum",
         "cusum_mode": "symmetric",
-        "k_Px":       0.5,
-        "lookback":   168,      # 7 días en horas
-        "min_events": 50,
+        "k_Px":       0.7,
+        "lookback":   20,       # 20 días
+        "min_events": 30,
     },
     "labeling": {
         "pt_sl":              [1.5, 1.0],
         "min_ret":            0.0,
-        "vertical_bars":      72,   # 3 días a 1h
-        "vol_span":           168,
-        "use_sample_weights": True,
+        "vertical_bars":      20,   # 20 días (1 mes)
+        "vol_span":           60,
+        "use_sample_weights": False,
     },
     "splitting": {
-        "n_splits":       5,
+        "n_splits":       3,            # FAST: 3 folds en lugar de 5
         "test_size":      0.2,
-        "purge_hours":    72,
+        "purge_hours":    240,
         "embargo_pct":    0.01,
         "expanding":      True,
-        "min_train_size": 500,
+        "min_train_size": 200,
     },
     "feature_selection": {
-        "max_features":       25,
-        "min_improvement":    0.002,
-        "n_estimators":       100,
-        "max_depth":          5,
-        "use_sample_weights": True,
+        "max_features":       5,        # FAST: máx 5 features
+        "min_improvement":    0.005,
+        "n_estimators":       20,       # FAST: 20 árboles para selección
+        "max_depth":          3,
+        "use_sample_weights": False,    # Desactivado: evita mismatch de tamaños
         "verbose":            False,
     },
     "modeling": {
         "model":                 "xgboost",
-        "max_combinations":      12,
-        "use_sample_weights":    True,
+        "max_combinations":      2,     # FAST: solo 2 combinaciones de hiper-params
+        "use_sample_weights":    False, # Desactivado: evita mismatch de tamaños post-split
         "use_selected_features": True,
         "verbose":               False,
+        "param_grid": {
+            "n_estimators":  [100],
+            "max_depth":     [3],
+            "learning_rate": [0.1],
+        },
     },
     "evaluation": {
         "risk_free_rate":   0.045,
-        "periods_per_year": 6048,   # 252 días × 24 horas
+        "periods_per_year": 252,
         "n_trials_dsr":     10,
         "pbo_partitions":   6,
         "commission_bps":   5.0,
@@ -319,67 +320,52 @@ class MainExecutor:
 
     def load_data(self) -> Dict[str, pd.DataFrame]:
         """
-        Carga dataset_completo.csv y separa por activo.
-        Fallback a CSVs individuales si no existe el combinado.
+        Carga siempre los CSVs individuales (formato más limpio).
+        dataset_completo.csv tiene formato wide con multi-header — usar individuales.
         """
-        logger.info(f"Cargando datos desde {self.data_path}")
-
-        if self.data_path.exists():
-            self._load_combined_csv()
-        else:
-            logger.warning("dataset_completo.csv no encontrado, usando CSVs individuales")
-            self._load_individual_csvs()
-
+        logger.info(f"Cargando CSVs individuales desde {self.data_path.parent}")
+        self._load_individual_csvs()
         logger.info(f"Activos cargados: {sorted(self.raw_data.keys())}")
         return self.raw_data
 
     def _load_combined_csv(self):
-        """Carga el CSV combinado y separa por columna 'Ticker'."""
-        df = pd.read_csv(self.data_path)
-
-        # Normalizar nombre de columna de fecha
-        date_col = next(
-            (c for c in df.columns if c.lower() in ("date", "datetime", "timestamp")),
-            df.columns[0],
-        )
-        df[date_col] = pd.to_datetime(df[date_col])
-        df = df.set_index(date_col).sort_index()
-        df.columns = [c.lower() for c in df.columns]
-
-        if "ticker" not in df.columns:
-            # Un solo activo, usar nombre del archivo
-            ticker = self.data_path.stem.replace("-usd", "").upper()
-            self.raw_data[ticker] = self._extract_ohlcv(df)
-            return
-
-        for ticker, group in df.groupby("ticker"):
-            ticker_clean = str(ticker).replace("-USD", "").replace("-", "")
-            asset_df     = group.drop(columns=["ticker"])
-            ohlcv        = self._extract_ohlcv(asset_df)
-            if len(ohlcv) >= 100:
-                self.raw_data[ticker_clean] = ohlcv
+        """No usado — dataset_completo.csv tiene formato wide no estándar."""
+        self._load_individual_csvs()
 
     def _load_individual_csvs(self):
-        """Carga CSVs individuales por activo desde el directorio de datos."""
+        """
+        Carga CSVs individuales por activo.
+        Maneja el formato con doble header (fila 0: columnas, fila 1: tickers repetidos).
+        """
         data_dir = self.data_path.parent
-        skip     = {"dataset_completo.csv", "README.md"}
+        skip     = {"dataset_completo.csv", "README.md", "dd.csv"}
 
         for csv_file in sorted(data_dir.glob("*.csv")):
             if csv_file.name in skip:
                 continue
             ticker = csv_file.stem.replace("-USD", "").replace("-", "")
             try:
-                df = pd.read_csv(csv_file)
-                date_col = next(
-                    (c for c in df.columns if c.lower() in ("date", "datetime")),
-                    df.columns[0],
-                )
-                df[date_col] = pd.to_datetime(df[date_col])
-                df = df.set_index(date_col).sort_index()
-                df.columns = [c.lower() for c in df.columns]
-                ohlcv = self._extract_ohlcv(df)
+                # Leer sin parsear fechas para detectar el doble-header
+                raw = pd.read_csv(csv_file, header=0)
+                date_col = raw.columns[0]
+
+                # Detectar y eliminar fila de tickers repetidos (ej: ",AAPL,AAPL,...")
+                if str(raw.iloc[0, 0]) in ("", "nan") or str(raw.iloc[0, 0]).upper() == ticker.upper():
+                    raw = raw.iloc[1:].reset_index(drop=True)
+
+                raw[date_col] = pd.to_datetime(raw[date_col], errors="coerce")
+                raw = raw.dropna(subset=[date_col])
+                raw = raw.set_index(date_col).sort_index()
+                raw.columns = [c.lower() for c in raw.columns]
+
+                # Convertir columnas a numérico
+                for col in raw.columns:
+                    raw[col] = pd.to_numeric(raw[col], errors="coerce")
+
+                ohlcv = self._extract_ohlcv(raw)
                 if len(ohlcv) >= 100:
                     self.raw_data[ticker] = ohlcv
+                    logger.info(f"  {ticker}: {len(ohlcv)} barras ({ohlcv.index[0].date()} → {ohlcv.index[-1].date()})")
             except Exception as exc:
                 logger.warning(f"No se pudo cargar {csv_file.name}: {exc}")
 
@@ -465,6 +451,17 @@ class MainExecutor:
     # 3. Cold Start: M2 + M3 sobre datos completos (2020-2025)
     # =========================================================================
 
+    @staticmethod
+    def _cold_cache_path(ticker: str, ohlcv: pd.DataFrame) -> Path:
+        """
+        Devuelve la ruta del archivo de caché para el cold-start de un ticker.
+        El nombre incluye un hash corto basado en el nº de filas y la última fecha,
+        así si cambian los datos el caché se invalida automáticamente.
+        """
+        key   = f"{ticker}_{len(ohlcv)}_{ohlcv.index[-1].date()}"
+        short = hashlib.md5(key.encode()).hexdigest()[:8]
+        return CACHE_DIR / f"cold_{ticker}_{short}.pkl"
+
     def run_cold_start(
         self,
         ticker: str,
@@ -473,14 +470,40 @@ class MainExecutor:
     ) -> Optional[PipelineData]:
         """
         Ejecuta M2 (features) y M3 (filtering) sobre el historial COMPLETO.
-        Almacena el resultado en caché para no repetirlo entre perfiles.
+        Guarda el resultado en disco (cache/) para no repetirlo entre perfiles
+        ni entre ejecuciones del modelo.
         """
+        # 1. Caché en memoria (mismo proceso)
         if ticker in self.cold_data:
             return self.cold_data[ticker]
 
-        logger.info(f"[{ticker}] Cold-start M2+M3 sobre {len(ohlcv)} barras (2020-2025)...")
+        # 2. Caché en disco
+        cache_path = self._cold_cache_path(ticker, ohlcv)
+        if cache_path.exists():
+            try:
+                with open(cache_path, "rb") as f:
+                    cached = pickle.load(f)
+                # Reconstruir PipelineData desde el dict guardado
+                result = PipelineData()
+                for k, v in cached.items():
+                    result.set(k, v, "cache")
+                t_ev    = result.get("tEvents",    required=False)
+                n_feats = result.get("features_df", required=False)
+                n_events = len(t_ev)    if t_ev    is not None else 0
+                n_feats  = n_feats.shape[1] if n_feats is not None else 0
+                logger.info(
+                    f"[{ticker}] Cold-start CARGADO desde caché | "
+                    f"features={n_feats} | eventos={n_events}"
+                )
+                self.cold_data[ticker] = result
+                return result
+            except Exception as exc:
+                logger.warning(f"[{ticker}] Caché corrupto, recalculando: {exc}")
+                cache_path.unlink(missing_ok=True)
 
-        # Inyectar OHLCV directamente — se salta M1
+        # 3. Calcular desde cero
+        logger.info(f"[{ticker}] Cold-start M2+M3 sobre {len(ohlcv)} barras...")
+
         data = PipelineData()
         data.set("close",  ohlcv["close"],  "executor", "Precios de cierre completos")
         data.set("open",   ohlcv["open"],   "executor")
@@ -500,10 +523,24 @@ class MainExecutor:
                 logger.error(f"[{ticker}] Cold-start falló")
                 return None
 
-            n_events = len(result.get("tEvents", required=False) or [])
+            t_ev     = result.get("tEvents",    required=False)
             n_feats  = result.get("features_df", required=False)
+            n_events = len(t_ev)    if t_ev    is not None else 0
             n_feats  = n_feats.shape[1] if n_feats is not None else 0
             logger.info(f"[{ticker}] Cold-start OK | features={n_feats} | eventos={n_events}")
+
+            # Guardar en disco: extraer los objetos clave
+            cache_dict = {}
+            for key in ("features_df", "tEvents", "close", "open", "high", "low", "volume", "ohlcv"):
+                val = result.get(key, required=False)
+                if val is not None:
+                    cache_dict[key] = val
+            try:
+                with open(cache_path, "wb") as f:
+                    pickle.dump(cache_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+                logger.info(f"[{ticker}] Caché guardado en {cache_path.name}")
+            except Exception as exc:
+                logger.warning(f"[{ticker}] No se pudo guardar caché: {exc}")
 
             self.cold_data[ticker] = result
             return result
@@ -564,10 +601,14 @@ class MainExecutor:
                 stages=["labeling", "splitting",
                         "feature_selection", "modeling", "evaluation"],
                 data=train_data,
-                verbose=False,
+                verbose=True,
             )
 
             if not ok:
+                # Mostrar el trace del stage que falló
+                for tr in pipeline.traces:
+                    if tr["trace"].get("status") not in ("OK",):
+                        logger.error(f"[{ticker}] Stage '{tr['module']}' status={tr['trace'].get('status')} error={tr['trace'].get('error','')}")
                 logger.error(f"[{ticker}] Pipeline de entrenamiento falló")
                 return None
 
@@ -956,7 +997,29 @@ class MainExecutor:
                 all_results[profile_name] = []
 
         self._print_summary(all_results)
+        self._copy_to_frontend(all_results)
         return all_results
+
+    @staticmethod
+    def _copy_to_frontend(all_results: Dict[str, List[dict]]):
+        """Copia los JSON generados a public/data/ para el frontend React."""
+        frontend_dirs = [
+            ROOT / "public" / "data",
+            ROOT / "smart-capital" / "public" / "data",
+        ]
+        copied_to = []
+        for dest_dir in frontend_dirs:
+            if dest_dir.exists():
+                for profile_name, results in all_results.items():
+                    if not results:
+                        continue
+                    dest = dest_dir / f"results_{profile_name}.json"
+                    with open(dest, "w") as f:
+                        json.dump(results, f, indent=2, default=str)
+                copied_to.append(str(dest_dir))
+
+        if copied_to:
+            logger.info(f"JSON copiados al frontend: {copied_to}")
 
     # =========================================================================
     # Helpers
