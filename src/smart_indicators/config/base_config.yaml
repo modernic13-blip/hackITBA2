@@ -167,3 +167,37 @@ evaluation:
   pbo_partitions: 8          # partitions for Probability of Backtest Overfitting
   commission_bps: 1.0        # commission in basis points per trade
   use_selected_features: true
+
+# =============================================================================
+# Risk Optimization (Portfolio Construction)
+# =============================================================================
+risk_optimization:
+  risk_profile: "low"         # "low" (conservative) or "high" (aggressive)
+  optimizer: "markowitz"      # "markowitz" or "hrp"
+
+  # Risk aversion parameter (lambda_risk)
+  # Automatically adjusted by risk_profile if not specified:
+  #   - Low risk:  lambda_risk = 6-8 (penaliza más la varianza)
+  #   - High risk: lambda_risk = 2-4 (acepta más volatilidad)
+  # lambda_risk: 6.0           # (optional, overrides risk_profile)
+
+  # Lookback window for calculating optimal weights (in trading days)
+  # Automatically adjusted by risk_profile if not specified:
+  #   - Low risk:  225 days (~1 year)
+  #   - High risk: 130 days (~6 months)
+  # lookback_days: 225         # (optional, overrides risk_profile)
+
+  # Threshold for rebalancing (minimum weight change to trigger rebalance)
+  # Automatically adjusted by risk_profile if not specified:
+  #   - Low risk:  5% (0.05)
+  #   - High risk: 1% (0.01)
+  # rebalance_threshold: 0.05  # (optional, overrides risk_profile)
+
+  # Penalty for portfolio turnover (penaliza cambios de pesos)
+  penalty: 0.001
+
+  # Capital inicial a invertir
+  capital: 100000             # en $ o tu moneda local
+
+  # HRP-specific parameters (if optimizer == "hrp")
+  linkage_method: "single"    # "single", "complete", "average", "ward"
