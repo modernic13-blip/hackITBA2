@@ -1,0 +1,3642 @@
+[
+  {
+    "date": "2025-01-02",
+    "portfolio_value": 998.8615,
+    "benchmark_value": 1003.96,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7258
+  },
+  {
+    "date": "2025-01-03",
+    "portfolio_value": 1005.9278,
+    "benchmark_value": 1008.1692,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6487
+  },
+  {
+    "date": "2025-01-06",
+    "portfolio_value": 1013.038,
+    "benchmark_value": 1011.5456,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5601
+  },
+  {
+    "date": "2025-01-07",
+    "portfolio_value": 1011.325,
+    "benchmark_value": 1013.0212,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5745
+  },
+  {
+    "date": "2025-01-08",
+    "portfolio_value": 1001.6167,
+    "benchmark_value": 1019.4709,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5834
+  },
+  {
+    "date": "2025-01-09",
+    "portfolio_value": 1003.4275,
+    "benchmark_value": 1029.745,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8059
+  },
+  {
+    "date": "2025-01-10",
+    "portfolio_value": 998.4697,
+    "benchmark_value": 1026.7615,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8136
+  },
+  {
+    "date": "2025-01-13",
+    "portfolio_value": 1010.2089,
+    "benchmark_value": 1031.2525,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6282
+  },
+  {
+    "date": "2025-01-14",
+    "portfolio_value": 1012.4809,
+    "benchmark_value": 1034.4896,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6333
+  },
+  {
+    "date": "2025-01-15",
+    "portfolio_value": 1014.4309,
+    "benchmark_value": 1030.6995,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.707
+  },
+  {
+    "date": "2025-01-16",
+    "portfolio_value": 1011.0577,
+    "benchmark_value": 1025.7556,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6979
+  },
+  {
+    "date": "2025-01-17",
+    "portfolio_value": 1013.4223,
+    "benchmark_value": 1027.1129,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6056
+  },
+  {
+    "date": "2025-01-20",
+    "portfolio_value": 1011.1043,
+    "benchmark_value": 1020.6232,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6348
+  },
+  {
+    "date": "2025-01-21",
+    "portfolio_value": 1005.78,
+    "benchmark_value": 1016.9913,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6309
+  },
+  {
+    "date": "2025-01-22",
+    "portfolio_value": 1008.753,
+    "benchmark_value": 1006.7723,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6159
+  },
+  {
+    "date": "2025-01-23",
+    "portfolio_value": 1002.5591,
+    "benchmark_value": 1003.2776,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7863
+  },
+  {
+    "date": "2025-01-24",
+    "portfolio_value": 1002.3184,
+    "benchmark_value": 997.9193,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8146
+  },
+  {
+    "date": "2025-01-27",
+    "portfolio_value": 1007.3302,
+    "benchmark_value": 1003.2101,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7544
+  },
+  {
+    "date": "2025-01-28",
+    "portfolio_value": 1011.7753,
+    "benchmark_value": 1010.2334,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5606
+  },
+  {
+    "date": "2025-01-29",
+    "portfolio_value": 1007.1017,
+    "benchmark_value": 1000.1433,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7047
+  },
+  {
+    "date": "2025-01-30",
+    "portfolio_value": 1011.2202,
+    "benchmark_value": 996.2404,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7377
+  },
+  {
+    "date": "2025-01-31",
+    "portfolio_value": 1004.9948,
+    "benchmark_value": 991.4867,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6732
+  },
+  {
+    "date": "2025-02-03",
+    "portfolio_value": 1013.1653,
+    "benchmark_value": 977.762,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.678
+  },
+  {
+    "date": "2025-02-04",
+    "portfolio_value": 1012.4626,
+    "benchmark_value": 976.0558,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7394
+  },
+  {
+    "date": "2025-02-05",
+    "portfolio_value": 1001.3227,
+    "benchmark_value": 959.2212,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7719
+  },
+  {
+    "date": "2025-02-06",
+    "portfolio_value": 1000.4407,
+    "benchmark_value": 966.0592,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7305
+  },
+  {
+    "date": "2025-02-07",
+    "portfolio_value": 1007.4514,
+    "benchmark_value": 967.4897,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5954
+  },
+  {
+    "date": "2025-02-10",
+    "portfolio_value": 1009.4133,
+    "benchmark_value": 969.4419,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7574
+  },
+  {
+    "date": "2025-02-11",
+    "portfolio_value": 1012.9551,
+    "benchmark_value": 973.5272,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6556
+  },
+  {
+    "date": "2025-02-12",
+    "portfolio_value": 1015.0786,
+    "benchmark_value": 971.878,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6713
+  },
+  {
+    "date": "2025-02-13",
+    "portfolio_value": 1003.4596,
+    "benchmark_value": 967.9363,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7712
+  },
+  {
+    "date": "2025-02-14",
+    "portfolio_value": 1007.051,
+    "benchmark_value": 964.1753,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6621
+  },
+  {
+    "date": "2025-02-17",
+    "portfolio_value": 999.528,
+    "benchmark_value": 975.4086,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8086
+  },
+  {
+    "date": "2025-02-18",
+    "portfolio_value": 1002.102,
+    "benchmark_value": 979.2331,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6126
+  },
+  {
+    "date": "2025-02-19",
+    "portfolio_value": 1003.2236,
+    "benchmark_value": 987.4583,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7091
+  },
+  {
+    "date": "2025-02-20",
+    "portfolio_value": 1003.5781,
+    "benchmark_value": 988.4576,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6631
+  },
+  {
+    "date": "2025-02-21",
+    "portfolio_value": 998.6746,
+    "benchmark_value": 995.382,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8073
+  },
+  {
+    "date": "2025-02-24",
+    "portfolio_value": 996.4363,
+    "benchmark_value": 987.9517,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7168
+  },
+  {
+    "date": "2025-02-25",
+    "portfolio_value": 995.9408,
+    "benchmark_value": 986.2663,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7929
+  },
+  {
+    "date": "2025-02-26",
+    "portfolio_value": 998.615,
+    "benchmark_value": 972.8236,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7654
+  },
+  {
+    "date": "2025-02-27",
+    "portfolio_value": 994.2956,
+    "benchmark_value": 977.4938,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.578
+  },
+  {
+    "date": "2025-02-28",
+    "portfolio_value": 993.2686,
+    "benchmark_value": 976.0323,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5682
+  },
+  {
+    "date": "2025-03-03",
+    "portfolio_value": 994.5715,
+    "benchmark_value": 980.3337,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6418
+  },
+  {
+    "date": "2025-03-04",
+    "portfolio_value": 995.0881,
+    "benchmark_value": 980.7543,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5908
+  },
+  {
+    "date": "2025-03-05",
+    "portfolio_value": 1000.0443,
+    "benchmark_value": 985.0119,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5569
+  },
+  {
+    "date": "2025-03-06",
+    "portfolio_value": 1006.2713,
+    "benchmark_value": 978.6301,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5901
+  },
+  {
+    "date": "2025-03-07",
+    "portfolio_value": 1006.5915,
+    "benchmark_value": 985.3303,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6483
+  },
+  {
+    "date": "2025-03-10",
+    "portfolio_value": 1015.4059,
+    "benchmark_value": 995.0577,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8181
+  },
+  {
+    "date": "2025-03-11",
+    "portfolio_value": 1008.9615,
+    "benchmark_value": 997.1346,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5732
+  },
+  {
+    "date": "2025-03-12",
+    "portfolio_value": 1013.8028,
+    "benchmark_value": 1001.3423,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6215
+  },
+  {
+    "date": "2025-03-13",
+    "portfolio_value": 1015.9213,
+    "benchmark_value": 998.0635,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5562
+  },
+  {
+    "date": "2025-03-14",
+    "portfolio_value": 1023.4449,
+    "benchmark_value": 995.8468,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5896
+  },
+  {
+    "date": "2025-03-17",
+    "portfolio_value": 1022.4657,
+    "benchmark_value": 995.7879,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6926
+  },
+  {
+    "date": "2025-03-18",
+    "portfolio_value": 1034.9993,
+    "benchmark_value": 994.2935,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.738
+  },
+  {
+    "date": "2025-03-19",
+    "portfolio_value": 1034.9958,
+    "benchmark_value": 1001.3078,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5951
+  },
+  {
+    "date": "2025-03-20",
+    "portfolio_value": 1036.4589,
+    "benchmark_value": 993.1256,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7603
+  },
+  {
+    "date": "2025-03-21",
+    "portfolio_value": 1034.7499,
+    "benchmark_value": 997.8361,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7691
+  },
+  {
+    "date": "2025-03-24",
+    "portfolio_value": 1047.2557,
+    "benchmark_value": 996.9226,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7676
+  },
+  {
+    "date": "2025-03-25",
+    "portfolio_value": 1051.9639,
+    "benchmark_value": 986.8886,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6112
+  },
+  {
+    "date": "2025-03-26",
+    "portfolio_value": 1046.5008,
+    "benchmark_value": 986.5473,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5578
+  },
+  {
+    "date": "2025-03-27",
+    "portfolio_value": 1051.9213,
+    "benchmark_value": 987.8986,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.62
+  },
+  {
+    "date": "2025-03-28",
+    "portfolio_value": 1046.7541,
+    "benchmark_value": 972.0742,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6708
+  },
+  {
+    "date": "2025-03-31",
+    "portfolio_value": 1064.4115,
+    "benchmark_value": 964.6399,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8079
+  },
+  {
+    "date": "2025-04-01",
+    "portfolio_value": 1061.8609,
+    "benchmark_value": 968.5885,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6112
+  },
+  {
+    "date": "2025-04-02",
+    "portfolio_value": 1063.6981,
+    "benchmark_value": 973.2866,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7185
+  },
+  {
+    "date": "2025-04-03",
+    "portfolio_value": 1074.0264,
+    "benchmark_value": 966.0046,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6795
+  },
+  {
+    "date": "2025-04-04",
+    "portfolio_value": 1067.8367,
+    "benchmark_value": 956.4306,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5729
+  },
+  {
+    "date": "2025-04-07",
+    "portfolio_value": 1060.7741,
+    "benchmark_value": 944.3664,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7612
+  },
+  {
+    "date": "2025-04-08",
+    "portfolio_value": 1061.2015,
+    "benchmark_value": 937.1872,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5982
+  },
+  {
+    "date": "2025-04-09",
+    "portfolio_value": 1063.0162,
+    "benchmark_value": 931.822,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7662
+  },
+  {
+    "date": "2025-04-10",
+    "portfolio_value": 1069.7398,
+    "benchmark_value": 931.0161,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6584
+  },
+  {
+    "date": "2025-04-11",
+    "portfolio_value": 1079.9041,
+    "benchmark_value": 927.9351,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5959
+  },
+  {
+    "date": "2025-04-14",
+    "portfolio_value": 1082.9218,
+    "benchmark_value": 930.9506,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7943
+  },
+  {
+    "date": "2025-04-15",
+    "portfolio_value": 1084.6213,
+    "benchmark_value": 927.8693,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7732
+  },
+  {
+    "date": "2025-04-16",
+    "portfolio_value": 1094.5024,
+    "benchmark_value": 927.0487,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6446
+  },
+  {
+    "date": "2025-04-17",
+    "portfolio_value": 1091.6183,
+    "benchmark_value": 926.3659,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5538
+  },
+  {
+    "date": "2025-04-18",
+    "portfolio_value": 1101.3797,
+    "benchmark_value": 925.0097,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6922
+  },
+  {
+    "date": "2025-04-21",
+    "portfolio_value": 1108.2611,
+    "benchmark_value": 922.5637,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7854
+  },
+  {
+    "date": "2025-04-22",
+    "portfolio_value": 1110.809,
+    "benchmark_value": 918.9671,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.618
+  },
+  {
+    "date": "2025-04-23",
+    "portfolio_value": 1109.9312,
+    "benchmark_value": 923.9154,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7083
+  },
+  {
+    "date": "2025-04-24",
+    "portfolio_value": 1109.9635,
+    "benchmark_value": 930.9948,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5854
+  },
+  {
+    "date": "2025-04-25",
+    "portfolio_value": 1115.6589,
+    "benchmark_value": 928.0859,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6737
+  },
+  {
+    "date": "2025-04-28",
+    "portfolio_value": 1103.5438,
+    "benchmark_value": 921.4005,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6636
+  },
+  {
+    "date": "2025-04-29",
+    "portfolio_value": 1110.775,
+    "benchmark_value": 917.9884,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6936
+  },
+  {
+    "date": "2025-04-30",
+    "portfolio_value": 1109.9348,
+    "benchmark_value": 918.1534,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6688
+  },
+  {
+    "date": "2025-05-01",
+    "portfolio_value": 1110.6164,
+    "benchmark_value": 919.0232,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7658
+  },
+  {
+    "date": "2025-05-02",
+    "portfolio_value": 1114.5955,
+    "benchmark_value": 925.8089,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7458
+  },
+  {
+    "date": "2025-05-05",
+    "portfolio_value": 1109.4676,
+    "benchmark_value": 924.1607,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.69
+  },
+  {
+    "date": "2025-05-06",
+    "portfolio_value": 1098.9492,
+    "benchmark_value": 920.6443,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5786
+  },
+  {
+    "date": "2025-05-07",
+    "portfolio_value": 1094.7547,
+    "benchmark_value": 919.1925,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6248
+  },
+  {
+    "date": "2025-05-08",
+    "portfolio_value": 1096.2794,
+    "benchmark_value": 911.9562,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7017
+  },
+  {
+    "date": "2025-05-09",
+    "portfolio_value": 1097.6254,
+    "benchmark_value": 898.2401,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6697
+  },
+  {
+    "date": "2025-05-12",
+    "portfolio_value": 1092.1183,
+    "benchmark_value": 893.7339,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6883
+  },
+  {
+    "date": "2025-05-13",
+    "portfolio_value": 1090.0197,
+    "benchmark_value": 887.6479,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.694
+  },
+  {
+    "date": "2025-05-14",
+    "portfolio_value": 1075.0169,
+    "benchmark_value": 890.0219,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7388
+  },
+  {
+    "date": "2025-05-15",
+    "portfolio_value": 1086.4379,
+    "benchmark_value": 879.9436,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6201
+  },
+  {
+    "date": "2025-05-16",
+    "portfolio_value": 1072.3322,
+    "benchmark_value": 874.8879,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7768
+  },
+  {
+    "date": "2025-05-19",
+    "portfolio_value": 1074.8915,
+    "benchmark_value": 877.5873,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6694
+  },
+  {
+    "date": "2025-05-20",
+    "portfolio_value": 1079.6148,
+    "benchmark_value": 879.9273,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5697
+  },
+  {
+    "date": "2025-05-21",
+    "portfolio_value": 1074.5475,
+    "benchmark_value": 870.8303,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7922
+  },
+  {
+    "date": "2025-05-22",
+    "portfolio_value": 1080.7543,
+    "benchmark_value": 879.1432,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7283
+  },
+  {
+    "date": "2025-05-23",
+    "portfolio_value": 1089.5475,
+    "benchmark_value": 889.4469,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8112
+  },
+  {
+    "date": "2025-05-26",
+    "portfolio_value": 1093.0449,
+    "benchmark_value": 904.8753,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6575
+  },
+  {
+    "date": "2025-05-27",
+    "portfolio_value": 1073.6665,
+    "benchmark_value": 906.754,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7748
+  },
+  {
+    "date": "2025-05-28",
+    "portfolio_value": 1077.7078,
+    "benchmark_value": 912.8275,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6892
+  },
+  {
+    "date": "2025-05-29",
+    "portfolio_value": 1075.8686,
+    "benchmark_value": 916.7479,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.636
+  },
+  {
+    "date": "2025-05-30",
+    "portfolio_value": 1076.0726,
+    "benchmark_value": 915.8427,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6996
+  },
+  {
+    "date": "2025-06-02",
+    "portfolio_value": 1075.3515,
+    "benchmark_value": 916.6383,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6395
+  },
+  {
+    "date": "2025-06-03",
+    "portfolio_value": 1070.2744,
+    "benchmark_value": 911.5865,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5674
+  },
+  {
+    "date": "2025-06-04",
+    "portfolio_value": 1081.9664,
+    "benchmark_value": 910.8805,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8124
+  },
+  {
+    "date": "2025-06-05",
+    "portfolio_value": 1086.4303,
+    "benchmark_value": 914.2916,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5607
+  },
+  {
+    "date": "2025-06-06",
+    "portfolio_value": 1087.7994,
+    "benchmark_value": 909.6407,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.585
+  },
+  {
+    "date": "2025-06-09",
+    "portfolio_value": 1075.5416,
+    "benchmark_value": 916.5656,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7711
+  },
+  {
+    "date": "2025-06-10",
+    "portfolio_value": 1075.7699,
+    "benchmark_value": 920.558,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7982
+  },
+  {
+    "date": "2025-06-11",
+    "portfolio_value": 1067.1449,
+    "benchmark_value": 916.614,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5742
+  },
+  {
+    "date": "2025-06-12",
+    "portfolio_value": 1076.712,
+    "benchmark_value": 920.4264,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6648
+  },
+  {
+    "date": "2025-06-13",
+    "portfolio_value": 1090.838,
+    "benchmark_value": 927.4601,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7213
+  },
+  {
+    "date": "2025-06-16",
+    "portfolio_value": 1092.1434,
+    "benchmark_value": 925.2389,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7812
+  },
+  {
+    "date": "2025-06-17",
+    "portfolio_value": 1104.5093,
+    "benchmark_value": 930.8375,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6725
+  },
+  {
+    "date": "2025-06-18",
+    "portfolio_value": 1100.4789,
+    "benchmark_value": 938.1969,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8002
+  },
+  {
+    "date": "2025-06-19",
+    "portfolio_value": 1100.5267,
+    "benchmark_value": 941.9865,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6923
+  },
+  {
+    "date": "2025-06-20",
+    "portfolio_value": 1101.1942,
+    "benchmark_value": 945.511,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5936
+  },
+  {
+    "date": "2025-06-23",
+    "portfolio_value": 1105.8465,
+    "benchmark_value": 947.2535,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6342
+  },
+  {
+    "date": "2025-06-24",
+    "portfolio_value": 1102.4907,
+    "benchmark_value": 958.1456,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6283
+  },
+  {
+    "date": "2025-06-25",
+    "portfolio_value": 1098.7877,
+    "benchmark_value": 958.5074,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6437
+  },
+  {
+    "date": "2025-06-26",
+    "portfolio_value": 1104.1971,
+    "benchmark_value": 959.4518,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5541
+  },
+  {
+    "date": "2025-06-27",
+    "portfolio_value": 1103.7456,
+    "benchmark_value": 951.3646,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6012
+  },
+  {
+    "date": "2025-06-30",
+    "portfolio_value": 1088.9092,
+    "benchmark_value": 954.1825,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5787
+  },
+  {
+    "date": "2025-07-01",
+    "portfolio_value": 1092.2581,
+    "benchmark_value": 948.0949,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6837
+  },
+  {
+    "date": "2025-07-02",
+    "portfolio_value": 1096.0118,
+    "benchmark_value": 942.7382,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6868
+  },
+  {
+    "date": "2025-07-03",
+    "portfolio_value": 1089.3177,
+    "benchmark_value": 925.7504,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6425
+  },
+  {
+    "date": "2025-07-04",
+    "portfolio_value": 1094.8101,
+    "benchmark_value": 917.2789,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7217
+  },
+  {
+    "date": "2025-07-07",
+    "portfolio_value": 1090.2302,
+    "benchmark_value": 920.9721,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5647
+  },
+  {
+    "date": "2025-07-08",
+    "portfolio_value": 1092.3799,
+    "benchmark_value": 923.1201,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.75
+  },
+  {
+    "date": "2025-07-09",
+    "portfolio_value": 1092.6759,
+    "benchmark_value": 927.3265,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5728
+  },
+  {
+    "date": "2025-07-10",
+    "portfolio_value": 1100.3019,
+    "benchmark_value": 916.6528,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.731
+  },
+  {
+    "date": "2025-07-11",
+    "portfolio_value": 1099.7585,
+    "benchmark_value": 921.6842,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6291
+  },
+  {
+    "date": "2025-07-14",
+    "portfolio_value": 1096.456,
+    "benchmark_value": 922.9865,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6704
+  },
+  {
+    "date": "2025-07-15",
+    "portfolio_value": 1095.494,
+    "benchmark_value": 939.7892,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8126
+  },
+  {
+    "date": "2025-07-16",
+    "portfolio_value": 1091.221,
+    "benchmark_value": 938.7106,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8107
+  },
+  {
+    "date": "2025-07-17",
+    "portfolio_value": 1089.4068,
+    "benchmark_value": 944.8112,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5503
+  },
+  {
+    "date": "2025-07-18",
+    "portfolio_value": 1084.3812,
+    "benchmark_value": 950.2509,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6857
+  },
+  {
+    "date": "2025-07-21",
+    "portfolio_value": 1087.1497,
+    "benchmark_value": 958.1264,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5513
+  },
+  {
+    "date": "2025-07-22",
+    "portfolio_value": 1087.3296,
+    "benchmark_value": 961.3876,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6579
+  },
+  {
+    "date": "2025-07-23",
+    "portfolio_value": 1089.1053,
+    "benchmark_value": 962.1245,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6321
+  },
+  {
+    "date": "2025-07-24",
+    "portfolio_value": 1090.4725,
+    "benchmark_value": 971.3773,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6929
+  },
+  {
+    "date": "2025-07-25",
+    "portfolio_value": 1090.9378,
+    "benchmark_value": 961.792,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7433
+  },
+  {
+    "date": "2025-07-28",
+    "portfolio_value": 1096.0857,
+    "benchmark_value": 957.551,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6381
+  },
+  {
+    "date": "2025-07-29",
+    "portfolio_value": 1100.2455,
+    "benchmark_value": 957.5494,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7455
+  },
+  {
+    "date": "2025-07-30",
+    "portfolio_value": 1099.4539,
+    "benchmark_value": 956.3422,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7755
+  },
+  {
+    "date": "2025-07-31",
+    "portfolio_value": 1107.1034,
+    "benchmark_value": 950.799,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7481
+  },
+  {
+    "date": "2025-08-01",
+    "portfolio_value": 1108.9292,
+    "benchmark_value": 947.7897,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6914
+  },
+  {
+    "date": "2025-08-04",
+    "portfolio_value": 1096.7447,
+    "benchmark_value": 947.804,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7673
+  },
+  {
+    "date": "2025-08-05",
+    "portfolio_value": 1101.2056,
+    "benchmark_value": 940.3698,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7911
+  },
+  {
+    "date": "2025-08-06",
+    "portfolio_value": 1097.4852,
+    "benchmark_value": 931.4927,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6121
+  },
+  {
+    "date": "2025-08-07",
+    "portfolio_value": 1101.3728,
+    "benchmark_value": 932.5246,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6474
+  },
+  {
+    "date": "2025-08-08",
+    "portfolio_value": 1111.7398,
+    "benchmark_value": 940.4792,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7008
+  },
+  {
+    "date": "2025-08-11",
+    "portfolio_value": 1105.6798,
+    "benchmark_value": 934.1932,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7338
+  },
+  {
+    "date": "2025-08-12",
+    "portfolio_value": 1105.5792,
+    "benchmark_value": 934.584,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7654
+  },
+  {
+    "date": "2025-08-13",
+    "portfolio_value": 1105.9324,
+    "benchmark_value": 927.2039,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6945
+  },
+  {
+    "date": "2025-08-14",
+    "portfolio_value": 1105.0477,
+    "benchmark_value": 925.536,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7489
+  },
+  {
+    "date": "2025-08-15",
+    "portfolio_value": 1105.4503,
+    "benchmark_value": 928.4359,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6217
+  },
+  {
+    "date": "2025-08-18",
+    "portfolio_value": 1105.3069,
+    "benchmark_value": 924.421,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7498
+  },
+  {
+    "date": "2025-08-19",
+    "portfolio_value": 1113.3961,
+    "benchmark_value": 923.6252,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6533
+  },
+  {
+    "date": "2025-08-20",
+    "portfolio_value": 1103.79,
+    "benchmark_value": 925.2662,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7571
+  },
+  {
+    "date": "2025-08-21",
+    "portfolio_value": 1097.1786,
+    "benchmark_value": 919.3861,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5709
+  },
+  {
+    "date": "2025-08-22",
+    "portfolio_value": 1100.6414,
+    "benchmark_value": 923.6735,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7507
+  },
+  {
+    "date": "2025-08-25",
+    "portfolio_value": 1098.2103,
+    "benchmark_value": 931.9142,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5534
+  },
+  {
+    "date": "2025-08-26",
+    "portfolio_value": 1103.4857,
+    "benchmark_value": 934.1883,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7314
+  },
+  {
+    "date": "2025-08-27",
+    "portfolio_value": 1100.3929,
+    "benchmark_value": 925.3699,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6285
+  },
+  {
+    "date": "2025-08-28",
+    "portfolio_value": 1093.4886,
+    "benchmark_value": 924.9705,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6759
+  },
+  {
+    "date": "2025-08-29",
+    "portfolio_value": 1104.1372,
+    "benchmark_value": 934.6114,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6038
+  },
+  {
+    "date": "2025-09-01",
+    "portfolio_value": 1119.9734,
+    "benchmark_value": 932.8634,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5547
+  },
+  {
+    "date": "2025-09-02",
+    "portfolio_value": 1108.3865,
+    "benchmark_value": 936.3005,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8114
+  },
+  {
+    "date": "2025-09-03",
+    "portfolio_value": 1103.8287,
+    "benchmark_value": 938.2754,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6067
+  },
+  {
+    "date": "2025-09-04",
+    "portfolio_value": 1108.5592,
+    "benchmark_value": 937.1171,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.707
+  },
+  {
+    "date": "2025-09-05",
+    "portfolio_value": 1114.097,
+    "benchmark_value": 943.6878,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8072
+  },
+  {
+    "date": "2025-09-08",
+    "portfolio_value": 1122.8674,
+    "benchmark_value": 953.1033,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6874
+  },
+  {
+    "date": "2025-09-09",
+    "portfolio_value": 1131.272,
+    "benchmark_value": 946.679,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6125
+  },
+  {
+    "date": "2025-09-10",
+    "portfolio_value": 1137.9907,
+    "benchmark_value": 942.4552,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5567
+  },
+  {
+    "date": "2025-09-11",
+    "portfolio_value": 1146.3834,
+    "benchmark_value": 942.9865,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6717
+  },
+  {
+    "date": "2025-09-12",
+    "portfolio_value": 1145.6237,
+    "benchmark_value": 946.7881,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6429
+  },
+  {
+    "date": "2025-09-15",
+    "portfolio_value": 1140.7683,
+    "benchmark_value": 958.7627,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5505
+  },
+  {
+    "date": "2025-09-16",
+    "portfolio_value": 1141.2813,
+    "benchmark_value": 946.298,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5824
+  },
+  {
+    "date": "2025-09-17",
+    "portfolio_value": 1151.4177,
+    "benchmark_value": 941.9879,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7934
+  },
+  {
+    "date": "2025-09-18",
+    "portfolio_value": 1150.2235,
+    "benchmark_value": 948.5105,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6561
+  },
+  {
+    "date": "2025-09-19",
+    "portfolio_value": 1159.8851,
+    "benchmark_value": 948.8037,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6474
+  },
+  {
+    "date": "2025-09-22",
+    "portfolio_value": 1155.3231,
+    "benchmark_value": 951.4917,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.563
+  },
+  {
+    "date": "2025-09-23",
+    "portfolio_value": 1166.338,
+    "benchmark_value": 959.3904,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6271
+  },
+  {
+    "date": "2025-09-24",
+    "portfolio_value": 1171.6726,
+    "benchmark_value": 957.7523,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6217
+  },
+  {
+    "date": "2025-09-25",
+    "portfolio_value": 1167.5866,
+    "benchmark_value": 957.8169,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6508
+  },
+  {
+    "date": "2025-09-26",
+    "portfolio_value": 1182.0504,
+    "benchmark_value": 954.3941,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7692
+  },
+  {
+    "date": "2025-09-29",
+    "portfolio_value": 1171.8441,
+    "benchmark_value": 943.9269,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.804
+  },
+  {
+    "date": "2025-09-30",
+    "portfolio_value": 1161.6292,
+    "benchmark_value": 941.0782,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5634
+  },
+  {
+    "date": "2025-10-01",
+    "portfolio_value": 1161.2457,
+    "benchmark_value": 934.2674,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7532
+  },
+  {
+    "date": "2025-10-02",
+    "portfolio_value": 1158.1853,
+    "benchmark_value": 930.3896,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5632
+  },
+  {
+    "date": "2025-10-03",
+    "portfolio_value": 1161.8944,
+    "benchmark_value": 929.234,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6775
+  },
+  {
+    "date": "2025-10-06",
+    "portfolio_value": 1159.1015,
+    "benchmark_value": 934.1363,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7495
+  },
+  {
+    "date": "2025-10-07",
+    "portfolio_value": 1164.9007,
+    "benchmark_value": 933.738,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7271
+  },
+  {
+    "date": "2025-10-08",
+    "portfolio_value": 1162.5611,
+    "benchmark_value": 942.0152,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6565
+  },
+  {
+    "date": "2025-10-09",
+    "portfolio_value": 1165.0785,
+    "benchmark_value": 945.7726,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6061
+  },
+  {
+    "date": "2025-10-10",
+    "portfolio_value": 1172.3472,
+    "benchmark_value": 941.8078,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6094
+  },
+  {
+    "date": "2025-10-13",
+    "portfolio_value": 1192.47,
+    "benchmark_value": 929.8568,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6715
+  },
+  {
+    "date": "2025-10-14",
+    "portfolio_value": 1195.9339,
+    "benchmark_value": 933.482,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5745
+  },
+  {
+    "date": "2025-10-15",
+    "portfolio_value": 1194.6956,
+    "benchmark_value": 936.2291,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6146
+  },
+  {
+    "date": "2025-10-16",
+    "portfolio_value": 1194.6811,
+    "benchmark_value": 945.0831,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7896
+  },
+  {
+    "date": "2025-10-17",
+    "portfolio_value": 1195.1393,
+    "benchmark_value": 938.616,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6617
+  },
+  {
+    "date": "2025-10-20",
+    "portfolio_value": 1188.7193,
+    "benchmark_value": 938.006,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6413
+  },
+  {
+    "date": "2025-10-21",
+    "portfolio_value": 1194.5102,
+    "benchmark_value": 940.3749,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8113
+  },
+  {
+    "date": "2025-10-22",
+    "portfolio_value": 1200.9474,
+    "benchmark_value": 946.2697,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.72
+  },
+  {
+    "date": "2025-10-23",
+    "portfolio_value": 1204.697,
+    "benchmark_value": 943.1225,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6232
+  },
+  {
+    "date": "2025-10-24",
+    "portfolio_value": 1205.246,
+    "benchmark_value": 950.1509,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6704
+  },
+  {
+    "date": "2025-10-27",
+    "portfolio_value": 1219.1936,
+    "benchmark_value": 946.8235,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7857
+  },
+  {
+    "date": "2025-10-28",
+    "portfolio_value": 1221.5327,
+    "benchmark_value": 947.4151,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7416
+  },
+  {
+    "date": "2025-10-29",
+    "portfolio_value": 1228.5971,
+    "benchmark_value": 943.1986,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7085
+  },
+  {
+    "date": "2025-10-30",
+    "portfolio_value": 1236.4325,
+    "benchmark_value": 943.5644,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8002
+  },
+  {
+    "date": "2025-10-31",
+    "portfolio_value": 1243.5955,
+    "benchmark_value": 932.37,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8125
+  },
+  {
+    "date": "2025-11-03",
+    "portfolio_value": 1244.1235,
+    "benchmark_value": 935.8604,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5917
+  },
+  {
+    "date": "2025-11-04",
+    "portfolio_value": 1233.4278,
+    "benchmark_value": 934.827,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8042
+  },
+  {
+    "date": "2025-11-05",
+    "portfolio_value": 1232.0296,
+    "benchmark_value": 925.8829,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7565
+  },
+  {
+    "date": "2025-11-06",
+    "portfolio_value": 1223.4918,
+    "benchmark_value": 928.4092,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5607
+  },
+  {
+    "date": "2025-11-07",
+    "portfolio_value": 1225.0539,
+    "benchmark_value": 924.1303,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7984
+  },
+  {
+    "date": "2025-11-10",
+    "portfolio_value": 1221.722,
+    "benchmark_value": 920.121,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5846
+  },
+  {
+    "date": "2025-11-11",
+    "portfolio_value": 1222.0893,
+    "benchmark_value": 929.6306,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7386
+  },
+  {
+    "date": "2025-11-12",
+    "portfolio_value": 1224.7081,
+    "benchmark_value": 931.5937,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6916
+  },
+  {
+    "date": "2025-11-13",
+    "portfolio_value": 1218.8768,
+    "benchmark_value": 928.7317,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6104
+  },
+  {
+    "date": "2025-11-14",
+    "portfolio_value": 1218.5066,
+    "benchmark_value": 928.5253,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6314
+  },
+  {
+    "date": "2025-11-17",
+    "portfolio_value": 1201.0762,
+    "benchmark_value": 932.8937,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.724
+  },
+  {
+    "date": "2025-11-18",
+    "portfolio_value": 1207.6503,
+    "benchmark_value": 928.3008,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6134
+  },
+  {
+    "date": "2025-11-19",
+    "portfolio_value": 1208.4701,
+    "benchmark_value": 945.1778,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7403
+  },
+  {
+    "date": "2025-11-20",
+    "portfolio_value": 1208.4126,
+    "benchmark_value": 946.8363,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6845
+  },
+  {
+    "date": "2025-11-21",
+    "portfolio_value": 1205.4336,
+    "benchmark_value": 941.0427,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6195
+  },
+  {
+    "date": "2025-11-24",
+    "portfolio_value": 1197.7393,
+    "benchmark_value": 928.3781,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6112
+  },
+  {
+    "date": "2025-11-25",
+    "portfolio_value": 1204.5933,
+    "benchmark_value": 929.9859,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6636
+  },
+  {
+    "date": "2025-11-26",
+    "portfolio_value": 1203.0969,
+    "benchmark_value": 926.3963,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7652
+  },
+  {
+    "date": "2025-11-27",
+    "portfolio_value": 1202.9902,
+    "benchmark_value": 919.0772,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6054
+  },
+  {
+    "date": "2025-11-28",
+    "portfolio_value": 1209.5948,
+    "benchmark_value": 918.3796,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7714
+  },
+  {
+    "date": "2025-12-01",
+    "portfolio_value": 1210.6925,
+    "benchmark_value": 923.2441,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7553
+  },
+  {
+    "date": "2025-12-02",
+    "portfolio_value": 1206.1871,
+    "benchmark_value": 938.8871,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6839
+  },
+  {
+    "date": "2025-12-03",
+    "portfolio_value": 1208.6404,
+    "benchmark_value": 943.5587,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6626
+  },
+  {
+    "date": "2025-12-04",
+    "portfolio_value": 1200.1493,
+    "benchmark_value": 930.0433,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5895
+  },
+  {
+    "date": "2025-12-05",
+    "portfolio_value": 1196.7177,
+    "benchmark_value": 933.1925,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.813
+  },
+  {
+    "date": "2025-12-08",
+    "portfolio_value": 1198.6642,
+    "benchmark_value": 935.2056,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5662
+  },
+  {
+    "date": "2025-12-09",
+    "portfolio_value": 1187.093,
+    "benchmark_value": 944.2534,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7886
+  },
+  {
+    "date": "2025-12-10",
+    "portfolio_value": 1184.8903,
+    "benchmark_value": 921.8435,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8015
+  },
+  {
+    "date": "2025-12-11",
+    "portfolio_value": 1183.1854,
+    "benchmark_value": 925.8258,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8027
+  },
+  {
+    "date": "2025-12-12",
+    "portfolio_value": 1183.613,
+    "benchmark_value": 924.5279,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7294
+  },
+  {
+    "date": "2025-12-15",
+    "portfolio_value": 1179.114,
+    "benchmark_value": 929.2058,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6396
+  },
+  {
+    "date": "2025-12-16",
+    "portfolio_value": 1179.8425,
+    "benchmark_value": 929.99,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6255
+  },
+  {
+    "date": "2025-12-17",
+    "portfolio_value": 1169.7977,
+    "benchmark_value": 943.3953,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.5834
+  },
+  {
+    "date": "2025-12-18",
+    "portfolio_value": 1174.9274,
+    "benchmark_value": 942.7515,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6463
+  },
+  {
+    "date": "2025-12-19",
+    "portfolio_value": 1181.0873,
+    "benchmark_value": 932.0676,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6668
+  },
+  {
+    "date": "2025-12-22",
+    "portfolio_value": 1189.2011,
+    "benchmark_value": 934.6726,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6506
+  },
+  {
+    "date": "2025-12-23",
+    "portfolio_value": 1193.761,
+    "benchmark_value": 932.9518,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6483
+  },
+  {
+    "date": "2025-12-24",
+    "portfolio_value": 1195.6518,
+    "benchmark_value": 932.3298,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.6609
+  },
+  {
+    "date": "2025-12-25",
+    "portfolio_value": 1200.7619,
+    "benchmark_value": 922.3794,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.561
+  },
+  {
+    "date": "2025-12-26",
+    "portfolio_value": 1203.7666,
+    "benchmark_value": 923.2342,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7984
+  },
+  {
+    "date": "2025-12-29",
+    "portfolio_value": 1203.7164,
+    "benchmark_value": 934.2937,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7926
+  },
+  {
+    "date": "2025-12-30",
+    "portfolio_value": 1201.1369,
+    "benchmark_value": 939.0679,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.8086
+  },
+  {
+    "date": "2025-12-31",
+    "portfolio_value": 1197.4445,
+    "benchmark_value": 935.9873,
+    "allocations": {
+      "AAPL": 0.2,
+      "AMZN": 0.15,
+      "XOM": 0.15,
+      "GLD": 0.2,
+      "QQQ": 0.2,
+      "TLT": 0.1
+    },
+    "confidence": 0.7435
+  }
+]

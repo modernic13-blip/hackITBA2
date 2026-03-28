@@ -1,0 +1,4162 @@
+[
+  {
+    "date": "2025-01-02",
+    "portfolio_value": 997.1306,
+    "benchmark_value": 1005.5181,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.551
+  },
+  {
+    "date": "2025-01-03",
+    "portfolio_value": 998.7106,
+    "benchmark_value": 990.2266,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7212
+  },
+  {
+    "date": "2025-01-06",
+    "portfolio_value": 1001.7054,
+    "benchmark_value": 990.0667,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6131
+  },
+  {
+    "date": "2025-01-07",
+    "portfolio_value": 975.1368,
+    "benchmark_value": 993.1401,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8076
+  },
+  {
+    "date": "2025-01-08",
+    "portfolio_value": 969.6643,
+    "benchmark_value": 996.9753,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6661
+  },
+  {
+    "date": "2025-01-09",
+    "portfolio_value": 945.9031,
+    "benchmark_value": 998.0106,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5994
+  },
+  {
+    "date": "2025-01-10",
+    "portfolio_value": 952.1058,
+    "benchmark_value": 987.5662,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7721
+  },
+  {
+    "date": "2025-01-13",
+    "portfolio_value": 954.831,
+    "benchmark_value": 978.5871,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6385
+  },
+  {
+    "date": "2025-01-14",
+    "portfolio_value": 951.2998,
+    "benchmark_value": 984.8416,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7612
+  },
+  {
+    "date": "2025-01-15",
+    "portfolio_value": 958.0796,
+    "benchmark_value": 987.3929,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7533
+  },
+  {
+    "date": "2025-01-16",
+    "portfolio_value": 958.8292,
+    "benchmark_value": 990.2964,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5591
+  },
+  {
+    "date": "2025-01-17",
+    "portfolio_value": 950.6562,
+    "benchmark_value": 988.6756,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8147
+  },
+  {
+    "date": "2025-01-20",
+    "portfolio_value": 974.4285,
+    "benchmark_value": 975.3146,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6215
+  },
+  {
+    "date": "2025-01-21",
+    "portfolio_value": 979.2933,
+    "benchmark_value": 977.2349,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6846
+  },
+  {
+    "date": "2025-01-22",
+    "portfolio_value": 977.0606,
+    "benchmark_value": 970.3974,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6132
+  },
+  {
+    "date": "2025-01-23",
+    "portfolio_value": 964.7969,
+    "benchmark_value": 975.4839,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.732
+  },
+  {
+    "date": "2025-01-24",
+    "portfolio_value": 965.2247,
+    "benchmark_value": 962.6246,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7294
+  },
+  {
+    "date": "2025-01-27",
+    "portfolio_value": 980.6513,
+    "benchmark_value": 971.9032,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6293
+  },
+  {
+    "date": "2025-01-28",
+    "portfolio_value": 971.8362,
+    "benchmark_value": 969.5907,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7493
+  },
+  {
+    "date": "2025-01-29",
+    "portfolio_value": 975.0602,
+    "benchmark_value": 974.8181,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6162
+  },
+  {
+    "date": "2025-01-30",
+    "portfolio_value": 988.4678,
+    "benchmark_value": 986.8223,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7061
+  },
+  {
+    "date": "2025-01-31",
+    "portfolio_value": 984.1348,
+    "benchmark_value": 993.3519,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.818
+  },
+  {
+    "date": "2025-02-03",
+    "portfolio_value": 976.9924,
+    "benchmark_value": 993.4973,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7683
+  },
+  {
+    "date": "2025-02-04",
+    "portfolio_value": 958.8732,
+    "benchmark_value": 976.3563,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5776
+  },
+  {
+    "date": "2025-02-05",
+    "portfolio_value": 940.2979,
+    "benchmark_value": 978.723,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.777
+  },
+  {
+    "date": "2025-02-06",
+    "portfolio_value": 943.5191,
+    "benchmark_value": 978.0872,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6293
+  },
+  {
+    "date": "2025-02-07",
+    "portfolio_value": 949.1211,
+    "benchmark_value": 981.4817,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8127
+  },
+  {
+    "date": "2025-02-10",
+    "portfolio_value": 928.9271,
+    "benchmark_value": 973.9408,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6505
+  },
+  {
+    "date": "2025-02-11",
+    "portfolio_value": 937.0288,
+    "benchmark_value": 968.7615,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6202
+  },
+  {
+    "date": "2025-02-12",
+    "portfolio_value": 942.0183,
+    "benchmark_value": 953.0094,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5786
+  },
+  {
+    "date": "2025-02-13",
+    "portfolio_value": 930.8284,
+    "benchmark_value": 948.1005,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6088
+  },
+  {
+    "date": "2025-02-14",
+    "portfolio_value": 927.657,
+    "benchmark_value": 951.1522,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6051
+  },
+  {
+    "date": "2025-02-17",
+    "portfolio_value": 927.8935,
+    "benchmark_value": 960.5155,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7259
+  },
+  {
+    "date": "2025-02-18",
+    "portfolio_value": 929.0016,
+    "benchmark_value": 961.8545,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6384
+  },
+  {
+    "date": "2025-02-19",
+    "portfolio_value": 926.8186,
+    "benchmark_value": 958.3411,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6343
+  },
+  {
+    "date": "2025-02-20",
+    "portfolio_value": 932.7207,
+    "benchmark_value": 970.1451,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.698
+  },
+  {
+    "date": "2025-02-21",
+    "portfolio_value": 937.7611,
+    "benchmark_value": 971.7294,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6567
+  },
+  {
+    "date": "2025-02-24",
+    "portfolio_value": 924.4269,
+    "benchmark_value": 969.0894,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5746
+  },
+  {
+    "date": "2025-02-25",
+    "portfolio_value": 933.1796,
+    "benchmark_value": 978.4168,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6606
+  },
+  {
+    "date": "2025-02-26",
+    "portfolio_value": 932.018,
+    "benchmark_value": 984.5329,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8074
+  },
+  {
+    "date": "2025-02-27",
+    "portfolio_value": 927.6215,
+    "benchmark_value": 993.1426,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6464
+  },
+  {
+    "date": "2025-02-28",
+    "portfolio_value": 910.6383,
+    "benchmark_value": 1000.4834,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8191
+  },
+  {
+    "date": "2025-03-03",
+    "portfolio_value": 906.9364,
+    "benchmark_value": 1004.3688,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7466
+  },
+  {
+    "date": "2025-03-04",
+    "portfolio_value": 907.8951,
+    "benchmark_value": 1005.4817,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7934
+  },
+  {
+    "date": "2025-03-05",
+    "portfolio_value": 892.121,
+    "benchmark_value": 1011.8756,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6597
+  },
+  {
+    "date": "2025-03-06",
+    "portfolio_value": 900.8423,
+    "benchmark_value": 1006.9733,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5939
+  },
+  {
+    "date": "2025-03-07",
+    "portfolio_value": 913.9809,
+    "benchmark_value": 1008.1868,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.723
+  },
+  {
+    "date": "2025-03-10",
+    "portfolio_value": 918.2966,
+    "benchmark_value": 1006.9335,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.718
+  },
+  {
+    "date": "2025-03-11",
+    "portfolio_value": 910.7124,
+    "benchmark_value": 1013.3745,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5894
+  },
+  {
+    "date": "2025-03-12",
+    "portfolio_value": 908.8381,
+    "benchmark_value": 1022.1806,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7999
+  },
+  {
+    "date": "2025-03-13",
+    "portfolio_value": 918.4888,
+    "benchmark_value": 1027.817,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7673
+  },
+  {
+    "date": "2025-03-14",
+    "portfolio_value": 925.6995,
+    "benchmark_value": 1027.2219,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5842
+  },
+  {
+    "date": "2025-03-17",
+    "portfolio_value": 952.3462,
+    "benchmark_value": 1020.7542,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6803
+  },
+  {
+    "date": "2025-03-18",
+    "portfolio_value": 975.61,
+    "benchmark_value": 1026.5107,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6547
+  },
+  {
+    "date": "2025-03-19",
+    "portfolio_value": 988.6188,
+    "benchmark_value": 1021.2392,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7726
+  },
+  {
+    "date": "2025-03-20",
+    "portfolio_value": 999.5265,
+    "benchmark_value": 1032.2351,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.61
+  },
+  {
+    "date": "2025-03-21",
+    "portfolio_value": 982.6786,
+    "benchmark_value": 1040.5256,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7739
+  },
+  {
+    "date": "2025-03-24",
+    "portfolio_value": 986.4809,
+    "benchmark_value": 1045.5842,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6579
+  },
+  {
+    "date": "2025-03-25",
+    "portfolio_value": 976.5787,
+    "benchmark_value": 1045.1738,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5832
+  },
+  {
+    "date": "2025-03-26",
+    "portfolio_value": 977.5951,
+    "benchmark_value": 1057.3231,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7923
+  },
+  {
+    "date": "2025-03-27",
+    "portfolio_value": 991.6593,
+    "benchmark_value": 1060.1547,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7545
+  },
+  {
+    "date": "2025-03-28",
+    "portfolio_value": 1012.5927,
+    "benchmark_value": 1063.9184,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5818
+  },
+  {
+    "date": "2025-03-31",
+    "portfolio_value": 1001.9025,
+    "benchmark_value": 1058.8134,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7193
+  },
+  {
+    "date": "2025-04-01",
+    "portfolio_value": 998.6386,
+    "benchmark_value": 1066.4751,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7073
+  },
+  {
+    "date": "2025-04-02",
+    "portfolio_value": 984.9637,
+    "benchmark_value": 1071.8054,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6706
+  },
+  {
+    "date": "2025-04-03",
+    "portfolio_value": 983.4853,
+    "benchmark_value": 1072.8291,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7171
+  },
+  {
+    "date": "2025-04-04",
+    "portfolio_value": 976.2816,
+    "benchmark_value": 1073.5993,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7562
+  },
+  {
+    "date": "2025-04-07",
+    "portfolio_value": 979.2053,
+    "benchmark_value": 1065.8331,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5985
+  },
+  {
+    "date": "2025-04-08",
+    "portfolio_value": 974.8508,
+    "benchmark_value": 1066.8328,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5847
+  },
+  {
+    "date": "2025-04-09",
+    "portfolio_value": 971.2838,
+    "benchmark_value": 1068.6217,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6693
+  },
+  {
+    "date": "2025-04-10",
+    "portfolio_value": 968.9013,
+    "benchmark_value": 1068.8901,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7218
+  },
+  {
+    "date": "2025-04-11",
+    "portfolio_value": 984.6626,
+    "benchmark_value": 1075.3077,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.76
+  },
+  {
+    "date": "2025-04-14",
+    "portfolio_value": 981.7572,
+    "benchmark_value": 1075.5351,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6861
+  },
+  {
+    "date": "2025-04-15",
+    "portfolio_value": 963.3781,
+    "benchmark_value": 1088.7755,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5868
+  },
+  {
+    "date": "2025-04-16",
+    "portfolio_value": 986.0726,
+    "benchmark_value": 1069.3243,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7477
+  },
+  {
+    "date": "2025-04-17",
+    "portfolio_value": 989.6033,
+    "benchmark_value": 1065.2226,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8151
+  },
+  {
+    "date": "2025-04-18",
+    "portfolio_value": 963.0742,
+    "benchmark_value": 1066.5812,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7973
+  },
+  {
+    "date": "2025-04-21",
+    "portfolio_value": 973.2548,
+    "benchmark_value": 1078.3168,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8013
+  },
+  {
+    "date": "2025-04-22",
+    "portfolio_value": 983.0716,
+    "benchmark_value": 1081.5345,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7542
+  },
+  {
+    "date": "2025-04-23",
+    "portfolio_value": 996.2662,
+    "benchmark_value": 1095.4938,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6242
+  },
+  {
+    "date": "2025-04-24",
+    "portfolio_value": 999.423,
+    "benchmark_value": 1091.9985,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6856
+  },
+  {
+    "date": "2025-04-25",
+    "portfolio_value": 1006.7197,
+    "benchmark_value": 1089.8937,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.621
+  },
+  {
+    "date": "2025-04-28",
+    "portfolio_value": 997.7371,
+    "benchmark_value": 1090.0555,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5599
+  },
+  {
+    "date": "2025-04-29",
+    "portfolio_value": 1001.143,
+    "benchmark_value": 1094.5888,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8028
+  },
+  {
+    "date": "2025-04-30",
+    "portfolio_value": 991.8518,
+    "benchmark_value": 1080.2866,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5956
+  },
+  {
+    "date": "2025-05-01",
+    "portfolio_value": 993.7328,
+    "benchmark_value": 1077.0472,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6933
+  },
+  {
+    "date": "2025-05-02",
+    "portfolio_value": 987.6801,
+    "benchmark_value": 1072.0768,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7857
+  },
+  {
+    "date": "2025-05-05",
+    "portfolio_value": 974.9257,
+    "benchmark_value": 1069.125,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7883
+  },
+  {
+    "date": "2025-05-06",
+    "portfolio_value": 1002.3494,
+    "benchmark_value": 1083.9257,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.72
+  },
+  {
+    "date": "2025-05-07",
+    "portfolio_value": 987.5477,
+    "benchmark_value": 1092.701,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6215
+  },
+  {
+    "date": "2025-05-08",
+    "portfolio_value": 1002.4846,
+    "benchmark_value": 1092.5172,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6473
+  },
+  {
+    "date": "2025-05-09",
+    "portfolio_value": 1004.2953,
+    "benchmark_value": 1084.7029,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5977
+  },
+  {
+    "date": "2025-05-12",
+    "portfolio_value": 1004.8728,
+    "benchmark_value": 1082.7281,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7714
+  },
+  {
+    "date": "2025-05-13",
+    "portfolio_value": 1005.2283,
+    "benchmark_value": 1093.9593,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8157
+  },
+  {
+    "date": "2025-05-14",
+    "portfolio_value": 991.941,
+    "benchmark_value": 1088.5671,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6344
+  },
+  {
+    "date": "2025-05-15",
+    "portfolio_value": 995.5104,
+    "benchmark_value": 1089.0032,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5903
+  },
+  {
+    "date": "2025-05-16",
+    "portfolio_value": 987.5327,
+    "benchmark_value": 1084.0131,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6884
+  },
+  {
+    "date": "2025-05-19",
+    "portfolio_value": 992.8178,
+    "benchmark_value": 1081.9611,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6114
+  },
+  {
+    "date": "2025-05-20",
+    "portfolio_value": 992.2008,
+    "benchmark_value": 1081.053,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5507
+  },
+  {
+    "date": "2025-05-21",
+    "portfolio_value": 989.7381,
+    "benchmark_value": 1084.3,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6464
+  },
+  {
+    "date": "2025-05-22",
+    "portfolio_value": 992.7657,
+    "benchmark_value": 1094.6279,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7091
+  },
+  {
+    "date": "2025-05-23",
+    "portfolio_value": 997.8109,
+    "benchmark_value": 1105.3192,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6782
+  },
+  {
+    "date": "2025-05-26",
+    "portfolio_value": 1015.6021,
+    "benchmark_value": 1119.3515,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6158
+  },
+  {
+    "date": "2025-05-27",
+    "portfolio_value": 1019.292,
+    "benchmark_value": 1122.6128,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7223
+  },
+  {
+    "date": "2025-05-28",
+    "portfolio_value": 1033.5347,
+    "benchmark_value": 1113.1147,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6585
+  },
+  {
+    "date": "2025-05-29",
+    "portfolio_value": 1034.1185,
+    "benchmark_value": 1114.7178,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7241
+  },
+  {
+    "date": "2025-05-30",
+    "portfolio_value": 1025.0922,
+    "benchmark_value": 1112.3751,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7243
+  },
+  {
+    "date": "2025-06-02",
+    "portfolio_value": 1000.9369,
+    "benchmark_value": 1119.1376,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7481
+  },
+  {
+    "date": "2025-06-03",
+    "portfolio_value": 1001.8767,
+    "benchmark_value": 1136.5032,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5619
+  },
+  {
+    "date": "2025-06-04",
+    "portfolio_value": 991.5642,
+    "benchmark_value": 1135.3371,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6142
+  },
+  {
+    "date": "2025-06-05",
+    "portfolio_value": 1009.9605,
+    "benchmark_value": 1140.7201,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5533
+  },
+  {
+    "date": "2025-06-06",
+    "portfolio_value": 985.5977,
+    "benchmark_value": 1135.1796,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5884
+  },
+  {
+    "date": "2025-06-09",
+    "portfolio_value": 990.93,
+    "benchmark_value": 1145.9447,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6869
+  },
+  {
+    "date": "2025-06-10",
+    "portfolio_value": 979.0592,
+    "benchmark_value": 1134.9632,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5972
+  },
+  {
+    "date": "2025-06-11",
+    "portfolio_value": 976.4411,
+    "benchmark_value": 1141.6463,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5631
+  },
+  {
+    "date": "2025-06-12",
+    "portfolio_value": 991.5561,
+    "benchmark_value": 1133.1322,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7432
+  },
+  {
+    "date": "2025-06-13",
+    "portfolio_value": 1013.2883,
+    "benchmark_value": 1134.173,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7512
+  },
+  {
+    "date": "2025-06-16",
+    "portfolio_value": 996.106,
+    "benchmark_value": 1137.4326,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6722
+  },
+  {
+    "date": "2025-06-17",
+    "portfolio_value": 997.5956,
+    "benchmark_value": 1141.5776,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6127
+  },
+  {
+    "date": "2025-06-18",
+    "portfolio_value": 1007.9363,
+    "benchmark_value": 1143.7562,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7524
+  },
+  {
+    "date": "2025-06-19",
+    "portfolio_value": 1001.4138,
+    "benchmark_value": 1129.6328,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7422
+  },
+  {
+    "date": "2025-06-20",
+    "portfolio_value": 1000.7256,
+    "benchmark_value": 1140.0571,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6677
+  },
+  {
+    "date": "2025-06-23",
+    "portfolio_value": 1004.646,
+    "benchmark_value": 1131.0589,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6216
+  },
+  {
+    "date": "2025-06-24",
+    "portfolio_value": 987.3916,
+    "benchmark_value": 1115.5195,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6086
+  },
+  {
+    "date": "2025-06-25",
+    "portfolio_value": 989.4843,
+    "benchmark_value": 1115.0073,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6203
+  },
+  {
+    "date": "2025-06-26",
+    "portfolio_value": 991.757,
+    "benchmark_value": 1128.2643,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8051
+  },
+  {
+    "date": "2025-06-27",
+    "portfolio_value": 992.2307,
+    "benchmark_value": 1121.6681,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7876
+  },
+  {
+    "date": "2025-06-30",
+    "portfolio_value": 989.1161,
+    "benchmark_value": 1127.2068,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.795
+  },
+  {
+    "date": "2025-07-01",
+    "portfolio_value": 978.4322,
+    "benchmark_value": 1118.7612,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7296
+  },
+  {
+    "date": "2025-07-02",
+    "portfolio_value": 991.1446,
+    "benchmark_value": 1118.027,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7767
+  },
+  {
+    "date": "2025-07-03",
+    "portfolio_value": 984.896,
+    "benchmark_value": 1103.8312,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.668
+  },
+  {
+    "date": "2025-07-04",
+    "portfolio_value": 983.3637,
+    "benchmark_value": 1094.3346,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6331
+  },
+  {
+    "date": "2025-07-07",
+    "portfolio_value": 987.6406,
+    "benchmark_value": 1105.141,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.571
+  },
+  {
+    "date": "2025-07-08",
+    "portfolio_value": 993.4888,
+    "benchmark_value": 1103.2624,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5573
+  },
+  {
+    "date": "2025-07-09",
+    "portfolio_value": 1013.8932,
+    "benchmark_value": 1114.7144,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6431
+  },
+  {
+    "date": "2025-07-10",
+    "portfolio_value": 1016.3099,
+    "benchmark_value": 1116.6036,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5612
+  },
+  {
+    "date": "2025-07-11",
+    "portfolio_value": 1011.4457,
+    "benchmark_value": 1106.6599,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7382
+  },
+  {
+    "date": "2025-07-14",
+    "portfolio_value": 1011.8278,
+    "benchmark_value": 1104.2329,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7094
+  },
+  {
+    "date": "2025-07-15",
+    "portfolio_value": 999.1281,
+    "benchmark_value": 1115.4417,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7713
+  },
+  {
+    "date": "2025-07-16",
+    "portfolio_value": 1002.9905,
+    "benchmark_value": 1114.0451,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7843
+  },
+  {
+    "date": "2025-07-17",
+    "portfolio_value": 1026.4807,
+    "benchmark_value": 1104.8677,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5789
+  },
+  {
+    "date": "2025-07-18",
+    "portfolio_value": 1028.7251,
+    "benchmark_value": 1108.9118,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5593
+  },
+  {
+    "date": "2025-07-21",
+    "portfolio_value": 1041.3795,
+    "benchmark_value": 1097.7329,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7212
+  },
+  {
+    "date": "2025-07-22",
+    "portfolio_value": 1049.4777,
+    "benchmark_value": 1088.477,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6276
+  },
+  {
+    "date": "2025-07-23",
+    "portfolio_value": 1054.4684,
+    "benchmark_value": 1090.921,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7545
+  },
+  {
+    "date": "2025-07-24",
+    "portfolio_value": 1058.0594,
+    "benchmark_value": 1097.7654,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6644
+  },
+  {
+    "date": "2025-07-25",
+    "portfolio_value": 1067.7027,
+    "benchmark_value": 1098.9582,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6263
+  },
+  {
+    "date": "2025-07-28",
+    "portfolio_value": 1066.0635,
+    "benchmark_value": 1092.1759,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6366
+  },
+  {
+    "date": "2025-07-29",
+    "portfolio_value": 1080.353,
+    "benchmark_value": 1090.5612,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7799
+  },
+  {
+    "date": "2025-07-30",
+    "portfolio_value": 1078.9293,
+    "benchmark_value": 1089.6798,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6615
+  },
+  {
+    "date": "2025-07-31",
+    "portfolio_value": 1060.8688,
+    "benchmark_value": 1095.2009,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6436
+  },
+  {
+    "date": "2025-08-01",
+    "portfolio_value": 1057.5515,
+    "benchmark_value": 1086.4753,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6085
+  },
+  {
+    "date": "2025-08-04",
+    "portfolio_value": 1061.5988,
+    "benchmark_value": 1084.36,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7713
+  },
+  {
+    "date": "2025-08-05",
+    "portfolio_value": 1062.6427,
+    "benchmark_value": 1085.1116,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6045
+  },
+  {
+    "date": "2025-08-06",
+    "portfolio_value": 1065.8691,
+    "benchmark_value": 1064.616,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5512
+  },
+  {
+    "date": "2025-08-07",
+    "portfolio_value": 1053.0177,
+    "benchmark_value": 1065.52,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7651
+  },
+  {
+    "date": "2025-08-08",
+    "portfolio_value": 1059.1814,
+    "benchmark_value": 1073.9111,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6437
+  },
+  {
+    "date": "2025-08-11",
+    "portfolio_value": 1064.3905,
+    "benchmark_value": 1069.2333,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8048
+  },
+  {
+    "date": "2025-08-12",
+    "portfolio_value": 1063.4385,
+    "benchmark_value": 1074.7271,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7389
+  },
+  {
+    "date": "2025-08-13",
+    "portfolio_value": 1058.5531,
+    "benchmark_value": 1075.1739,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7219
+  },
+  {
+    "date": "2025-08-14",
+    "portfolio_value": 1077.2242,
+    "benchmark_value": 1082.0322,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7382
+  },
+  {
+    "date": "2025-08-15",
+    "portfolio_value": 1081.8257,
+    "benchmark_value": 1072.0781,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.646
+  },
+  {
+    "date": "2025-08-18",
+    "portfolio_value": 1072.8975,
+    "benchmark_value": 1076.8561,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7904
+  },
+  {
+    "date": "2025-08-19",
+    "portfolio_value": 1094.8463,
+    "benchmark_value": 1085.4018,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5568
+  },
+  {
+    "date": "2025-08-20",
+    "portfolio_value": 1098.191,
+    "benchmark_value": 1091.5282,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7933
+  },
+  {
+    "date": "2025-08-21",
+    "portfolio_value": 1087.1778,
+    "benchmark_value": 1091.8872,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7887
+  },
+  {
+    "date": "2025-08-22",
+    "portfolio_value": 1089.3238,
+    "benchmark_value": 1100.7534,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6935
+  },
+  {
+    "date": "2025-08-25",
+    "portfolio_value": 1090.6653,
+    "benchmark_value": 1088.2911,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7245
+  },
+  {
+    "date": "2025-08-26",
+    "portfolio_value": 1085.255,
+    "benchmark_value": 1094.2237,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5919
+  },
+  {
+    "date": "2025-08-27",
+    "portfolio_value": 1095.7409,
+    "benchmark_value": 1085.2325,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7503
+  },
+  {
+    "date": "2025-08-28",
+    "portfolio_value": 1102.797,
+    "benchmark_value": 1092.7892,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7588
+  },
+  {
+    "date": "2025-08-29",
+    "portfolio_value": 1098.0507,
+    "benchmark_value": 1091.3096,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6747
+  },
+  {
+    "date": "2025-09-01",
+    "portfolio_value": 1105.5188,
+    "benchmark_value": 1088.0034,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6017
+  },
+  {
+    "date": "2025-09-02",
+    "portfolio_value": 1100.2811,
+    "benchmark_value": 1099.6708,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7778
+  },
+  {
+    "date": "2025-09-03",
+    "portfolio_value": 1105.0438,
+    "benchmark_value": 1103.79,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6168
+  },
+  {
+    "date": "2025-09-04",
+    "portfolio_value": 1098.9974,
+    "benchmark_value": 1112.534,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5934
+  },
+  {
+    "date": "2025-09-05",
+    "portfolio_value": 1096.0929,
+    "benchmark_value": 1117.4068,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8133
+  },
+  {
+    "date": "2025-09-08",
+    "portfolio_value": 1096.1314,
+    "benchmark_value": 1114.2391,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8098
+  },
+  {
+    "date": "2025-09-09",
+    "portfolio_value": 1106.4482,
+    "benchmark_value": 1119.2409,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8156
+  },
+  {
+    "date": "2025-09-10",
+    "portfolio_value": 1112.7456,
+    "benchmark_value": 1107.4319,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6674
+  },
+  {
+    "date": "2025-09-11",
+    "portfolio_value": 1119.3279,
+    "benchmark_value": 1118.2778,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5789
+  },
+  {
+    "date": "2025-09-12",
+    "portfolio_value": 1123.427,
+    "benchmark_value": 1126.1757,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5592
+  },
+  {
+    "date": "2025-09-15",
+    "portfolio_value": 1106.6188,
+    "benchmark_value": 1134.8718,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7372
+  },
+  {
+    "date": "2025-09-16",
+    "portfolio_value": 1090.1884,
+    "benchmark_value": 1135.2687,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6751
+  },
+  {
+    "date": "2025-09-17",
+    "portfolio_value": 1101.2237,
+    "benchmark_value": 1144.1092,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6593
+  },
+  {
+    "date": "2025-09-18",
+    "portfolio_value": 1100.5057,
+    "benchmark_value": 1127.0771,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6661
+  },
+  {
+    "date": "2025-09-19",
+    "portfolio_value": 1083.2966,
+    "benchmark_value": 1121.6243,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6637
+  },
+  {
+    "date": "2025-09-22",
+    "portfolio_value": 1086.6314,
+    "benchmark_value": 1134.5034,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7876
+  },
+  {
+    "date": "2025-09-23",
+    "portfolio_value": 1090.1999,
+    "benchmark_value": 1122.7503,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7802
+  },
+  {
+    "date": "2025-09-24",
+    "portfolio_value": 1083.6251,
+    "benchmark_value": 1113.0027,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6726
+  },
+  {
+    "date": "2025-09-25",
+    "portfolio_value": 1077.9318,
+    "benchmark_value": 1123.5385,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5764
+  },
+  {
+    "date": "2025-09-26",
+    "portfolio_value": 1060.5817,
+    "benchmark_value": 1130.6141,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7426
+  },
+  {
+    "date": "2025-09-29",
+    "portfolio_value": 1055.2651,
+    "benchmark_value": 1126.6769,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6644
+  },
+  {
+    "date": "2025-09-30",
+    "portfolio_value": 1040.4736,
+    "benchmark_value": 1130.1596,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6605
+  },
+  {
+    "date": "2025-10-01",
+    "portfolio_value": 1029.2636,
+    "benchmark_value": 1114.3117,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5994
+  },
+  {
+    "date": "2025-10-02",
+    "portfolio_value": 1018.9027,
+    "benchmark_value": 1103.5635,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.655
+  },
+  {
+    "date": "2025-10-03",
+    "portfolio_value": 989.3117,
+    "benchmark_value": 1105.3187,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5603
+  },
+  {
+    "date": "2025-10-06",
+    "portfolio_value": 983.8113,
+    "benchmark_value": 1104.5058,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7611
+  },
+  {
+    "date": "2025-10-07",
+    "portfolio_value": 996.7092,
+    "benchmark_value": 1101.5131,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5773
+  },
+  {
+    "date": "2025-10-08",
+    "portfolio_value": 985.2123,
+    "benchmark_value": 1097.5866,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7437
+  },
+  {
+    "date": "2025-10-09",
+    "portfolio_value": 970.4857,
+    "benchmark_value": 1097.1641,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7738
+  },
+  {
+    "date": "2025-10-10",
+    "portfolio_value": 960.3081,
+    "benchmark_value": 1096.5086,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.806
+  },
+  {
+    "date": "2025-10-13",
+    "portfolio_value": 964.9748,
+    "benchmark_value": 1108.2172,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.656
+  },
+  {
+    "date": "2025-10-14",
+    "portfolio_value": 966.0965,
+    "benchmark_value": 1104.6869,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.8158
+  },
+  {
+    "date": "2025-10-15",
+    "portfolio_value": 964.5542,
+    "benchmark_value": 1107.188,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6241
+  },
+  {
+    "date": "2025-10-16",
+    "portfolio_value": 963.8401,
+    "benchmark_value": 1108.3564,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.663
+  },
+  {
+    "date": "2025-10-17",
+    "portfolio_value": 950.1192,
+    "benchmark_value": 1114.5274,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6451
+  },
+  {
+    "date": "2025-10-20",
+    "portfolio_value": 950.0893,
+    "benchmark_value": 1120.488,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7502
+  },
+  {
+    "date": "2025-10-21",
+    "portfolio_value": 962.6575,
+    "benchmark_value": 1117.3764,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6091
+  },
+  {
+    "date": "2025-10-22",
+    "portfolio_value": 966.703,
+    "benchmark_value": 1110.4035,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6072
+  },
+  {
+    "date": "2025-10-23",
+    "portfolio_value": 980.0556,
+    "benchmark_value": 1120.595,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7686
+  },
+  {
+    "date": "2025-10-24",
+    "portfolio_value": 972.6921,
+    "benchmark_value": 1114.4246,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7018
+  },
+  {
+    "date": "2025-10-27",
+    "portfolio_value": 977.5313,
+    "benchmark_value": 1134.7229,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6453
+  },
+  {
+    "date": "2025-10-28",
+    "portfolio_value": 965.4467,
+    "benchmark_value": 1123.9141,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7704
+  },
+  {
+    "date": "2025-10-29",
+    "portfolio_value": 957.446,
+    "benchmark_value": 1125.6491,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.698
+  },
+  {
+    "date": "2025-10-30",
+    "portfolio_value": 972.2225,
+    "benchmark_value": 1136.6424,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6458
+  },
+  {
+    "date": "2025-10-31",
+    "portfolio_value": 977.9048,
+    "benchmark_value": 1132.0117,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6516
+  },
+  {
+    "date": "2025-11-03",
+    "portfolio_value": 978.3505,
+    "benchmark_value": 1140.7906,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6002
+  },
+  {
+    "date": "2025-11-04",
+    "portfolio_value": 996.2616,
+    "benchmark_value": 1141.4404,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6259
+  },
+  {
+    "date": "2025-11-05",
+    "portfolio_value": 997.2669,
+    "benchmark_value": 1148.6438,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6795
+  },
+  {
+    "date": "2025-11-06",
+    "portfolio_value": 983.9064,
+    "benchmark_value": 1154.0539,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.728
+  },
+  {
+    "date": "2025-11-07",
+    "portfolio_value": 968.4622,
+    "benchmark_value": 1168.6161,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7807
+  },
+  {
+    "date": "2025-11-10",
+    "portfolio_value": 987.8683,
+    "benchmark_value": 1174.4452,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7946
+  },
+  {
+    "date": "2025-11-11",
+    "portfolio_value": 989.8426,
+    "benchmark_value": 1170.4723,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7745
+  },
+  {
+    "date": "2025-11-12",
+    "portfolio_value": 989.282,
+    "benchmark_value": 1169.86,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5531
+  },
+  {
+    "date": "2025-11-13",
+    "portfolio_value": 1005.161,
+    "benchmark_value": 1166.7346,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6175
+  },
+  {
+    "date": "2025-11-14",
+    "portfolio_value": 1010.8089,
+    "benchmark_value": 1169.8769,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6131
+  },
+  {
+    "date": "2025-11-17",
+    "portfolio_value": 1013.2181,
+    "benchmark_value": 1162.8715,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5912
+  },
+  {
+    "date": "2025-11-18",
+    "portfolio_value": 1030.2056,
+    "benchmark_value": 1155.1409,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.5953
+  },
+  {
+    "date": "2025-11-19",
+    "portfolio_value": 1042.9675,
+    "benchmark_value": 1148.5835,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7609
+  },
+  {
+    "date": "2025-11-20",
+    "portfolio_value": 1031.7992,
+    "benchmark_value": 1134.1758,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7628
+  },
+  {
+    "date": "2025-11-21",
+    "portfolio_value": 1036.521,
+    "benchmark_value": 1130.1407,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7371
+  },
+  {
+    "date": "2025-11-24",
+    "portfolio_value": 1018.8458,
+    "benchmark_value": 1128.0664,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6684
+  },
+  {
+    "date": "2025-11-25",
+    "portfolio_value": 1030.1339,
+    "benchmark_value": 1121.7402,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6214
+  },
+  {
+    "date": "2025-11-26",
+    "portfolio_value": 1031.4859,
+    "benchmark_value": 1126.4468,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6831
+  },
+  {
+    "date": "2025-11-27",
+    "portfolio_value": 1044.1039,
+    "benchmark_value": 1130.0516,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.589
+  },
+  {
+    "date": "2025-11-28",
+    "portfolio_value": 1031.3824,
+    "benchmark_value": 1130.9843,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6957
+  },
+  {
+    "date": "2025-12-01",
+    "portfolio_value": 1032.9698,
+    "benchmark_value": 1130.7223,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.777
+  },
+  {
+    "date": "2025-12-02",
+    "portfolio_value": 1019.3909,
+    "benchmark_value": 1133.1872,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7296
+  },
+  {
+    "date": "2025-12-03",
+    "portfolio_value": 1025.9766,
+    "benchmark_value": 1127.1395,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6631
+  },
+  {
+    "date": "2025-12-04",
+    "portfolio_value": 1031.0419,
+    "benchmark_value": 1126.8026,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.722
+  },
+  {
+    "date": "2025-12-05",
+    "portfolio_value": 1029.9883,
+    "benchmark_value": 1125.7984,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7146
+  },
+  {
+    "date": "2025-12-08",
+    "portfolio_value": 1019.9414,
+    "benchmark_value": 1109.5911,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6392
+  },
+  {
+    "date": "2025-12-09",
+    "portfolio_value": 1033.9944,
+    "benchmark_value": 1108.9481,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6809
+  },
+  {
+    "date": "2025-12-10",
+    "portfolio_value": 1037.1223,
+    "benchmark_value": 1108.1461,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7439
+  },
+  {
+    "date": "2025-12-11",
+    "portfolio_value": 1030.5407,
+    "benchmark_value": 1103.571,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7827
+  },
+  {
+    "date": "2025-12-12",
+    "portfolio_value": 1022.7025,
+    "benchmark_value": 1110.5216,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6919
+  },
+  {
+    "date": "2025-12-15",
+    "portfolio_value": 1024.4307,
+    "benchmark_value": 1105.6403,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6675
+  },
+  {
+    "date": "2025-12-16",
+    "portfolio_value": 1012.5111,
+    "benchmark_value": 1110.6688,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7732
+  },
+  {
+    "date": "2025-12-17",
+    "portfolio_value": 1007.6739,
+    "benchmark_value": 1125.1461,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.659
+  },
+  {
+    "date": "2025-12-18",
+    "portfolio_value": 999.5697,
+    "benchmark_value": 1125.4259,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6867
+  },
+  {
+    "date": "2025-12-19",
+    "portfolio_value": 1016.1178,
+    "benchmark_value": 1124.0564,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7638
+  },
+  {
+    "date": "2025-12-22",
+    "portfolio_value": 1012.0926,
+    "benchmark_value": 1130.4869,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6308
+  },
+  {
+    "date": "2025-12-23",
+    "portfolio_value": 999.2876,
+    "benchmark_value": 1125.1108,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7617
+  },
+  {
+    "date": "2025-12-24",
+    "portfolio_value": 1017.052,
+    "benchmark_value": 1128.6792,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7891
+  },
+  {
+    "date": "2025-12-25",
+    "portfolio_value": 1014.3506,
+    "benchmark_value": 1128.3982,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.6311
+  },
+  {
+    "date": "2025-12-26",
+    "portfolio_value": 1022.3119,
+    "benchmark_value": 1129.027,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7988
+  },
+  {
+    "date": "2025-12-29",
+    "portfolio_value": 1010.2627,
+    "benchmark_value": 1122.1501,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.763
+  },
+  {
+    "date": "2025-12-30",
+    "portfolio_value": 1023.8819,
+    "benchmark_value": 1116.7767,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.7165
+  },
+  {
+    "date": "2025-12-31",
+    "portfolio_value": 1012.4575,
+    "benchmark_value": 1108.5692,
+    "allocations": {
+      "AAPL": 0.15,
+      "NVDA": 0.2,
+      "META": 0.15,
+      "AMZN": 0.1,
+      "GLD": 0.1,
+      "QQQ": 0.15,
+      "BTC": 0.1,
+      "COIN": 0.05
+    },
+    "confidence": 0.711
+  }
+]
