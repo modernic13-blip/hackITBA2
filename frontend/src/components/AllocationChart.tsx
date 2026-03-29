@@ -46,6 +46,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
         day: idx + 1,
         portfolio: Math.round(d.portfolio_value * multiplier),
         benchmark: Math.round(d.benchmark_value * multiplier),
+        spy: d.spy_value ? Math.round(d.spy_value * multiplier) : null,
         month: d.date.slice(0, 7)
       };
       assetList.forEach((asset) => {
@@ -159,7 +160,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                     }}
                     formatter={(value: number, name: string) => [
                       `$${value.toLocaleString()}`,
-                      name === "portfolio" ? "Portafolio IA" : "Equal-Weight (mismo universo)",
+                      name === "portfolio" ? "Portafolio IA" : name === "spy" ? "S&P 500 (SPY)" : "Equal-Weight (mismo universo)",
                     ]}
                   />
                   <Legend wrapperStyle={{ fontSize: 12 }} />
@@ -181,6 +182,17 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                     dot={false}
                     isAnimationActive={true}
                     animationDuration={1500}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="spy"
+                    stroke="hsl(0, 84%, 60%)"
+                    strokeWidth={2}
+                    strokeDasharray="6 3"
+                    dot={false}
+                    isAnimationActive={true}
+                    animationDuration={1500}
+                    name="S&P 500"
                   />
                 </LineChart>
               </ResponsiveContainer>

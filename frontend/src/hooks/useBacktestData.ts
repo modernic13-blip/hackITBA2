@@ -8,6 +8,7 @@ export interface BacktestDay {
   confidence: number;
   regime?: string;
   optimizer?: string;
+  spy_value?: number;
 }
 
 export type RiskProfile = "low_risk" | "med_risk" | "high_risk";
