@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
-import { Session } from "@supabase/supabase-js";
 import { UserNav } from "@/components/UserNav";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
 import { ArrowLeft } from "lucide-react";
@@ -9,54 +8,43 @@ import { ArrowLeft } from "lucide-react";
 type DataPoint = { day: number; value: number; neto: number; feePaga: number };
 
 export default function Dashboard() {
-    const navigate = useNavigate();
-    const [session, setSession] = useState<Session | null>(null);
+    const [userName, setUserName] = useState("Inversor");
     const [loading, setLoading] = useState(true);
     const [viewMode, setViewMode] = useState<"real" | "simulacion">("simulacion");
     const [simData, setSimData] = useState<DataPoint[]>([]);
     const [initialCapital, setInitialCapital] = useState<number>(0);
 
     useEffect(() => {
-        // Auth Check & Load DB Data
-        const fetchSessionAndData = async () => {
-            const { data: { session: currentSession } } = await supabase.auth.getSession();
-            if (!currentSession) {
-                navigate("/login");
-                return;
-            }
-            setSession(currentSession);
+        const fetchData = async () => {
+            try {
+                const { data: { session } } = await supabase.auth.getSession();
+                if (session) {
+                    const user = session.user;
+                    setUserName(user.user_metadata?.full_name || user.user_metadata?.name || "Inversor");
 
-            // Fetch synced variables
-            const { data: dbData } = await supabase
-                .from('simulations')
-                .select('game_data, capital_input')
-                .eq('user_id', currentSession.user.id)
-                .single();
+                    const { data: dbData } = await supabase
+                        .from('simulations')
+                        .select('game_data, capital_input')
+                        .eq('user_id', user.id)
+                        .single();
 
-            if (dbData) {
-                if (dbData.game_data) setSimData(dbData.game_data);
-                if (dbData.capital_input) setInitialCapital(dbData.capital_input);
+                    if (dbData) {
+                        if (dbData.game_data) setSimData(dbData.game_data);
+                        if (dbData.capital_input) setInitialCapital(dbData.capital_input);
+                    }
+                }
+            } catch {
+                // Sin sesión — dashboard funciona igual con datos vacíos
             }
             setLoading(false);
         };
-        fetchSessionAndData();
+        fetchData();
+    }, []);
 
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-            if (!session) navigate("/login");
-            else setSession(session);
-        });
-
-        return () => subscription.unsubscribe();
-    }, [navigate]);
-
-    if (loading || !session) {
+    if (loading) {
         return <div className="min-h-screen flex items-center justify-center bg-background"><span className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></span></div>;
     }
 
-    const { user } = session;
-    const fullName = user.user_metadata?.full_name || user.user_metadata?.name || "Inversor";
-
-    // Calc metrics precisely
     const currentNeto = simData.length > 0 ? simData[simData.length - 1].neto : 0;
     const profit = currentNeto - initialCapital;
     const returnPct = initialCapital > 0 ? ((currentNeto - initialCapital) / initialCapital) * 100 : 0;
@@ -78,13 +66,12 @@ export default function Dashboard() {
             <main className="flex-1 max-w-7xl w-full mx-auto px-6 lg:px-12 pt-10 pb-12">
                 <header className="mb-10 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
                     <div>
-                        <h1 className="text-3xl font-semibold">Hola, {fullName.split(' ')[0]} 👋</h1>
+                        <h1 className="text-3xl font-semibold">Hola, {userName.split(' ')[0]} 👋</h1>
                         <p className="text-muted-foreground mt-1 gap-2 flex items-center">
                             Visualiza de forma global tus estrategias conectadas a la DB.
                         </p>
                     </div>
 
-                    {/* Toggle Real vs Simulado */}
                     <div className="flex bg-muted p-1 rounded-xl w-max border border-border">
                         <button
                             onClick={() => setViewMode("simulacion")}
@@ -114,7 +101,6 @@ export default function Dashboard() {
                     </div>
                 ) : (
                     <div className="space-y-6">
-                        {/* Mini Stats */}
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                             <div className="bg-card border border-border p-5 rounded-xl">
                                 <div className="text-xs text-muted-foreground uppercase mb-1">Capital Inicial</div>
@@ -138,7 +124,6 @@ export default function Dashboard() {
                             </div>
                         </div>
 
-                        {/* Gráfico */}
                         <div className="bg-card border border-border rounded-xl p-6 min-h-[400px] flex flex-col">
                             <div className="flex justify-between items-center mb-6">
                                 <h3 className="text-sm font-medium flex items-center gap-2">
@@ -166,7 +151,7 @@ export default function Dashboard() {
                                     </ResponsiveContainer>
                                 ) : (
                                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/30 rounded-lg">
-                                        <p className="text-muted-foreground mb-4">No hay datos en Supabase para mostrar.</p>
+                                        <p className="text-muted-foreground mb-4">No hay datos guardados. Corré una simulación primero.</p>
                                         <Link to="/simulacion" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg text-sm font-medium transition-colors">
                                             Correr Primera Simulación
                                         </Link>

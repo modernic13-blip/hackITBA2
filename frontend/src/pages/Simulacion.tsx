@@ -58,31 +58,35 @@ export default function Simulacion() {
     }
   }, [rawData, capitalInput, selectedModel.id, cursor]);
 
+  // Intentar cargar sesión (opcional — funciona sin login)
   useEffect(() => {
     let mounted = true;
     const initSession = async () => {
-      const { data } = await supabase.auth.getSession();
-      if (!data.session) { navigate("/login"); return; }
-      const currentUserId = data.session.user.id;
-      if (mounted) {
-        setUserId(currentUserId);
-        const { data: dbData } = await supabase
-          .from("simulations")
-          .select("*")
-          .eq("user_id", currentUserId)
-          .single();
-        if (dbData) {
-          if (dbData.capital_input) setCapitalInput(dbData.capital_input);
-          if (dbData.selected_model_id) {
-            const m = AI_MODELS.find(x => x.id === dbData.selected_model_id);
-            if (m) setSelectedModel(m);
-          }
-          if (dbData.day_counter && dbData.game_data) {
-            setCursor(dbData.day_counter);
+      try {
+        const { data } = await supabase.auth.getSession();
+        if (data.session && mounted) {
+          const currentUserId = data.session.user.id;
+          setUserId(currentUserId);
+          const { data: dbData } = await supabase
+            .from("simulations")
+            .select("*")
+            .eq("user_id", currentUserId)
+            .single();
+          if (dbData) {
+            if (dbData.capital_input) setCapitalInput(dbData.capital_input);
+            if (dbData.selected_model_id) {
+              const m = AI_MODELS.find(x => x.id === dbData.selected_model_id);
+              if (m) setSelectedModel(m);
+            }
+            if (dbData.day_counter && dbData.game_data) {
+              setCursor(dbData.day_counter);
+            }
           }
         }
-        setIsLoadingAuth(false);
+      } catch {
+        // Sin sesión — funciona igual sin guardar en nube
       }
+      if (mounted) setIsLoadingAuth(false);
     };
     initSession();
     return () => { mounted = false; };
