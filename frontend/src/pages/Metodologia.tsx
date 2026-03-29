@@ -175,25 +175,25 @@ export default function Metodologia() {
               <span className="text-xs font-bold uppercase tracking-wider text-red-400">Caso de Éxito 1 — Protección en Caídas</span>
             </div>
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold">Bitcoin se desplomó un <span className="text-red-500">-30%</span>. Nuestro modelo ganó <span className="text-success">+38%</span>.</h3>
+              <h3 className="text-xl font-semibold">Período difícil del mercado (Mar-Sep). Nuestro modelo ganó <span className="text-success">+46.6%</span>.</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Durante el crash de BTC entre marzo y septiembre de 2024, el <strong className="text-foreground">RegimeDetector</strong> clasificó el período como <strong className="text-foreground">BEAR</strong> y activó automáticamente <strong className="text-foreground">HRP (Hierarchical Risk Parity)</strong> — el optimizador defensivo.
+                Entre marzo y septiembre de 2024, el mercado crypto enfrentó correcciones significativas. El <strong className="text-foreground">RegimeDetector</strong> identificó los períodos de estrés y alternó entre <strong className="text-foreground">HRP (defensivo)</strong> y <strong className="text-foreground">Kelly (agresivo)</strong> según las condiciones.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                En lugar de mantener exposición a un activo en caída libre, el sistema reasignó el capital de forma inteligente hacia activos con momentum positivo: <strong className="text-foreground">NVDA, META y AAPL</strong>. Resultado: mientras Bitcoin perdía un tercio de su valor, el portafolio generó un retorno positivo del <strong className="text-foreground">+38%</strong>.
+                El sistema reasignó capital dinámicamente hacia activos con momentum positivo: rotó de BTC hacia <strong className="text-foreground">META y NVDA</strong> cuando detectó debilidad. Resultado: el perfil Dinámico generó <strong className="text-foreground">+46.6%</strong> mientras el equal-weight solo subió +13.8%.
               </p>
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="bg-background rounded-xl p-4 text-center border border-border">
-                  <p className="text-2xl font-bold text-red-500">-30%</p>
-                  <p className="text-xs text-muted-foreground mt-1">Bitcoin (BTC)</p>
-                </div>
-                <div className="bg-background rounded-xl p-4 text-center border border-border">
-                  <p className="text-2xl font-bold text-muted-foreground">-0.8%</p>
+                  <p className="text-2xl font-bold text-muted-foreground">+13.8%</p>
                   <p className="text-xs text-muted-foreground mt-1">Equal-Weight</p>
                 </div>
+                <div className="bg-background rounded-xl p-4 text-center border border-border">
+                  <p className="text-2xl font-bold text-success">+39.6%</p>
+                  <p className="text-xs text-muted-foreground mt-1">QuantFlow Agresivo</p>
+                </div>
                 <div className="bg-background rounded-xl p-4 text-center border border-primary/30">
-                  <p className="text-2xl font-bold text-success">+38%</p>
-                  <p className="text-xs text-muted-foreground mt-1">QuantFlow IA</p>
+                  <p className="text-2xl font-bold text-success">+46.6%</p>
+                  <p className="text-xs text-muted-foreground mt-1">QuantFlow Dinámico</p>
                 </div>
               </div>
             </div>
@@ -211,25 +211,25 @@ export default function Metodologia() {
               <span className="text-xs font-bold uppercase tracking-wider text-success">Caso de Éxito 2 — Maximizando Ganancias</span>
             </div>
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold">PLTR subió <span className="text-success">+170%</span>. Nuestro portafolio logró <span className="text-success">+220%</span>.</h3>
+              <h3 className="text-xl font-semibold">El portafolio Agresivo logró <span className="text-success">+182.2%</span> en 2024.</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Palantir (PLTR) tuvo un año extraordinario en 2024. Cuando el <strong className="text-foreground">RegimeDetector</strong> identificó el régimen como <strong className="text-foreground">BULL</strong>, activó el <strong className="text-foreground">Kelly Criterion</strong> — el optimizador agresivo que maximiza el crecimiento geométrico del capital.
+                El perfil High Risk capturó los mejores rallies del año. Cuando el <strong className="text-foreground">RegimeDetector</strong> identificó régimen <strong className="text-foreground">BULL</strong>, activó el <strong className="text-foreground">Kelly Criterion</strong> — el optimizador agresivo que maximiza crecimiento geométrico.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Kelly aumentó la exposición a PLTR hasta <strong className="text-foreground">24.9%</strong> del portafolio en los momentos de mayor confianza del modelo. En las correcciones intermedias, el sistema rotó automáticamente a <strong className="text-foreground">HRP</strong> para proteger las ganancias acumuladas. El resultado: un portafolio que no solo capturó el rally de PLTR, sino que lo <strong className="text-foreground">potenció combinándolo con otros activos ganadores</strong>.
+                Kelly concentró exposición en activos ganadores: <strong className="text-foreground">NVDA (40%), BTC (34-40%), PLTR (10-15%)</strong> en los momentos de mayor confianza. En correcciones, rotó a <strong className="text-foreground">HRP</strong> para proteger ganancias. El resultado: <strong className="text-foreground">+61.1% de alpha</strong> sobre el equal-weight de los mismos activos.
               </p>
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="bg-background rounded-xl p-4 text-center border border-border">
-                  <p className="text-2xl font-bold text-success">+170%</p>
-                  <p className="text-xs text-muted-foreground mt-1">Palantir (PLTR)</p>
+                  <p className="text-2xl font-bold text-muted-foreground">+26%</p>
+                  <p className="text-xs text-muted-foreground mt-1">S&P 500 (SPY)</p>
                 </div>
                 <div className="bg-background rounded-xl p-4 text-center border border-border">
-                  <p className="text-2xl font-bold text-muted-foreground">+121%</p>
+                  <p className="text-2xl font-bold text-success">+121.1%</p>
                   <p className="text-xs text-muted-foreground mt-1">Equal-Weight</p>
                 </div>
                 <div className="bg-background rounded-xl p-4 text-center border border-primary/30">
-                  <p className="text-2xl font-bold text-success">+220%</p>
-                  <p className="text-xs text-muted-foreground mt-1">QuantFlow IA</p>
+                  <p className="text-2xl font-bold text-success">+182.2%</p>
+                  <p className="text-xs text-muted-foreground mt-1">QuantFlow Agresivo</p>
                 </div>
               </div>
             </div>
