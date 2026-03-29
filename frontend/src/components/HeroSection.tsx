@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const PortfolioLine = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -149,6 +150,18 @@ const HeroSection = () => {
         >
           Tu sistema de trading automatizado impulsado por Inteligencia Artificial y datos de mercado reales.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="mt-8"
+        >
+          <Link to="/metodologia" className="group inline-flex items-center gap-2 text-sm font-mono tracking-tight text-muted-foreground hover:text-foreground transition-colors pb-1 border-b border-transparent hover:border-foreground/30">
+            Leer Metodología de Validación
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </Link>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
