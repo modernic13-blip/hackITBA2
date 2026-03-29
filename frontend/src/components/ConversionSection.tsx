@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 
 export const AI_MODELS = [
-  { id: "low", name: "Modelo Conservador", fee: "1%", desc: "Dedicamos el 1% de tus ganancias. Estable.", features: ["Bajo riesgo", "Retiros gratis", "Soporte 24/7"] },
-  { id: "mid", name: "Modelo Dinámico", fee: "10%", desc: "Dedicamos el 10% de tus ganancias. Balance perfecto.", features: ["Volatilidad media", "Ajustes diarios", "Prioridad de red"] },
-  { id: "high", name: "Modelo Agresivo", fee: "30%", desc: "Dedicamos el 30% de tus ganancias. Da más plata.", features: ["Alto riesgo", "Algoritmo avanzado", "Asesor IA VIP"] },
+  { id: "low", name: "Modelo Conservador", fee: "6%", desc: "Dedicamos el 6% de tus ganancias. Estable.", features: ["Bajo riesgo", "Retiros gratis", "Soporte 24/7"] },
+  { id: "mid", name: "Modelo Dinámico", fee: "3%", desc: "Dedicamos el 3% de tus ganancias. Balance perfecto.", features: ["Volatilidad media", "Ajustes diarios", "Prioridad de red"] },
+  { id: "high", name: "Modelo Agresivo", fee: "1%", desc: "Dedicamos el 1% de tus ganancias. Da más plata.", features: ["Alto riesgo", "Algoritmo avanzado", "Asesor IA VIP"] },
 ];
 
 const ConversionSection = () => {

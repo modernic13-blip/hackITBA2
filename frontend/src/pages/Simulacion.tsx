@@ -7,9 +7,9 @@ import { supabase } from "@/lib/supabase";
 import { useBacktestData, modelIdToProfile, type BacktestDay } from "@/hooks/useBacktestData";
 
 const AI_MODELS = [
-  { id: "low", name: "Modelo Conservador", fee: "1%", feeRate: 0.01, desc: "Bajo riesgo" },
-  { id: "mid", name: "Modelo Dinámico", fee: "10%", feeRate: 0.10, desc: "Balance medio" },
-  { id: "high", name: "Modelo Agresivo", fee: "30%", feeRate: 0.30, desc: "Alto riesgo" },
+  { id: "low", name: "Modelo Conservador", fee: "6%", feeRate: 0.06, desc: "Bajo riesgo" },
+  { id: "mid", name: "Modelo Dinámico", fee: "3%", feeRate: 0.03, desc: "Balance medio" },
+  { id: "high", name: "Modelo Agresivo", fee: "1%", feeRate: 0.01, desc: "Alto riesgo" },
 ];
 
 const REGIME_LABELS: Record<string, { label: string; color: string }> = {
