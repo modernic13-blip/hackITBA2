@@ -154,6 +154,189 @@ export default function Metodologia() {
           </div>
         </motion.section>
 
+        {/* Casos de Éxito */}
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="space-y-10">
+          <div className="text-center space-y-3">
+            <h2 className="text-3xl font-bold tracking-tight">Casos de Éxito y Rendimiento</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
+              Resultados reales de nuestro backtest out-of-sample (2024). El modelo nunca vio estos datos durante el entrenamiento.
+            </p>
+          </div>
+
+          {/* Caso 1: Protección en caídas */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-card border border-border rounded-2xl overflow-hidden"
+          >
+            <div className="bg-red-500/5 border-b border-red-500/20 px-6 py-3 flex items-center gap-2">
+              <span className="text-lg">🛡️</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-red-400">Caso de Éxito 1 — Protección en Caídas</span>
+            </div>
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-semibold">Bitcoin se desplomó un <span className="text-red-500">-30%</span>. Nuestro modelo ganó <span className="text-success">+38%</span>.</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Durante el crash de BTC entre marzo y septiembre de 2024, el <strong className="text-foreground">RegimeDetector</strong> clasificó el período como <strong className="text-foreground">BEAR</strong> y activó automáticamente <strong className="text-foreground">HRP (Hierarchical Risk Parity)</strong> — el optimizador defensivo.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                En lugar de mantener exposición a un activo en caída libre, el sistema reasignó el capital de forma inteligente hacia activos con momentum positivo: <strong className="text-foreground">NVDA, META y AAPL</strong>. Resultado: mientras Bitcoin perdía un tercio de su valor, el portafolio generó un retorno positivo del <strong className="text-foreground">+38%</strong>.
+              </p>
+              <div className="grid grid-cols-3 gap-3 pt-2">
+                <div className="bg-background rounded-xl p-4 text-center border border-border">
+                  <p className="text-2xl font-bold text-red-500">-30%</p>
+                  <p className="text-xs text-muted-foreground mt-1">Bitcoin (BTC)</p>
+                </div>
+                <div className="bg-background rounded-xl p-4 text-center border border-border">
+                  <p className="text-2xl font-bold text-muted-foreground">-0.8%</p>
+                  <p className="text-xs text-muted-foreground mt-1">Equal-Weight</p>
+                </div>
+                <div className="bg-background rounded-xl p-4 text-center border border-primary/30">
+                  <p className="text-2xl font-bold text-success">+38%</p>
+                  <p className="text-xs text-muted-foreground mt-1">QuantFlow IA</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Caso 2: Maximizando rally */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-card border border-border rounded-2xl overflow-hidden"
+          >
+            <div className="bg-success/5 border-b border-success/20 px-6 py-3 flex items-center gap-2">
+              <span className="text-lg">🚀</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-success">Caso de Éxito 2 — Maximizando Ganancias</span>
+            </div>
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-semibold">PLTR subió <span className="text-success">+170%</span>. Nuestro portafolio logró <span className="text-success">+220%</span>.</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Palantir (PLTR) tuvo un año extraordinario en 2024. Cuando el <strong className="text-foreground">RegimeDetector</strong> identificó el régimen como <strong className="text-foreground">BULL</strong>, activó el <strong className="text-foreground">Kelly Criterion</strong> — el optimizador agresivo que maximiza el crecimiento geométrico del capital.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Kelly aumentó la exposición a PLTR hasta <strong className="text-foreground">24.9%</strong> del portafolio en los momentos de mayor confianza del modelo. En las correcciones intermedias, el sistema rotó automáticamente a <strong className="text-foreground">HRP</strong> para proteger las ganancias acumuladas. El resultado: un portafolio que no solo capturó el rally de PLTR, sino que lo <strong className="text-foreground">potenció combinándolo con otros activos ganadores</strong>.
+              </p>
+              <div className="grid grid-cols-3 gap-3 pt-2">
+                <div className="bg-background rounded-xl p-4 text-center border border-border">
+                  <p className="text-2xl font-bold text-success">+170%</p>
+                  <p className="text-xs text-muted-foreground mt-1">Palantir (PLTR)</p>
+                </div>
+                <div className="bg-background rounded-xl p-4 text-center border border-border">
+                  <p className="text-2xl font-bold text-muted-foreground">+121%</p>
+                  <p className="text-xs text-muted-foreground mt-1">Equal-Weight</p>
+                </div>
+                <div className="bg-background rounded-xl p-4 text-center border border-primary/30">
+                  <p className="text-2xl font-bold text-success">+220%</p>
+                  <p className="text-xs text-muted-foreground mt-1">QuantFlow IA</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Caso 3: vs S&P 500 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-card border border-border rounded-2xl overflow-hidden"
+          >
+            <div className="bg-primary/5 border-b border-primary/20 px-6 py-3 flex items-center gap-2">
+              <span className="text-lg">📊</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">Superando al S&P 500 — Consistentemente</span>
+            </div>
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-semibold">Los <span className="text-primary">3 perfiles</span> superaron al S&P 500 en 2024.</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                El objetivo principal del sistema era <strong className="text-foreground">generar retornos superiores al índice de referencia más importante del mundo</strong>. Lo logramos de forma contundente: incluso nuestro perfil más conservador casi <strong className="text-foreground">triplicó</strong> el rendimiento del S&P 500.
+              </p>
+              <div className="space-y-3 pt-2">
+                {[
+                  { name: "S&P 500 (SPY)", ret: "+26%", color: "text-muted-foreground", bg: "bg-muted", width: "14%" },
+                  { name: "Conservador", ret: "+71.2%", color: "text-primary", bg: "bg-primary/20", width: "39%" },
+                  { name: "Dinámico", ret: "+148%", color: "text-primary", bg: "bg-primary/30", width: "81%" },
+                  { name: "Agresivo", ret: "+182.2%", color: "text-primary", bg: "bg-primary/40", width: "100%" },
+                ].map((item) => (
+                  <div key={item.name} className="space-y-1.5">
+                    <div className="flex justify-between text-sm">
+                      <span className="font-medium text-foreground">{item.name}</span>
+                      <span className={`font-bold ${item.color}`}>{item.ret}</span>
+                    </div>
+                    <div className="h-3 bg-muted rounded-full overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: item.width }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        className={`h-full rounded-full ${item.bg}`}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 mt-4">
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground">Nota de transparencia:</strong> El universo de activos de QuantFlow incluye activos de alto crecimiento (NVDA, BTC, PLTR) que tuvieron rendimientos atípicos en 2024. La comparación más justa es contra el Equal-Weight de los mismos 11 activos, donde el modelo genera <strong className="text-foreground">+15% a +77% de alpha</strong> gracias a la optimización adaptativa.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Tabla resumen */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="bg-card border border-border rounded-2xl p-6"
+          >
+            <h3 className="text-sm font-semibold text-foreground mb-4">Resumen de Rendimiento (Backtest 2024, out-of-sample)</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border text-xs text-muted-foreground uppercase">
+                    <th className="text-left py-3 pr-4">Perfil</th>
+                    <th className="text-right py-3 px-3">Retorno</th>
+                    <th className="text-right py-3 px-3">vs EW</th>
+                    <th className="text-right py-3 px-3">vs SPY</th>
+                    <th className="text-right py-3 px-3">Sharpe</th>
+                    <th className="text-right py-3 pl-3">Max DD</th>
+                  </tr>
+                </thead>
+                <tbody className="text-foreground">
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 pr-4 font-medium">Conservador</td>
+                    <td className="py-3 px-3 text-right text-success font-bold">+71.2%</td>
+                    <td className="py-3 px-3 text-right">+15.6%</td>
+                    <td className="py-3 px-3 text-right">+45.2%</td>
+                    <td className="py-3 px-3 text-right">2.80</td>
+                    <td className="py-3 pl-3 text-right text-red-400">-12.7%</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 pr-4 font-medium">Dinámico</td>
+                    <td className="py-3 px-3 text-right text-success font-bold">+148.0%</td>
+                    <td className="py-3 px-3 text-right">+76.7%</td>
+                    <td className="py-3 px-3 text-right">+122%</td>
+                    <td className="py-3 px-3 text-right font-bold">2.97</td>
+                    <td className="py-3 pl-3 text-right text-red-400">-11.3%</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 font-medium">Agresivo</td>
+                    <td className="py-3 px-3 text-right text-success font-bold">+182.2%</td>
+                    <td className="py-3 px-3 text-right">+61.1%</td>
+                    <td className="py-3 px-3 text-right">+156.2%</td>
+                    <td className="py-3 px-3 text-right">2.44</td>
+                    <td className="py-3 pl-3 text-right text-red-400">-18.9%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">
+              El perfil <strong className="text-foreground">Dinámico</strong> ofrece el mejor ratio riesgo-retorno con un Sharpe de <strong className="text-foreground">2.97</strong> y un Max Drawdown de solo <strong className="text-foreground">-11.3%</strong> — retornos de triple dígito con riesgo controlado.
+            </p>
+          </motion.div>
+        </motion.section>
+
         {/* Referencias */}
         <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="space-y-6 pb-12">
           <h2 className="text-2xl font-semibold">Referencias Académicas</h2>
