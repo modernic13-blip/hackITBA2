@@ -10,7 +10,6 @@ export default defineConfig({
       overlay: false,
     },
   },
-  envDir: path.resolve(__dirname, ".."),
   plugins: [react()],
   resolve: {
     alias: {
