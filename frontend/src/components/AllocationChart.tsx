@@ -160,7 +160,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                     }}
                     formatter={(value: number, name: string) => [
                       `$${value.toLocaleString()}`,
-                      name === "portfolio" ? "Portafolio IA" : name === "spy" ? "S&P 500 (SPY)" : "Equal-Weight (mismo universo)",
+                      name === "portfolio" ? "Portafolio IA" : (name === "spy" || name === "S&P 500") ? "S&P 500 (SPY)" : name === "benchmark" ? "Equal-Weight (mismo universo)" : name,
                     ]}
                   />
                   <Legend wrapperStyle={{ fontSize: 12 }} />
