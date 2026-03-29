@@ -33,6 +33,9 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 import yaml
+import joblib
+from scipy.cluster.hierarchy import linkage, leaves_list
+from scipy.spatial.distance import squareform
 
 # ── Path setup ────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent
@@ -62,8 +65,10 @@ PROFILE_FILES = {
     "high_risk": "high_risk.yaml",
 }
 
-CACHE_DIR = ROOT / "cache"
+CACHE_DIR  = ROOT / "cache"
+MODELS_DIR = ROOT / "cache" / "models"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
 # ── Configuración base del pipeline (auto-adapta a frecuencia detectada) ────────
 BASE_PIPELINE_CONFIG: dict = {
@@ -282,6 +287,274 @@ class BlackLittermanOptimizer:
 
         total = w.sum()
         return w / total if total > 0 else np.ones(len(w)) / len(w)
+
+
+# =============================================================================
+# HRP Optimizer (Hierarchical Risk Parity — López de Prado)
+# =============================================================================
+
+class HRPOptimizer:
+    """
+    Hierarchical Risk Parity: no requiere inversión de matrices.
+    Robusto en mercados volátiles con matrices de covarianza inestables.
+
+    Algoritmo:
+      1. Correlación → distancia → clustering jerárquico
+      2. Quasi-diagonalización de la covarianza
+      3. Bisección recursiva asignando peso inverso a varianza
+    """
+
+    def __init__(self, max_weight: float = 0.40):
+        self.max_weight = max_weight
+
+    def optimize(
+        self,
+        prices:           pd.DataFrame,
+        ml_signals:       Dict[str, float],
+        confidence_level: float = 0.70,
+    ) -> Tuple[Dict[str, float], float]:
+        tickers = list(prices.columns)
+        n = len(tickers)
+        if n < 2:
+            return {t: 1.0 / n for t in tickers}, 0.5
+
+        returns = prices.pct_change().dropna()
+        if len(returns) < 20:
+            return {t: 1.0 / n for t in tickers}, 0.5
+
+        cov  = returns.cov().values
+        corr = returns.corr().values
+
+        # 1. Distancia y clustering
+        dist = np.sqrt(0.5 * (1 - corr))
+        np.fill_diagonal(dist, 0)
+        dist = np.nan_to_num(dist, nan=0.0)
+        condensed = squareform(dist, checks=False)
+        condensed = np.nan_to_num(condensed, nan=0.0)
+        link = linkage(condensed, method="single")
+        sort_ix = list(leaves_list(link))
+
+        # 2. Bisección recursiva
+        weights = np.ones(n)
+        clusters = [sort_ix]
+
+        while clusters:
+            new_clusters = []
+            for cluster in clusters:
+                if len(cluster) <= 1:
+                    continue
+                mid = len(cluster) // 2
+                left, right = cluster[:mid], cluster[mid:]
+
+                var_left  = self._cluster_var(cov, left)
+                var_right = self._cluster_var(cov, right)
+                alpha = 1.0 - var_left / (var_left + var_right + 1e-10)
+
+                for i in left:
+                    weights[i] *= alpha
+                for i in right:
+                    weights[i] *= (1.0 - alpha)
+
+                if len(left)  > 1: new_clusters.append(left)
+                if len(right) > 1: new_clusters.append(right)
+            clusters = new_clusters
+
+        # 3. Ajustar por señales ML (tilt)
+        for i, t in enumerate(tickers):
+            if t in ml_signals:
+                signal = ml_signals[t]
+                tilt = 1.0 + signal * confidence_level * 0.5
+                weights[i] *= max(tilt, 0.1)
+
+        # Normalizar y aplicar max_weight
+        weights = np.clip(weights, 0, None)
+        total = weights.sum()
+        if total > 0:
+            weights /= total
+        else:
+            weights = np.ones(n) / n
+
+        weights = BlackLittermanOptimizer._project_simplex(weights, self.max_weight)
+
+        avg_conf = 0.5 + 0.5 * float(np.mean([abs(ml_signals.get(t, 0)) for t in tickers]))
+        return {t: float(w) for t, w in zip(tickers, weights)}, avg_conf
+
+    @staticmethod
+    def _cluster_var(cov: np.ndarray, indices: List[int]) -> float:
+        sub_cov = cov[np.ix_(indices, indices)]
+        inv_diag = 1.0 / (np.diag(sub_cov) + 1e-10)
+        w = inv_diag / inv_diag.sum()
+        return float(w @ sub_cov @ w)
+
+
+# =============================================================================
+# Kelly Criterion Optimizer
+# =============================================================================
+
+class KellyOptimizer:
+    """
+    Kelly Criterion adaptado para portafolios multi-activo.
+    Maximiza el crecimiento geométrico esperado del capital.
+
+    Fórmula: f* = (p × b - q) / b
+      p = probabilidad de ganar, b = ratio ganancia/pérdida, q = 1-p
+
+    Se usa un fraction < 1.0 para reducir agresividad (Half-Kelly típico).
+    """
+
+    def __init__(self, max_weight: float = 0.40, fraction: float = 0.5):
+        self.max_weight = max_weight
+        self.fraction   = fraction  # Half-Kelly por defecto
+
+    def optimize(
+        self,
+        prices:           pd.DataFrame,
+        ml_signals:       Dict[str, float],
+        confidence_level: float = 0.70,
+    ) -> Tuple[Dict[str, float], float]:
+        tickers = list(prices.columns)
+        n = len(tickers)
+        if n < 2:
+            return {t: 1.0 / n for t in tickers}, 0.5
+
+        returns = prices.pct_change().dropna()
+        if len(returns) < 20:
+            return {t: 1.0 / n for t in tickers}, 0.5
+
+        weights = {}
+        for t in tickers:
+            if t not in returns.columns:
+                weights[t] = 0.0
+                continue
+
+            r = returns[t].values
+            signal = ml_signals.get(t, 0.0)
+
+            # Probabilidad basada en señal ML + histórico
+            hist_win_rate = float((r > 0).mean())
+            p = np.clip(0.5 + signal * confidence_level * 0.3 + (hist_win_rate - 0.5) * 0.2, 0.01, 0.99)
+            q = 1.0 - p
+
+            # Ratio ganancia/pérdida
+            gains  = r[r > 0]
+            losses = r[r < 0]
+            avg_gain = float(gains.mean()) if len(gains) > 0 else 0.01
+            avg_loss = float(abs(losses.mean())) if len(losses) > 0 else 0.01
+            b = avg_gain / (avg_loss + 1e-10)
+
+            # Kelly fraction
+            f = (p * b - q) / (b + 1e-10)
+            f = max(f, 0.0) * self.fraction  # Aplicar fracción conservadora
+
+            weights[t] = f
+
+        # Normalizar
+        total = sum(weights.values())
+        if total > 0:
+            weights = {t: v / total for t, v in weights.items()}
+        else:
+            weights = {t: 1.0 / n for t in tickers}
+
+        w_array = np.array([weights[t] for t in tickers])
+        w_array = BlackLittermanOptimizer._project_simplex(w_array, self.max_weight)
+        weights = {t: float(w) for t, w in zip(tickers, w_array)}
+
+        avg_conf = 0.5 + 0.5 * float(np.mean([abs(ml_signals.get(t, 0)) for t in tickers]))
+        return weights, avg_conf
+
+
+# =============================================================================
+# Regime Detector — Detecta bull/bear/crisis para adaptar la estrategia
+# =============================================================================
+
+class RegimeDetector:
+    """
+    Detecta el régimen de mercado actual analizando:
+      - Trend: retorno acumulado rolling (SMA 50 vs SMA 200 equivalente)
+      - Volatility: percentil de volatilidad realizada vs histórica
+      - Correlation: correlación media entre activos (risk-on/risk-off)
+
+    Regímenes:
+      BULL     → Trend positivo, vol baja     → usar Kelly (más agresivo)
+      BEAR     → Trend negativo, vol normal   → usar HRP (defensivo)
+      CRISIS   → Vol alta, correlación alta   → usar HRP (máxima diversificación)
+      NEUTRAL  → Sin señal clara              → usar Black-Litterman (bayesiano)
+    """
+
+    BULL    = "bull"
+    BEAR    = "bear"
+    CRISIS  = "crisis"
+    NEUTRAL = "neutral"
+
+    def __init__(
+        self,
+        vol_lookback:     int   = 60,
+        trend_lookback:   int   = 120,
+        vol_crisis_pctile: float = 80.0,
+        corr_crisis_thresh: float = 0.65,
+    ):
+        self.vol_lookback       = vol_lookback
+        self.trend_lookback     = trend_lookback
+        self.vol_crisis_pctile  = vol_crisis_pctile
+        self.corr_crisis_thresh = corr_crisis_thresh
+
+    def detect(self, prices: pd.DataFrame) -> str:
+        """
+        Analiza los últimos N días de precios y retorna el régimen.
+        """
+        if len(prices) < self.trend_lookback:
+            return self.NEUTRAL
+
+        returns = prices.pct_change().dropna()
+        recent  = returns.tail(self.vol_lookback)
+
+        # 1. Trend: retorno promedio de todos los activos en la ventana
+        mean_return = float(recent.mean().mean()) * 252  # anualizado
+        trend_positive = mean_return > 0.05   # >5% anualizado = bull
+        trend_negative = mean_return < -0.05  # <-5% anualizado = bear
+
+        # 2. Volatilidad: vol reciente vs histórica
+        recent_vol = float(recent.std().mean()) * np.sqrt(252)
+        full_vol   = float(returns.std().mean()) * np.sqrt(252)
+        vol_ratio  = recent_vol / (full_vol + 1e-10) * 100  # percentil proxy
+        high_vol   = vol_ratio > self.vol_crisis_pctile
+
+        # 3. Correlación media entre activos
+        if recent.shape[1] >= 2:
+            corr_matrix = recent.corr().values
+            n = corr_matrix.shape[0]
+            upper = corr_matrix[np.triu_indices(n, k=1)]
+            mean_corr = float(np.nanmean(upper))
+        else:
+            mean_corr = 0.0
+        high_corr = mean_corr > self.corr_crisis_thresh
+
+        # 4. Clasificar régimen
+        if high_vol and high_corr:
+            regime = self.CRISIS
+        elif trend_negative:
+            regime = self.BEAR
+        elif trend_positive and not high_vol:
+            regime = self.BULL
+        else:
+            regime = self.NEUTRAL
+
+        return regime
+
+    @staticmethod
+    def select_optimizer(
+        regime: str,
+        bl:     BlackLittermanOptimizer,
+        hrp:    HRPOptimizer,
+        kelly:  KellyOptimizer,
+    ):
+        """Retorna el optimizador óptimo para el régimen detectado."""
+        if regime == RegimeDetector.BULL:
+            return kelly, "Kelly"
+        elif regime in (RegimeDetector.BEAR, RegimeDetector.CRISIS):
+            return hrp, "HRP"
+        else:
+            return bl, "Black-Litterman"
 
 
 # =============================================================================
@@ -565,11 +838,60 @@ class MainExecutor:
     # 4. Entrenamiento: M4-M8 sobre datos pre-2025
     # =========================================================================
 
+    # ─── Model Persistence (.joblib) ─────────────────────────────────────
+
+    @staticmethod
+    def _model_path(ticker: str, profile_name: str) -> Path:
+        """Ruta del modelo entrenado guardado en disco."""
+        return MODELS_DIR / f"{ticker}_{profile_name}.joblib"
+
+    def _save_trained_model(self, ticker: str, profile_name: str, trained: dict):
+        """Guarda modelo entrenado + features seleccionadas en disco."""
+        path = self._model_path(ticker, profile_name)
+        payload = {
+            "ticker":            ticker,
+            "model":             trained["model"],
+            "selected_features": trained["selected_features"],
+            "metrics":           trained["metrics"],
+            "train_cutoff":      str(TRAIN_CUTOFF),
+        }
+        try:
+            joblib.dump(payload, path, compress=3)
+            logger.info(f"[{ticker}] Modelo guardado → {path.name}")
+        except Exception as exc:
+            logger.warning(f"[{ticker}] No se pudo guardar modelo: {exc}")
+
+    def _load_trained_model(
+        self, ticker: str, profile_name: str, features_df: pd.DataFrame, close: pd.Series
+    ) -> Optional[dict]:
+        """Carga modelo pre-entrenado si existe y coincide el TRAIN_CUTOFF."""
+        path = self._model_path(ticker, profile_name)
+        if not path.exists():
+            return None
+        try:
+            payload = joblib.load(path)
+            if payload.get("train_cutoff") != str(TRAIN_CUTOFF):
+                logger.info(f"[{ticker}] Modelo expirado (cutoff distinto), re-entrenando")
+                return None
+            logger.info(f"[{ticker}] Modelo CARGADO desde {path.name}")
+            return {
+                "ticker":            ticker,
+                "model":             payload["model"],
+                "selected_features": payload["selected_features"],
+                "features_df_full":  features_df,
+                "close":             close,
+                "metrics":           payload["metrics"],
+            }
+        except Exception as exc:
+            logger.warning(f"[{ticker}] Modelo corrupto, re-entrenando: {exc}")
+            return None
+
     def train_asset(
         self,
         ticker:    str,
         cold:      PipelineData,
         config:    dict,
+        profile_name: str = "",
     ) -> Optional[dict]:
         """
         Ejecuta M4 (labeling) → M5 (splitting) → M6 (feature_selection)
@@ -577,6 +899,9 @@ class MainExecutor:
 
         Usa features_df pre-computadas (cold start) para evitar NaN en
         indicadores al inicio del período.
+
+        Si existe un modelo guardado (.joblib) con el mismo TRAIN_CUTOFF,
+        lo carga en lugar de re-entrenar (ahorra ~80% del tiempo).
         """
         logger.info(f"[{ticker}] Entrenando con datos 2020-2024...")
 
@@ -585,6 +910,11 @@ class MainExecutor:
             close:       pd.Series     = cold.get("close")
             ohlcv:       pd.DataFrame  = cold.get("ohlcv")
             t_events:    pd.DatetimeIndex = cold.get("tEvents")
+
+            # ── Intentar cargar modelo guardado (.joblib) ─────────────
+            cached_model = self._load_trained_model(ticker, profile_name, features_df, close)
+            if cached_model is not None:
+                return cached_model
 
             # ── Corte temporal: solo eventos pre-2025 ──────────────────────
             train_events = t_events[t_events < TRAIN_CUTOFF]
@@ -646,7 +976,7 @@ class MainExecutor:
                 f"features={len(selected_features)}"
             )
 
-            return {
+            result = {
                 "ticker":            ticker,
                 "model":             model,
                 "selected_features": selected_features,
@@ -654,6 +984,11 @@ class MainExecutor:
                 "close":             close,
                 "metrics":           metrics,
             }
+
+            # ── Guardar modelo en disco (.joblib) ─────────────────────
+            self._save_trained_model(ticker, profile_name, result)
+
+            return result
 
         except Exception as exc:
             logger.error(f"[{ticker}] Error de entrenamiento: {exc}", exc_info=True)
@@ -768,14 +1103,18 @@ class MainExecutor:
         Returns:
             Lista de registros diarios compatibles con el frontend React.
         """
-        # ── Parámetros Black-Litterman desde el perfil ────────────────────
+        # ── Parámetros desde el perfil ────────────────────────────────────
         bl_cfg           = profile_config.get("black_litterman", {})
         delta            = float(bl_cfg.get("delta",              2.5))
         tau              = float(bl_cfg.get("tau",                0.05))
         confidence_level = float(profile_config.get("confidence_level", 0.70))
         max_weight       = float(profile_config.get("max_weight_per_asset", 0.40))
 
-        bl = BlackLittermanOptimizer(delta=delta, tau=tau, max_weight=max_weight)
+        # ── Tres optimizadores + detector de régimen ──────────────────
+        bl    = BlackLittermanOptimizer(delta=delta, tau=tau, max_weight=max_weight)
+        hrp   = HRPOptimizer(max_weight=max_weight)
+        kelly = KellyOptimizer(max_weight=max_weight, fraction=0.5)
+        regime_detector = RegimeDetector()
 
         tickers = [t for t in predictions if len(predictions[t]) > 0]
         if not tickers:
@@ -817,6 +1156,8 @@ class MainExecutor:
         benchmark_value  = initial_capital
         current_weights  = dict(equal_w)   # Pesos iniciales iguales
         results: List[dict] = []
+        regime   = "neutral"               # Inicializar para primer día sin ventana
+        opt_name = "Black-Litterman"
 
         # ── Loop diario ────────────────────────────────────────────────────
         for i, date in enumerate(trading_days[:-1]):
@@ -848,7 +1189,7 @@ class MainExecutor:
                 if len(slice_) >= 30:
                     window_parts[ticker] = slice_
 
-            # 3. Black-Litterman si hay suficientes datos
+            # 3. Optimización adaptativa por régimen de mercado
             if len(window_parts) >= 2 and len(daily_signals) >= 2:
                 avail_tickers = sorted(window_parts.keys())
                 hist_df       = pd.DataFrame(
@@ -857,13 +1198,20 @@ class MainExecutor:
 
                 if len(hist_df) >= 30:
                     avail_signals = {t: daily_signals.get(t, 0.0) for t in avail_tickers}
-                    bl_weights, _ = bl.optimize(
+
+                    # Detectar régimen y seleccionar optimizador
+                    regime = regime_detector.detect(hist_df)
+                    optimizer, opt_name = RegimeDetector.select_optimizer(
+                        regime, bl, hrp, kelly
+                    )
+
+                    opt_weights, _ = optimizer.optimize(
                         prices=hist_df,
                         ml_signals=avail_signals,
                         confidence_level=confidence_level,
                     )
                     # Extender a todos los tickers (0 para los no incluidos)
-                    raw_w = {t: bl_weights.get(t, 0.0) for t in tickers}
+                    raw_w = {t: opt_weights.get(t, 0.0) for t in tickers}
                     total = sum(raw_w.values())
                     current_weights = (
                         {t: v / total for t, v in raw_w.items()}
@@ -893,6 +1241,8 @@ class MainExecutor:
                 "benchmark_value": round(benchmark_value, 4),
                 "allocations":     {t: round(current_weights.get(t, 0.0), 4) for t in tickers},
                 "confidence":      round(avg_conf, 4),
+                "regime":          regime if 'regime' in dir() else "neutral",
+                "optimizer":       opt_name if 'opt_name' in dir() else "Black-Litterman",
             })
 
         final_port  = results[-1]["portfolio_value"] if results else initial_capital
@@ -953,7 +1303,7 @@ class MainExecutor:
                 continue
 
             # ── Entrenamiento (específico por perfil × activo) ─────────────
-            trained = self.train_asset(ticker, cold, config)
+            trained = self.train_asset(ticker, cold, config, profile_name=profile_name)
             if trained is None:
                 continue
 

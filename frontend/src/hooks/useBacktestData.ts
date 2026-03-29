@@ -6,6 +6,8 @@ export interface BacktestDay {
   benchmark_value: number;
   allocations: Record<string, number>;
   confidence: number;
+  regime?: string;
+  optimizer?: string;
 }
 
 export type RiskProfile = "low_risk" | "med_risk" | "high_risk";

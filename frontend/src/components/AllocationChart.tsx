@@ -25,6 +25,8 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
   const [chartData, setChartData] = useState<any[]>([]);
   const [lastDayAllocs, setLastDayAllocs] = useState<Array<{ name: string; value: number }>>([]);
   const [assets, setAssets] = useState<string[]>([]);
+  const [regimeStats, setRegimeStats] = useState<Array<{ name: string; days: number; pct: number; color: string }>>([]);
+  const [optimizerStats, setOptimizerStats] = useState<Array<{ name: string; days: number; pct: number }>>([]);
   const multiplier = 25; // Scale up 1000 to match the 25k static capital for visualizations
 
   useEffect(() => {
@@ -63,6 +65,38 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
       .filter((d) => d.value > 0.1)
       .sort((a, b) => b.value - a.value);
     setLastDayAllocs(pieData);
+
+    // Estadísticas de régimen y optimizador
+    const regimeColors: Record<string, string> = {
+      bull:    "hsl(142, 76%, 36%)",
+      bear:    "hsl(0, 84%, 60%)",
+      crisis:  "hsl(39, 100%, 50%)",
+      neutral: "hsl(220, 9%, 55%)",
+    };
+    const regimeCounts: Record<string, number> = {};
+    const optimizerCounts: Record<string, number> = {};
+    for (const d of data) {
+      const r = (d.regime ?? "neutral").toLowerCase();
+      regimeCounts[r] = (regimeCounts[r] ?? 0) + 1;
+      const o = d.optimizer ?? "Black-Litterman";
+      optimizerCounts[o] = (optimizerCounts[o] ?? 0) + 1;
+    }
+    const total = data.length;
+    setRegimeStats(
+      Object.entries(regimeCounts)
+        .sort(([, a], [, b]) => b - a)
+        .map(([name, days]) => ({
+          name: name.charAt(0).toUpperCase() + name.slice(1),
+          days,
+          pct: Math.round((days / total) * 100),
+          color: regimeColors[name] ?? "hsl(220,9%,55%)",
+        }))
+    );
+    setOptimizerStats(
+      Object.entries(optimizerCounts)
+        .sort(([, a], [, b]) => b - a)
+        .map(([name, days]) => ({ name, days, pct: Math.round((days / total) * 100) }))
+    );
   }, [data]);
 
   if (data.length === 0) return null;
@@ -206,6 +240,62 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
             <span className="text-primary text-xl">${finalValue.toLocaleString()}</span>
           </p>
         </motion.div>
+
+        {/* Régimen de Mercado & Optimizador */}
+        {(regimeStats.length > 0 || optimizerStats.length > 0) && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          >
+            {/* Régimen */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+              <h3 className="text-sm font-semibold text-foreground mb-5">Régimen de Mercado Detectado</h3>
+              <div className="space-y-3">
+                {regimeStats.map(({ name, days, pct, color }) => (
+                  <div key={name}>
+                    <div className="flex justify-between text-xs mb-1">
+                      <span className="font-medium text-foreground">{name}</span>
+                      <span className="text-muted-foreground">{days} días ({pct}%)</span>
+                    </div>
+                    <div className="h-2 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all duration-700"
+                        style={{ width: `${pct}%`, backgroundColor: color }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Optimizador */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+              <h3 className="text-sm font-semibold text-foreground mb-5">Optimizador Utilizado</h3>
+              <div className="space-y-3">
+                {optimizerStats.map(({ name, days, pct }, idx) => (
+                  <div key={name}>
+                    <div className="flex justify-between text-xs mb-1">
+                      <span className="font-medium text-foreground">{name}</span>
+                      <span className="text-muted-foreground">{days} días ({pct}%)</span>
+                    </div>
+                    <div className="h-2 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all duration-700"
+                        style={{ width: `${pct}%`, backgroundColor: COLORS[idx % COLORS.length] }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                El sistema alterna automáticamente entre Black-Litterman (neutro), HRP (bear/crisis) y Kelly (bull) según las condiciones del mercado.
+              </p>
+            </div>
+          </motion.div>
+        )}
 
         {/* Stacked Area Chart */}
         <motion.div

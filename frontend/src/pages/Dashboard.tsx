@@ -58,7 +58,8 @@ export default function Dashboard() {
 
     // Calc metrics precisely
     const currentNeto = simData.length > 0 ? simData[simData.length - 1].neto : 0;
-    const profit = currentNeto > 0 ? currentNeto - initialCapital : 0;
+    const profit = currentNeto - initialCapital;
+    const returnPct = initialCapital > 0 ? ((currentNeto - initialCapital) / initialCapital) * 100 : 0;
 
     return (
         <div className="min-h-screen bg-background text-foreground flex flex-col relative font-sans">
@@ -130,8 +131,10 @@ export default function Dashboard() {
                                 </div>
                             </div>
                             <div className="bg-card border border-border p-5 rounded-xl">
-                                <div className="text-xs text-muted-foreground uppercase mb-1">Días Corridos</div>
-                                <div className="text-2xl font-bold">{simData.length > 0 ? simData[simData.length - 1].day : 0}</div>
+                                <div className="text-xs text-muted-foreground uppercase mb-1">Retorno %</div>
+                                <div className={`text-2xl font-bold ${returnPct >= 0 ? 'text-success' : 'text-red-500'}`}>
+                                    {returnPct >= 0 ? '+' : ''}{returnPct.toFixed(1)}%
+                                </div>
                             </div>
                         </div>
 

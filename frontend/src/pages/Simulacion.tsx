@@ -12,6 +12,13 @@ const AI_MODELS = [
   { id: "high", name: "Modelo Agresivo", fee: "30%", feeRate: 0.30, desc: "Alto riesgo" },
 ];
 
+const REGIME_LABELS: Record<string, { label: string; color: string }> = {
+  bull:    { label: "Bull 📈",   color: "text-success" },
+  bear:    { label: "Bear 📉",   color: "text-red-500" },
+  crisis:  { label: "Crisis ⚠️", color: "text-orange-500" },
+  neutral: { label: "Neutral ⚖️", color: "text-muted-foreground" },
+};
+
 type DataPoint = { day: number; value: number; neto: number; feePaga: number };
 
 function buildGameData(raw: BacktestDay[], capital: number, feeRate: number): DataPoint[] {
@@ -36,43 +43,34 @@ export default function Simulacion() {
     AI_MODELS.find((m) => m.id === location.state?.selectedModelId) || AI_MODELS[1],
   );
   const [isPlaying, setIsPlaying] = useState(false);
-  const [cursor, setCursor] = useState(0);   // índice actual en gameData
+  const [cursor, setCursor] = useState(0);
   const [gameData, setGameData] = useState<DataPoint[]>([]);
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
 
-  // Cargar datos reales del perfil seleccionado
   const { data: rawData, loading: loadingBacktest } = useBacktestData(selectedModel.id);
 
-  // Pre-computar todos los puntos a partir del JSON real + capital del usuario
   const fullData = useRef<DataPoint[]>([]);
   useEffect(() => {
     if (rawData.length === 0) return;
     fullData.current = buildGameData(rawData, capitalInput, selectedModel.feeRate);
-    // Si el cursor ya avanzó (ej. restaurado desde DB), reescalar en lugar de reiniciar
     if (cursor > 0) {
       setGameData(fullData.current.slice(0, cursor + 1));
     }
   }, [rawData, capitalInput, selectedModel.id, cursor]);
 
-  // Auth guard & DB Fetch
   useEffect(() => {
     let mounted = true;
-
     const initSession = async () => {
       const { data } = await supabase.auth.getSession();
       if (!data.session) { navigate("/login"); return; }
-
       const currentUserId = data.session.user.id;
       if (mounted) {
         setUserId(currentUserId);
-
-        // Fetch guardado de la nube
         const { data: dbData } = await supabase
           .from("simulations")
           .select("*")
           .eq("user_id", currentUserId)
           .single();
-
         if (dbData) {
           if (dbData.capital_input) setCapitalInput(dbData.capital_input);
           if (dbData.selected_model_id) {
@@ -86,12 +84,10 @@ export default function Simulacion() {
         setIsLoadingAuth(false);
       }
     };
-
     initSession();
     return () => { mounted = false; };
   }, [navigate]);
 
-  // Reproducción: avanza un punto cada 300 ms
   useEffect(() => {
     if (!isPlaying) return;
     const interval = setInterval(() => {
@@ -108,10 +104,8 @@ export default function Simulacion() {
     return () => clearInterval(interval);
   }, [isPlaying]);
 
-  // Autoguardar en Supabase al pausar
   useEffect(() => {
     if (isLoadingAuth || !userId || isPlaying || gameData.length === 0) return;
-
     supabase.from("simulations").upsert({
       user_id: userId,
       selected_model_id: selectedModel.id,
@@ -126,8 +120,6 @@ export default function Simulacion() {
     setIsPlaying(false);
     setCursor(0);
     setGameData([]);
-
-    // Wipe DB state immediately
     if (userId) {
       await supabase.from("simulations").upsert({
         user_id: userId,
@@ -156,6 +148,34 @@ export default function Simulacion() {
   const current = gameData[gameData.length - 1] ?? { value: capitalInput, neto: capitalInput, feePaga: 0 };
   const isLosing = current.neto < capitalInput;
   const totalDays = fullData.current.length;
+  const progressPct = totalDays > 0 ? (cursor / totalDays) * 100 : 0;
+
+  // Métricas en tiempo real desde gameData
+  const returnPct = capitalInput > 0 ? ((current.neto / capitalInput) - 1) * 100 : 0;
+  let maxDD = 0;
+  if (gameData.length > 1) {
+    let peak = gameData[0].neto;
+    for (const pt of gameData) {
+      if (pt.neto > peak) peak = pt.neto;
+      const dd = (pt.neto - peak) / peak;
+      if (dd < maxDD) maxDD = dd;
+    }
+  }
+
+  // Datos del día actual desde rawData (régimen, optimizador, allocations, confianza)
+  const currentRaw: BacktestDay | null = cursor > 0 && cursor - 1 < rawData.length
+    ? rawData[cursor - 1]
+    : null;
+
+  const regimeKey = (currentRaw?.regime ?? "neutral").toLowerCase();
+  const regimeInfo = REGIME_LABELS[regimeKey] ?? { label: regimeKey, color: "text-foreground" };
+
+  const topAllocations = currentRaw
+    ? Object.entries(currentRaw.allocations)
+        .filter(([, w]) => w > 0.005)
+        .sort(([, a], [, b]) => b - a)
+        .slice(0, 5)
+    : [];
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
@@ -176,7 +196,7 @@ export default function Simulacion() {
               onClick={() => handleModelChange(m)}
               className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${selectedModel.id === m.id
                 ? "bg-card text-foreground shadow-sm"
-                : "text-muted-foreground hover:text-foregr  ound"
+                : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               {m.name}
@@ -193,10 +213,14 @@ export default function Simulacion() {
             <div>
               <h2 className="text-sm font-medium text-muted-foreground">Tu Capital Neto Actual</h2>
               <div
-                className={`text-5xl font-bold tracking-tight mt-2 flex items-baseline gap-3 ${isLosing ? "text-red-500" : "text-foreground"
-                  }`}
+                className={`text-5xl font-bold tracking-tight mt-2 flex items-baseline gap-3 ${isLosing ? "text-red-500" : "text-foreground"}`}
               >
                 ${current.neto.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                {gameData.length > 1 && (
+                  <span className={`text-lg font-medium ${returnPct >= 0 ? "text-success" : "text-red-500"}`}>
+                    {returnPct >= 0 ? "+" : ""}{returnPct.toFixed(1)}%
+                  </span>
+                )}
               </div>
             </div>
             <div className="text-right">
@@ -204,6 +228,21 @@ export default function Simulacion() {
               <div className="text-2xl font-mono font-medium">
                 {cursor} / {totalDays}
               </div>
+            </div>
+          </div>
+
+          {/* Barra de progreso */}
+          <div className="space-y-1">
+            <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+              <div
+                className="h-full bg-primary rounded-full transition-all duration-300"
+                style={{ width: `${progressPct}%` }}
+              />
+            </div>
+            <div className="flex justify-between text-xs text-muted-foreground">
+              <span>Inicio</span>
+              <span>{Math.round(progressPct)}% completado</span>
+              <span>Fin</span>
             </div>
           </div>
 
@@ -257,9 +296,9 @@ export default function Simulacion() {
         </div>
 
         {/* Panel de control */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           <div className="bg-card border border-border rounded-2xl p-6">
-            <div className="mb-8">
+            <div className="mb-6">
               <label className="text-sm font-medium text-muted-foreground mb-4 block">
                 Inversión Ficticia Inicial
               </label>
@@ -277,10 +316,11 @@ export default function Simulacion() {
               </div>
             </div>
 
-            <div className="space-y-4 mb-8">
+            {/* Info del modelo */}
+            <div className="space-y-3 mb-6">
               <div className="flex justify-between items-center text-sm border-b border-border pb-3">
-                <span className="text-muted-foreground">Performance Fee Automático</span>
-                <span className="font-semibold">{selectedModel.fee} de las ganancias</span>
+                <span className="text-muted-foreground">Performance Fee</span>
+                <span className="font-semibold">{selectedModel.fee} de ganancias</span>
               </div>
               <div className="flex justify-between items-center text-sm border-b border-border pb-3">
                 <span className="text-muted-foreground">Perfil de Riesgo</span>
@@ -292,9 +332,30 @@ export default function Simulacion() {
                   {modelIdToProfile(selectedModel.id).replace("_", " ")}
                 </span>
               </div>
-              <div className="flex justify-between items-center text-sm">
+              <div className="flex justify-between items-center text-sm border-b border-border pb-3">
                 <span className="text-muted-foreground">Costo Pagado a I.A</span>
                 <span className="font-medium text-red-500">${current.feePaga.toFixed(2)}</span>
+              </div>
+              {/* Régimen de mercado */}
+              <div className="flex justify-between items-center text-sm border-b border-border pb-3">
+                <span className="text-muted-foreground">Régimen Detectado</span>
+                <span className={`font-semibold ${regimeInfo.color}`}>
+                  {currentRaw ? regimeInfo.label : "—"}
+                </span>
+              </div>
+              {/* Optimizador activo */}
+              <div className="flex justify-between items-center text-sm border-b border-border pb-3">
+                <span className="text-muted-foreground">Optimizador Activo</span>
+                <span className="font-medium text-foreground text-right text-xs">
+                  {currentRaw?.optimizer ?? "—"}
+                </span>
+              </div>
+              {/* Confianza del modelo */}
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-muted-foreground">Confianza IA</span>
+                <span className="font-medium text-foreground">
+                  {currentRaw ? `${(currentRaw.confidence * 100).toFixed(0)}%` : "—"}
+                </span>
               </div>
             </div>
 
@@ -325,7 +386,69 @@ export default function Simulacion() {
             </div>
           </div>
 
-          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
+          {/* Métricas en tiempo real */}
+          {gameData.length > 1 && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-card border border-border rounded-2xl p-5 space-y-3"
+            >
+              <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                Rendimiento en Tiempo Real
+              </h4>
+              <div className="grid grid-cols-3 gap-3 text-center">
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Retorno</p>
+                  <p className={`text-lg font-bold ${returnPct >= 0 ? "text-success" : "text-red-500"}`}>
+                    {returnPct >= 0 ? "+" : ""}{returnPct.toFixed(1)}%
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Max DD</p>
+                  <p className="text-lg font-bold text-red-400">
+                    {(maxDD * 100).toFixed(1)}%
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Confianza</p>
+                  <p className="text-lg font-bold text-foreground">
+                    {currentRaw ? `${(currentRaw.confidence * 100).toFixed(0)}%` : "—"}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Top Allocations del día actual */}
+          {topAllocations.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-card border border-border rounded-2xl p-5"
+            >
+              <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+                Pesos Actuales (Top 5)
+              </h4>
+              <div className="space-y-2.5">
+                {topAllocations.map(([ticker, weight]) => (
+                  <div key={ticker} className="flex items-center gap-3">
+                    <span className="text-xs font-medium text-foreground w-10 shrink-0">{ticker}</span>
+                    <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-primary rounded-full transition-all duration-500"
+                        style={{ width: `${weight * 100}%` }}
+                      />
+                    </div>
+                    <span className="text-xs text-muted-foreground w-10 text-right shrink-0">
+                      {(weight * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5">
             <h4 className="text-sm font-medium text-primary flex items-center gap-2 mb-2">
               <Check size={16} /> Datos Reales de Backtest
             </h4>
