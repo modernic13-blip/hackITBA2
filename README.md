@@ -329,21 +329,21 @@ Los archivos YAML permiten personalizar por activo:
 **Entrenamiento:** 2020-2023 (4 anos de datos diarios)
 **Test (out-of-sample):** Enero 2024 - Diciembre 2024 (251 dias de trading)
 
-| Perfil | Retorno Total | S&P 500 | vs S&P 500 | Sharpe | Max Drawdown |
-|--------|:------------:|:-------:|:----------:|:------:|:------------:|
-| **Low Risk** | **+71.2%** | +24.5% | **+46.7%** | 2.80 | -12.7% |
-| **Med Risk** | **+148.0%** | +24.5% | **+123.5%** | **2.97** | -11.3% |
-| **High Risk** | **+182.2%** | +24.5% | **+157.7%** | 2.44 | -18.9% |
+| Perfil | Retorno Total | Equal-Weight | vs EW | Sharpe | Max Drawdown |
+|--------|:------------:|:------------:|:-----:|:------:|:------------:|
+| **Low Risk** | **+71.2%** | +55.7% | **+15.6%** | 2.80 | -12.7% |
+| **Med Risk** | **+148.0%** | +71.3% | **+76.7%** | **2.97** | -11.3% |
+| **High Risk** | **+182.2%** | +121.1% | **+61.1%** | 2.44 | -18.9% |
 
 ```
 Inversion de USD 100 en Enero 2024:
-  S&P 500 (SPY)       → USD 124     (+24.5%)
-  QuantFlow Low Risk   → USD 171     (+71.2%)   ██████████████████████████████████▓░░░░░░
-  QuantFlow Med Risk   → USD 248     (+148.0%)  ██████████████████████████████████████████████████████████████████████████▓░░░
-  QuantFlow High Risk  → USD 282     (+182.2%)  ██████████████████████████████████████████████████████████████████████████████████████████████▓
+  Equal-Weight (11 activos) → USD 156-221  (segun perfil)
+  QuantFlow Low Risk        → USD 171     (+71.2%)   ████████████████████████████████████▓░░░░░
+  QuantFlow Med Risk        → USD 248     (+148.0%)  █████████████████████████████████████████████████████████████████████████████▓
+  QuantFlow High Risk       → USD 282     (+182.2%)  ████████████████████████████████████████████████████████████████████████████████████████████▓
 ```
 
-> Los 3 perfiles superaron al S&P 500 de forma contundente. Incluso el perfil Conservador (+71.2%) casi triplicó el rendimiento del indice (+24.5%).
+> **Nota:** El benchmark es un portafolio equal-weight de los mismos 11 activos del universo (AAPL, AMZN, BTC, COIN, GLD, META, NVDA, PLTR, QQQ, TLT, XOM). Los 3 perfiles superaron a este benchmark, demostrando que la optimizacion adaptativa agrega alpha real sobre una estrategia pasiva con los mismos activos. A modo referencial, el S&P 500 (SPY) retorno ~+24.5% en 2024.
 
 ---
 
@@ -557,26 +557,25 @@ Palantir (PLTR) tuvo un ano extraordinario con **+365.5%** de retorno. El perfil
 
 ```
 Ano 2024 completo:
-  S&P 500              +24.5%  ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-  Benchmark (EW)      +121.1%  ████████████████████████████████████████████████████████████▓
+  Equal-Weight        +121.1%  ████████████████████████████████████████████████████████████▓
   QuantFlow High Risk +182.2%  █████████████████████████████████████████████████████████████████████████████████████████████▓
 ```
 
 **La clave:** En los periodos `BULL` el **Kelly Criterion** aumentó agresivamente la exposición a PLTR (hasta 24.9%), mientras que en correcciones el sistema rotó a **HRP** para proteger ganancias.
 
-### 3. Superando al S&P 500 — Consistentemente
+### 3. Superando al Equal-Weight — Consistentemente
 
-El objetivo principal del sistema era **ganarle al S&P 500**. Lo logramos en todos los perfiles:
+El objetivo principal del sistema era **generar alpha sobre un portafolio pasivo de los mismos activos**. Lo logramos en todos los perfiles:
 
-| Perfil | QuantFlow | S&P 500 | Diferencia | Sharpe Ratio |
-|--------|:---------:|:-------:|:----------:|:------------:|
-| Conservador | **+71.2%** | +24.5% | **+46.7%** | 2.80 |
-| Balanceado | **+148.0%** | +24.5% | **+123.5%** | **2.97** |
-| Agresivo | **+182.2%** | +24.5% | **+157.7%** | 2.44 |
+| Perfil | QuantFlow | Equal-Weight | Alpha | Sharpe Ratio |
+|--------|:---------:|:------------:|:-----:|:------------:|
+| Conservador | **+71.2%** | +55.7% | **+15.6%** | 2.80 |
+| Balanceado | **+148.0%** | +71.3% | **+76.7%** | **2.97** |
+| Agresivo | **+182.2%** | +121.1% | **+61.1%** | 2.44 |
 
-> Incluso el perfil **mas conservador** (Low Risk) casi **triplico** el rendimiento del S&P 500, con un Sharpe Ratio de 2.80 — indicando retornos excelentes ajustados por riesgo.
+> El perfil **Balanceado** logro el mejor ratio riesgo/retorno con un Sharpe de **2.97** y un Max Drawdown de solo **-11.3%**, generando **+76.7% de alpha** sobre el equal-weight, demostrando que la optimizacion adaptativa agrega valor real.
 
-> El perfil **Balanceado** logro el mejor ratio riesgo/retorno con un Sharpe de **2.97** y un Max Drawdown de solo **-11.3%**, demostrando que es posible obtener retornos de triple digito con riesgo controlado.
+> Referencia: S&P 500 (SPY) retorno ~+24.5% en 2024. Los 3 perfiles lo superan ampliamente, aunque la comparacion directa no es 1:1 ya que el universo de activos es diferente (incluye BTC, NVDA, PLTR — activos con retornos atipicos en 2024).
 
 ---
 

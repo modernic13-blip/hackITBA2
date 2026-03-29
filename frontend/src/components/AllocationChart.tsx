@@ -131,7 +131,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
           transition={{ duration: 0.8, delay: 0.1 }}
         >
           <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-foreground mb-6">Ganancias Totales (Portfolio AI vs Benchmark)</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-6">Ganancias Totales (Portfolio IA vs Equal-Weight)</h3>
             <div className="h-[360px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={chartData} margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
@@ -159,7 +159,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
                     }}
                     formatter={(value: number, name: string) => [
                       `$${value.toLocaleString()}`,
-                      name === "portfolio" ? "Portafolio IA" : "Benchmark (S&P 500)",
+                      name === "portfolio" ? "Portafolio IA" : "Equal-Weight (mismo universo)",
                     ]}
                   />
                   <Legend wrapperStyle={{ fontSize: 12 }} />
@@ -206,7 +206,7 @@ const AllocationChart = ({ data }: AllocationChartProps) => {
             { label: "Max Drawdown", value: `${metrics.maxDrawdown}%`, colored: false },
             { label: "Sharpe Ratio", value: String(metrics.sharpeRatio), colored: false },
             {
-              label: "vs Benchmark",
+              label: "vs Equal-Weight",
               value: `${metrics.vsbenchmark >= 0 ? "+" : ""}${metrics.vsbenchmark}%`,
               colored: true,
               positive: metrics.vsbenchmark >= 0,
