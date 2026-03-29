@@ -1,0 +1,76 @@
+name: Run QuantFlow Pipeline
+ 
+on:
+  # Corre manualmente desde GitHub → Actions → "Run workflow"
+  workflow_dispatch:
+    inputs:
+      profiles:
+        description: 'Perfiles a correr (ej: low_risk med_risk high_risk)'
+        required: false
+        default: 'low_risk med_risk high_risk'
+ 
+  # Opcional: cron para correr automáticamente (ej: todos los lunes a las 6 AM UTC)
+  # schedule:
+  #   - cron: '0 6 * * 1'
+ 
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2 horas máximo (el pipeline tarda ~45 min la primera vez)
+ 
+    steps:
+      # 1. Bajar el código
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      # 2. Configurar Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+ 
+      # 3. Cache de dependencias pip (acelera ejecuciones futuras)
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+ 
+      # 4. Cache del pipeline ML (modelos .joblib y features .pkl)
+      #    Esto hace que la segunda ejecución tarde ~8 min en vez de ~45 min
+      - name: Cache ML models and features
+        uses: actions/cache@v4
+        with:
+          path: cache/
+          key: ${{ runner.os }}-ml-cache-${{ hashFiles('configs/*.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-ml-cache-
+ 
+      # 5. Instalar dependencias
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+ 
+      # 6. Crear archivo .env con los secrets de GitHub
+      - name: Create .env file
+        run: |
+          echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" >> .env
+          echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}" >> .env
+          # Agregá acá cualquier otra variable de tu .env.example
+ 
+      # 7. Correr el pipeline
+      - name: Run ML pipeline
+        run: |
+          python main_executor.py --profiles ${{ github.event.inputs.profiles || 'low_risk med_risk high_risk' }}
+ 
+      # 8. Commitear los JSONs generados de vuelta al repo
+      #    Así el frontend en Vercel los levanta automáticamente
+      - name: Commit results to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/results_*.json
+          git diff --staged --quiet || git commit -m "chore: update pipeline results [skip ci]"
+          git push
+ 
